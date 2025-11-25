@@ -1,0 +1,10 @@
+# --- Ignoruj DANE ---
+Dane/
+preprocessed_data/
+
+# --- Ignoruj pliki systemowe Pythona ---
+__pycache__/
+*.pyc
+
+# --- Ignoruj pliki tymczasowe Excela (jeśli jakieś są otwarte) ---
+~$*.xlsx

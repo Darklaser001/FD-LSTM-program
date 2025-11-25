@@ -1,0 +1,202 @@
+[
+    {
+        "file_name": "329634",
+        "start_index": 0,
+        "end_index": 14531,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\329634_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\329634_map.csv"
+    },
+    {
+        "file_name": "330048",
+        "start_index": 0,
+        "end_index": 18623,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\330048_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\330048_map.csv"
+    },
+    {
+        "file_name": "331345",
+        "start_index": 0,
+        "end_index": 1869,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\331345_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\331345_map.csv"
+    },
+    {
+        "file_name": "344405",
+        "start_index": 0,
+        "end_index": 6685,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\344405_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\344405_map.csv"
+    },
+    {
+        "file_name": "344423",
+        "start_index": 0,
+        "end_index": 7007,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\344423_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\344423_map.csv"
+    },
+    {
+        "file_name": "345143",
+        "start_index": 0,
+        "end_index": 21224,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\345143_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\345143_map.csv"
+    },
+    {
+        "file_name": "349413",
+        "start_index": 0,
+        "end_index": 19381,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\349413_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\349413_map.csv"
+    },
+    {
+        "file_name": "366899",
+        "start_index": 0,
+        "end_index": 10493,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\366899_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\366899_map.csv"
+    },
+    {
+        "file_name": "702642",
+        "start_index": 0,
+        "end_index": 16655,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\702642_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\702642_map.csv"
+    },
+    {
+        "file_name": "717823",
+        "start_index": 0,
+        "end_index": 17783,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\717823_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\717823_map.csv"
+    },
+    {
+        "file_name": "946284",
+        "start_index": 0,
+        "end_index": 110,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\946284_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\946284_map.csv"
+    },
+    {
+        "file_name": "946284",
+        "start_index": 4539,
+        "end_index": 4623,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\946284_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\946284_map.csv"
+    },
+    {
+        "file_name": "946284",
+        "start_index": 4639,
+        "end_index": 4639,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\946284_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\946284_map.csv"
+    },
+    {
+        "file_name": "946284",
+        "start_index": 4668,
+        "end_index": 5062,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\946284_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\946284_map.csv"
+    },
+    {
+        "file_name": "946284",
+        "start_index": 5072,
+        "end_index": 5106,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\946284_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\946284_map.csv"
+    },
+    {
+        "file_name": "946284",
+        "start_index": 5269,
+        "end_index": 5270,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\946284_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\946284_map.csv"
+    },
+    {
+        "file_name": "946284",
+        "start_index": 5306,
+        "end_index": 6415,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\946284_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\946284_map.csv"
+    },
+    {
+        "file_name": "957419",
+        "start_index": 1000,
+        "end_index": 1005,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\957419_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\957419_map.csv"
+    },
+    {
+        "file_name": "957419",
+        "start_index": 1007,
+        "end_index": 1007,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\957419_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\957419_map.csv"
+    },
+    {
+        "file_name": "957419",
+        "start_index": 1009,
+        "end_index": 1022,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\957419_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\957419_map.csv"
+    },
+    {
+        "file_name": "957419",
+        "start_index": 4537,
+        "end_index": 4542,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\957419_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\957419_map.csv"
+    },
+    {
+        "file_name": "957419",
+        "start_index": 4555,
+        "end_index": 4567,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\957419_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\957419_map.csv"
+    },
+    {
+        "file_name": "957419",
+        "start_index": 4578,
+        "end_index": 4598,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\957419_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\957419_map.csv"
+    },
+    {
+        "file_name": "957615",
+        "start_index": 717,
+        "end_index": 717,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\957615_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\957615_map.csv"
+    },
+    {
+        "file_name": "957615",
+        "start_index": 11197,
+        "end_index": 11266,
+        "seq_len": 100,
+        "data_file_path": "preprocessed_data\\RLV2\\957615_data.pt",
+        "map_file_path": "preprocessed_data\\RLV2\\957615_map.csv"
+    }
+]

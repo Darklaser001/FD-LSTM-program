@@ -1,0 +1,93 @@
+2025-11-12 01:52:56,761 [INFO] --- Konfiguracja Uruchomienia ---
+2025-11-12 01:52:56,762 [INFO] Rodzina danych: RLV1
+2025-11-12 01:52:56,764 [INFO] Katalog bazowy danych: preprocessed_data
+2025-11-12 01:52:56,769 [INFO] Rozmiar partii (Batch Size): 512
+2025-11-12 01:52:56,769 [INFO] Wymuœ obliczenie progu: False
+2025-11-12 01:52:56,770 [INFO] Parametry modelu zostan¹ wczytane z checkpointu...
+2025-11-12 01:52:56,771 [INFO] ---------------------------------
+2025-11-12 01:52:56,771 [INFO] --- Rozpoczynam Detekcjê Anomalii dla: RLV1 ---
+2025-11-12 01:52:56,771 [INFO] Logi zapisywane do: outputs\RLV1\detect_RLV1_output.txt
+2025-11-12 01:52:56,800 [INFO] U¿ywam urz¹dzenia: cuda
+2025-11-12 01:52:57,011 [INFO] Model wczytany pomyœlnie.
+2025-11-12 01:52:57,011 [WARNING] Brak pliku progu w checkpoints\RLV1\threshold_RLV1.json.
+2025-11-12 01:52:57,013 [WARNING] Uruchamiam automatyczne obliczanie progu (proszê czekaæ)...
+2025-11-12 01:55:10,348 [INFO] Obliczanie progu zakoñczone. Kontynuujê detekcjê.
+2025-11-12 01:55:10,389 [INFO] Pomyœlnie wczytano próg: 5.685222
+2025-11-12 01:55:10,390 [INFO] 
+--- Rozpoczynam analizê plików 'Wady' (Próg = 5.685222) ---
+2025-11-12 01:55:10,414 [INFO] >>> Analizujê plik: 316367.xlsx
+2025-11-12 01:55:12,308 [INFO] WYKRYTO 93 zdarzeñ anomalii w tym pliku.
+2025-11-12 01:55:12,309 [INFO] >>> Analizujê plik: 330083.xlsx
+2025-11-12 01:55:13,832 [INFO] WYKRYTO 6 zdarzeñ anomalii w tym pliku.
+2025-11-12 01:55:13,832 [INFO] >>> Analizujê plik: 330233.xlsx
+2025-11-12 01:55:15,189 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-12 01:55:15,189 [INFO] >>> Analizujê plik: 330484.xlsx
+2025-11-12 01:55:16,491 [INFO] WYKRYTO 3 zdarzeñ anomalii w tym pliku.
+2025-11-12 01:55:16,492 [INFO] >>> Analizujê plik: 330642.xlsx
+2025-11-12 01:55:17,859 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-12 01:55:17,859 [INFO] >>> Analizujê plik: 331628.xlsx
+2025-11-12 01:55:19,478 [INFO] WYKRYTO 4 zdarzeñ anomalii w tym pliku.
+2025-11-12 01:55:19,478 [INFO] >>> Analizujê plik: 364497.xlsx
+2025-11-12 01:55:20,503 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-12 01:55:20,503 [INFO] >>> Analizujê plik: 370615.xlsx
+2025-11-12 01:55:21,174 [INFO] WYKRYTO 2 zdarzeñ anomalii w tym pliku.
+2025-11-12 01:55:21,174 [INFO] >>> Analizujê plik: 419092.xlsx
+2025-11-12 01:55:23,217 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-12 01:55:23,218 [INFO] >>> Analizujê plik: 612235.xlsx
+2025-11-12 01:55:25,478 [INFO] WYKRYTO 53 zdarzeñ anomalii w tym pliku.
+2025-11-12 01:55:25,479 [INFO] >>> Analizujê plik: 636195.xlsx
+2025-11-12 01:55:26,016 [INFO] WYKRYTO 11 zdarzeñ anomalii w tym pliku.
+2025-11-12 01:55:26,016 [INFO] >>> Analizujê plik: 710175.xlsx
+2025-11-12 01:55:26,902 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-12 01:55:26,902 [INFO] 
+--- Detekcja Wstêpna Zakoñczona ---
+2025-11-12 01:55:26,905 [INFO] £¹cznie znaleziono 175 zdarzeñ w 10 plikach.
+2025-11-12 01:55:26,909 [INFO] Zapisano surowe zdarzenia w: outputs\RLV1\raw_events_RLV1.json
+2025-11-12 01:55:26,909 [INFO] 
+--- Uruchamiam automatyczn¹ klasyfikacjê i raportowanie... ---
+2025-11-12 01:56:07,145 [INFO] Klasyfikacja zakoñczona pomyœlnie.
+2025-11-12 02:02:32,362 [INFO] --- Konfiguracja Uruchomienia ---
+2025-11-12 02:02:32,363 [INFO] Rodzina danych: RLV1
+2025-11-12 02:02:32,365 [INFO] Katalog bazowy danych: preprocessed_data
+2025-11-12 02:02:32,366 [INFO] Rozmiar partii (Batch Size): 512
+2025-11-12 02:02:32,366 [INFO] Wymuœ obliczenie progu: False
+2025-11-12 02:02:32,367 [INFO] Parametry modelu zostan¹ wczytane z checkpointu...
+2025-11-12 02:02:32,367 [INFO] ---------------------------------
+2025-11-12 02:02:32,367 [INFO] --- Rozpoczynam Detekcjê Anomalii dla: RLV1 ---
+2025-11-12 02:02:32,368 [INFO] Logi zapisywane do: outputs\RLV1\detect_RLV1_output.txt
+2025-11-12 02:02:32,393 [INFO] U¿ywam urz¹dzenia: cuda
+2025-11-12 02:02:32,584 [INFO] Model wczytany pomyœlnie.
+2025-11-12 02:02:32,585 [INFO] Pomyœlnie wczytano próg: 5.685222
+2025-11-12 02:02:32,587 [INFO] 
+--- Rozpoczynam analizê plików 'Wady' (Próg = 5.685222) ---
+2025-11-12 02:02:32,588 [INFO] >>> Analizujê plik: 316367.xlsx
+2025-11-12 02:02:34,084 [INFO] WYKRYTO 93 zdarzeñ anomalii w tym pliku.
+2025-11-12 02:02:34,084 [INFO] >>> Analizujê plik: 330083.xlsx
+2025-11-12 02:02:35,560 [INFO] WYKRYTO 6 zdarzeñ anomalii w tym pliku.
+2025-11-12 02:02:35,560 [INFO] >>> Analizujê plik: 330233.xlsx
+2025-11-12 02:02:36,884 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-12 02:02:36,885 [INFO] >>> Analizujê plik: 330484.xlsx
+2025-11-12 02:02:38,176 [INFO] WYKRYTO 3 zdarzeñ anomalii w tym pliku.
+2025-11-12 02:02:38,176 [INFO] >>> Analizujê plik: 330642.xlsx
+2025-11-12 02:02:39,393 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-12 02:02:39,394 [INFO] >>> Analizujê plik: 331628.xlsx
+2025-11-12 02:02:41,011 [INFO] WYKRYTO 4 zdarzeñ anomalii w tym pliku.
+2025-11-12 02:02:41,011 [INFO] >>> Analizujê plik: 364497.xlsx
+2025-11-12 02:02:42,017 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-12 02:02:42,017 [INFO] >>> Analizujê plik: 370615.xlsx
+2025-11-12 02:02:42,666 [INFO] WYKRYTO 2 zdarzeñ anomalii w tym pliku.
+2025-11-12 02:02:42,667 [INFO] >>> Analizujê plik: 419092.xlsx
+2025-11-12 02:02:44,720 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-12 02:02:44,720 [INFO] >>> Analizujê plik: 612235.xlsx
+2025-11-12 02:02:46,983 [INFO] WYKRYTO 53 zdarzeñ anomalii w tym pliku.
+2025-11-12 02:02:46,983 [INFO] >>> Analizujê plik: 636195.xlsx
+2025-11-12 02:02:47,501 [INFO] WYKRYTO 11 zdarzeñ anomalii w tym pliku.
+2025-11-12 02:02:47,501 [INFO] >>> Analizujê plik: 710175.xlsx
+2025-11-12 02:02:48,379 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-12 02:02:48,379 [INFO] 
+--- Detekcja Wstêpna Zakoñczona ---
+2025-11-12 02:02:48,382 [INFO] £¹cznie znaleziono 175 zdarzeñ w 10 plikach.
+2025-11-12 02:02:48,386 [INFO] Zapisano surowe zdarzenia w: outputs\RLV1\raw_events_RLV1.json
+2025-11-12 02:02:48,386 [INFO] 
+--- Uruchamiam automatyczn¹ klasyfikacjê i raportowanie... ---
+2025-11-12 02:03:24,887 [INFO] Klasyfikacja zakoñczona pomyœlnie.

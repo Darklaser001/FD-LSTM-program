@@ -1,0 +1,134 @@
+2025-11-25 04:59:29,516 [INFO] --- Konfiguracja Uruchomienia ---
+2025-11-25 04:59:29,516 [INFO] Rodzina danych: RLR1
+2025-11-25 04:59:29,516 [INFO] Katalog bazowy danych: preprocessed_data
+2025-11-25 04:59:29,517 [INFO] Rozmiar partii (Batch Size): 512
+2025-11-25 04:59:29,517 [INFO] Wymuœ obliczenie progu: False
+2025-11-25 04:59:29,517 [INFO] Parametry modelu zostan¹ wczytane z checkpointu...
+2025-11-25 04:59:29,517 [INFO] ---------------------------------
+2025-11-25 04:59:29,517 [INFO] --- Rozpoczynam Detekcjê Anomalii dla: RLR1 ---
+2025-11-25 04:59:29,517 [INFO] Logi zapisywane do: outputs\RLR1\detect_RLR1_output.txt
+2025-11-25 04:59:29,593 [INFO] U¿ywam urz¹dzenia: cuda
+2025-11-25 04:59:29,936 [INFO] Model wczytany pomyœlnie.
+2025-11-25 04:59:29,936 [WARNING] Brak pliku progu w checkpoints\RLR1\threshold_RLR1.json.
+2025-11-25 04:59:29,936 [WARNING] Uruchamiam automatyczne obliczanie progu (proszê czekaæ)...
+2025-11-25 05:00:50,528 [INFO] Obliczanie progu zakoñczone. Kontynuujê detekcjê.
+2025-11-25 05:00:50,628 [INFO] Pomyœlnie wczytano próg: 9.603624
+2025-11-25 05:00:50,629 [INFO] 
+--- Rozpoczynam analizê plików 'Wady' (Próg = 9.603624) ---
+2025-11-25 05:00:50,644 [INFO] >>> Analizujê plik: 941003.xlsx
+2025-11-25 05:00:51,408 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:00:51,409 [INFO] >>> Analizujê plik: 941017.xlsx
+2025-11-25 05:00:51,819 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:00:51,819 [INFO] >>> Analizujê plik: 941065.xlsx
+2025-11-25 05:00:52,208 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:00:52,208 [INFO] >>> Analizujê plik: 941104.xlsx
+2025-11-25 05:00:52,599 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:00:52,599 [INFO] >>> Analizujê plik: 941639.xlsx
+2025-11-25 05:00:52,993 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:00:52,993 [INFO] >>> Analizujê plik: 941664.xlsx
+2025-11-25 05:00:53,382 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:00:53,382 [INFO] >>> Analizujê plik: 941689.xlsx
+2025-11-25 05:00:53,773 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:00:53,773 [INFO] >>> Analizujê plik: 941779.xlsx
+2025-11-25 05:00:53,894 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:00:53,894 [INFO] >>> Analizujê plik: 942407.xlsx
+2025-11-25 05:00:54,282 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:00:54,282 [INFO] >>> Analizujê plik: 942465.xlsx
+2025-11-25 05:00:54,690 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:00:54,690 [INFO] >>> Analizujê plik: 942732.xlsx
+2025-11-25 05:00:55,064 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:00:55,065 [INFO] >>> Analizujê plik: 943357.xlsx
+2025-11-25 05:00:55,499 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:00:55,500 [INFO] >>> Analizujê plik: 943960.xlsx
+2025-11-25 05:00:55,800 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:00:55,801 [INFO] >>> Analizujê plik: 944086.xlsx
+2025-11-25 05:00:56,095 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:00:56,095 [INFO] >>> Analizujê plik: 944113.xlsx
+2025-11-25 05:00:56,386 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:00:56,386 [INFO] >>> Analizujê plik: 944480.xlsx
+2025-11-25 05:00:56,826 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:00:56,826 [INFO] >>> Analizujê plik: 944576.xlsx
+2025-11-25 05:00:57,543 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:00:57,544 [INFO] >>> Analizujê plik: 948099.xlsx
+2025-11-25 05:00:58,324 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:00:58,324 [INFO] >>> Analizujê plik: 949947.xlsx
+2025-11-25 05:00:58,746 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:00:58,746 [INFO] >>> Analizujê plik: 950731.xlsx
+2025-11-25 05:00:59,496 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:00:59,496 [INFO] >>> Analizujê plik: 953148.xlsx
+2025-11-25 05:01:00,881 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:01:00,881 [INFO] >>> Analizujê plik: 953364.xlsx
+2025-11-25 05:01:01,369 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:01:01,370 [INFO] >>> Analizujê plik: 953757.xlsx
+2025-11-25 05:01:02,035 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:01:02,035 [INFO] >>> Analizujê plik: 954645.xlsx
+2025-11-25 05:01:02,506 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:01:02,507 [INFO] >>> Analizujê plik: 954686.xlsx
+2025-11-25 05:01:02,753 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:01:02,754 [INFO] >>> Analizujê plik: 954784.xlsx
+2025-11-25 05:01:03,242 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:01:03,242 [INFO] >>> Analizujê plik: 954883.xlsx
+2025-11-25 05:01:03,725 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:01:03,725 [INFO] >>> Analizujê plik: 955412.xlsx
+2025-11-25 05:01:04,435 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:01:04,436 [INFO] >>> Analizujê plik: 956613.xlsx
+2025-11-25 05:01:04,812 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:01:04,812 [INFO] >>> Analizujê plik: 956985.xlsx
+2025-11-25 05:01:05,169 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:01:05,169 [INFO] >>> Analizujê plik: 957055.xlsx
+2025-11-25 05:01:05,514 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:01:05,515 [INFO] >>> Analizujê plik: 957223.xlsx
+2025-11-25 05:01:06,089 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:01:06,090 [INFO] >>> Analizujê plik: 958621.xlsx
+2025-11-25 05:01:06,656 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 05:01:06,656 [INFO] >>> Analizujê plik: 958751.xlsx
+2025-11-25 05:01:07,136 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:01:07,136 [INFO] >>> Analizujê plik: 959207.xlsx
+2025-11-25 05:01:07,435 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:01:07,435 [INFO] >>> Analizujê plik: 960365.xlsx
+2025-11-25 05:01:07,983 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:01:07,983 [INFO] >>> Analizujê plik: 960755.xlsx
+2025-11-25 05:01:08,742 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:01:08,742 [INFO] >>> Analizujê plik: 961510.xlsx
+2025-11-25 05:01:09,029 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:01:09,029 [INFO] >>> Analizujê plik: 961594.xlsx
+2025-11-25 05:01:09,232 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:01:09,232 [INFO] >>> Analizujê plik: 961663.xlsx
+2025-11-25 05:01:09,516 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:01:09,516 [INFO] >>> Analizujê plik: 962265.xlsx
+2025-11-25 05:01:09,895 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:01:09,895 [INFO] >>> Analizujê plik: 962299.xlsx
+2025-11-25 05:01:10,570 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:01:10,570 [INFO] >>> Analizujê plik: 962480.xlsx
+2025-11-25 05:01:11,948 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:01:11,949 [INFO] >>> Analizujê plik: 962828.xlsx
+2025-11-25 05:01:12,834 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:01:12,835 [INFO] >>> Analizujê plik: 962902.xlsx
+2025-11-25 05:01:13,140 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:01:13,140 [INFO] >>> Analizujê plik: 962963.xlsx
+2025-11-25 05:01:13,853 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:01:13,853 [INFO] >>> Analizujê plik: 962981.xlsx
+2025-11-25 05:01:14,563 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:01:14,564 [INFO] >>> Analizujê plik: 963046.xlsx
+2025-11-25 05:01:15,267 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:01:15,267 [INFO] >>> Analizujê plik: 963068.xlsx
+2025-11-25 05:01:15,457 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:01:15,457 [INFO] >>> Analizujê plik: 963087.xlsx
+2025-11-25 05:01:15,805 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:01:15,805 [INFO] >>> Analizujê plik: 963501.xlsx
+2025-11-25 05:01:16,157 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:01:16,157 [INFO] >>> Analizujê plik: 963529.xlsx
+2025-11-25 05:01:16,510 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:01:16,510 [INFO] >>> Analizujê plik: 963819.xlsx
+2025-11-25 05:01:17,211 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:01:17,211 [INFO] >>> Analizujê plik: 963939.xlsx
+2025-11-25 05:01:17,920 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:01:17,921 [INFO] >>> Analizujê plik: 964126.xlsx
+2025-11-25 05:01:18,628 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 05:01:18,629 [INFO] 
+--- Detekcja Wstêpna Zakoñczona ---
+2025-11-25 05:01:18,629 [INFO] £¹cznie znaleziono 32 zdarzeñ w 32 plikach.
+2025-11-25 05:01:18,630 [INFO] Zapisano surowe zdarzenia w: outputs\RLR1\raw_events_RLR1.json
+2025-11-25 05:01:18,631 [INFO] 
+--- Uruchamiam automatyczn¹ klasyfikacjê i raportowanie... ---
+2025-11-25 05:02:05,267 [ERROR] Automatyczne uruchomienie 'classify.py' nie powiod³o siê: Command '['python', 'classify.py', '--family', 'RLR1']' returned non-zero exit status 1.

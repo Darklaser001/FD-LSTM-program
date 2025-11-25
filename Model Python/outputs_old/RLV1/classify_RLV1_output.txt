@@ -1,0 +1,1838 @@
+2025-11-12 01:55:32,607 [INFO] --- Rozpoczynam Klasyfikacjê i Raportowanie dla: RLV1 ---
+2025-11-12 01:55:32,607 [INFO] Liczba klastrów (typów anomalii): 5
+2025-11-12 01:55:32,610 [INFO] Logi zapisywane do: outputs\RLV1\classify_RLV1_output.txt
+2025-11-12 01:55:32,679 [INFO] Wczytujê checkpoint z: checkpoints\RLV1\model_checkpoint_RLV1.pth
+2025-11-12 01:55:32,922 [INFO] Model wczytany pomyœlnie.
+2025-11-12 01:55:32,945 [INFO] Wczytano 175 surowych zdarzeñ anomalii.
+2025-11-12 01:55:32,945 [INFO] Rozpoczynam ekstrakcjê cech dla ka¿dego zdarzenia...
+2025-11-12 01:55:59,755 [INFO] Rozpoczynam klastrowanie zdarzeñ...
+2025-11-12 01:56:01,461 [INFO] Klastrowanie zakoñczone. Znaleziono 5 typów anomalii.
+2025-11-12 01:56:01,461 [INFO] 
+==================================================
+2025-11-12 01:56:01,464 [INFO] --- OSTATECZNY RAPORT WYKRYTYCH ANOMALII ---
+2025-11-12 01:56:01,465 [INFO] ==================================================
+
+2025-11-12 01:56:01,465 [INFO] 
+>>> Analizujê plik: 316367.xlsx
+2025-11-12 01:56:01,509 [WARNING]   WYKRYTO Anomaliê Typu: 5
+2025-11-12 01:56:01,509 [WARNING]     - Zakres indeksów: [0 - 1134]
+2025-11-12 01:56:01,512 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:11:21)
+2025-11-12 01:56:01,512 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:31:54)
+2025-11-12 01:56:01,512 [WARNING]     - Cechy: (Amplituda: 11214620.00, Czas trwania: 1135)
+2025-11-12 01:56:01,528 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,529 [WARNING]     - Zakres indeksów: [1136 - 1136]
+2025-11-12 01:56:01,529 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:30:17)
+2025-11-12 01:56:01,529 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:31:56)
+2025-11-12 01:56:01,530 [WARNING]     - Cechy: (Amplituda: 5.78, Czas trwania: 1)
+2025-11-12 01:56:01,550 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,551 [WARNING]     - Zakres indeksów: [1138 - 1821]
+2025-11-12 01:56:01,554 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:30:19)
+2025-11-12 01:56:01,554 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:43:21)
+2025-11-12 01:56:01,555 [WARNING]     - Cechy: (Amplituda: 6.91, Czas trwania: 684)
+2025-11-12 01:56:01,572 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,572 [WARNING]     - Zakres indeksów: [1825 - 1829]
+2025-11-12 01:56:01,572 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:41:46)
+2025-11-12 01:56:01,573 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:43:29)
+2025-11-12 01:56:01,573 [WARNING]     - Cechy: (Amplituda: 5.97, Czas trwania: 5)
+2025-11-12 01:56:01,590 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,590 [WARNING]     - Zakres indeksów: [1832 - 2219]
+2025-11-12 01:56:01,591 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:41:53)
+2025-11-12 01:56:01,592 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:49:59)
+2025-11-12 01:56:01,592 [WARNING]     - Cechy: (Amplituda: 6.51, Czas trwania: 388)
+2025-11-12 01:56:01,610 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,610 [WARNING]     - Zakres indeksów: [2235 - 2262]
+2025-11-12 01:56:01,611 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:48:36)
+2025-11-12 01:56:01,614 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:50:42)
+2025-11-12 01:56:01,616 [WARNING]     - Cechy: (Amplituda: 6.53, Czas trwania: 28)
+2025-11-12 01:56:01,635 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,635 [WARNING]     - Zakres indeksów: [2270 - 2272]
+2025-11-12 01:56:01,635 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:49:11)
+2025-11-12 01:56:01,636 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:50:52)
+2025-11-12 01:56:01,636 [WARNING]     - Cechy: (Amplituda: 6.39, Czas trwania: 3)
+2025-11-12 01:56:01,655 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,655 [WARNING]     - Zakres indeksów: [2278 - 2280]
+2025-11-12 01:56:01,655 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:49:19)
+2025-11-12 01:56:01,656 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:51:00)
+2025-11-12 01:56:01,656 [WARNING]     - Cechy: (Amplituda: 6.38, Czas trwania: 3)
+2025-11-12 01:56:01,673 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,674 [WARNING]     - Zakres indeksów: [2286 - 2295]
+2025-11-12 01:56:01,674 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:49:27)
+2025-11-12 01:56:01,675 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:51:15)
+2025-11-12 01:56:01,675 [WARNING]     - Cechy: (Amplituda: 6.38, Czas trwania: 10)
+2025-11-12 01:56:01,692 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,692 [WARNING]     - Zakres indeksów: [2315 - 2318]
+2025-11-12 01:56:01,693 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:49:56)
+2025-11-12 01:56:01,694 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:51:38)
+2025-11-12 01:56:01,694 [WARNING]     - Cechy: (Amplituda: 6.38, Czas trwania: 4)
+2025-11-12 01:56:01,712 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,712 [WARNING]     - Zakres indeksów: [2321 - 2339]
+2025-11-12 01:56:01,712 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:50:02)
+2025-11-12 01:56:01,713 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:51:59)
+2025-11-12 01:56:01,713 [WARNING]     - Cechy: (Amplituda: 6.41, Czas trwania: 19)
+2025-11-12 01:56:01,731 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,731 [WARNING]     - Zakres indeksów: [2341 - 2342]
+2025-11-12 01:56:01,732 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:50:22)
+2025-11-12 01:56:01,732 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:52:02)
+2025-11-12 01:56:01,733 [WARNING]     - Cechy: (Amplituda: 6.38, Czas trwania: 2)
+2025-11-12 01:56:01,752 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,752 [WARNING]     - Zakres indeksów: [2349 - 2351]
+2025-11-12 01:56:01,755 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:50:30)
+2025-11-12 01:56:01,756 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:52:11)
+2025-11-12 01:56:01,756 [WARNING]     - Cechy: (Amplituda: 6.39, Czas trwania: 3)
+2025-11-12 01:56:01,773 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,774 [WARNING]     - Zakres indeksów: [2356 - 2357]
+2025-11-12 01:56:01,774 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:50:37)
+2025-11-12 01:56:01,775 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:52:17)
+2025-11-12 01:56:01,775 [WARNING]     - Cechy: (Amplituda: 6.41, Czas trwania: 2)
+2025-11-12 01:56:01,793 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,793 [WARNING]     - Zakres indeksów: [2389 - 2393]
+2025-11-12 01:56:01,793 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:51:10)
+2025-11-12 01:56:01,794 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:52:53)
+2025-11-12 01:56:01,794 [WARNING]     - Cechy: (Amplituda: 6.45, Czas trwania: 5)
+2025-11-12 01:56:01,813 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,813 [WARNING]     - Zakres indeksów: [2404 - 2409]
+2025-11-12 01:56:01,815 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:51:25)
+2025-11-12 01:56:01,818 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:53:09)
+2025-11-12 01:56:01,819 [WARNING]     - Cechy: (Amplituda: 6.45, Czas trwania: 6)
+2025-11-12 01:56:01,837 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,839 [WARNING]     - Zakres indeksów: [2412 - 2415]
+2025-11-12 01:56:01,840 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:51:33)
+2025-11-12 01:56:01,841 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:53:15)
+2025-11-12 01:56:01,841 [WARNING]     - Cechy: (Amplituda: 6.43, Czas trwania: 4)
+2025-11-12 01:56:01,859 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,859 [WARNING]     - Zakres indeksów: [2417 - 2428]
+2025-11-12 01:56:01,860 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:51:38)
+2025-11-12 01:56:01,860 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:53:28)
+2025-11-12 01:56:01,861 [WARNING]     - Cechy: (Amplituda: 6.46, Czas trwania: 12)
+2025-11-12 01:56:01,879 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,879 [WARNING]     - Zakres indeksów: [2430 - 2437]
+2025-11-12 01:56:01,879 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:51:51)
+2025-11-12 01:56:01,880 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:53:37)
+2025-11-12 01:56:01,881 [WARNING]     - Cechy: (Amplituda: 6.44, Czas trwania: 8)
+2025-11-12 01:56:01,900 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,900 [WARNING]     - Zakres indeksów: [2441 - 2451]
+2025-11-12 01:56:01,904 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:52:02)
+2025-11-12 01:56:01,905 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:53:51)
+2025-11-12 01:56:01,905 [WARNING]     - Cechy: (Amplituda: 6.45, Czas trwania: 11)
+2025-11-12 01:56:01,924 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,924 [WARNING]     - Zakres indeksów: [2457 - 2459]
+2025-11-12 01:56:01,925 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:52:18)
+2025-11-12 01:56:01,925 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:53:59)
+2025-11-12 01:56:01,926 [WARNING]     - Cechy: (Amplituda: 6.41, Czas trwania: 3)
+2025-11-12 01:56:01,943 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,943 [WARNING]     - Zakres indeksów: [2465 - 2470]
+2025-11-12 01:56:01,943 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:52:26)
+2025-11-12 01:56:01,944 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:54:10)
+2025-11-12 01:56:01,945 [WARNING]     - Cechy: (Amplituda: 6.43, Czas trwania: 6)
+2025-11-12 01:56:01,961 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,961 [WARNING]     - Zakres indeksów: [2482 - 2483]
+2025-11-12 01:56:01,962 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:52:43)
+2025-11-12 01:56:01,963 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:54:23)
+2025-11-12 01:56:01,963 [WARNING]     - Cechy: (Amplituda: 6.44, Czas trwania: 2)
+2025-11-12 01:56:01,981 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:01,982 [WARNING]     - Zakres indeksów: [2491 - 2492]
+2025-11-12 01:56:01,983 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:52:52)
+2025-11-12 01:56:01,983 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:54:32)
+2025-11-12 01:56:01,984 [WARNING]     - Cechy: (Amplituda: 6.44, Czas trwania: 2)
+2025-11-12 01:56:02,003 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,003 [WARNING]     - Zakres indeksów: [2508 - 2511]
+2025-11-12 01:56:02,005 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:53:09)
+2025-11-12 01:56:02,006 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:54:51)
+2025-11-12 01:56:02,006 [WARNING]     - Cechy: (Amplituda: 6.45, Czas trwania: 4)
+2025-11-12 01:56:02,024 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,024 [WARNING]     - Zakres indeksów: [2513 - 2519]
+2025-11-12 01:56:02,025 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:53:14)
+2025-11-12 01:56:02,025 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:54:59)
+2025-11-12 01:56:02,026 [WARNING]     - Cechy: (Amplituda: 6.46, Czas trwania: 7)
+2025-11-12 01:56:02,044 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,044 [WARNING]     - Zakres indeksów: [2521 - 2552]
+2025-11-12 01:56:02,045 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:53:22)
+2025-11-12 01:56:02,045 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:55:32)
+2025-11-12 01:56:02,046 [WARNING]     - Cechy: (Amplituda: 6.47, Czas trwania: 32)
+2025-11-12 01:56:02,063 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,063 [WARNING]     - Zakres indeksów: [2554 - 2568]
+2025-11-12 01:56:02,063 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:53:55)
+2025-11-12 01:56:02,064 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:55:48)
+2025-11-12 01:56:02,064 [WARNING]     - Cechy: (Amplituda: 6.45, Czas trwania: 15)
+2025-11-12 01:56:02,080 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,081 [WARNING]     - Zakres indeksów: [2583 - 2584]
+2025-11-12 01:56:02,081 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:54:24)
+2025-11-12 01:56:02,082 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:56:04)
+2025-11-12 01:56:02,082 [WARNING]     - Cechy: (Amplituda: 6.47, Czas trwania: 2)
+2025-11-12 01:56:02,101 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,101 [WARNING]     - Zakres indeksów: [2596 - 2599]
+2025-11-12 01:56:02,104 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:54:37)
+2025-11-12 01:56:02,105 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:56:19)
+2025-11-12 01:56:02,105 [WARNING]     - Cechy: (Amplituda: 6.51, Czas trwania: 4)
+2025-11-12 01:56:02,122 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,122 [WARNING]     - Zakres indeksów: [2601 - 2602]
+2025-11-12 01:56:02,123 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:54:42)
+2025-11-12 01:56:02,123 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:56:22)
+2025-11-12 01:56:02,124 [WARNING]     - Cechy: (Amplituda: 6.50, Czas trwania: 2)
+2025-11-12 01:56:02,140 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,140 [WARNING]     - Zakres indeksów: [2613 - 2616]
+2025-11-12 01:56:02,141 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:54:54)
+2025-11-12 01:56:02,141 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:56:36)
+2025-11-12 01:56:02,142 [WARNING]     - Cechy: (Amplituda: 6.51, Czas trwania: 4)
+2025-11-12 01:56:02,157 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,157 [WARNING]     - Zakres indeksów: [2618 - 2621]
+2025-11-12 01:56:02,158 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:54:59)
+2025-11-12 01:56:02,158 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:56:41)
+2025-11-12 01:56:02,159 [WARNING]     - Cechy: (Amplituda: 6.51, Czas trwania: 4)
+2025-11-12 01:56:02,177 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,177 [WARNING]     - Zakres indeksów: [2623 - 2648]
+2025-11-12 01:56:02,177 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:55:04)
+2025-11-12 01:56:02,178 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:57:08)
+2025-11-12 01:56:02,178 [WARNING]     - Cechy: (Amplituda: 6.53, Czas trwania: 26)
+2025-11-12 01:56:02,194 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,195 [WARNING]     - Zakres indeksów: [2651 - 2653]
+2025-11-12 01:56:02,195 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:55:32)
+2025-11-12 01:56:02,196 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:57:13)
+2025-11-12 01:56:02,196 [WARNING]     - Cechy: (Amplituda: 6.41, Czas trwania: 3)
+2025-11-12 01:56:02,214 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,215 [WARNING]     - Zakres indeksów: [2659 - 2681]
+2025-11-12 01:56:02,216 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:55:40)
+2025-11-12 01:56:02,216 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:57:41)
+2025-11-12 01:56:02,217 [WARNING]     - Cechy: (Amplituda: 6.44, Czas trwania: 23)
+2025-11-12 01:56:02,237 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,237 [WARNING]     - Zakres indeksów: [2686 - 2697]
+2025-11-12 01:56:02,238 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:56:07)
+2025-11-12 01:56:02,238 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:57:57)
+2025-11-12 01:56:02,239 [WARNING]     - Cechy: (Amplituda: 6.38, Czas trwania: 12)
+2025-11-12 01:56:02,262 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,262 [WARNING]     - Zakres indeksów: [2700 - 2701]
+2025-11-12 01:56:02,263 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:56:21)
+2025-11-12 01:56:02,267 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:58:01)
+2025-11-12 01:56:02,269 [WARNING]     - Cechy: (Amplituda: 6.34, Czas trwania: 2)
+2025-11-12 01:56:02,287 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,287 [WARNING]     - Zakres indeksów: [2732 - 2733]
+2025-11-12 01:56:02,287 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:56:53)
+2025-11-12 01:56:02,288 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:58:33)
+2025-11-12 01:56:02,288 [WARNING]     - Cechy: (Amplituda: 6.38, Czas trwania: 2)
+2025-11-12 01:56:02,305 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,306 [WARNING]     - Zakres indeksów: [2743 - 2745]
+2025-11-12 01:56:02,306 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:57:04)
+2025-11-12 01:56:02,307 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:58:45)
+2025-11-12 01:56:02,307 [WARNING]     - Cechy: (Amplituda: 6.38, Czas trwania: 3)
+2025-11-12 01:56:02,324 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,324 [WARNING]     - Zakres indeksów: [2752 - 2753]
+2025-11-12 01:56:02,325 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:57:13)
+2025-11-12 01:56:02,325 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:58:53)
+2025-11-12 01:56:02,326 [WARNING]     - Cechy: (Amplituda: 6.38, Czas trwania: 2)
+2025-11-12 01:56:02,346 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,346 [WARNING]     - Zakres indeksów: [2762 - 2764]
+2025-11-12 01:56:02,347 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:57:23)
+2025-11-12 01:56:02,348 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:59:04)
+2025-11-12 01:56:02,348 [WARNING]     - Cechy: (Amplituda: 6.38, Czas trwania: 3)
+2025-11-12 01:56:02,364 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,364 [WARNING]     - Zakres indeksów: [2766 - 2769]
+2025-11-12 01:56:02,365 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:57:27)
+2025-11-12 01:56:02,365 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:59:09)
+2025-11-12 01:56:02,365 [WARNING]     - Cechy: (Amplituda: 6.38, Czas trwania: 4)
+2025-11-12 01:56:02,382 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,382 [WARNING]     - Zakres indeksów: [2771 - 2772]
+2025-11-12 01:56:02,383 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:57:32)
+2025-11-12 01:56:02,383 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:59:12)
+2025-11-12 01:56:02,384 [WARNING]     - Cechy: (Amplituda: 6.38, Czas trwania: 2)
+2025-11-12 01:56:02,400 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,400 [WARNING]     - Zakres indeksów: [2784 - 2785]
+2025-11-12 01:56:02,400 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:57:45)
+2025-11-12 01:56:02,401 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:59:25)
+2025-11-12 01:56:02,401 [WARNING]     - Cechy: (Amplituda: 6.40, Czas trwania: 2)
+2025-11-12 01:56:02,418 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,418 [WARNING]     - Zakres indeksów: [2794 - 2795]
+2025-11-12 01:56:02,419 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:57:55)
+2025-11-12 01:56:02,419 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:59:35)
+2025-11-12 01:56:02,420 [WARNING]     - Cechy: (Amplituda: 6.42, Czas trwania: 2)
+2025-11-12 01:56:02,436 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,438 [WARNING]     - Zakres indeksów: [2804 - 2816]
+2025-11-12 01:56:02,438 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:58:05)
+2025-11-12 01:56:02,439 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:59:56)
+2025-11-12 01:56:02,439 [WARNING]     - Cechy: (Amplituda: 6.46, Czas trwania: 13)
+2025-11-12 01:56:02,456 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,456 [WARNING]     - Zakres indeksów: [2820 - 2823]
+2025-11-12 01:56:02,456 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:58:21)
+2025-11-12 01:56:02,457 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:00:03)
+2025-11-12 01:56:02,457 [WARNING]     - Cechy: (Amplituda: 6.46, Czas trwania: 4)
+2025-11-12 01:56:02,473 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,473 [WARNING]     - Zakres indeksów: [2825 - 2827]
+2025-11-12 01:56:02,474 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:58:26)
+2025-11-12 01:56:02,474 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:00:07)
+2025-11-12 01:56:02,474 [WARNING]     - Cechy: (Amplituda: 6.46, Czas trwania: 3)
+2025-11-12 01:56:02,489 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,490 [WARNING]     - Zakres indeksów: [2829 - 2830]
+2025-11-12 01:56:02,490 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:58:30)
+2025-11-12 01:56:02,491 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:00:10)
+2025-11-12 01:56:02,491 [WARNING]     - Cechy: (Amplituda: 6.45, Czas trwania: 2)
+2025-11-12 01:56:02,507 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,507 [WARNING]     - Zakres indeksów: [2847 - 2849]
+2025-11-12 01:56:02,508 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:58:48)
+2025-11-12 01:56:02,508 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:00:29)
+2025-11-12 01:56:02,509 [WARNING]     - Cechy: (Amplituda: 6.49, Czas trwania: 3)
+2025-11-12 01:56:02,524 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,524 [WARNING]     - Zakres indeksów: [2858 - 2877]
+2025-11-12 01:56:02,525 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:58:59)
+2025-11-12 01:56:02,525 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:00:57)
+2025-11-12 01:56:02,525 [WARNING]     - Cechy: (Amplituda: 6.53, Czas trwania: 20)
+2025-11-12 01:56:02,541 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,541 [WARNING]     - Zakres indeksów: [2879 - 2888]
+2025-11-12 01:56:02,541 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:59:20)
+2025-11-12 01:56:02,542 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:01:08)
+2025-11-12 01:56:02,542 [WARNING]     - Cechy: (Amplituda: 6.49, Czas trwania: 10)
+2025-11-12 01:56:02,558 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,558 [WARNING]     - Zakres indeksów: [2892 - 3149]
+2025-11-12 01:56:02,558 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:59:33)
+2025-11-12 01:56:02,559 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:05:29)
+2025-11-12 01:56:02,559 [WARNING]     - Cechy: (Amplituda: 84780.88, Czas trwania: 258)
+2025-11-12 01:56:02,575 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,576 [WARNING]     - Zakres indeksów: [3166 - 3166]
+2025-11-12 01:56:02,576 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 03:04:07)
+2025-11-12 01:56:02,579 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:05:46)
+2025-11-12 01:56:02,579 [WARNING]     - Cechy: (Amplituda: 5.82, Czas trwania: 1)
+2025-11-12 01:56:02,596 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,596 [WARNING]     - Zakres indeksów: [3169 - 3169]
+2025-11-12 01:56:02,598 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 03:04:10)
+2025-11-12 01:56:02,598 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:05:49)
+2025-11-12 01:56:02,599 [WARNING]     - Cechy: (Amplituda: 5.70, Czas trwania: 1)
+2025-11-12 01:56:02,615 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,615 [WARNING]     - Zakres indeksów: [3175 - 3176]
+2025-11-12 01:56:02,616 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 03:04:16)
+2025-11-12 01:56:02,616 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:05:56)
+2025-11-12 01:56:02,616 [WARNING]     - Cechy: (Amplituda: 6.02, Czas trwania: 2)
+2025-11-12 01:56:02,634 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,634 [WARNING]     - Zakres indeksów: [3178 - 3178]
+2025-11-12 01:56:02,634 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 03:04:19)
+2025-11-12 01:56:02,635 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:05:58)
+2025-11-12 01:56:02,635 [WARNING]     - Cechy: (Amplituda: 5.75, Czas trwania: 1)
+2025-11-12 01:56:02,651 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,652 [WARNING]     - Zakres indeksów: [3187 - 3203]
+2025-11-12 01:56:02,652 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 03:04:28)
+2025-11-12 01:56:02,653 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:06:23)
+2025-11-12 01:56:02,653 [WARNING]     - Cechy: (Amplituda: 5.88, Czas trwania: 17)
+2025-11-12 01:56:02,669 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,669 [WARNING]     - Zakres indeksów: [3236 - 3394]
+2025-11-12 01:56:02,670 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 03:05:17)
+2025-11-12 01:56:02,672 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:09:34)
+2025-11-12 01:56:02,672 [WARNING]     - Cechy: (Amplituda: 6.66, Czas trwania: 159)
+2025-11-12 01:56:02,688 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,688 [WARNING]     - Zakres indeksów: [3399 - 3406]
+2025-11-12 01:56:02,689 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 03:08:00)
+2025-11-12 01:56:02,689 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:09:46)
+2025-11-12 01:56:02,689 [WARNING]     - Cechy: (Amplituda: 6.71, Czas trwania: 8)
+2025-11-12 01:56:02,705 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,705 [WARNING]     - Zakres indeksów: [3408 - 3408]
+2025-11-12 01:56:02,706 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 03:08:09)
+2025-11-12 01:56:02,706 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:09:48)
+2025-11-12 01:56:02,707 [WARNING]     - Cechy: (Amplituda: 6.70, Czas trwania: 1)
+2025-11-12 01:56:02,721 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,722 [WARNING]     - Zakres indeksów: [3410 - 3410]
+2025-11-12 01:56:02,722 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 03:08:11)
+2025-11-12 01:56:02,722 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:09:50)
+2025-11-12 01:56:02,723 [WARNING]     - Cechy: (Amplituda: 6.72, Czas trwania: 1)
+2025-11-12 01:56:02,738 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,738 [WARNING]     - Zakres indeksów: [3417 - 3417]
+2025-11-12 01:56:02,738 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 03:08:18)
+2025-11-12 01:56:02,739 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:09:57)
+2025-11-12 01:56:02,739 [WARNING]     - Cechy: (Amplituda: 6.80, Czas trwania: 1)
+2025-11-12 01:56:02,754 [WARNING]   WYKRYTO Anomaliê Typu: 3
+2025-11-12 01:56:02,754 [WARNING]     - Zakres indeksów: [3421 - 19385]
+2025-11-12 01:56:02,755 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 03:08:22)
+2025-11-12 01:56:02,755 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 07:36:05)
+2025-11-12 01:56:02,756 [WARNING]     - Cechy: (Amplituda: 24535696.00, Czas trwania: 15965)
+2025-11-12 01:56:02,771 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,771 [WARNING]     - Zakres indeksów: [20397 - 20424]
+2025-11-12 01:56:02,772 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 07:51:18)
+2025-11-12 01:56:02,772 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 07:53:24)
+2025-11-12 01:56:02,773 [WARNING]     - Cechy: (Amplituda: 5.73, Czas trwania: 28)
+2025-11-12 01:56:02,788 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,788 [WARNING]     - Zakres indeksów: [20426 - 20439]
+2025-11-12 01:56:02,788 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 07:51:47)
+2025-11-12 01:56:02,789 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 07:53:39)
+2025-11-12 01:56:02,789 [WARNING]     - Cechy: (Amplituda: 5.70, Czas trwania: 14)
+2025-11-12 01:56:02,804 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,805 [WARNING]     - Zakres indeksów: [20443 - 20443]
+2025-11-12 01:56:02,805 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 07:52:04)
+2025-11-12 01:56:02,806 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 07:53:43)
+2025-11-12 01:56:02,806 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 1)
+2025-11-12 01:56:02,821 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,821 [WARNING]     - Zakres indeksów: [20445 - 20673]
+2025-11-12 01:56:02,821 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 07:52:06)
+2025-11-12 01:56:02,822 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 07:57:33)
+2025-11-12 01:56:02,822 [WARNING]     - Cechy: (Amplituda: 5.84, Czas trwania: 229)
+2025-11-12 01:56:02,837 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,838 [WARNING]     - Zakres indeksów: [20675 - 20680]
+2025-11-12 01:56:02,838 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 07:55:56)
+2025-11-12 01:56:02,839 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 07:57:40)
+2025-11-12 01:56:02,839 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 6)
+2025-11-12 01:56:02,855 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,855 [WARNING]     - Zakres indeksów: [20685 - 20688]
+2025-11-12 01:56:02,856 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 07:56:06)
+2025-11-12 01:56:02,856 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 07:57:48)
+2025-11-12 01:56:02,856 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 4)
+2025-11-12 01:56:02,873 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,873 [WARNING]     - Zakres indeksów: [20691 - 20693]
+2025-11-12 01:56:02,876 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 07:56:12)
+2025-11-12 01:56:02,876 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 07:57:53)
+2025-11-12 01:56:02,877 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 3)
+2025-11-12 01:56:02,893 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,893 [WARNING]     - Zakres indeksów: [20695 - 20805]
+2025-11-12 01:56:02,893 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 07:56:16)
+2025-11-12 01:56:02,894 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 07:59:45)
+2025-11-12 01:56:02,894 [WARNING]     - Cechy: (Amplituda: 5.76, Czas trwania: 111)
+2025-11-12 01:56:02,909 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,909 [WARNING]     - Zakres indeksów: [20807 - 21026]
+2025-11-12 01:56:02,910 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 07:58:08)
+2025-11-12 01:56:02,910 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:03:26)
+2025-11-12 01:56:02,911 [WARNING]     - Cechy: (Amplituda: 5.86, Czas trwania: 220)
+2025-11-12 01:56:02,926 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,927 [WARNING]     - Zakres indeksów: [21061 - 21061]
+2025-11-12 01:56:02,927 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:02:22)
+2025-11-12 01:56:02,928 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:04:01)
+2025-11-12 01:56:02,928 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 1)
+2025-11-12 01:56:02,944 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,944 [WARNING]     - Zakres indeksów: [21072 - 21077]
+2025-11-12 01:56:02,944 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:02:33)
+2025-11-12 01:56:02,945 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:04:17)
+2025-11-12 01:56:02,945 [WARNING]     - Cechy: (Amplituda: 5.78, Czas trwania: 6)
+2025-11-12 01:56:02,962 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,962 [WARNING]     - Zakres indeksów: [21080 - 21085]
+2025-11-12 01:56:02,963 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:02:41)
+2025-11-12 01:56:02,963 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:04:25)
+2025-11-12 01:56:02,964 [WARNING]     - Cechy: (Amplituda: 5.80, Czas trwania: 6)
+2025-11-12 01:56:02,991 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:02,991 [WARNING]     - Zakres indeksów: [21092 - 21094]
+2025-11-12 01:56:02,996 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:02:53)
+2025-11-12 01:56:02,998 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:04:34)
+2025-11-12 01:56:03,003 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 3)
+2025-11-12 01:56:03,025 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,027 [WARNING]     - Zakres indeksów: [21100 - 21101]
+2025-11-12 01:56:03,028 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:03:01)
+2025-11-12 01:56:03,028 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:04:41)
+2025-11-12 01:56:03,029 [WARNING]     - Cechy: (Amplituda: 5.79, Czas trwania: 2)
+2025-11-12 01:56:03,057 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,057 [WARNING]     - Zakres indeksów: [21105 - 21106]
+2025-11-12 01:56:03,059 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:03:06)
+2025-11-12 01:56:03,060 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:04:46)
+2025-11-12 01:56:03,060 [WARNING]     - Cechy: (Amplituda: 5.79, Czas trwania: 2)
+2025-11-12 01:56:03,087 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,087 [WARNING]     - Zakres indeksów: [21111 - 21112]
+2025-11-12 01:56:03,088 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:03:12)
+2025-11-12 01:56:03,089 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:04:52)
+2025-11-12 01:56:03,089 [WARNING]     - Cechy: (Amplituda: 5.78, Czas trwania: 2)
+2025-11-12 01:56:03,109 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,109 [WARNING]     - Zakres indeksów: [21116 - 21116]
+2025-11-12 01:56:03,110 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:03:17)
+2025-11-12 01:56:03,111 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:04:56)
+2025-11-12 01:56:03,111 [WARNING]     - Cechy: (Amplituda: 5.77, Czas trwania: 1)
+2025-11-12 01:56:03,131 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,131 [WARNING]     - Zakres indeksów: [21143 - 21145]
+2025-11-12 01:56:03,132 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:03:44)
+2025-11-12 01:56:03,132 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:05:25)
+2025-11-12 01:56:03,134 [WARNING]     - Cechy: (Amplituda: 5.78, Czas trwania: 3)
+2025-11-12 01:56:03,156 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,156 [WARNING]     - Zakres indeksów: [21147 - 21148]
+2025-11-12 01:56:03,161 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:03:48)
+2025-11-12 01:56:03,161 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:05:28)
+2025-11-12 01:56:03,162 [WARNING]     - Cechy: (Amplituda: 5.78, Czas trwania: 2)
+2025-11-12 01:56:03,183 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,187 [WARNING]     - Zakres indeksów: [21156 - 21157]
+2025-11-12 01:56:03,187 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:03:57)
+2025-11-12 01:56:03,188 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:05:37)
+2025-11-12 01:56:03,189 [WARNING]     - Cechy: (Amplituda: 5.78, Czas trwania: 2)
+2025-11-12 01:56:03,209 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,209 [WARNING]     - Zakres indeksów: [21178 - 21221]
+2025-11-12 01:56:03,210 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:04:19)
+2025-11-12 01:56:03,211 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:06:41)
+2025-11-12 01:56:03,211 [WARNING]     - Cechy: (Amplituda: 5.84, Czas trwania: 44)
+2025-11-12 01:56:03,236 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,237 [WARNING]     - Zakres indeksów: [21224 - 21225]
+2025-11-12 01:56:03,240 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:05:05)
+2025-11-12 01:56:03,241 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:06:45)
+2025-11-12 01:56:03,242 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 2)
+2025-11-12 01:56:03,278 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,278 [WARNING]     - Zakres indeksów: [21276 - 21277]
+2025-11-12 01:56:03,279 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:05:57)
+2025-11-12 01:56:03,279 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:07:37)
+2025-11-12 01:56:03,280 [WARNING]     - Cechy: (Amplituda: 5.80, Czas trwania: 2)
+2025-11-12 01:56:03,305 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,305 [WARNING]     - Zakres indeksów: [21281 - 21281]
+2025-11-12 01:56:03,306 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:06:02)
+2025-11-12 01:56:03,310 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:07:41)
+2025-11-12 01:56:03,311 [WARNING]     - Cechy: (Amplituda: 5.75, Czas trwania: 1)
+2025-11-12 01:56:03,333 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,333 [WARNING]     - Zakres indeksów: [21288 - 21292]
+2025-11-12 01:56:03,333 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:06:09)
+2025-11-12 01:56:03,334 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:07:52)
+2025-11-12 01:56:03,334 [WARNING]     - Cechy: (Amplituda: 5.76, Czas trwania: 5)
+2025-11-12 01:56:03,351 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,351 [WARNING]     - Zakres indeksów: [21295 - 21458]
+2025-11-12 01:56:03,352 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:06:16)
+2025-11-12 01:56:03,352 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:10:38)
+2025-11-12 01:56:03,353 [WARNING]     - Cechy: (Amplituda: 6.17, Czas trwania: 164)
+2025-11-12 01:56:03,372 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,372 [WARNING]     - Zakres indeksów: [21493 - 21495]
+2025-11-12 01:56:03,372 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:09:34)
+2025-11-12 01:56:03,373 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:11:15)
+2025-11-12 01:56:03,373 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 3)
+2025-11-12 01:56:03,392 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,392 [WARNING]     - Zakres indeksów: [21497 - 21878]
+2025-11-12 01:56:03,393 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:09:38)
+2025-11-12 01:56:03,393 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:17:38)
+2025-11-12 01:56:03,393 [WARNING]     - Cechy: (Amplituda: 5.91, Czas trwania: 382)
+2025-11-12 01:56:03,394 [INFO] 
+>>> Analizujê plik: 330083.xlsx
+2025-11-12 01:56:03,427 [WARNING]   WYKRYTO Anomaliê Typu: 5
+2025-11-12 01:56:03,428 [WARNING]     - Zakres indeksów: [0 - 2438]
+2025-11-12 01:56:03,431 [WARNING]     - Rozpoczêcie: ID 6462 (Czas: 2021-02-07 11:26:03)
+2025-11-12 01:56:03,431 [WARNING]     - Zakoñczenie: ID 6462 (Czas: 2021-02-07 12:08:20)
+2025-11-12 01:56:03,432 [WARNING]     - Cechy: (Amplituda: 16469676.00, Czas trwania: 2439)
+2025-11-12 01:56:03,449 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,450 [WARNING]     - Zakres indeksów: [2686 - 2686]
+2025-11-12 01:56:03,451 [WARNING]     - Rozpoczêcie: ID 6462 (Czas: 2021-02-07 12:10:49)
+2025-11-12 01:56:03,451 [WARNING]     - Zakoñczenie: ID 6462 (Czas: 2021-02-07 12:12:28)
+2025-11-12 01:56:03,452 [WARNING]     - Cechy: (Amplituda: 5.67, Czas trwania: 1)
+2025-11-12 01:56:03,467 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,468 [WARNING]     - Zakres indeksów: [2736 - 2736]
+2025-11-12 01:56:03,468 [WARNING]     - Rozpoczêcie: ID 6462 (Czas: 2021-02-07 12:11:39)
+2025-11-12 01:56:03,469 [WARNING]     - Zakoñczenie: ID 6462 (Czas: 2021-02-07 12:13:18)
+2025-11-12 01:56:03,469 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 1)
+2025-11-12 01:56:03,484 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,484 [WARNING]     - Zakres indeksów: [3210 - 3238]
+2025-11-12 01:56:03,484 [WARNING]     - Rozpoczêcie: ID 6462 (Czas: 2021-02-07 12:19:33)
+2025-11-12 01:56:03,485 [WARNING]     - Zakoñczenie: ID 6462 (Czas: 2021-02-07 12:21:40)
+2025-11-12 01:56:03,485 [WARNING]     - Cechy: (Amplituda: 5.71, Czas trwania: 29)
+2025-11-12 01:56:03,500 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,500 [WARNING]     - Zakres indeksów: [3341 - 3349]
+2025-11-12 01:56:03,501 [WARNING]     - Rozpoczêcie: ID 6462 (Czas: 2021-02-07 12:21:44)
+2025-11-12 01:56:03,501 [WARNING]     - Zakoñczenie: ID 6462 (Czas: 2021-02-07 12:23:31)
+2025-11-12 01:56:03,501 [WARNING]     - Cechy: (Amplituda: 5.70, Czas trwania: 9)
+2025-11-12 01:56:03,517 [WARNING]   WYKRYTO Anomaliê Typu: 4
+2025-11-12 01:56:03,517 [WARNING]     - Zakres indeksów: [3412 - 23044]
+2025-11-12 01:56:03,518 [WARNING]     - Rozpoczêcie: ID 6462 (Czas: 2021-02-07 12:22:55)
+2025-11-12 01:56:03,518 [WARNING]     - Zakoñczenie: ID 6462 (Czas: 2021-02-07 17:51:46)
+2025-11-12 01:56:03,519 [WARNING]     - Cechy: (Amplituda: 83725744.00, Czas trwania: 19633)
+2025-11-12 01:56:03,519 [INFO] 
+>>> Analizujê plik: 330233.xlsx
+2025-11-12 01:56:03,547 [WARNING]   WYKRYTO Anomaliê Typu: 4
+2025-11-12 01:56:03,547 [WARNING]     - Zakres indeksów: [0 - 20574]
+2025-11-12 01:56:03,550 [WARNING]     - Rozpoczêcie: ID 6465 (Czas: 2021-02-07 19:10:39)
+2025-11-12 01:56:03,550 [WARNING]     - Zakoñczenie: ID 6465 (Czas: 2021-02-08 00:55:12)
+2025-11-12 01:56:03,551 [WARNING]     - Cechy: (Amplituda: 59623804.00, Czas trwania: 20575)
+2025-11-12 01:56:03,551 [INFO] 
+>>> Analizujê plik: 330484.xlsx
+2025-11-12 01:56:03,579 [WARNING]   WYKRYTO Anomaliê Typu: 2
+2025-11-12 01:56:03,579 [WARNING]     - Zakres indeksów: [0 - 18400]
+2025-11-12 01:56:03,579 [WARNING]     - Rozpoczêcie: ID 6471 (Czas: 2021-02-08 08:27:02)
+2025-11-12 01:56:03,580 [WARNING]     - Zakoñczenie: ID 6471 (Czas: 2021-02-08 13:35:21)
+2025-11-12 01:56:03,580 [WARNING]     - Cechy: (Amplituda: 115179256.00, Czas trwania: 18401)
+2025-11-12 01:56:03,594 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,594 [WARNING]     - Zakres indeksów: [18454 - 18480]
+2025-11-12 01:56:03,595 [WARNING]     - Rozpoczêcie: ID 6471 (Czas: 2021-02-08 13:34:36)
+2025-11-12 01:56:03,595 [WARNING]     - Zakoñczenie: ID 6471 (Czas: 2021-02-08 13:36:41)
+2025-11-12 01:56:03,596 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 27)
+2025-11-12 01:56:03,610 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,610 [WARNING]     - Zakres indeksów: [18528 - 18616]
+2025-11-12 01:56:03,611 [WARNING]     - Rozpoczêcie: ID 6471 (Czas: 2021-02-08 13:35:50)
+2025-11-12 01:56:03,611 [WARNING]     - Zakoñczenie: ID 6471 (Czas: 2021-02-08 13:38:57)
+2025-11-12 01:56:03,612 [WARNING]     - Cechy: (Amplituda: 5.90, Czas trwania: 89)
+2025-11-12 01:56:03,612 [INFO] 
+>>> Analizujê plik: 330642.xlsx
+2025-11-12 01:56:03,653 [WARNING]   WYKRYTO Anomaliê Typu: 2
+2025-11-12 01:56:03,653 [WARNING]     - Zakres indeksów: [0 - 18192]
+2025-11-12 01:56:03,656 [WARNING]     - Rozpoczêcie: ID 6473 (Czas: 2021-02-08 15:01:11)
+2025-11-12 01:56:03,656 [WARNING]     - Zakoñczenie: ID 6473 (Czas: 2021-02-08 20:06:02)
+2025-11-12 01:56:03,657 [WARNING]     - Cechy: (Amplituda: 125400632.00, Czas trwania: 18193)
+2025-11-12 01:56:03,657 [INFO] 
+>>> Analizujê plik: 331628.xlsx
+2025-11-12 01:56:03,686 [WARNING]   WYKRYTO Anomaliê Typu: 5
+2025-11-12 01:56:03,687 [WARNING]     - Zakres indeksów: [0 - 531]
+2025-11-12 01:56:03,689 [WARNING]     - Rozpoczêcie: ID 6500 (Czas: 2021-02-11 01:55:57)
+2025-11-12 01:56:03,689 [WARNING]     - Zakoñczenie: ID 6500 (Czas: 2021-02-11 02:06:27)
+2025-11-12 01:56:03,690 [WARNING]     - Cechy: (Amplituda: 19649432.00, Czas trwania: 532)
+2025-11-12 01:56:03,707 [WARNING]   WYKRYTO Anomaliê Typu: 5
+2025-11-12 01:56:03,708 [WARNING]     - Zakres indeksów: [4955 - 8322]
+2025-11-12 01:56:03,708 [WARNING]     - Rozpoczêcie: ID 6500 (Czas: 2021-02-11 03:18:32)
+2025-11-12 01:56:03,709 [WARNING]     - Zakoñczenie: ID 6500 (Czas: 2021-02-11 04:16:18)
+2025-11-12 01:56:03,709 [WARNING]     - Cechy: (Amplituda: 10863680.00, Czas trwania: 3368)
+2025-11-12 01:56:03,726 [WARNING]   WYKRYTO Anomaliê Typu: 4
+2025-11-12 01:56:03,726 [WARNING]     - Zakres indeksów: [8494 - 21433]
+2025-11-12 01:56:03,728 [WARNING]     - Rozpoczêcie: ID 6500 (Czas: 2021-02-11 04:17:31)
+2025-11-12 01:56:03,730 [WARNING]     - Zakoñczenie: ID 6500 (Czas: 2021-02-11 07:54:49)
+2025-11-12 01:56:03,731 [WARNING]     - Cechy: (Amplituda: 50633852.00, Czas trwania: 12940)
+2025-11-12 01:56:03,749 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,749 [WARNING]     - Zakres indeksów: [21796 - 22388]
+2025-11-12 01:56:03,750 [WARNING]     - Rozpoczêcie: ID 6500 (Czas: 2021-02-11 07:59:13)
+2025-11-12 01:56:03,751 [WARNING]     - Zakoñczenie: ID 6500 (Czas: 2021-02-11 08:10:44)
+2025-11-12 01:56:03,751 [WARNING]     - Cechy: (Amplituda: 4433248.00, Czas trwania: 593)
+2025-11-12 01:56:03,752 [INFO] 
+>>> Analizujê plik: 364497.xlsx
+2025-11-12 01:56:03,787 [WARNING]   WYKRYTO Anomaliê Typu: 3
+2025-11-12 01:56:03,788 [WARNING]     - Zakres indeksów: [0 - 15454]
+2025-11-12 01:56:03,790 [WARNING]     - Rozpoczêcie: ID 7097 (Czas: 2021-06-25 03:46:27)
+2025-11-12 01:56:03,790 [WARNING]     - Zakoñczenie: ID 7097 (Czas: 2021-06-25 08:05:40)
+2025-11-12 01:56:03,791 [WARNING]     - Cechy: (Amplituda: 27422842.00, Czas trwania: 15455)
+2025-11-12 01:56:03,791 [INFO] 
+>>> Analizujê plik: 370615.xlsx
+2025-11-12 01:56:03,819 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,819 [WARNING]     - Zakres indeksów: [4534 - 4803]
+2025-11-12 01:56:03,820 [WARNING]     - Rozpoczêcie: ID 7240 (Czas: 2021-07-12 23:17:58)
+2025-11-12 01:56:03,820 [WARNING]     - Zakoñczenie: ID 7240 (Czas: 2021-07-12 23:24:06)
+2025-11-12 01:56:03,820 [WARNING]     - Cechy: (Amplituda: 1504397.12, Czas trwania: 270)
+2025-11-12 01:56:03,831 [WARNING]   WYKRYTO Anomaliê Typu: 5
+2025-11-12 01:56:03,831 [WARNING]     - Zakres indeksów: [6433 - 10024]
+2025-11-12 01:56:03,831 [WARNING]     - Rozpoczêcie: ID 7240 (Czas: 2021-07-12 23:49:37)
+2025-11-12 01:56:03,832 [WARNING]     - Zakoñczenie: ID 7240 (Czas: 2021-07-13 00:51:07)
+2025-11-12 01:56:03,832 [WARNING]     - Cechy: (Amplituda: 16342881.00, Czas trwania: 3592)
+2025-11-12 01:56:03,833 [INFO] 
+>>> Analizujê plik: 612235.xlsx
+2025-11-12 01:56:03,867 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,867 [WARNING]     - Zakres indeksów: [11008 - 11790]
+2025-11-12 01:56:03,871 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 10:37:41)
+2025-11-12 01:56:03,871 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 10:52:22)
+2025-11-12 01:56:03,872 [WARNING]     - Cechy: (Amplituda: 30.06, Czas trwania: 783)
+2025-11-12 01:56:03,894 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,895 [WARNING]     - Zakres indeksów: [12698 - 13916]
+2025-11-12 01:56:03,895 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 11:05:51)
+2025-11-12 01:56:03,896 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 11:27:48)
+2025-11-12 01:56:03,896 [WARNING]     - Cechy: (Amplituda: 26.89, Czas trwania: 1219)
+2025-11-12 01:56:03,918 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,918 [WARNING]     - Zakres indeksów: [21658 - 21658]
+2025-11-12 01:56:03,921 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 13:35:11)
+2025-11-12 01:56:03,921 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 13:36:50)
+2025-11-12 01:56:03,922 [WARNING]     - Cechy: (Amplituda: 5.84, Czas trwania: 1)
+2025-11-12 01:56:03,943 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,944 [WARNING]     - Zakres indeksów: [22054 - 22069]
+2025-11-12 01:56:03,944 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 13:41:47)
+2025-11-12 01:56:03,945 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 13:43:41)
+2025-11-12 01:56:03,945 [WARNING]     - Cechy: (Amplituda: 5.88, Czas trwania: 16)
+2025-11-12 01:56:03,968 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,968 [WARNING]     - Zakres indeksów: [22270 - 22374]
+2025-11-12 01:56:03,970 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 13:45:23)
+2025-11-12 01:56:03,971 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 13:48:46)
+2025-11-12 01:56:03,971 [WARNING]     - Cechy: (Amplituda: 8.21, Czas trwania: 105)
+2025-11-12 01:56:03,992 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:03,992 [WARNING]     - Zakres indeksów: [22675 - 22676]
+2025-11-12 01:56:03,993 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 13:52:08)
+2025-11-12 01:56:03,993 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 13:53:48)
+2025-11-12 01:56:03,995 [WARNING]     - Cechy: (Amplituda: 5.86, Czas trwania: 2)
+2025-11-12 01:56:04,017 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,017 [WARNING]     - Zakres indeksów: [22846 - 22966]
+2025-11-12 01:56:04,017 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 13:54:59)
+2025-11-12 01:56:04,018 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 13:58:38)
+2025-11-12 01:56:04,018 [WARNING]     - Cechy: (Amplituda: 6.91, Czas trwania: 121)
+2025-11-12 01:56:04,040 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,040 [WARNING]     - Zakres indeksów: [22971 - 23029]
+2025-11-12 01:56:04,043 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 13:57:04)
+2025-11-12 01:56:04,043 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 13:59:41)
+2025-11-12 01:56:04,044 [WARNING]     - Cechy: (Amplituda: 7.21, Czas trwania: 59)
+2025-11-12 01:56:04,065 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,065 [WARNING]     - Zakres indeksów: [23154 - 23159]
+2025-11-12 01:56:04,066 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 14:00:07)
+2025-11-12 01:56:04,066 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 14:01:51)
+2025-11-12 01:56:04,066 [WARNING]     - Cechy: (Amplituda: 5.88, Czas trwania: 6)
+2025-11-12 01:56:04,087 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,087 [WARNING]     - Zakres indeksów: [23164 - 23170]
+2025-11-12 01:56:04,090 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 14:00:17)
+2025-11-12 01:56:04,090 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 14:02:02)
+2025-11-12 01:56:04,091 [WARNING]     - Cechy: (Amplituda: 5.88, Czas trwania: 7)
+2025-11-12 01:56:04,111 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,111 [WARNING]     - Zakres indeksów: [23175 - 23177]
+2025-11-12 01:56:04,112 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 14:00:28)
+2025-11-12 01:56:04,112 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 14:02:09)
+2025-11-12 01:56:04,113 [WARNING]     - Cechy: (Amplituda: 5.88, Czas trwania: 3)
+2025-11-12 01:56:04,134 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,134 [WARNING]     - Zakres indeksów: [23246 - 23249]
+2025-11-12 01:56:04,137 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 14:01:39)
+2025-11-12 01:56:04,138 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 14:03:21)
+2025-11-12 01:56:04,138 [WARNING]     - Cechy: (Amplituda: 5.88, Czas trwania: 4)
+2025-11-12 01:56:04,160 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,160 [WARNING]     - Zakres indeksów: [23251 - 23830]
+2025-11-12 01:56:04,161 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 14:01:44)
+2025-11-12 01:56:04,161 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 14:13:02)
+2025-11-12 01:56:04,162 [WARNING]     - Cechy: (Amplituda: 8.95, Czas trwania: 580)
+2025-11-12 01:56:04,184 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,184 [WARNING]     - Zakres indeksów: [23835 - 23836]
+2025-11-12 01:56:04,187 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 14:11:28)
+2025-11-12 01:56:04,188 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 14:13:08)
+2025-11-12 01:56:04,188 [WARNING]     - Cechy: (Amplituda: 5.93, Czas trwania: 2)
+2025-11-12 01:56:04,210 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,210 [WARNING]     - Zakres indeksów: [23840 - 23845]
+2025-11-12 01:56:04,211 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 14:11:33)
+2025-11-12 01:56:04,211 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 14:13:17)
+2025-11-12 01:56:04,212 [WARNING]     - Cechy: (Amplituda: 5.94, Czas trwania: 6)
+2025-11-12 01:56:04,237 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,237 [WARNING]     - Zakres indeksów: [23848 - 23851]
+2025-11-12 01:56:04,238 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 14:11:41)
+2025-11-12 01:56:04,238 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 14:13:23)
+2025-11-12 01:56:04,238 [WARNING]     - Cechy: (Amplituda: 5.90, Czas trwania: 4)
+2025-11-12 01:56:04,266 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,266 [WARNING]     - Zakres indeksów: [23876 - 28146]
+2025-11-12 01:56:04,269 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 14:12:09)
+2025-11-12 01:56:04,269 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:24:58)
+2025-11-12 01:56:04,270 [WARNING]     - Cechy: (Amplituda: 23.24, Czas trwania: 4271)
+2025-11-12 01:56:04,290 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,292 [WARNING]     - Zakres indeksów: [28172 - 28174]
+2025-11-12 01:56:04,292 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:23:45)
+2025-11-12 01:56:04,293 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:25:26)
+2025-11-12 01:56:04,293 [WARNING]     - Cechy: (Amplituda: 5.99, Czas trwania: 3)
+2025-11-12 01:56:04,315 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,315 [WARNING]     - Zakres indeksów: [28380 - 28403]
+2025-11-12 01:56:04,316 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:27:13)
+2025-11-12 01:56:04,316 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:29:15)
+2025-11-12 01:56:04,316 [WARNING]     - Cechy: (Amplituda: 6.48, Czas trwania: 24)
+2025-11-12 01:56:04,337 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,337 [WARNING]     - Zakres indeksów: [28525 - 28529]
+2025-11-12 01:56:04,340 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:29:38)
+2025-11-12 01:56:04,340 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:31:21)
+2025-11-12 01:56:04,340 [WARNING]     - Cechy: (Amplituda: 5.80, Czas trwania: 5)
+2025-11-12 01:56:04,361 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,362 [WARNING]     - Zakres indeksów: [28531 - 28536]
+2025-11-12 01:56:04,362 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:29:44)
+2025-11-12 01:56:04,363 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:31:28)
+2025-11-12 01:56:04,363 [WARNING]     - Cechy: (Amplituda: 5.80, Czas trwania: 6)
+2025-11-12 01:56:04,384 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,385 [WARNING]     - Zakres indeksów: [28547 - 28548]
+2025-11-12 01:56:04,387 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:30:00)
+2025-11-12 01:56:04,387 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:31:40)
+2025-11-12 01:56:04,388 [WARNING]     - Cechy: (Amplituda: 5.80, Czas trwania: 2)
+2025-11-12 01:56:04,408 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,409 [WARNING]     - Zakres indeksów: [28551 - 28568]
+2025-11-12 01:56:04,409 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:30:04)
+2025-11-12 01:56:04,410 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:32:00)
+2025-11-12 01:56:04,410 [WARNING]     - Cechy: (Amplituda: 6.13, Czas trwania: 18)
+2025-11-12 01:56:04,432 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,432 [WARNING]     - Zakres indeksów: [28573 - 28684]
+2025-11-12 01:56:04,435 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:30:26)
+2025-11-12 01:56:04,435 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:33:56)
+2025-11-12 01:56:04,436 [WARNING]     - Cechy: (Amplituda: 7.49, Czas trwania: 112)
+2025-11-12 01:56:04,457 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,457 [WARNING]     - Zakres indeksów: [28688 - 28688]
+2025-11-12 01:56:04,457 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:32:21)
+2025-11-12 01:56:04,458 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:34:00)
+2025-11-12 01:56:04,458 [WARNING]     - Cechy: (Amplituda: 5.83, Czas trwania: 1)
+2025-11-12 01:56:04,479 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,479 [WARNING]     - Zakres indeksów: [28705 - 28840]
+2025-11-12 01:56:04,482 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:32:38)
+2025-11-12 01:56:04,483 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:36:32)
+2025-11-12 01:56:04,483 [WARNING]     - Cechy: (Amplituda: 7.51, Czas trwania: 136)
+2025-11-12 01:56:04,504 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,504 [WARNING]     - Zakres indeksów: [28955 - 28958]
+2025-11-12 01:56:04,505 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:36:48)
+2025-11-12 01:56:04,505 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:38:30)
+2025-11-12 01:56:04,505 [WARNING]     - Cechy: (Amplituda: 5.76, Czas trwania: 4)
+2025-11-12 01:56:04,526 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,526 [WARNING]     - Zakres indeksów: [28977 - 28977]
+2025-11-12 01:56:04,528 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:37:10)
+2025-11-12 01:56:04,529 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:38:49)
+2025-11-12 01:56:04,529 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 1)
+2025-11-12 01:56:04,550 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,550 [WARNING]     - Zakres indeksów: [28983 - 28987]
+2025-11-12 01:56:04,551 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:37:16)
+2025-11-12 01:56:04,551 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:38:59)
+2025-11-12 01:56:04,552 [WARNING]     - Cechy: (Amplituda: 6.03, Czas trwania: 5)
+2025-11-12 01:56:04,572 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,572 [WARNING]     - Zakres indeksów: [28989 - 29096]
+2025-11-12 01:56:04,574 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:37:22)
+2025-11-12 01:56:04,575 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:40:48)
+2025-11-12 01:56:04,576 [WARNING]     - Cechy: (Amplituda: 7.03, Czas trwania: 108)
+2025-11-12 01:56:04,596 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,596 [WARNING]     - Zakres indeksów: [29099 - 29099]
+2025-11-12 01:56:04,597 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:39:12)
+2025-11-12 01:56:04,598 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:40:51)
+2025-11-12 01:56:04,598 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 1)
+2025-11-12 01:56:04,619 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,619 [WARNING]     - Zakres indeksów: [29102 - 29281]
+2025-11-12 01:56:04,621 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:39:15)
+2025-11-12 01:56:04,622 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:43:53)
+2025-11-12 01:56:04,622 [WARNING]     - Cechy: (Amplituda: 8.49, Czas trwania: 180)
+2025-11-12 01:56:04,643 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,643 [WARNING]     - Zakres indeksów: [29283 - 29285]
+2025-11-12 01:56:04,643 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:42:16)
+2025-11-12 01:56:04,644 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:43:57)
+2025-11-12 01:56:04,644 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 3)
+2025-11-12 01:56:04,666 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,666 [WARNING]     - Zakres indeksów: [29369 - 29369]
+2025-11-12 01:56:04,669 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:43:42)
+2025-11-12 01:56:04,669 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:45:21)
+2025-11-12 01:56:04,670 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 1)
+2025-11-12 01:56:04,690 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,690 [WARNING]     - Zakres indeksów: [29373 - 32307]
+2025-11-12 01:56:04,691 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:43:46)
+2025-11-12 01:56:04,691 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:34:19)
+2025-11-12 01:56:04,692 [WARNING]     - Cechy: (Amplituda: 13.86, Czas trwania: 2935)
+2025-11-12 01:56:04,713 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,713 [WARNING]     - Zakres indeksów: [33061 - 33062]
+2025-11-12 01:56:04,716 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:45:14)
+2025-11-12 01:56:04,716 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:46:54)
+2025-11-12 01:56:04,717 [WARNING]     - Cechy: (Amplituda: 5.82, Czas trwania: 2)
+2025-11-12 01:56:04,737 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,737 [WARNING]     - Zakres indeksów: [33068 - 33074]
+2025-11-12 01:56:04,738 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:45:21)
+2025-11-12 01:56:04,739 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:47:06)
+2025-11-12 01:56:04,739 [WARNING]     - Cechy: (Amplituda: 5.82, Czas trwania: 7)
+2025-11-12 01:56:04,760 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,760 [WARNING]     - Zakres indeksów: [33079 - 33089]
+2025-11-12 01:56:04,762 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:45:32)
+2025-11-12 01:56:04,763 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:47:21)
+2025-11-12 01:56:04,763 [WARNING]     - Cechy: (Amplituda: 5.84, Czas trwania: 11)
+2025-11-12 01:56:04,784 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,784 [WARNING]     - Zakres indeksów: [33140 - 33167]
+2025-11-12 01:56:04,785 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:46:33)
+2025-11-12 01:56:04,785 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:48:39)
+2025-11-12 01:56:04,786 [WARNING]     - Cechy: (Amplituda: 6.49, Czas trwania: 28)
+2025-11-12 01:56:04,806 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,806 [WARNING]     - Zakres indeksów: [33198 - 33220]
+2025-11-12 01:56:04,809 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:47:31)
+2025-11-12 01:56:04,809 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:49:32)
+2025-11-12 01:56:04,810 [WARNING]     - Cechy: (Amplituda: 6.23, Czas trwania: 23)
+2025-11-12 01:56:04,831 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,831 [WARNING]     - Zakres indeksów: [33253 - 33253]
+2025-11-12 01:56:04,832 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:48:26)
+2025-11-12 01:56:04,832 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:50:05)
+2025-11-12 01:56:04,833 [WARNING]     - Cechy: (Amplituda: 5.87, Czas trwania: 1)
+2025-11-12 01:56:04,854 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,854 [WARNING]     - Zakres indeksów: [33257 - 33297]
+2025-11-12 01:56:04,856 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:48:30)
+2025-11-12 01:56:04,857 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:50:49)
+2025-11-12 01:56:04,857 [WARNING]     - Cechy: (Amplituda: 6.55, Czas trwania: 41)
+2025-11-12 01:56:04,878 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,878 [WARNING]     - Zakres indeksów: [33308 - 33420]
+2025-11-12 01:56:04,879 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:49:21)
+2025-11-12 01:56:04,879 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:52:52)
+2025-11-12 01:56:04,880 [WARNING]     - Cechy: (Amplituda: 7.00, Czas trwania: 113)
+2025-11-12 01:56:04,901 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,901 [WARNING]     - Zakres indeksów: [33462 - 33464]
+2025-11-12 01:56:04,904 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:51:55)
+2025-11-12 01:56:04,904 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:53:36)
+2025-11-12 01:56:04,905 [WARNING]     - Cechy: (Amplituda: 5.87, Czas trwania: 3)
+2025-11-12 01:56:04,925 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,925 [WARNING]     - Zakres indeksów: [33477 - 33596]
+2025-11-12 01:56:04,926 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:52:10)
+2025-11-12 01:56:04,927 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:55:48)
+2025-11-12 01:56:04,927 [WARNING]     - Cechy: (Amplituda: 7.17, Czas trwania: 120)
+2025-11-12 01:56:04,949 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,949 [WARNING]     - Zakres indeksów: [33599 - 33602]
+2025-11-12 01:56:04,952 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:54:12)
+2025-11-12 01:56:04,952 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:55:54)
+2025-11-12 01:56:04,953 [WARNING]     - Cechy: (Amplituda: 5.99, Czas trwania: 4)
+2025-11-12 01:56:04,974 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,975 [WARNING]     - Zakres indeksów: [33611 - 33613]
+2025-11-12 01:56:04,975 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:54:24)
+2025-11-12 01:56:04,976 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:56:05)
+2025-11-12 01:56:04,976 [WARNING]     - Cechy: (Amplituda: 6.01, Czas trwania: 3)
+2025-11-12 01:56:04,998 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:04,998 [WARNING]     - Zakres indeksów: [33623 - 33624]
+2025-11-12 01:56:05,001 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:54:36)
+2025-11-12 01:56:05,001 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:56:16)
+2025-11-12 01:56:05,001 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 2)
+2025-11-12 01:56:05,022 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:05,022 [WARNING]     - Zakres indeksów: [33654 - 33654]
+2025-11-12 01:56:05,023 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:55:07)
+2025-11-12 01:56:05,023 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:56:46)
+2025-11-12 01:56:05,024 [WARNING]     - Cechy: (Amplituda: 5.78, Czas trwania: 1)
+2025-11-12 01:56:05,047 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:05,047 [WARNING]     - Zakres indeksów: [33662 - 33662]
+2025-11-12 01:56:05,050 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:55:15)
+2025-11-12 01:56:05,050 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:56:54)
+2025-11-12 01:56:05,051 [WARNING]     - Cechy: (Amplituda: 5.80, Czas trwania: 1)
+2025-11-12 01:56:05,074 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:05,074 [WARNING]     - Zakres indeksów: [33709 - 33710]
+2025-11-12 01:56:05,075 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:56:02)
+2025-11-12 01:56:05,075 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:57:42)
+2025-11-12 01:56:05,076 [WARNING]     - Cechy: (Amplituda: 5.78, Czas trwania: 2)
+2025-11-12 01:56:05,099 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:05,099 [WARNING]     - Zakres indeksów: [33721 - 33724]
+2025-11-12 01:56:05,099 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:56:14)
+2025-11-12 01:56:05,100 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:57:56)
+2025-11-12 01:56:05,100 [WARNING]     - Cechy: (Amplituda: 5.70, Czas trwania: 4)
+2025-11-12 01:56:05,123 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:05,123 [WARNING]     - Zakres indeksów: [33734 - 34952]
+2025-11-12 01:56:05,125 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:56:27)
+2025-11-12 01:56:05,126 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 17:18:24)
+2025-11-12 01:56:05,126 [WARNING]     - Cechy: (Amplituda: 35.89, Czas trwania: 1219)
+2025-11-12 01:56:05,126 [INFO] 
+>>> Analizujê plik: 636195.xlsx
+2025-11-12 01:56:05,150 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:05,151 [WARNING]     - Zakres indeksów: [1807 - 1852]
+2025-11-12 01:56:05,153 [WARNING]     - Rozpoczêcie: ID 9437 (Czas: 2022-08-24 18:28:15)
+2025-11-12 01:56:05,153 [WARNING]     - Zakoñczenie: ID 9437 (Czas: 2022-08-24 18:30:39)
+2025-11-12 01:56:05,154 [WARNING]     - Cechy: (Amplituda: 9.87, Czas trwania: 46)
+2025-11-12 01:56:05,162 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:05,162 [WARNING]     - Zakres indeksów: [2234 - 2235]
+2025-11-12 01:56:05,163 [WARNING]     - Rozpoczêcie: ID 9437 (Czas: 2022-08-24 18:35:22)
+2025-11-12 01:56:05,164 [WARNING]     - Zakoñczenie: ID 9437 (Czas: 2022-08-24 18:37:02)
+2025-11-12 01:56:05,164 [WARNING]     - Cechy: (Amplituda: 5.77, Czas trwania: 2)
+2025-11-12 01:56:05,173 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:05,173 [WARNING]     - Zakres indeksów: [2250 - 2254]
+2025-11-12 01:56:05,174 [WARNING]     - Rozpoczêcie: ID 9437 (Czas: 2022-08-24 18:35:38)
+2025-11-12 01:56:05,174 [WARNING]     - Zakoñczenie: ID 9437 (Czas: 2022-08-24 18:37:21)
+2025-11-12 01:56:05,175 [WARNING]     - Cechy: (Amplituda: 5.93, Czas trwania: 5)
+2025-11-12 01:56:05,184 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:05,184 [WARNING]     - Zakres indeksów: [2261 - 2263]
+2025-11-12 01:56:05,185 [WARNING]     - Rozpoczêcie: ID 9437 (Czas: 2022-08-24 18:35:49)
+2025-11-12 01:56:05,185 [WARNING]     - Zakoñczenie: ID 9437 (Czas: 2022-08-24 18:37:30)
+2025-11-12 01:56:05,185 [WARNING]     - Cechy: (Amplituda: 5.84, Czas trwania: 3)
+2025-11-12 01:56:05,193 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:05,193 [WARNING]     - Zakres indeksów: [2266 - 2823]
+2025-11-12 01:56:05,194 [WARNING]     - Rozpoczêcie: ID 9437 (Czas: 2022-08-24 18:35:54)
+2025-11-12 01:56:05,194 [WARNING]     - Zakoñczenie: ID 9437 (Czas: 2022-08-24 18:46:50)
+2025-11-12 01:56:05,195 [WARNING]     - Cechy: (Amplituda: 13.84, Czas trwania: 558)
+2025-11-12 01:56:05,205 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:05,205 [WARNING]     - Zakres indeksów: [2833 - 2834]
+2025-11-12 01:56:05,205 [WARNING]     - Rozpoczêcie: ID 9437 (Czas: 2022-08-24 18:45:21)
+2025-11-12 01:56:05,206 [WARNING]     - Zakoñczenie: ID 9437 (Czas: 2022-08-24 18:47:01)
+2025-11-12 01:56:05,206 [WARNING]     - Cechy: (Amplituda: 5.89, Czas trwania: 2)
+2025-11-12 01:56:05,216 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:05,216 [WARNING]     - Zakres indeksów: [2868 - 2868]
+2025-11-12 01:56:05,217 [WARNING]     - Rozpoczêcie: ID 9437 (Czas: 2022-08-24 18:45:56)
+2025-11-12 01:56:05,217 [WARNING]     - Zakoñczenie: ID 9437 (Czas: 2022-08-24 18:47:35)
+2025-11-12 01:56:05,218 [WARNING]     - Cechy: (Amplituda: 5.77, Czas trwania: 1)
+2025-11-12 01:56:05,225 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:05,225 [WARNING]     - Zakres indeksów: [2873 - 2879]
+2025-11-12 01:56:05,226 [WARNING]     - Rozpoczêcie: ID 9437 (Czas: 2022-08-24 18:46:01)
+2025-11-12 01:56:05,226 [WARNING]     - Zakoñczenie: ID 9437 (Czas: 2022-08-24 18:47:46)
+2025-11-12 01:56:05,227 [WARNING]     - Cechy: (Amplituda: 6.03, Czas trwania: 7)
+2025-11-12 01:56:05,236 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:05,236 [WARNING]     - Zakres indeksów: [2898 - 2898]
+2025-11-12 01:56:05,237 [WARNING]     - Rozpoczêcie: ID 9437 (Czas: 2022-08-24 18:46:26)
+2025-11-12 01:56:05,238 [WARNING]     - Zakoñczenie: ID 9437 (Czas: 2022-08-24 18:48:05)
+2025-11-12 01:56:05,238 [WARNING]     - Cechy: (Amplituda: 5.85, Czas trwania: 1)
+2025-11-12 01:56:05,247 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:05,247 [WARNING]     - Zakres indeksów: [2901 - 2906]
+2025-11-12 01:56:05,248 [WARNING]     - Rozpoczêcie: ID 9437 (Czas: 2022-08-24 18:46:29)
+2025-11-12 01:56:05,248 [WARNING]     - Zakoñczenie: ID 9437 (Czas: 2022-08-24 18:48:13)
+2025-11-12 01:56:05,249 [WARNING]     - Cechy: (Amplituda: 6.08, Czas trwania: 6)
+2025-11-12 01:56:05,257 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 01:56:05,257 [WARNING]     - Zakres indeksów: [2914 - 2943]
+2025-11-12 01:56:05,258 [WARNING]     - Rozpoczêcie: ID 9437 (Czas: 2022-08-24 18:46:42)
+2025-11-12 01:56:05,258 [WARNING]     - Zakoñczenie: ID 9437 (Czas: 2022-08-24 18:48:50)
+2025-11-12 01:56:05,265 [WARNING]     - Cechy: (Amplituda: 6.54, Czas trwania: 30)
+2025-11-12 01:56:05,266 [INFO] 
+--- Generowanie wykresów dla ka¿dego typu anomalii... ---
+2025-11-12 01:56:05,268 [INFO] Generujê wykres dla Typu 5 -> outputs\RLV1\plot_RLV1_Typ_5.png
+2025-11-12 01:56:05,639 [INFO] Generujê wykres dla Typu 1 -> outputs\RLV1\plot_RLV1_Typ_1.png
+2025-11-12 01:56:05,822 [INFO] Generujê wykres dla Typu 3 -> outputs\RLV1\plot_RLV1_Typ_3.png
+2025-11-12 01:56:06,027 [INFO] Generujê wykres dla Typu 4 -> outputs\RLV1\plot_RLV1_Typ_4.png
+2025-11-12 01:56:06,233 [INFO] Generujê wykres dla Typu 2 -> outputs\RLV1\plot_RLV1_Typ_2.png
+2025-11-12 01:56:06,441 [INFO] Wszystkie wykresy wygenerowane.
+2025-11-12 01:56:06,446 [INFO] Pomyœlnie zapisano posortowane anomalie w: outputs\RLV1\classified_anomalies_RLV1.json
+2025-11-12 01:56:06,446 [INFO] --- Klasyfikacja Zakoñczona ---
+2025-11-12 02:02:52,401 [INFO] --- Rozpoczynam Klasyfikacjê i Raportowanie dla: RLV1 ---
+2025-11-12 02:02:52,402 [INFO] Liczba klastrów (typów anomalii): 5
+2025-11-12 02:02:52,404 [INFO] Logi zapisywane do: outputs\RLV1\classify_RLV1_output.txt
+2025-11-12 02:02:52,432 [INFO] Wczytujê checkpoint z: checkpoints\RLV1\model_checkpoint_RLV1.pth
+2025-11-12 02:02:52,632 [INFO] Model wczytany pomyœlnie.
+2025-11-12 02:02:52,649 [INFO] Wczytano 175 surowych zdarzeñ anomalii.
+2025-11-12 02:02:52,650 [INFO] Rozpoczynam ekstrakcjê cech dla ka¿dego zdarzenia...
+2025-11-12 02:03:18,376 [INFO] Rozpoczynam klastrowanie zdarzeñ...
+2025-11-12 02:03:19,821 [INFO] Klastrowanie zakoñczone. Znaleziono 5 typów anomalii.
+2025-11-12 02:03:19,821 [INFO] 
+==================================================
+2025-11-12 02:03:19,823 [INFO] --- OSTATECZNY RAPORT WYKRYTYCH ANOMALII ---
+2025-11-12 02:03:19,824 [INFO] ==================================================
+
+2025-11-12 02:03:19,824 [INFO] 
+>>> Analizujê plik: 316367.xlsx
+2025-11-12 02:03:19,842 [WARNING]   WYKRYTO Anomaliê Typu: 5
+2025-11-12 02:03:19,842 [WARNING]     - Zakres indeksów: [0 - 1134]
+2025-11-12 02:03:19,842 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:11:21)
+2025-11-12 02:03:19,843 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:31:54)
+2025-11-12 02:03:19,843 [WARNING]     - Cechy: (Amplituda: 11214620.00, Czas trwania: 1135)
+2025-11-12 02:03:19,859 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:19,859 [WARNING]     - Zakres indeksów: [1136 - 1136]
+2025-11-12 02:03:19,859 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:30:17)
+2025-11-12 02:03:19,860 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:31:56)
+2025-11-12 02:03:19,860 [WARNING]     - Cechy: (Amplituda: 5.78, Czas trwania: 1)
+2025-11-12 02:03:19,875 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:19,875 [WARNING]     - Zakres indeksów: [1138 - 1821]
+2025-11-12 02:03:19,875 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:30:19)
+2025-11-12 02:03:19,876 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:43:21)
+2025-11-12 02:03:19,876 [WARNING]     - Cechy: (Amplituda: 6.91, Czas trwania: 684)
+2025-11-12 02:03:19,891 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:19,891 [WARNING]     - Zakres indeksów: [1825 - 1829]
+2025-11-12 02:03:19,891 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:41:46)
+2025-11-12 02:03:19,892 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:43:29)
+2025-11-12 02:03:19,892 [WARNING]     - Cechy: (Amplituda: 5.97, Czas trwania: 5)
+2025-11-12 02:03:19,906 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:19,906 [WARNING]     - Zakres indeksów: [1832 - 2219]
+2025-11-12 02:03:19,907 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:41:53)
+2025-11-12 02:03:19,907 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:49:59)
+2025-11-12 02:03:19,908 [WARNING]     - Cechy: (Amplituda: 6.51, Czas trwania: 388)
+2025-11-12 02:03:19,927 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:19,927 [WARNING]     - Zakres indeksów: [2235 - 2262]
+2025-11-12 02:03:19,928 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:48:36)
+2025-11-12 02:03:19,929 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:50:42)
+2025-11-12 02:03:19,930 [WARNING]     - Cechy: (Amplituda: 6.53, Czas trwania: 28)
+2025-11-12 02:03:19,946 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:19,946 [WARNING]     - Zakres indeksów: [2270 - 2272]
+2025-11-12 02:03:19,946 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:49:11)
+2025-11-12 02:03:19,947 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:50:52)
+2025-11-12 02:03:19,947 [WARNING]     - Cechy: (Amplituda: 6.39, Czas trwania: 3)
+2025-11-12 02:03:19,964 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:19,966 [WARNING]     - Zakres indeksów: [2278 - 2280]
+2025-11-12 02:03:19,966 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:49:19)
+2025-11-12 02:03:19,966 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:51:00)
+2025-11-12 02:03:19,967 [WARNING]     - Cechy: (Amplituda: 6.38, Czas trwania: 3)
+2025-11-12 02:03:19,983 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:19,983 [WARNING]     - Zakres indeksów: [2286 - 2295]
+2025-11-12 02:03:19,984 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:49:27)
+2025-11-12 02:03:19,984 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:51:15)
+2025-11-12 02:03:19,984 [WARNING]     - Cechy: (Amplituda: 6.38, Czas trwania: 10)
+2025-11-12 02:03:19,999 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:19,999 [WARNING]     - Zakres indeksów: [2315 - 2318]
+2025-11-12 02:03:20,000 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:49:56)
+2025-11-12 02:03:20,000 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:51:38)
+2025-11-12 02:03:20,000 [WARNING]     - Cechy: (Amplituda: 6.38, Czas trwania: 4)
+2025-11-12 02:03:20,015 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,015 [WARNING]     - Zakres indeksów: [2321 - 2339]
+2025-11-12 02:03:20,016 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:50:02)
+2025-11-12 02:03:20,016 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:51:59)
+2025-11-12 02:03:20,016 [WARNING]     - Cechy: (Amplituda: 6.41, Czas trwania: 19)
+2025-11-12 02:03:20,031 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,031 [WARNING]     - Zakres indeksów: [2341 - 2342]
+2025-11-12 02:03:20,031 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:50:22)
+2025-11-12 02:03:20,032 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:52:02)
+2025-11-12 02:03:20,032 [WARNING]     - Cechy: (Amplituda: 6.38, Czas trwania: 2)
+2025-11-12 02:03:20,046 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,046 [WARNING]     - Zakres indeksów: [2349 - 2351]
+2025-11-12 02:03:20,047 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:50:30)
+2025-11-12 02:03:20,047 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:52:11)
+2025-11-12 02:03:20,048 [WARNING]     - Cechy: (Amplituda: 6.39, Czas trwania: 3)
+2025-11-12 02:03:20,062 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,062 [WARNING]     - Zakres indeksów: [2356 - 2357]
+2025-11-12 02:03:20,063 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:50:37)
+2025-11-12 02:03:20,063 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:52:17)
+2025-11-12 02:03:20,063 [WARNING]     - Cechy: (Amplituda: 6.41, Czas trwania: 2)
+2025-11-12 02:03:20,078 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,078 [WARNING]     - Zakres indeksów: [2389 - 2393]
+2025-11-12 02:03:20,078 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:51:10)
+2025-11-12 02:03:20,079 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:52:53)
+2025-11-12 02:03:20,079 [WARNING]     - Cechy: (Amplituda: 6.45, Czas trwania: 5)
+2025-11-12 02:03:20,094 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,094 [WARNING]     - Zakres indeksów: [2404 - 2409]
+2025-11-12 02:03:20,094 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:51:25)
+2025-11-12 02:03:20,095 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:53:09)
+2025-11-12 02:03:20,095 [WARNING]     - Cechy: (Amplituda: 6.45, Czas trwania: 6)
+2025-11-12 02:03:20,110 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,110 [WARNING]     - Zakres indeksów: [2412 - 2415]
+2025-11-12 02:03:20,111 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:51:33)
+2025-11-12 02:03:20,111 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:53:15)
+2025-11-12 02:03:20,112 [WARNING]     - Cechy: (Amplituda: 6.43, Czas trwania: 4)
+2025-11-12 02:03:20,126 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,126 [WARNING]     - Zakres indeksów: [2417 - 2428]
+2025-11-12 02:03:20,127 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:51:38)
+2025-11-12 02:03:20,127 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:53:28)
+2025-11-12 02:03:20,128 [WARNING]     - Cechy: (Amplituda: 6.46, Czas trwania: 12)
+2025-11-12 02:03:20,142 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,142 [WARNING]     - Zakres indeksów: [2430 - 2437]
+2025-11-12 02:03:20,143 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:51:51)
+2025-11-12 02:03:20,143 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:53:37)
+2025-11-12 02:03:20,144 [WARNING]     - Cechy: (Amplituda: 6.44, Czas trwania: 8)
+2025-11-12 02:03:20,158 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,159 [WARNING]     - Zakres indeksów: [2441 - 2451]
+2025-11-12 02:03:20,159 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:52:02)
+2025-11-12 02:03:20,160 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:53:51)
+2025-11-12 02:03:20,160 [WARNING]     - Cechy: (Amplituda: 6.45, Czas trwania: 11)
+2025-11-12 02:03:20,175 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,175 [WARNING]     - Zakres indeksów: [2457 - 2459]
+2025-11-12 02:03:20,175 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:52:18)
+2025-11-12 02:03:20,176 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:53:59)
+2025-11-12 02:03:20,176 [WARNING]     - Cechy: (Amplituda: 6.41, Czas trwania: 3)
+2025-11-12 02:03:20,191 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,191 [WARNING]     - Zakres indeksów: [2465 - 2470]
+2025-11-12 02:03:20,191 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:52:26)
+2025-11-12 02:03:20,192 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:54:10)
+2025-11-12 02:03:20,192 [WARNING]     - Cechy: (Amplituda: 6.43, Czas trwania: 6)
+2025-11-12 02:03:20,207 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,207 [WARNING]     - Zakres indeksów: [2482 - 2483]
+2025-11-12 02:03:20,208 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:52:43)
+2025-11-12 02:03:20,208 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:54:23)
+2025-11-12 02:03:20,209 [WARNING]     - Cechy: (Amplituda: 6.44, Czas trwania: 2)
+2025-11-12 02:03:20,223 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,223 [WARNING]     - Zakres indeksów: [2491 - 2492]
+2025-11-12 02:03:20,223 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:52:52)
+2025-11-12 02:03:20,224 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:54:32)
+2025-11-12 02:03:20,224 [WARNING]     - Cechy: (Amplituda: 6.44, Czas trwania: 2)
+2025-11-12 02:03:20,239 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,239 [WARNING]     - Zakres indeksów: [2508 - 2511]
+2025-11-12 02:03:20,240 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:53:09)
+2025-11-12 02:03:20,240 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:54:51)
+2025-11-12 02:03:20,241 [WARNING]     - Cechy: (Amplituda: 6.45, Czas trwania: 4)
+2025-11-12 02:03:20,255 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,255 [WARNING]     - Zakres indeksów: [2513 - 2519]
+2025-11-12 02:03:20,256 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:53:14)
+2025-11-12 02:03:20,256 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:54:59)
+2025-11-12 02:03:20,257 [WARNING]     - Cechy: (Amplituda: 6.46, Czas trwania: 7)
+2025-11-12 02:03:20,271 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,271 [WARNING]     - Zakres indeksów: [2521 - 2552]
+2025-11-12 02:03:20,272 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:53:22)
+2025-11-12 02:03:20,272 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:55:32)
+2025-11-12 02:03:20,272 [WARNING]     - Cechy: (Amplituda: 6.47, Czas trwania: 32)
+2025-11-12 02:03:20,288 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,288 [WARNING]     - Zakres indeksów: [2554 - 2568]
+2025-11-12 02:03:20,289 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:53:55)
+2025-11-12 02:03:20,289 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:55:48)
+2025-11-12 02:03:20,290 [WARNING]     - Cechy: (Amplituda: 6.45, Czas trwania: 15)
+2025-11-12 02:03:20,305 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,305 [WARNING]     - Zakres indeksów: [2583 - 2584]
+2025-11-12 02:03:20,306 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:54:24)
+2025-11-12 02:03:20,306 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:56:04)
+2025-11-12 02:03:20,308 [WARNING]     - Cechy: (Amplituda: 6.47, Czas trwania: 2)
+2025-11-12 02:03:20,324 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,325 [WARNING]     - Zakres indeksów: [2596 - 2599]
+2025-11-12 02:03:20,326 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:54:37)
+2025-11-12 02:03:20,326 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:56:19)
+2025-11-12 02:03:20,327 [WARNING]     - Cechy: (Amplituda: 6.51, Czas trwania: 4)
+2025-11-12 02:03:20,342 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,342 [WARNING]     - Zakres indeksów: [2601 - 2602]
+2025-11-12 02:03:20,343 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:54:42)
+2025-11-12 02:03:20,343 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:56:22)
+2025-11-12 02:03:20,344 [WARNING]     - Cechy: (Amplituda: 6.50, Czas trwania: 2)
+2025-11-12 02:03:20,358 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,358 [WARNING]     - Zakres indeksów: [2613 - 2616]
+2025-11-12 02:03:20,359 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:54:54)
+2025-11-12 02:03:20,359 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:56:36)
+2025-11-12 02:03:20,360 [WARNING]     - Cechy: (Amplituda: 6.51, Czas trwania: 4)
+2025-11-12 02:03:20,375 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,375 [WARNING]     - Zakres indeksów: [2618 - 2621]
+2025-11-12 02:03:20,375 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:54:59)
+2025-11-12 02:03:20,376 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:56:41)
+2025-11-12 02:03:20,376 [WARNING]     - Cechy: (Amplituda: 6.51, Czas trwania: 4)
+2025-11-12 02:03:20,391 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,392 [WARNING]     - Zakres indeksów: [2623 - 2648]
+2025-11-12 02:03:20,392 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:55:04)
+2025-11-12 02:03:20,393 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:57:08)
+2025-11-12 02:03:20,393 [WARNING]     - Cechy: (Amplituda: 6.53, Czas trwania: 26)
+2025-11-12 02:03:20,408 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,409 [WARNING]     - Zakres indeksów: [2651 - 2653]
+2025-11-12 02:03:20,409 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:55:32)
+2025-11-12 02:03:20,410 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:57:13)
+2025-11-12 02:03:20,410 [WARNING]     - Cechy: (Amplituda: 6.41, Czas trwania: 3)
+2025-11-12 02:03:20,425 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,425 [WARNING]     - Zakres indeksów: [2659 - 2681]
+2025-11-12 02:03:20,426 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:55:40)
+2025-11-12 02:03:20,426 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:57:41)
+2025-11-12 02:03:20,427 [WARNING]     - Cechy: (Amplituda: 6.44, Czas trwania: 23)
+2025-11-12 02:03:20,441 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,442 [WARNING]     - Zakres indeksów: [2686 - 2697]
+2025-11-12 02:03:20,442 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:56:07)
+2025-11-12 02:03:20,443 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:57:57)
+2025-11-12 02:03:20,443 [WARNING]     - Cechy: (Amplituda: 6.38, Czas trwania: 12)
+2025-11-12 02:03:20,457 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,458 [WARNING]     - Zakres indeksów: [2700 - 2701]
+2025-11-12 02:03:20,458 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:56:21)
+2025-11-12 02:03:20,459 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:58:01)
+2025-11-12 02:03:20,459 [WARNING]     - Cechy: (Amplituda: 6.34, Czas trwania: 2)
+2025-11-12 02:03:20,474 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,474 [WARNING]     - Zakres indeksów: [2732 - 2733]
+2025-11-12 02:03:20,475 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:56:53)
+2025-11-12 02:03:20,475 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:58:33)
+2025-11-12 02:03:20,476 [WARNING]     - Cechy: (Amplituda: 6.38, Czas trwania: 2)
+2025-11-12 02:03:20,490 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,491 [WARNING]     - Zakres indeksów: [2743 - 2745]
+2025-11-12 02:03:20,491 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:57:04)
+2025-11-12 02:03:20,492 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:58:45)
+2025-11-12 02:03:20,492 [WARNING]     - Cechy: (Amplituda: 6.38, Czas trwania: 3)
+2025-11-12 02:03:20,508 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,508 [WARNING]     - Zakres indeksów: [2752 - 2753]
+2025-11-12 02:03:20,509 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:57:13)
+2025-11-12 02:03:20,510 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:58:53)
+2025-11-12 02:03:20,512 [WARNING]     - Cechy: (Amplituda: 6.38, Czas trwania: 2)
+2025-11-12 02:03:20,527 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,528 [WARNING]     - Zakres indeksów: [2762 - 2764]
+2025-11-12 02:03:20,528 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:57:23)
+2025-11-12 02:03:20,529 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:59:04)
+2025-11-12 02:03:20,529 [WARNING]     - Cechy: (Amplituda: 6.38, Czas trwania: 3)
+2025-11-12 02:03:20,545 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,545 [WARNING]     - Zakres indeksów: [2766 - 2769]
+2025-11-12 02:03:20,546 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:57:27)
+2025-11-12 02:03:20,546 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:59:09)
+2025-11-12 02:03:20,546 [WARNING]     - Cechy: (Amplituda: 6.38, Czas trwania: 4)
+2025-11-12 02:03:20,561 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,561 [WARNING]     - Zakres indeksów: [2771 - 2772]
+2025-11-12 02:03:20,562 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:57:32)
+2025-11-12 02:03:20,562 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:59:12)
+2025-11-12 02:03:20,563 [WARNING]     - Cechy: (Amplituda: 6.38, Czas trwania: 2)
+2025-11-12 02:03:20,577 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,577 [WARNING]     - Zakres indeksów: [2784 - 2785]
+2025-11-12 02:03:20,578 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:57:45)
+2025-11-12 02:03:20,578 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:59:25)
+2025-11-12 02:03:20,579 [WARNING]     - Cechy: (Amplituda: 6.40, Czas trwania: 2)
+2025-11-12 02:03:20,593 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,593 [WARNING]     - Zakres indeksów: [2794 - 2795]
+2025-11-12 02:03:20,594 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:57:55)
+2025-11-12 02:03:20,594 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:59:35)
+2025-11-12 02:03:20,595 [WARNING]     - Cechy: (Amplituda: 6.42, Czas trwania: 2)
+2025-11-12 02:03:20,609 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,609 [WARNING]     - Zakres indeksów: [2804 - 2816]
+2025-11-12 02:03:20,610 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:58:05)
+2025-11-12 02:03:20,610 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 02:59:56)
+2025-11-12 02:03:20,611 [WARNING]     - Cechy: (Amplituda: 6.46, Czas trwania: 13)
+2025-11-12 02:03:20,625 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,626 [WARNING]     - Zakres indeksów: [2820 - 2823]
+2025-11-12 02:03:20,626 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:58:21)
+2025-11-12 02:03:20,627 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:00:03)
+2025-11-12 02:03:20,627 [WARNING]     - Cechy: (Amplituda: 6.46, Czas trwania: 4)
+2025-11-12 02:03:20,642 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,642 [WARNING]     - Zakres indeksów: [2825 - 2827]
+2025-11-12 02:03:20,643 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:58:26)
+2025-11-12 02:03:20,643 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:00:07)
+2025-11-12 02:03:20,643 [WARNING]     - Cechy: (Amplituda: 6.46, Czas trwania: 3)
+2025-11-12 02:03:20,658 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,658 [WARNING]     - Zakres indeksów: [2829 - 2830]
+2025-11-12 02:03:20,659 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:58:30)
+2025-11-12 02:03:20,659 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:00:10)
+2025-11-12 02:03:20,659 [WARNING]     - Cechy: (Amplituda: 6.45, Czas trwania: 2)
+2025-11-12 02:03:20,674 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,674 [WARNING]     - Zakres indeksów: [2847 - 2849]
+2025-11-12 02:03:20,674 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:58:48)
+2025-11-12 02:03:20,675 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:00:29)
+2025-11-12 02:03:20,675 [WARNING]     - Cechy: (Amplituda: 6.49, Czas trwania: 3)
+2025-11-12 02:03:20,689 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,690 [WARNING]     - Zakres indeksów: [2858 - 2877]
+2025-11-12 02:03:20,690 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:58:59)
+2025-11-12 02:03:20,691 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:00:57)
+2025-11-12 02:03:20,691 [WARNING]     - Cechy: (Amplituda: 6.53, Czas trwania: 20)
+2025-11-12 02:03:20,706 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,706 [WARNING]     - Zakres indeksów: [2879 - 2888]
+2025-11-12 02:03:20,706 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:59:20)
+2025-11-12 02:03:20,707 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:01:08)
+2025-11-12 02:03:20,707 [WARNING]     - Cechy: (Amplituda: 6.49, Czas trwania: 10)
+2025-11-12 02:03:20,722 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,722 [WARNING]     - Zakres indeksów: [2892 - 3149]
+2025-11-12 02:03:20,722 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 02:59:33)
+2025-11-12 02:03:20,723 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:05:29)
+2025-11-12 02:03:20,723 [WARNING]     - Cechy: (Amplituda: 84780.88, Czas trwania: 258)
+2025-11-12 02:03:20,738 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,738 [WARNING]     - Zakres indeksów: [3166 - 3166]
+2025-11-12 02:03:20,738 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 03:04:07)
+2025-11-12 02:03:20,739 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:05:46)
+2025-11-12 02:03:20,739 [WARNING]     - Cechy: (Amplituda: 5.82, Czas trwania: 1)
+2025-11-12 02:03:20,754 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,754 [WARNING]     - Zakres indeksów: [3169 - 3169]
+2025-11-12 02:03:20,754 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 03:04:10)
+2025-11-12 02:03:20,755 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:05:49)
+2025-11-12 02:03:20,755 [WARNING]     - Cechy: (Amplituda: 5.70, Czas trwania: 1)
+2025-11-12 02:03:20,769 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,770 [WARNING]     - Zakres indeksów: [3175 - 3176]
+2025-11-12 02:03:20,770 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 03:04:16)
+2025-11-12 02:03:20,770 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:05:56)
+2025-11-12 02:03:20,771 [WARNING]     - Cechy: (Amplituda: 6.02, Czas trwania: 2)
+2025-11-12 02:03:20,785 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,785 [WARNING]     - Zakres indeksów: [3178 - 3178]
+2025-11-12 02:03:20,786 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 03:04:19)
+2025-11-12 02:03:20,786 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:05:58)
+2025-11-12 02:03:20,787 [WARNING]     - Cechy: (Amplituda: 5.75, Czas trwania: 1)
+2025-11-12 02:03:20,801 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,801 [WARNING]     - Zakres indeksów: [3187 - 3203]
+2025-11-12 02:03:20,801 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 03:04:28)
+2025-11-12 02:03:20,802 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:06:23)
+2025-11-12 02:03:20,802 [WARNING]     - Cechy: (Amplituda: 5.88, Czas trwania: 17)
+2025-11-12 02:03:20,816 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,816 [WARNING]     - Zakres indeksów: [3236 - 3394]
+2025-11-12 02:03:20,817 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 03:05:17)
+2025-11-12 02:03:20,817 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:09:34)
+2025-11-12 02:03:20,817 [WARNING]     - Cechy: (Amplituda: 6.66, Czas trwania: 159)
+2025-11-12 02:03:20,832 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,832 [WARNING]     - Zakres indeksów: [3399 - 3406]
+2025-11-12 02:03:20,833 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 03:08:00)
+2025-11-12 02:03:20,833 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:09:46)
+2025-11-12 02:03:20,834 [WARNING]     - Cechy: (Amplituda: 6.71, Czas trwania: 8)
+2025-11-12 02:03:20,849 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,849 [WARNING]     - Zakres indeksów: [3408 - 3408]
+2025-11-12 02:03:20,849 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 03:08:09)
+2025-11-12 02:03:20,850 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:09:48)
+2025-11-12 02:03:20,850 [WARNING]     - Cechy: (Amplituda: 6.70, Czas trwania: 1)
+2025-11-12 02:03:20,864 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,865 [WARNING]     - Zakres indeksów: [3410 - 3410]
+2025-11-12 02:03:20,865 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 03:08:11)
+2025-11-12 02:03:20,865 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:09:50)
+2025-11-12 02:03:20,866 [WARNING]     - Cechy: (Amplituda: 6.72, Czas trwania: 1)
+2025-11-12 02:03:20,880 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,880 [WARNING]     - Zakres indeksów: [3417 - 3417]
+2025-11-12 02:03:20,881 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 03:08:18)
+2025-11-12 02:03:20,881 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 03:09:57)
+2025-11-12 02:03:20,882 [WARNING]     - Cechy: (Amplituda: 6.80, Czas trwania: 1)
+2025-11-12 02:03:20,896 [WARNING]   WYKRYTO Anomaliê Typu: 3
+2025-11-12 02:03:20,896 [WARNING]     - Zakres indeksów: [3421 - 19385]
+2025-11-12 02:03:20,897 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 03:08:22)
+2025-11-12 02:03:20,897 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 07:36:05)
+2025-11-12 02:03:20,898 [WARNING]     - Cechy: (Amplituda: 24535696.00, Czas trwania: 15965)
+2025-11-12 02:03:20,913 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,913 [WARNING]     - Zakres indeksów: [20397 - 20424]
+2025-11-12 02:03:20,914 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 07:51:18)
+2025-11-12 02:03:20,914 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 07:53:24)
+2025-11-12 02:03:20,914 [WARNING]     - Cechy: (Amplituda: 5.73, Czas trwania: 28)
+2025-11-12 02:03:20,930 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,930 [WARNING]     - Zakres indeksów: [20426 - 20439]
+2025-11-12 02:03:20,931 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 07:51:47)
+2025-11-12 02:03:20,931 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 07:53:39)
+2025-11-12 02:03:20,935 [WARNING]     - Cechy: (Amplituda: 5.70, Czas trwania: 14)
+2025-11-12 02:03:20,953 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,954 [WARNING]     - Zakres indeksów: [20443 - 20443]
+2025-11-12 02:03:20,955 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 07:52:04)
+2025-11-12 02:03:20,956 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 07:53:43)
+2025-11-12 02:03:20,957 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 1)
+2025-11-12 02:03:20,974 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,975 [WARNING]     - Zakres indeksów: [20445 - 20673]
+2025-11-12 02:03:20,975 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 07:52:06)
+2025-11-12 02:03:20,976 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 07:57:33)
+2025-11-12 02:03:20,976 [WARNING]     - Cechy: (Amplituda: 5.84, Czas trwania: 229)
+2025-11-12 02:03:20,990 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:20,991 [WARNING]     - Zakres indeksów: [20675 - 20680]
+2025-11-12 02:03:20,991 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 07:55:56)
+2025-11-12 02:03:20,992 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 07:57:40)
+2025-11-12 02:03:20,992 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 6)
+2025-11-12 02:03:21,006 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,006 [WARNING]     - Zakres indeksów: [20685 - 20688]
+2025-11-12 02:03:21,007 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 07:56:06)
+2025-11-12 02:03:21,007 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 07:57:48)
+2025-11-12 02:03:21,008 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 4)
+2025-11-12 02:03:21,022 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,022 [WARNING]     - Zakres indeksów: [20691 - 20693]
+2025-11-12 02:03:21,022 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 07:56:12)
+2025-11-12 02:03:21,023 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 07:57:53)
+2025-11-12 02:03:21,023 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 3)
+2025-11-12 02:03:21,037 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,038 [WARNING]     - Zakres indeksów: [20695 - 20805]
+2025-11-12 02:03:21,038 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 07:56:16)
+2025-11-12 02:03:21,039 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 07:59:45)
+2025-11-12 02:03:21,039 [WARNING]     - Cechy: (Amplituda: 5.76, Czas trwania: 111)
+2025-11-12 02:03:21,053 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,054 [WARNING]     - Zakres indeksów: [20807 - 21026]
+2025-11-12 02:03:21,054 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 07:58:08)
+2025-11-12 02:03:21,054 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:03:26)
+2025-11-12 02:03:21,055 [WARNING]     - Cechy: (Amplituda: 5.86, Czas trwania: 220)
+2025-11-12 02:03:21,069 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,069 [WARNING]     - Zakres indeksów: [21061 - 21061]
+2025-11-12 02:03:21,070 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:02:22)
+2025-11-12 02:03:21,070 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:04:01)
+2025-11-12 02:03:21,070 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 1)
+2025-11-12 02:03:21,085 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,085 [WARNING]     - Zakres indeksów: [21072 - 21077]
+2025-11-12 02:03:21,085 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:02:33)
+2025-11-12 02:03:21,086 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:04:17)
+2025-11-12 02:03:21,086 [WARNING]     - Cechy: (Amplituda: 5.78, Czas trwania: 6)
+2025-11-12 02:03:21,100 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,101 [WARNING]     - Zakres indeksów: [21080 - 21085]
+2025-11-12 02:03:21,101 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:02:41)
+2025-11-12 02:03:21,101 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:04:25)
+2025-11-12 02:03:21,102 [WARNING]     - Cechy: (Amplituda: 5.80, Czas trwania: 6)
+2025-11-12 02:03:21,116 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,116 [WARNING]     - Zakres indeksów: [21092 - 21094]
+2025-11-12 02:03:21,117 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:02:53)
+2025-11-12 02:03:21,117 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:04:34)
+2025-11-12 02:03:21,118 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 3)
+2025-11-12 02:03:21,132 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,132 [WARNING]     - Zakres indeksów: [21100 - 21101]
+2025-11-12 02:03:21,133 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:03:01)
+2025-11-12 02:03:21,133 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:04:41)
+2025-11-12 02:03:21,134 [WARNING]     - Cechy: (Amplituda: 5.79, Czas trwania: 2)
+2025-11-12 02:03:21,148 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,148 [WARNING]     - Zakres indeksów: [21105 - 21106]
+2025-11-12 02:03:21,149 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:03:06)
+2025-11-12 02:03:21,149 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:04:46)
+2025-11-12 02:03:21,150 [WARNING]     - Cechy: (Amplituda: 5.79, Czas trwania: 2)
+2025-11-12 02:03:21,164 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,164 [WARNING]     - Zakres indeksów: [21111 - 21112]
+2025-11-12 02:03:21,165 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:03:12)
+2025-11-12 02:03:21,165 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:04:52)
+2025-11-12 02:03:21,166 [WARNING]     - Cechy: (Amplituda: 5.78, Czas trwania: 2)
+2025-11-12 02:03:21,180 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,181 [WARNING]     - Zakres indeksów: [21116 - 21116]
+2025-11-12 02:03:21,181 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:03:17)
+2025-11-12 02:03:21,181 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:04:56)
+2025-11-12 02:03:21,182 [WARNING]     - Cechy: (Amplituda: 5.77, Czas trwania: 1)
+2025-11-12 02:03:21,196 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,196 [WARNING]     - Zakres indeksów: [21143 - 21145]
+2025-11-12 02:03:21,197 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:03:44)
+2025-11-12 02:03:21,197 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:05:25)
+2025-11-12 02:03:21,198 [WARNING]     - Cechy: (Amplituda: 5.78, Czas trwania: 3)
+2025-11-12 02:03:21,212 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,213 [WARNING]     - Zakres indeksów: [21147 - 21148]
+2025-11-12 02:03:21,214 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:03:48)
+2025-11-12 02:03:21,214 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:05:28)
+2025-11-12 02:03:21,215 [WARNING]     - Cechy: (Amplituda: 5.78, Czas trwania: 2)
+2025-11-12 02:03:21,230 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,231 [WARNING]     - Zakres indeksów: [21156 - 21157]
+2025-11-12 02:03:21,231 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:03:57)
+2025-11-12 02:03:21,232 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:05:37)
+2025-11-12 02:03:21,234 [WARNING]     - Cechy: (Amplituda: 5.78, Czas trwania: 2)
+2025-11-12 02:03:21,248 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,249 [WARNING]     - Zakres indeksów: [21178 - 21221]
+2025-11-12 02:03:21,250 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:04:19)
+2025-11-12 02:03:21,250 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:06:41)
+2025-11-12 02:03:21,251 [WARNING]     - Cechy: (Amplituda: 5.84, Czas trwania: 44)
+2025-11-12 02:03:21,268 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,269 [WARNING]     - Zakres indeksów: [21224 - 21225]
+2025-11-12 02:03:21,269 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:05:05)
+2025-11-12 02:03:21,270 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:06:45)
+2025-11-12 02:03:21,270 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 2)
+2025-11-12 02:03:21,284 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,285 [WARNING]     - Zakres indeksów: [21276 - 21277]
+2025-11-12 02:03:21,285 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:05:57)
+2025-11-12 02:03:21,286 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:07:37)
+2025-11-12 02:03:21,286 [WARNING]     - Cechy: (Amplituda: 5.80, Czas trwania: 2)
+2025-11-12 02:03:21,300 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,301 [WARNING]     - Zakres indeksów: [21281 - 21281]
+2025-11-12 02:03:21,301 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:06:02)
+2025-11-12 02:03:21,302 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:07:41)
+2025-11-12 02:03:21,302 [WARNING]     - Cechy: (Amplituda: 5.75, Czas trwania: 1)
+2025-11-12 02:03:21,316 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,317 [WARNING]     - Zakres indeksów: [21288 - 21292]
+2025-11-12 02:03:21,317 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:06:09)
+2025-11-12 02:03:21,318 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:07:52)
+2025-11-12 02:03:21,318 [WARNING]     - Cechy: (Amplituda: 5.76, Czas trwania: 5)
+2025-11-12 02:03:21,333 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,333 [WARNING]     - Zakres indeksów: [21295 - 21458]
+2025-11-12 02:03:21,333 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:06:16)
+2025-11-12 02:03:21,334 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:10:38)
+2025-11-12 02:03:21,334 [WARNING]     - Cechy: (Amplituda: 6.17, Czas trwania: 164)
+2025-11-12 02:03:21,349 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,349 [WARNING]     - Zakres indeksów: [21493 - 21495]
+2025-11-12 02:03:21,349 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:09:34)
+2025-11-12 02:03:21,350 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:11:15)
+2025-11-12 02:03:21,350 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 3)
+2025-11-12 02:03:21,364 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,365 [WARNING]     - Zakres indeksów: [21497 - 21878]
+2025-11-12 02:03:21,365 [WARNING]     - Rozpoczêcie: ID 6238 (Czas: 2021-01-05 08:09:38)
+2025-11-12 02:03:21,366 [WARNING]     - Zakoñczenie: ID 6238 (Czas: 2021-01-05 08:17:38)
+2025-11-12 02:03:21,366 [WARNING]     - Cechy: (Amplituda: 5.91, Czas trwania: 382)
+2025-11-12 02:03:21,366 [INFO] 
+>>> Analizujê plik: 330083.xlsx
+2025-11-12 02:03:21,382 [WARNING]   WYKRYTO Anomaliê Typu: 5
+2025-11-12 02:03:21,383 [WARNING]     - Zakres indeksów: [0 - 2438]
+2025-11-12 02:03:21,383 [WARNING]     - Rozpoczêcie: ID 6462 (Czas: 2021-02-07 11:26:03)
+2025-11-12 02:03:21,383 [WARNING]     - Zakoñczenie: ID 6462 (Czas: 2021-02-07 12:08:20)
+2025-11-12 02:03:21,384 [WARNING]     - Cechy: (Amplituda: 16469676.00, Czas trwania: 2439)
+2025-11-12 02:03:21,399 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,399 [WARNING]     - Zakres indeksów: [2686 - 2686]
+2025-11-12 02:03:21,400 [WARNING]     - Rozpoczêcie: ID 6462 (Czas: 2021-02-07 12:10:49)
+2025-11-12 02:03:21,400 [WARNING]     - Zakoñczenie: ID 6462 (Czas: 2021-02-07 12:12:28)
+2025-11-12 02:03:21,400 [WARNING]     - Cechy: (Amplituda: 5.67, Czas trwania: 1)
+2025-11-12 02:03:21,416 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,416 [WARNING]     - Zakres indeksów: [2736 - 2736]
+2025-11-12 02:03:21,416 [WARNING]     - Rozpoczêcie: ID 6462 (Czas: 2021-02-07 12:11:39)
+2025-11-12 02:03:21,417 [WARNING]     - Zakoñczenie: ID 6462 (Czas: 2021-02-07 12:13:18)
+2025-11-12 02:03:21,417 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 1)
+2025-11-12 02:03:21,434 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,434 [WARNING]     - Zakres indeksów: [3210 - 3238]
+2025-11-12 02:03:21,435 [WARNING]     - Rozpoczêcie: ID 6462 (Czas: 2021-02-07 12:19:33)
+2025-11-12 02:03:21,437 [WARNING]     - Zakoñczenie: ID 6462 (Czas: 2021-02-07 12:21:40)
+2025-11-12 02:03:21,437 [WARNING]     - Cechy: (Amplituda: 5.71, Czas trwania: 29)
+2025-11-12 02:03:21,454 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,454 [WARNING]     - Zakres indeksów: [3341 - 3349]
+2025-11-12 02:03:21,454 [WARNING]     - Rozpoczêcie: ID 6462 (Czas: 2021-02-07 12:21:44)
+2025-11-12 02:03:21,455 [WARNING]     - Zakoñczenie: ID 6462 (Czas: 2021-02-07 12:23:31)
+2025-11-12 02:03:21,455 [WARNING]     - Cechy: (Amplituda: 5.70, Czas trwania: 9)
+2025-11-12 02:03:21,471 [WARNING]   WYKRYTO Anomaliê Typu: 4
+2025-11-12 02:03:21,471 [WARNING]     - Zakres indeksów: [3412 - 23044]
+2025-11-12 02:03:21,472 [WARNING]     - Rozpoczêcie: ID 6462 (Czas: 2021-02-07 12:22:55)
+2025-11-12 02:03:21,472 [WARNING]     - Zakoñczenie: ID 6462 (Czas: 2021-02-07 17:51:46)
+2025-11-12 02:03:21,473 [WARNING]     - Cechy: (Amplituda: 83725744.00, Czas trwania: 19633)
+2025-11-12 02:03:21,473 [INFO] 
+>>> Analizujê plik: 330233.xlsx
+2025-11-12 02:03:21,488 [WARNING]   WYKRYTO Anomaliê Typu: 4
+2025-11-12 02:03:21,488 [WARNING]     - Zakres indeksów: [0 - 20574]
+2025-11-12 02:03:21,489 [WARNING]     - Rozpoczêcie: ID 6465 (Czas: 2021-02-07 19:10:39)
+2025-11-12 02:03:21,489 [WARNING]     - Zakoñczenie: ID 6465 (Czas: 2021-02-08 00:55:12)
+2025-11-12 02:03:21,490 [WARNING]     - Cechy: (Amplituda: 59623804.00, Czas trwania: 20575)
+2025-11-12 02:03:21,490 [INFO] 
+>>> Analizujê plik: 330484.xlsx
+2025-11-12 02:03:21,506 [WARNING]   WYKRYTO Anomaliê Typu: 2
+2025-11-12 02:03:21,506 [WARNING]     - Zakres indeksów: [0 - 18400]
+2025-11-12 02:03:21,507 [WARNING]     - Rozpoczêcie: ID 6471 (Czas: 2021-02-08 08:27:02)
+2025-11-12 02:03:21,507 [WARNING]     - Zakoñczenie: ID 6471 (Czas: 2021-02-08 13:35:21)
+2025-11-12 02:03:21,508 [WARNING]     - Cechy: (Amplituda: 115179256.00, Czas trwania: 18401)
+2025-11-12 02:03:21,521 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,521 [WARNING]     - Zakres indeksów: [18454 - 18480]
+2025-11-12 02:03:21,522 [WARNING]     - Rozpoczêcie: ID 6471 (Czas: 2021-02-08 13:34:36)
+2025-11-12 02:03:21,523 [WARNING]     - Zakoñczenie: ID 6471 (Czas: 2021-02-08 13:36:41)
+2025-11-12 02:03:21,523 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 27)
+2025-11-12 02:03:21,537 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,538 [WARNING]     - Zakres indeksów: [18528 - 18616]
+2025-11-12 02:03:21,538 [WARNING]     - Rozpoczêcie: ID 6471 (Czas: 2021-02-08 13:35:50)
+2025-11-12 02:03:21,539 [WARNING]     - Zakoñczenie: ID 6471 (Czas: 2021-02-08 13:38:57)
+2025-11-12 02:03:21,539 [WARNING]     - Cechy: (Amplituda: 5.90, Czas trwania: 89)
+2025-11-12 02:03:21,540 [INFO] 
+>>> Analizujê plik: 330642.xlsx
+2025-11-12 02:03:21,554 [WARNING]   WYKRYTO Anomaliê Typu: 2
+2025-11-12 02:03:21,555 [WARNING]     - Zakres indeksów: [0 - 18192]
+2025-11-12 02:03:21,555 [WARNING]     - Rozpoczêcie: ID 6473 (Czas: 2021-02-08 15:01:11)
+2025-11-12 02:03:21,556 [WARNING]     - Zakoñczenie: ID 6473 (Czas: 2021-02-08 20:06:02)
+2025-11-12 02:03:21,556 [WARNING]     - Cechy: (Amplituda: 125400632.00, Czas trwania: 18193)
+2025-11-12 02:03:21,556 [INFO] 
+>>> Analizujê plik: 331628.xlsx
+2025-11-12 02:03:21,576 [WARNING]   WYKRYTO Anomaliê Typu: 5
+2025-11-12 02:03:21,576 [WARNING]     - Zakres indeksów: [0 - 531]
+2025-11-12 02:03:21,579 [WARNING]     - Rozpoczêcie: ID 6500 (Czas: 2021-02-11 01:55:57)
+2025-11-12 02:03:21,579 [WARNING]     - Zakoñczenie: ID 6500 (Czas: 2021-02-11 02:06:27)
+2025-11-12 02:03:21,580 [WARNING]     - Cechy: (Amplituda: 19649432.00, Czas trwania: 532)
+2025-11-12 02:03:21,598 [WARNING]   WYKRYTO Anomaliê Typu: 5
+2025-11-12 02:03:21,598 [WARNING]     - Zakres indeksów: [4955 - 8322]
+2025-11-12 02:03:21,598 [WARNING]     - Rozpoczêcie: ID 6500 (Czas: 2021-02-11 03:18:32)
+2025-11-12 02:03:21,599 [WARNING]     - Zakoñczenie: ID 6500 (Czas: 2021-02-11 04:16:18)
+2025-11-12 02:03:21,599 [WARNING]     - Cechy: (Amplituda: 10863680.00, Czas trwania: 3368)
+2025-11-12 02:03:21,617 [WARNING]   WYKRYTO Anomaliê Typu: 4
+2025-11-12 02:03:21,617 [WARNING]     - Zakres indeksów: [8494 - 21433]
+2025-11-12 02:03:21,618 [WARNING]     - Rozpoczêcie: ID 6500 (Czas: 2021-02-11 04:17:31)
+2025-11-12 02:03:21,618 [WARNING]     - Zakoñczenie: ID 6500 (Czas: 2021-02-11 07:54:49)
+2025-11-12 02:03:21,618 [WARNING]     - Cechy: (Amplituda: 50633852.00, Czas trwania: 12940)
+2025-11-12 02:03:21,636 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,636 [WARNING]     - Zakres indeksów: [21796 - 22388]
+2025-11-12 02:03:21,637 [WARNING]     - Rozpoczêcie: ID 6500 (Czas: 2021-02-11 07:59:13)
+2025-11-12 02:03:21,637 [WARNING]     - Zakoñczenie: ID 6500 (Czas: 2021-02-11 08:10:44)
+2025-11-12 02:03:21,637 [WARNING]     - Cechy: (Amplituda: 4433248.00, Czas trwania: 593)
+2025-11-12 02:03:21,638 [INFO] 
+>>> Analizujê plik: 364497.xlsx
+2025-11-12 02:03:21,653 [WARNING]   WYKRYTO Anomaliê Typu: 3
+2025-11-12 02:03:21,653 [WARNING]     - Zakres indeksów: [0 - 15454]
+2025-11-12 02:03:21,653 [WARNING]     - Rozpoczêcie: ID 7097 (Czas: 2021-06-25 03:46:27)
+2025-11-12 02:03:21,656 [WARNING]     - Zakoñczenie: ID 7097 (Czas: 2021-06-25 08:05:40)
+2025-11-12 02:03:21,656 [WARNING]     - Cechy: (Amplituda: 27422842.00, Czas trwania: 15455)
+2025-11-12 02:03:21,657 [INFO] 
+>>> Analizujê plik: 370615.xlsx
+2025-11-12 02:03:21,667 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,667 [WARNING]     - Zakres indeksów: [4534 - 4803]
+2025-11-12 02:03:21,667 [WARNING]     - Rozpoczêcie: ID 7240 (Czas: 2021-07-12 23:17:58)
+2025-11-12 02:03:21,668 [WARNING]     - Zakoñczenie: ID 7240 (Czas: 2021-07-12 23:24:06)
+2025-11-12 02:03:21,668 [WARNING]     - Cechy: (Amplituda: 1504397.12, Czas trwania: 270)
+2025-11-12 02:03:21,678 [WARNING]   WYKRYTO Anomaliê Typu: 5
+2025-11-12 02:03:21,679 [WARNING]     - Zakres indeksów: [6433 - 10024]
+2025-11-12 02:03:21,679 [WARNING]     - Rozpoczêcie: ID 7240 (Czas: 2021-07-12 23:49:37)
+2025-11-12 02:03:21,680 [WARNING]     - Zakoñczenie: ID 7240 (Czas: 2021-07-13 00:51:07)
+2025-11-12 02:03:21,680 [WARNING]     - Cechy: (Amplituda: 16342881.00, Czas trwania: 3592)
+2025-11-12 02:03:21,681 [INFO] 
+>>> Analizujê plik: 612235.xlsx
+2025-11-12 02:03:21,703 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,703 [WARNING]     - Zakres indeksów: [11008 - 11790]
+2025-11-12 02:03:21,705 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 10:37:41)
+2025-11-12 02:03:21,706 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 10:52:22)
+2025-11-12 02:03:21,706 [WARNING]     - Cechy: (Amplituda: 30.06, Czas trwania: 783)
+2025-11-12 02:03:21,727 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,728 [WARNING]     - Zakres indeksów: [12698 - 13916]
+2025-11-12 02:03:21,728 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 11:05:51)
+2025-11-12 02:03:21,729 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 11:27:48)
+2025-11-12 02:03:21,729 [WARNING]     - Cechy: (Amplituda: 26.89, Czas trwania: 1219)
+2025-11-12 02:03:21,752 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,752 [WARNING]     - Zakres indeksów: [21658 - 21658]
+2025-11-12 02:03:21,754 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 13:35:11)
+2025-11-12 02:03:21,755 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 13:36:50)
+2025-11-12 02:03:21,755 [WARNING]     - Cechy: (Amplituda: 5.84, Czas trwania: 1)
+2025-11-12 02:03:21,776 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,776 [WARNING]     - Zakres indeksów: [22054 - 22069]
+2025-11-12 02:03:21,777 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 13:41:47)
+2025-11-12 02:03:21,778 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 13:43:41)
+2025-11-12 02:03:21,778 [WARNING]     - Cechy: (Amplituda: 5.88, Czas trwania: 16)
+2025-11-12 02:03:21,802 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,802 [WARNING]     - Zakres indeksów: [22270 - 22374]
+2025-11-12 02:03:21,802 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 13:45:23)
+2025-11-12 02:03:21,803 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 13:48:46)
+2025-11-12 02:03:21,803 [WARNING]     - Cechy: (Amplituda: 8.21, Czas trwania: 105)
+2025-11-12 02:03:21,824 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,825 [WARNING]     - Zakres indeksów: [22675 - 22676]
+2025-11-12 02:03:21,825 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 13:52:08)
+2025-11-12 02:03:21,828 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 13:53:48)
+2025-11-12 02:03:21,828 [WARNING]     - Cechy: (Amplituda: 5.86, Czas trwania: 2)
+2025-11-12 02:03:21,850 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,850 [WARNING]     - Zakres indeksów: [22846 - 22966]
+2025-11-12 02:03:21,850 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 13:54:59)
+2025-11-12 02:03:21,851 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 13:58:38)
+2025-11-12 02:03:21,851 [WARNING]     - Cechy: (Amplituda: 6.91, Czas trwania: 121)
+2025-11-12 02:03:21,872 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,872 [WARNING]     - Zakres indeksów: [22971 - 23029]
+2025-11-12 02:03:21,875 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 13:57:04)
+2025-11-12 02:03:21,875 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 13:59:41)
+2025-11-12 02:03:21,876 [WARNING]     - Cechy: (Amplituda: 7.21, Czas trwania: 59)
+2025-11-12 02:03:21,897 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,898 [WARNING]     - Zakres indeksów: [23154 - 23159]
+2025-11-12 02:03:21,898 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 14:00:07)
+2025-11-12 02:03:21,898 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 14:01:51)
+2025-11-12 02:03:21,899 [WARNING]     - Cechy: (Amplituda: 5.88, Czas trwania: 6)
+2025-11-12 02:03:21,920 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,921 [WARNING]     - Zakres indeksów: [23164 - 23170]
+2025-11-12 02:03:21,923 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 14:00:17)
+2025-11-12 02:03:21,923 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 14:02:02)
+2025-11-12 02:03:21,924 [WARNING]     - Cechy: (Amplituda: 5.88, Czas trwania: 7)
+2025-11-12 02:03:21,945 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,945 [WARNING]     - Zakres indeksów: [23175 - 23177]
+2025-11-12 02:03:21,946 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 14:00:28)
+2025-11-12 02:03:21,946 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 14:02:09)
+2025-11-12 02:03:21,947 [WARNING]     - Cechy: (Amplituda: 5.88, Czas trwania: 3)
+2025-11-12 02:03:21,971 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,972 [WARNING]     - Zakres indeksów: [23246 - 23249]
+2025-11-12 02:03:21,974 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 14:01:39)
+2025-11-12 02:03:21,975 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 14:03:21)
+2025-11-12 02:03:21,975 [WARNING]     - Cechy: (Amplituda: 5.88, Czas trwania: 4)
+2025-11-12 02:03:21,995 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:21,995 [WARNING]     - Zakres indeksów: [23251 - 23830]
+2025-11-12 02:03:21,996 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 14:01:44)
+2025-11-12 02:03:21,996 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 14:13:02)
+2025-11-12 02:03:21,997 [WARNING]     - Cechy: (Amplituda: 8.95, Czas trwania: 580)
+2025-11-12 02:03:22,021 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,021 [WARNING]     - Zakres indeksów: [23835 - 23836]
+2025-11-12 02:03:22,021 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 14:11:28)
+2025-11-12 02:03:22,022 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 14:13:08)
+2025-11-12 02:03:22,022 [WARNING]     - Cechy: (Amplituda: 5.93, Czas trwania: 2)
+2025-11-12 02:03:22,043 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,043 [WARNING]     - Zakres indeksów: [23840 - 23845]
+2025-11-12 02:03:22,044 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 14:11:33)
+2025-11-12 02:03:22,046 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 14:13:17)
+2025-11-12 02:03:22,047 [WARNING]     - Cechy: (Amplituda: 5.94, Czas trwania: 6)
+2025-11-12 02:03:22,067 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,068 [WARNING]     - Zakres indeksów: [23848 - 23851]
+2025-11-12 02:03:22,068 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 14:11:41)
+2025-11-12 02:03:22,069 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 14:13:23)
+2025-11-12 02:03:22,069 [WARNING]     - Cechy: (Amplituda: 5.90, Czas trwania: 4)
+2025-11-12 02:03:22,089 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,090 [WARNING]     - Zakres indeksów: [23876 - 28146]
+2025-11-12 02:03:22,090 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 14:12:09)
+2025-11-12 02:03:22,091 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:24:58)
+2025-11-12 02:03:22,093 [WARNING]     - Cechy: (Amplituda: 23.24, Czas trwania: 4271)
+2025-11-12 02:03:22,114 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,114 [WARNING]     - Zakres indeksów: [28172 - 28174]
+2025-11-12 02:03:22,115 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:23:45)
+2025-11-12 02:03:22,115 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:25:26)
+2025-11-12 02:03:22,116 [WARNING]     - Cechy: (Amplituda: 5.99, Czas trwania: 3)
+2025-11-12 02:03:22,137 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,137 [WARNING]     - Zakres indeksów: [28380 - 28403]
+2025-11-12 02:03:22,139 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:27:13)
+2025-11-12 02:03:22,140 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:29:15)
+2025-11-12 02:03:22,140 [WARNING]     - Cechy: (Amplituda: 6.48, Czas trwania: 24)
+2025-11-12 02:03:22,161 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,162 [WARNING]     - Zakres indeksów: [28525 - 28529]
+2025-11-12 02:03:22,162 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:29:38)
+2025-11-12 02:03:22,163 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:31:21)
+2025-11-12 02:03:22,163 [WARNING]     - Cechy: (Amplituda: 5.80, Czas trwania: 5)
+2025-11-12 02:03:22,185 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,185 [WARNING]     - Zakres indeksów: [28531 - 28536]
+2025-11-12 02:03:22,187 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:29:44)
+2025-11-12 02:03:22,188 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:31:28)
+2025-11-12 02:03:22,188 [WARNING]     - Cechy: (Amplituda: 5.80, Czas trwania: 6)
+2025-11-12 02:03:22,209 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,210 [WARNING]     - Zakres indeksów: [28547 - 28548]
+2025-11-12 02:03:22,210 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:30:00)
+2025-11-12 02:03:22,211 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:31:40)
+2025-11-12 02:03:22,211 [WARNING]     - Cechy: (Amplituda: 5.80, Czas trwania: 2)
+2025-11-12 02:03:22,233 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,233 [WARNING]     - Zakres indeksów: [28551 - 28568]
+2025-11-12 02:03:22,235 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:30:04)
+2025-11-12 02:03:22,236 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:32:00)
+2025-11-12 02:03:22,236 [WARNING]     - Cechy: (Amplituda: 6.13, Czas trwania: 18)
+2025-11-12 02:03:22,257 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,257 [WARNING]     - Zakres indeksów: [28573 - 28684]
+2025-11-12 02:03:22,258 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:30:26)
+2025-11-12 02:03:22,258 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:33:56)
+2025-11-12 02:03:22,259 [WARNING]     - Cechy: (Amplituda: 7.49, Czas trwania: 112)
+2025-11-12 02:03:22,281 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,282 [WARNING]     - Zakres indeksów: [28688 - 28688]
+2025-11-12 02:03:22,284 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:32:21)
+2025-11-12 02:03:22,285 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:34:00)
+2025-11-12 02:03:22,285 [WARNING]     - Cechy: (Amplituda: 5.83, Czas trwania: 1)
+2025-11-12 02:03:22,308 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,309 [WARNING]     - Zakres indeksów: [28705 - 28840]
+2025-11-12 02:03:22,309 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:32:38)
+2025-11-12 02:03:22,312 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:36:32)
+2025-11-12 02:03:22,312 [WARNING]     - Cechy: (Amplituda: 7.51, Czas trwania: 136)
+2025-11-12 02:03:22,335 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,335 [WARNING]     - Zakres indeksów: [28955 - 28958]
+2025-11-12 02:03:22,336 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:36:48)
+2025-11-12 02:03:22,336 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:38:30)
+2025-11-12 02:03:22,337 [WARNING]     - Cechy: (Amplituda: 5.76, Czas trwania: 4)
+2025-11-12 02:03:22,358 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,358 [WARNING]     - Zakres indeksów: [28977 - 28977]
+2025-11-12 02:03:22,360 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:37:10)
+2025-11-12 02:03:22,361 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:38:49)
+2025-11-12 02:03:22,361 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 1)
+2025-11-12 02:03:22,383 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,383 [WARNING]     - Zakres indeksów: [28983 - 28987]
+2025-11-12 02:03:22,384 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:37:16)
+2025-11-12 02:03:22,384 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:38:59)
+2025-11-12 02:03:22,384 [WARNING]     - Cechy: (Amplituda: 6.03, Czas trwania: 5)
+2025-11-12 02:03:22,406 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,406 [WARNING]     - Zakres indeksów: [28989 - 29096]
+2025-11-12 02:03:22,409 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:37:22)
+2025-11-12 02:03:22,409 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:40:48)
+2025-11-12 02:03:22,410 [WARNING]     - Cechy: (Amplituda: 7.03, Czas trwania: 108)
+2025-11-12 02:03:22,433 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,433 [WARNING]     - Zakres indeksów: [29099 - 29099]
+2025-11-12 02:03:22,434 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:39:12)
+2025-11-12 02:03:22,434 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:40:51)
+2025-11-12 02:03:22,436 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 1)
+2025-11-12 02:03:22,459 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,459 [WARNING]     - Zakres indeksów: [29102 - 29281]
+2025-11-12 02:03:22,460 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:39:15)
+2025-11-12 02:03:22,460 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:43:53)
+2025-11-12 02:03:22,461 [WARNING]     - Cechy: (Amplituda: 8.49, Czas trwania: 180)
+2025-11-12 02:03:22,484 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,484 [WARNING]     - Zakres indeksów: [29283 - 29285]
+2025-11-12 02:03:22,487 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:42:16)
+2025-11-12 02:03:22,487 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:43:57)
+2025-11-12 02:03:22,488 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 3)
+2025-11-12 02:03:22,510 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,510 [WARNING]     - Zakres indeksów: [29369 - 29369]
+2025-11-12 02:03:22,511 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:43:42)
+2025-11-12 02:03:22,512 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 15:45:21)
+2025-11-12 02:03:22,512 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 1)
+2025-11-12 02:03:22,538 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,538 [WARNING]     - Zakres indeksów: [29373 - 32307]
+2025-11-12 02:03:22,539 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 15:43:46)
+2025-11-12 02:03:22,539 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:34:19)
+2025-11-12 02:03:22,540 [WARNING]     - Cechy: (Amplituda: 13.86, Czas trwania: 2935)
+2025-11-12 02:03:22,562 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,562 [WARNING]     - Zakres indeksów: [33061 - 33062]
+2025-11-12 02:03:22,565 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:45:14)
+2025-11-12 02:03:22,566 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:46:54)
+2025-11-12 02:03:22,566 [WARNING]     - Cechy: (Amplituda: 5.82, Czas trwania: 2)
+2025-11-12 02:03:22,588 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,588 [WARNING]     - Zakres indeksów: [33068 - 33074]
+2025-11-12 02:03:22,589 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:45:21)
+2025-11-12 02:03:22,589 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:47:06)
+2025-11-12 02:03:22,589 [WARNING]     - Cechy: (Amplituda: 5.82, Czas trwania: 7)
+2025-11-12 02:03:22,613 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,613 [WARNING]     - Zakres indeksów: [33079 - 33089]
+2025-11-12 02:03:22,616 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:45:32)
+2025-11-12 02:03:22,616 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:47:21)
+2025-11-12 02:03:22,617 [WARNING]     - Cechy: (Amplituda: 5.84, Czas trwania: 11)
+2025-11-12 02:03:22,639 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,640 [WARNING]     - Zakres indeksów: [33140 - 33167]
+2025-11-12 02:03:22,641 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:46:33)
+2025-11-12 02:03:22,641 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:48:39)
+2025-11-12 02:03:22,642 [WARNING]     - Cechy: (Amplituda: 6.49, Czas trwania: 28)
+2025-11-12 02:03:22,664 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,665 [WARNING]     - Zakres indeksów: [33198 - 33220]
+2025-11-12 02:03:22,665 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:47:31)
+2025-11-12 02:03:22,665 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:49:32)
+2025-11-12 02:03:22,666 [WARNING]     - Cechy: (Amplituda: 6.23, Czas trwania: 23)
+2025-11-12 02:03:22,689 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,689 [WARNING]     - Zakres indeksów: [33253 - 33253]
+2025-11-12 02:03:22,691 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:48:26)
+2025-11-12 02:03:22,692 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:50:05)
+2025-11-12 02:03:22,693 [WARNING]     - Cechy: (Amplituda: 5.87, Czas trwania: 1)
+2025-11-12 02:03:22,716 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,716 [WARNING]     - Zakres indeksów: [33257 - 33297]
+2025-11-12 02:03:22,718 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:48:30)
+2025-11-12 02:03:22,719 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:50:49)
+2025-11-12 02:03:22,719 [WARNING]     - Cechy: (Amplituda: 6.55, Czas trwania: 41)
+2025-11-12 02:03:22,742 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,742 [WARNING]     - Zakres indeksów: [33308 - 33420]
+2025-11-12 02:03:22,743 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:49:21)
+2025-11-12 02:03:22,744 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:52:52)
+2025-11-12 02:03:22,744 [WARNING]     - Cechy: (Amplituda: 7.00, Czas trwania: 113)
+2025-11-12 02:03:22,768 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,768 [WARNING]     - Zakres indeksów: [33462 - 33464]
+2025-11-12 02:03:22,771 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:51:55)
+2025-11-12 02:03:22,772 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:53:36)
+2025-11-12 02:03:22,772 [WARNING]     - Cechy: (Amplituda: 5.87, Czas trwania: 3)
+2025-11-12 02:03:22,795 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,797 [WARNING]     - Zakres indeksów: [33477 - 33596]
+2025-11-12 02:03:22,797 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:52:10)
+2025-11-12 02:03:22,798 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:55:48)
+2025-11-12 02:03:22,799 [WARNING]     - Cechy: (Amplituda: 7.17, Czas trwania: 120)
+2025-11-12 02:03:22,821 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,821 [WARNING]     - Zakres indeksów: [33599 - 33602]
+2025-11-12 02:03:22,822 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:54:12)
+2025-11-12 02:03:22,822 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:55:54)
+2025-11-12 02:03:22,822 [WARNING]     - Cechy: (Amplituda: 5.99, Czas trwania: 4)
+2025-11-12 02:03:22,847 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,847 [WARNING]     - Zakres indeksów: [33611 - 33613]
+2025-11-12 02:03:22,849 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:54:24)
+2025-11-12 02:03:22,850 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:56:05)
+2025-11-12 02:03:22,851 [WARNING]     - Cechy: (Amplituda: 6.01, Czas trwania: 3)
+2025-11-12 02:03:22,873 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,874 [WARNING]     - Zakres indeksów: [33623 - 33624]
+2025-11-12 02:03:22,875 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:54:36)
+2025-11-12 02:03:22,876 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:56:16)
+2025-11-12 02:03:22,876 [WARNING]     - Cechy: (Amplituda: 5.69, Czas trwania: 2)
+2025-11-12 02:03:22,899 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,899 [WARNING]     - Zakres indeksów: [33654 - 33654]
+2025-11-12 02:03:22,900 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:55:07)
+2025-11-12 02:03:22,900 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:56:46)
+2025-11-12 02:03:22,901 [WARNING]     - Cechy: (Amplituda: 5.78, Czas trwania: 1)
+2025-11-12 02:03:22,924 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,924 [WARNING]     - Zakres indeksów: [33662 - 33662]
+2025-11-12 02:03:22,926 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:55:15)
+2025-11-12 02:03:22,927 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:56:54)
+2025-11-12 02:03:22,928 [WARNING]     - Cechy: (Amplituda: 5.80, Czas trwania: 1)
+2025-11-12 02:03:22,951 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,951 [WARNING]     - Zakres indeksów: [33709 - 33710]
+2025-11-12 02:03:22,954 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:56:02)
+2025-11-12 02:03:22,955 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:57:42)
+2025-11-12 02:03:22,955 [WARNING]     - Cechy: (Amplituda: 5.78, Czas trwania: 2)
+2025-11-12 02:03:22,983 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:22,983 [WARNING]     - Zakres indeksów: [33721 - 33724]
+2025-11-12 02:03:22,986 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:56:14)
+2025-11-12 02:03:22,987 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 16:57:56)
+2025-11-12 02:03:22,987 [WARNING]     - Cechy: (Amplituda: 5.70, Czas trwania: 4)
+2025-11-12 02:03:23,010 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:23,010 [WARNING]     - Zakres indeksów: [33734 - 34952]
+2025-11-12 02:03:23,010 [WARNING]     - Rozpoczêcie: ID 9201 (Czas: 2022-07-23 16:56:27)
+2025-11-12 02:03:23,011 [WARNING]     - Zakoñczenie: ID 9201 (Czas: 2022-07-23 17:18:24)
+2025-11-12 02:03:23,011 [WARNING]     - Cechy: (Amplituda: 35.89, Czas trwania: 1219)
+2025-11-12 02:03:23,012 [INFO] 
+>>> Analizujê plik: 636195.xlsx
+2025-11-12 02:03:23,023 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:23,023 [WARNING]     - Zakres indeksów: [1807 - 1852]
+2025-11-12 02:03:23,024 [WARNING]     - Rozpoczêcie: ID 9437 (Czas: 2022-08-24 18:28:15)
+2025-11-12 02:03:23,024 [WARNING]     - Zakoñczenie: ID 9437 (Czas: 2022-08-24 18:30:39)
+2025-11-12 02:03:23,024 [WARNING]     - Cechy: (Amplituda: 9.87, Czas trwania: 46)
+2025-11-12 02:03:23,033 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:23,033 [WARNING]     - Zakres indeksów: [2234 - 2235]
+2025-11-12 02:03:23,033 [WARNING]     - Rozpoczêcie: ID 9437 (Czas: 2022-08-24 18:35:22)
+2025-11-12 02:03:23,034 [WARNING]     - Zakoñczenie: ID 9437 (Czas: 2022-08-24 18:37:02)
+2025-11-12 02:03:23,035 [WARNING]     - Cechy: (Amplituda: 5.77, Czas trwania: 2)
+2025-11-12 02:03:23,042 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:23,043 [WARNING]     - Zakres indeksów: [2250 - 2254]
+2025-11-12 02:03:23,043 [WARNING]     - Rozpoczêcie: ID 9437 (Czas: 2022-08-24 18:35:38)
+2025-11-12 02:03:23,043 [WARNING]     - Zakoñczenie: ID 9437 (Czas: 2022-08-24 18:37:21)
+2025-11-12 02:03:23,046 [WARNING]     - Cechy: (Amplituda: 5.93, Czas trwania: 5)
+2025-11-12 02:03:23,055 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:23,055 [WARNING]     - Zakres indeksów: [2261 - 2263]
+2025-11-12 02:03:23,055 [WARNING]     - Rozpoczêcie: ID 9437 (Czas: 2022-08-24 18:35:49)
+2025-11-12 02:03:23,056 [WARNING]     - Zakoñczenie: ID 9437 (Czas: 2022-08-24 18:37:30)
+2025-11-12 02:03:23,056 [WARNING]     - Cechy: (Amplituda: 5.84, Czas trwania: 3)
+2025-11-12 02:03:23,065 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:23,065 [WARNING]     - Zakres indeksów: [2266 - 2823]
+2025-11-12 02:03:23,066 [WARNING]     - Rozpoczêcie: ID 9437 (Czas: 2022-08-24 18:35:54)
+2025-11-12 02:03:23,066 [WARNING]     - Zakoñczenie: ID 9437 (Czas: 2022-08-24 18:46:50)
+2025-11-12 02:03:23,066 [WARNING]     - Cechy: (Amplituda: 13.84, Czas trwania: 558)
+2025-11-12 02:03:23,074 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:23,074 [WARNING]     - Zakres indeksów: [2833 - 2834]
+2025-11-12 02:03:23,075 [WARNING]     - Rozpoczêcie: ID 9437 (Czas: 2022-08-24 18:45:21)
+2025-11-12 02:03:23,077 [WARNING]     - Zakoñczenie: ID 9437 (Czas: 2022-08-24 18:47:01)
+2025-11-12 02:03:23,078 [WARNING]     - Cechy: (Amplituda: 5.89, Czas trwania: 2)
+2025-11-12 02:03:23,086 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:23,087 [WARNING]     - Zakres indeksów: [2868 - 2868]
+2025-11-12 02:03:23,087 [WARNING]     - Rozpoczêcie: ID 9437 (Czas: 2022-08-24 18:45:56)
+2025-11-12 02:03:23,087 [WARNING]     - Zakoñczenie: ID 9437 (Czas: 2022-08-24 18:47:35)
+2025-11-12 02:03:23,088 [WARNING]     - Cechy: (Amplituda: 5.77, Czas trwania: 1)
+2025-11-12 02:03:23,097 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:23,097 [WARNING]     - Zakres indeksów: [2873 - 2879]
+2025-11-12 02:03:23,097 [WARNING]     - Rozpoczêcie: ID 9437 (Czas: 2022-08-24 18:46:01)
+2025-11-12 02:03:23,098 [WARNING]     - Zakoñczenie: ID 9437 (Czas: 2022-08-24 18:47:46)
+2025-11-12 02:03:23,098 [WARNING]     - Cechy: (Amplituda: 6.03, Czas trwania: 7)
+2025-11-12 02:03:23,106 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:23,108 [WARNING]     - Zakres indeksów: [2898 - 2898]
+2025-11-12 02:03:23,109 [WARNING]     - Rozpoczêcie: ID 9437 (Czas: 2022-08-24 18:46:26)
+2025-11-12 02:03:23,109 [WARNING]     - Zakoñczenie: ID 9437 (Czas: 2022-08-24 18:48:05)
+2025-11-12 02:03:23,110 [WARNING]     - Cechy: (Amplituda: 5.85, Czas trwania: 1)
+2025-11-12 02:03:23,118 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:23,118 [WARNING]     - Zakres indeksów: [2901 - 2906]
+2025-11-12 02:03:23,119 [WARNING]     - Rozpoczêcie: ID 9437 (Czas: 2022-08-24 18:46:29)
+2025-11-12 02:03:23,119 [WARNING]     - Zakoñczenie: ID 9437 (Czas: 2022-08-24 18:48:13)
+2025-11-12 02:03:23,119 [WARNING]     - Cechy: (Amplituda: 6.08, Czas trwania: 6)
+2025-11-12 02:03:23,129 [WARNING]   WYKRYTO Anomaliê Typu: 1
+2025-11-12 02:03:23,129 [WARNING]     - Zakres indeksów: [2914 - 2943]
+2025-11-12 02:03:23,129 [WARNING]     - Rozpoczêcie: ID 9437 (Czas: 2022-08-24 18:46:42)
+2025-11-12 02:03:23,130 [WARNING]     - Zakoñczenie: ID 9437 (Czas: 2022-08-24 18:48:50)
+2025-11-12 02:03:23,130 [WARNING]     - Cechy: (Amplituda: 6.54, Czas trwania: 30)
+2025-11-12 02:03:23,131 [INFO] 
+--- Generowanie wykresów dla ka¿dego typu anomalii... ---
+2025-11-12 02:03:23,131 [INFO] Generujê wykres dla Typu 5 -> outputs\RLV1\plot_RLV1_Typ_5.png
+2025-11-12 02:03:23,386 [INFO] Generujê wykres dla Typu 1 -> outputs\RLV1\plot_RLV1_Typ_1.png
+2025-11-12 02:03:23,569 [INFO] Generujê wykres dla Typu 3 -> outputs\RLV1\plot_RLV1_Typ_3.png
+2025-11-12 02:03:23,773 [INFO] Generujê wykres dla Typu 4 -> outputs\RLV1\plot_RLV1_Typ_4.png
+2025-11-12 02:03:23,982 [INFO] Generujê wykres dla Typu 2 -> outputs\RLV1\plot_RLV1_Typ_2.png
+2025-11-12 02:03:24,187 [INFO] Wszystkie wykresy wygenerowane.
+2025-11-12 02:03:24,191 [INFO] Pomyœlnie zapisano posortowane anomalie w: outputs\RLV1\classified_anomalies_RLV1.json
+2025-11-12 02:03:24,192 [INFO] --- Klasyfikacja Zakoñczona ---
