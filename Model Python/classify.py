@@ -47,14 +47,10 @@ class LSTMAutoencoder(nn.Module):
 # =============================================================================
 
 def plot_3d_scatter_analysis(processed_events, log_dir, family_name):
-    """Generuje wykres 3D: Czas vs Błąd vs Zmienność."""
-    # Import wymagany do działania 3D
-    from mpl_toolkits.mplot3d import Axes3D 
+    """Wersja PANCERNA: Ręczne obliczanie logarytmu przed rysowaniem."""
+    from mpl_toolkits.mplot3d import Axes3D
 
-    fig = plt.figure(figsize=(16, 12))
-    ax = fig.add_subplot(111, projection='3d')
-    
-    # Przygotowanie danych
+    # 1. Przygotowanie danych
     data = []
     for event in processed_events:
         if 'type' not in event: continue
@@ -65,49 +61,55 @@ def plot_3d_scatter_analysis(processed_events, log_dir, family_name):
             'Type': event['type'] # Int
         })
     
-    if not data: return
+    if not data:
+        logging.warning("Brak danych do wykresu 3D.")
+        return
 
-    # Sortujemy typy, żeby kolory w legendzie były po kolei
-    unique_types = sorted(list(set(d['Type'] for d in data)))
+    df = pd.DataFrame(data)
 
+    # 2. Matematyka (Ręczny Logarytm)
+    # Zamieniamy 0 na małą liczbę, żeby logarytm nie wybuchł
     epsilon = 1e-6
+    df['Log_Duration'] = np.log10(df['Duration'] + epsilon)
+    df['Log_Mean_Error'] = np.log10(df['Mean Error'] + epsilon)
+    df['Log_Variability'] = np.log10(df['Variability'] + epsilon)
 
-    # Rysujemy seriami (dla każdego typu osobno), żeby legenda działała poprawnie
+    # 3. Rysowanie (Na zwykłych osiach liniowych, bo dane są już zlogarytmowane)
+    fig = plt.figure(figsize=(16, 12))
+    ax = fig.add_subplot(111, projection='3d')
+
+    unique_types = sorted(df['Type'].unique())
+
     for type_id in unique_types:
-        # Filtrujemy punkty tylko dla tego typu
-        points = [d for d in data if d['Type'] == type_id]
-        
-        # Dodajemy epsilon do każdej wartości by uniknąć wartości 0 przy tworzeniu logarytmicznego wykresu
-        xs = [p['Duration'] + epsilon for p in points]
-        ys = [p['Mean Error'] + epsilon for p in points]
-        zs = [p['Variability'] + epsilon for p in points]
-        
+        subset = df[df['Type'] == type_id]
         color = CLUSTER_COLORS.get(type_id, 'black')
         
-        # Rysujemy punkty
-        ax.scatter(xs, ys, zs, c=color, label=f'Typ {type_id}', s=60, alpha=0.7, edgecolors='w')
+        ax.scatter(
+            subset['Log_Duration'], 
+            subset['Log_Mean_Error'], 
+            subset['Log_Variability'],
+            c=color,
+            label=f'Typ {type_id}',
+            s=60, 
+            alpha=0.8, 
+            edgecolors='w'
+        )
 
-    # Ustawiamy skalę logarytmiczną dla osi
-    # (bo każda cecha ma ogromny rozrzut)
-    ax.set_xscale('log')
-    ax.set_yscale('log')
-    ax.set_zscale('log')
-
-    # Opisy osi
-    ax.set_xlabel('Czas Trwania (Duration)')
-    ax.set_ylabel('Średni Błąd (Mean Error)')
-    ax.set_zlabel('Zmienność (Variability)')
+    # Opisy osi (informujemy, że to Log10)
+    ax.set_xlabel('Log10(Czas Trwania)')
+    ax.set_ylabel('Log10(Średni Błąd)')
+    ax.set_zlabel('Log10(Zmienność)')
     
-    ax.set_title(f"Analiza 3D Anomalii ({family_name})\n(Wszystkie osie w skali logarytmicznej)")
+    ax.set_title(f"Analiza 3D Anomalii ({family_name})\n(Wartości zlogarytmowane ręcznie)")
     ax.legend(loc='upper left')
     
-    # Ustawiamy widok kamery (kąt), żeby było dobrze widać głębię
+    # Kąt kamery
     ax.view_init(elev=20, azim=135)
-    
+
     path = os.path.join(log_dir, f"ANALYSIS_3D_Scatter_{family_name}.png")
     plt.savefig(path, dpi=150, bbox_inches='tight')
     plt.close()
-    logging.info(f"Zapisano wykres 3D: {path}")
+    logging.info(f"Zapisano wykres 3D (metoda pancerna): {path}")
 
 def plot_scatter_analysis(processed_events, log_dir, family_name):
     """Rysuje mapę anomalii: Czas trwania vs Amplituda."""

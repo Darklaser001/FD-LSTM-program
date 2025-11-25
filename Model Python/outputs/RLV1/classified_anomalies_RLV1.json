@@ -1,0 +1,1486 @@
+{
+    "Anomalia Typu 1": [
+        {
+            "file": "316367.xlsx",
+            "local_start_index": 2738,
+            "local_end_index": 3002,
+            "features": {
+                "duration": 265,
+                "amplitude": 33126.75,
+                "mean_error": 31992.203125,
+                "variability": 4844.0458984375
+            }
+        },
+        {
+            "file": "331628.xlsx",
+            "local_start_index": 21640,
+            "local_end_index": 22388,
+            "features": {
+                "duration": 749,
+                "amplitude": 2765568.0,
+                "mean_error": 1202227.25,
+                "variability": 890976.9375
+            }
+        },
+        {
+            "file": "370615.xlsx",
+            "local_start_index": 4378,
+            "local_end_index": 4802,
+            "features": {
+                "duration": 425,
+                "amplitude": 930527.6875,
+                "mean_error": 560433.5625,
+                "variability": 309926.78125
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 10920,
+            "local_end_index": 11631,
+            "features": {
+                "duration": 712,
+                "amplitude": 32.064002990722656,
+                "mean_error": 25.225496292114258,
+                "variability": 4.355325222015381
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 12627,
+            "local_end_index": 13782,
+            "features": {
+                "duration": 1156,
+                "amplitude": 27.131921768188477,
+                "mean_error": 24.45270347595215,
+                "variability": 3.055652141571045
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 24004,
+            "local_end_index": 24020,
+            "features": {
+                "duration": 17,
+                "amplitude": 15.333337783813477,
+                "mean_error": 14.970608711242676,
+                "variability": 0.1423054337501526
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 24026,
+            "local_end_index": 24026,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.72883129119873,
+                "mean_error": 14.72883129119873,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 24039,
+            "local_end_index": 24070,
+            "features": {
+                "duration": 32,
+                "amplitude": 15.210580825805664,
+                "mean_error": 14.859711647033691,
+                "variability": 0.14186735451221466
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 24083,
+            "local_end_index": 24083,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.663158416748047,
+                "mean_error": 14.663158416748047,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 24087,
+            "local_end_index": 24087,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.64389419555664,
+                "mean_error": 14.64389419555664,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 24091,
+            "local_end_index": 24092,
+            "features": {
+                "duration": 2,
+                "amplitude": 14.741857528686523,
+                "mean_error": 14.692262649536133,
+                "variability": 0.04959440231323242
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 24584,
+            "local_end_index": 24591,
+            "features": {
+                "duration": 8,
+                "amplitude": 15.487935066223145,
+                "mean_error": 14.987380027770996,
+                "variability": 0.2970166802406311
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 24651,
+            "local_end_index": 24651,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.720041275024414,
+                "mean_error": 14.720041275024414,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 24654,
+            "local_end_index": 24668,
+            "features": {
+                "duration": 15,
+                "amplitude": 14.885193824768066,
+                "mean_error": 14.77871036529541,
+                "variability": 0.06916036456823349
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 24680,
+            "local_end_index": 24680,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.692093849182129,
+                "mean_error": 14.692093849182129,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 24682,
+            "local_end_index": 24682,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.655167579650879,
+                "mean_error": 14.655167579650879,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 24716,
+            "local_end_index": 24717,
+            "features": {
+                "duration": 2,
+                "amplitude": 14.705853462219238,
+                "mean_error": 14.704360961914062,
+                "variability": 0.0014925003051757812
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 24824,
+            "local_end_index": 24827,
+            "features": {
+                "duration": 4,
+                "amplitude": 15.705780029296875,
+                "mean_error": 15.504913330078125,
+                "variability": 0.19659562408924103
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 24841,
+            "local_end_index": 24844,
+            "features": {
+                "duration": 4,
+                "amplitude": 14.992631912231445,
+                "mean_error": 14.890780448913574,
+                "variability": 0.08172431588172913
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 24871,
+            "local_end_index": 24871,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.859062194824219,
+                "mean_error": 14.859062194824219,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 24908,
+            "local_end_index": 24909,
+            "features": {
+                "duration": 2,
+                "amplitude": 14.817643165588379,
+                "mean_error": 14.793458938598633,
+                "variability": 0.024184226989746094
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 24920,
+            "local_end_index": 24932,
+            "features": {
+                "duration": 13,
+                "amplitude": 15.021735191345215,
+                "mean_error": 14.833616256713867,
+                "variability": 0.09790699928998947
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 24940,
+            "local_end_index": 24949,
+            "features": {
+                "duration": 10,
+                "amplitude": 14.787701606750488,
+                "mean_error": 14.715855598449707,
+                "variability": 0.04671818017959595
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 24969,
+            "local_end_index": 24969,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.694754600524902,
+                "mean_error": 14.694754600524902,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 24973,
+            "local_end_index": 24973,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.868037223815918,
+                "mean_error": 14.868037223815918,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 24976,
+            "local_end_index": 24976,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.763800621032715,
+                "mean_error": 14.763800621032715,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 24982,
+            "local_end_index": 25008,
+            "features": {
+                "duration": 27,
+                "amplitude": 15.181595802307129,
+                "mean_error": 14.885293006896973,
+                "variability": 0.157567098736763
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25010,
+            "local_end_index": 25025,
+            "features": {
+                "duration": 16,
+                "amplitude": 15.059991836547852,
+                "mean_error": 14.93504524230957,
+                "variability": 0.11150906980037689
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25027,
+            "local_end_index": 25093,
+            "features": {
+                "duration": 67,
+                "amplitude": 15.539718627929688,
+                "mean_error": 15.236507415771484,
+                "variability": 0.1839594841003418
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25096,
+            "local_end_index": 25109,
+            "features": {
+                "duration": 14,
+                "amplitude": 14.922887802124023,
+                "mean_error": 14.768855094909668,
+                "variability": 0.07158569991588593
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25121,
+            "local_end_index": 25141,
+            "features": {
+                "duration": 21,
+                "amplitude": 15.458525657653809,
+                "mean_error": 15.16736125946045,
+                "variability": 0.18306559324264526
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25143,
+            "local_end_index": 25152,
+            "features": {
+                "duration": 10,
+                "amplitude": 15.264734268188477,
+                "mean_error": 15.056719779968262,
+                "variability": 0.1679728478193283
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25154,
+            "local_end_index": 25154,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.972841262817383,
+                "mean_error": 14.972841262817383,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25157,
+            "local_end_index": 25168,
+            "features": {
+                "duration": 12,
+                "amplitude": 15.653655052185059,
+                "mean_error": 15.43416690826416,
+                "variability": 0.14806894958019257
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25171,
+            "local_end_index": 25171,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.65479564666748,
+                "mean_error": 14.65479564666748,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25180,
+            "local_end_index": 25182,
+            "features": {
+                "duration": 3,
+                "amplitude": 15.23939037322998,
+                "mean_error": 15.117220878601074,
+                "variability": 0.11625897884368896
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25185,
+            "local_end_index": 25186,
+            "features": {
+                "duration": 2,
+                "amplitude": 15.813116073608398,
+                "mean_error": 15.234420776367188,
+                "variability": 0.5786957740783691
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25192,
+            "local_end_index": 25193,
+            "features": {
+                "duration": 2,
+                "amplitude": 14.867499351501465,
+                "mean_error": 14.847835540771484,
+                "variability": 0.019663333892822266
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25197,
+            "local_end_index": 25197,
+            "features": {
+                "duration": 1,
+                "amplitude": 15.077672004699707,
+                "mean_error": 15.077672004699707,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25204,
+            "local_end_index": 25204,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.67230224609375,
+                "mean_error": 14.67230224609375,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25210,
+            "local_end_index": 25216,
+            "features": {
+                "duration": 7,
+                "amplitude": 16.24688720703125,
+                "mean_error": 15.412736892700195,
+                "variability": 0.5837032794952393
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25246,
+            "local_end_index": 25246,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.820170402526855,
+                "mean_error": 14.820170402526855,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25334,
+            "local_end_index": 25337,
+            "features": {
+                "duration": 4,
+                "amplitude": 15.569599151611328,
+                "mean_error": 15.164440155029297,
+                "variability": 0.32635971903800964
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25345,
+            "local_end_index": 25345,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.988025665283203,
+                "mean_error": 14.988025665283203,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25351,
+            "local_end_index": 25351,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.747520446777344,
+                "mean_error": 14.747520446777344,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25364,
+            "local_end_index": 25369,
+            "features": {
+                "duration": 6,
+                "amplitude": 15.226706504821777,
+                "mean_error": 15.040312767028809,
+                "variability": 0.13035517930984497
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25374,
+            "local_end_index": 25380,
+            "features": {
+                "duration": 7,
+                "amplitude": 15.01176929473877,
+                "mean_error": 14.866986274719238,
+                "variability": 0.10129736363887787
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25384,
+            "local_end_index": 25384,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.675625801086426,
+                "mean_error": 14.675625801086426,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25422,
+            "local_end_index": 25423,
+            "features": {
+                "duration": 2,
+                "amplitude": 14.791674613952637,
+                "mean_error": 14.762825012207031,
+                "variability": 0.02884960174560547
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25425,
+            "local_end_index": 25426,
+            "features": {
+                "duration": 2,
+                "amplitude": 14.769489288330078,
+                "mean_error": 14.7066068649292,
+                "variability": 0.0628824234008789
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25428,
+            "local_end_index": 25429,
+            "features": {
+                "duration": 2,
+                "amplitude": 14.7079439163208,
+                "mean_error": 14.680753707885742,
+                "variability": 0.027190685272216797
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25497,
+            "local_end_index": 25642,
+            "features": {
+                "duration": 146,
+                "amplitude": 18.785415649414062,
+                "mean_error": 15.790313720703125,
+                "variability": 0.7917042970657349
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25652,
+            "local_end_index": 25652,
+            "features": {
+                "duration": 1,
+                "amplitude": 15.11388111114502,
+                "mean_error": 15.11388111114502,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25655,
+            "local_end_index": 25656,
+            "features": {
+                "duration": 2,
+                "amplitude": 15.048644065856934,
+                "mean_error": 14.874727249145508,
+                "variability": 0.17391681671142578
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25659,
+            "local_end_index": 25659,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.721875190734863,
+                "mean_error": 14.721875190734863,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25663,
+            "local_end_index": 25667,
+            "features": {
+                "duration": 5,
+                "amplitude": 16.277021408081055,
+                "mean_error": 15.324686050415039,
+                "variability": 0.6681312322616577
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25672,
+            "local_end_index": 25677,
+            "features": {
+                "duration": 6,
+                "amplitude": 16.802335739135742,
+                "mean_error": 16.240821838378906,
+                "variability": 0.6198611259460449
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25679,
+            "local_end_index": 25707,
+            "features": {
+                "duration": 29,
+                "amplitude": 16.9981746673584,
+                "mean_error": 15.86237621307373,
+                "variability": 0.7239382266998291
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25784,
+            "local_end_index": 25784,
+            "features": {
+                "duration": 1,
+                "amplitude": 15.520145416259766,
+                "mean_error": 15.520145416259766,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25796,
+            "local_end_index": 25798,
+            "features": {
+                "duration": 3,
+                "amplitude": 15.266733169555664,
+                "mean_error": 15.080302238464355,
+                "variability": 0.14322514832019806
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25802,
+            "local_end_index": 25808,
+            "features": {
+                "duration": 7,
+                "amplitude": 16.450031280517578,
+                "mean_error": 16.22313117980957,
+                "variability": 0.2080642133951187
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25824,
+            "local_end_index": 25826,
+            "features": {
+                "duration": 3,
+                "amplitude": 15.724069595336914,
+                "mean_error": 15.244166374206543,
+                "variability": 0.40369144082069397
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25833,
+            "local_end_index": 25850,
+            "features": {
+                "duration": 18,
+                "amplitude": 17.10628890991211,
+                "mean_error": 16.646413803100586,
+                "variability": 0.35841065645217896
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25855,
+            "local_end_index": 25906,
+            "features": {
+                "duration": 52,
+                "amplitude": 17.641263961791992,
+                "mean_error": 16.64555549621582,
+                "variability": 0.5092003345489502
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 25908,
+            "local_end_index": 26101,
+            "features": {
+                "duration": 194,
+                "amplitude": 20.08338737487793,
+                "mean_error": 17.519411087036133,
+                "variability": 0.6822306513786316
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26103,
+            "local_end_index": 26127,
+            "features": {
+                "duration": 25,
+                "amplitude": 17.71187400817871,
+                "mean_error": 17.05458641052246,
+                "variability": 0.5373720526695251
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26132,
+            "local_end_index": 26132,
+            "features": {
+                "duration": 1,
+                "amplitude": 15.967517852783203,
+                "mean_error": 15.967517852783203,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26135,
+            "local_end_index": 26135,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.762413024902344,
+                "mean_error": 14.762413024902344,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26140,
+            "local_end_index": 26152,
+            "features": {
+                "duration": 13,
+                "amplitude": 17.263216018676758,
+                "mean_error": 16.800111770629883,
+                "variability": 0.5566985607147217
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26154,
+            "local_end_index": 26175,
+            "features": {
+                "duration": 22,
+                "amplitude": 17.624591827392578,
+                "mean_error": 16.860458374023438,
+                "variability": 0.7932140827178955
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26178,
+            "local_end_index": 26180,
+            "features": {
+                "duration": 3,
+                "amplitude": 18.218603134155273,
+                "mean_error": 17.022560119628906,
+                "variability": 0.9981431365013123
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26182,
+            "local_end_index": 26197,
+            "features": {
+                "duration": 16,
+                "amplitude": 19.773704528808594,
+                "mean_error": 17.319503784179688,
+                "variability": 1.5950771570205688
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26218,
+            "local_end_index": 26219,
+            "features": {
+                "duration": 2,
+                "amplitude": 15.234610557556152,
+                "mean_error": 14.999876022338867,
+                "variability": 0.23473501205444336
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26254,
+            "local_end_index": 26266,
+            "features": {
+                "duration": 13,
+                "amplitude": 16.54541778564453,
+                "mean_error": 15.946691513061523,
+                "variability": 0.48210933804512024
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26311,
+            "local_end_index": 26312,
+            "features": {
+                "duration": 2,
+                "amplitude": 16.269018173217773,
+                "mean_error": 16.053136825561523,
+                "variability": 0.2158818244934082
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26314,
+            "local_end_index": 26317,
+            "features": {
+                "duration": 4,
+                "amplitude": 16.213451385498047,
+                "mean_error": 15.35885238647461,
+                "variability": 0.61061030626297
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26322,
+            "local_end_index": 26360,
+            "features": {
+                "duration": 39,
+                "amplitude": 17.357675552368164,
+                "mean_error": 16.76804542541504,
+                "variability": 0.702306866645813
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26363,
+            "local_end_index": 26595,
+            "features": {
+                "duration": 233,
+                "amplitude": 18.289596557617188,
+                "mean_error": 16.43086051940918,
+                "variability": 0.4997727572917938
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26597,
+            "local_end_index": 26597,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.658966064453125,
+                "mean_error": 14.658966064453125,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26600,
+            "local_end_index": 26617,
+            "features": {
+                "duration": 18,
+                "amplitude": 17.862796783447266,
+                "mean_error": 16.97817039489746,
+                "variability": 0.8837481737136841
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26620,
+            "local_end_index": 26628,
+            "features": {
+                "duration": 9,
+                "amplitude": 16.968198776245117,
+                "mean_error": 15.95064640045166,
+                "variability": 0.7497284412384033
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26634,
+            "local_end_index": 26657,
+            "features": {
+                "duration": 24,
+                "amplitude": 17.800771713256836,
+                "mean_error": 17.0051326751709,
+                "variability": 0.5995102524757385
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26677,
+            "local_end_index": 26677,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.940728187561035,
+                "mean_error": 14.940728187561035,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26679,
+            "local_end_index": 26694,
+            "features": {
+                "duration": 16,
+                "amplitude": 19.51985740661621,
+                "mean_error": 17.862422943115234,
+                "variability": 1.3729298114776611
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26696,
+            "local_end_index": 26704,
+            "features": {
+                "duration": 9,
+                "amplitude": 17.073928833007812,
+                "mean_error": 16.39714813232422,
+                "variability": 0.6000319123268127
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26722,
+            "local_end_index": 26722,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.75913143157959,
+                "mean_error": 14.75913143157959,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26727,
+            "local_end_index": 26739,
+            "features": {
+                "duration": 13,
+                "amplitude": 17.556949615478516,
+                "mean_error": 16.188709259033203,
+                "variability": 1.0040781497955322
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26742,
+            "local_end_index": 26745,
+            "features": {
+                "duration": 4,
+                "amplitude": 15.840967178344727,
+                "mean_error": 15.27084732055664,
+                "variability": 0.3534497022628784
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26749,
+            "local_end_index": 26759,
+            "features": {
+                "duration": 11,
+                "amplitude": 17.06308937072754,
+                "mean_error": 16.038984298706055,
+                "variability": 0.7014098763465881
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26761,
+            "local_end_index": 26761,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.759832382202148,
+                "mean_error": 14.759832382202148,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 26769,
+            "local_end_index": 27068,
+            "features": {
+                "duration": 300,
+                "amplitude": 21.237119674682617,
+                "mean_error": 18.269296646118164,
+                "variability": 0.9186635613441467
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 27076,
+            "local_end_index": 27078,
+            "features": {
+                "duration": 3,
+                "amplitude": 15.292484283447266,
+                "mean_error": 15.02136516571045,
+                "variability": 0.20198377966880798
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 27084,
+            "local_end_index": 27097,
+            "features": {
+                "duration": 14,
+                "amplitude": 18.158302307128906,
+                "mean_error": 16.953279495239258,
+                "variability": 1.1369132995605469
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 27099,
+            "local_end_index": 27101,
+            "features": {
+                "duration": 3,
+                "amplitude": 15.91197681427002,
+                "mean_error": 15.355121612548828,
+                "variability": 0.449030339717865
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 27104,
+            "local_end_index": 27108,
+            "features": {
+                "duration": 5,
+                "amplitude": 15.885172843933105,
+                "mean_error": 15.416933059692383,
+                "variability": 0.34895312786102295
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 27110,
+            "local_end_index": 27127,
+            "features": {
+                "duration": 18,
+                "amplitude": 17.91977310180664,
+                "mean_error": 16.531389236450195,
+                "variability": 0.8402643799781799
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 27129,
+            "local_end_index": 27133,
+            "features": {
+                "duration": 5,
+                "amplitude": 16.36507225036621,
+                "mean_error": 15.466341972351074,
+                "variability": 0.5542147159576416
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 27135,
+            "local_end_index": 27921,
+            "features": {
+                "duration": 787,
+                "amplitude": 23.016511917114258,
+                "mean_error": 18.531564712524414,
+                "variability": 1.6625577211380005
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 27923,
+            "local_end_index": 27930,
+            "features": {
+                "duration": 8,
+                "amplitude": 14.96208381652832,
+                "mean_error": 14.779499053955078,
+                "variability": 0.10443497449159622
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 29720,
+            "local_end_index": 29729,
+            "features": {
+                "duration": 10,
+                "amplitude": 14.959541320800781,
+                "mean_error": 14.856918334960938,
+                "variability": 0.09464843571186066
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 29837,
+            "local_end_index": 29838,
+            "features": {
+                "duration": 2,
+                "amplitude": 14.754498481750488,
+                "mean_error": 14.726877212524414,
+                "variability": 0.027620792388916016
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 29843,
+            "local_end_index": 29868,
+            "features": {
+                "duration": 26,
+                "amplitude": 14.800870895385742,
+                "mean_error": 14.691779136657715,
+                "variability": 0.03629294037818909
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 29919,
+            "local_end_index": 29929,
+            "features": {
+                "duration": 11,
+                "amplitude": 14.874366760253906,
+                "mean_error": 14.760098457336426,
+                "variability": 0.055984143167734146
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 29931,
+            "local_end_index": 29970,
+            "features": {
+                "duration": 40,
+                "amplitude": 17.30972671508789,
+                "mean_error": 15.351339340209961,
+                "variability": 0.7499955296516418
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 30032,
+            "local_end_index": 30038,
+            "features": {
+                "duration": 7,
+                "amplitude": 14.795197486877441,
+                "mean_error": 14.726059913635254,
+                "variability": 0.039233386516571045
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 30043,
+            "local_end_index": 30047,
+            "features": {
+                "duration": 5,
+                "amplitude": 14.826025009155273,
+                "mean_error": 14.720586776733398,
+                "variability": 0.0533977746963501
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 30053,
+            "local_end_index": 30054,
+            "features": {
+                "duration": 2,
+                "amplitude": 14.670275688171387,
+                "mean_error": 14.660504341125488,
+                "variability": 0.009771347045898438
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 30073,
+            "local_end_index": 30075,
+            "features": {
+                "duration": 3,
+                "amplitude": 14.82313346862793,
+                "mean_error": 14.753987312316895,
+                "variability": 0.05167403817176819
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 30150,
+            "local_end_index": 30168,
+            "features": {
+                "duration": 19,
+                "amplitude": 14.919214248657227,
+                "mean_error": 14.728096008300781,
+                "variability": 0.07779005169868469
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 30444,
+            "local_end_index": 30448,
+            "features": {
+                "duration": 5,
+                "amplitude": 15.80380630493164,
+                "mean_error": 15.375204086303711,
+                "variability": 0.35476553440093994
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 30488,
+            "local_end_index": 30489,
+            "features": {
+                "duration": 2,
+                "amplitude": 14.673039436340332,
+                "mean_error": 14.661548614501953,
+                "variability": 0.01149129867553711
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 30514,
+            "local_end_index": 30613,
+            "features": {
+                "duration": 100,
+                "amplitude": 15.946722984313965,
+                "mean_error": 14.949252128601074,
+                "variability": 0.24340838193893433
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 30615,
+            "local_end_index": 30647,
+            "features": {
+                "duration": 33,
+                "amplitude": 14.935253143310547,
+                "mean_error": 14.806723594665527,
+                "variability": 0.07278876006603241
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 30656,
+            "local_end_index": 30664,
+            "features": {
+                "duration": 9,
+                "amplitude": 15.041465759277344,
+                "mean_error": 14.86968994140625,
+                "variability": 0.10884196311235428
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 30666,
+            "local_end_index": 30685,
+            "features": {
+                "duration": 20,
+                "amplitude": 14.819806098937988,
+                "mean_error": 14.721282958984375,
+                "variability": 0.04814973101019859
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 30974,
+            "local_end_index": 31000,
+            "features": {
+                "duration": 27,
+                "amplitude": 15.39206314086914,
+                "mean_error": 14.99026870727539,
+                "variability": 0.23458214104175568
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 31039,
+            "local_end_index": 31039,
+            "features": {
+                "duration": 1,
+                "amplitude": 14.646134376525879,
+                "mean_error": 14.646134376525879,
+                "variability": 0.0
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 31041,
+            "local_end_index": 31089,
+            "features": {
+                "duration": 49,
+                "amplitude": 15.135430335998535,
+                "mean_error": 14.9200439453125,
+                "variability": 0.14742785692214966
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 31097,
+            "local_end_index": 31098,
+            "features": {
+                "duration": 2,
+                "amplitude": 14.722722053527832,
+                "mean_error": 14.689860343933105,
+                "variability": 0.03286170959472656
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 31149,
+            "local_end_index": 31195,
+            "features": {
+                "duration": 47,
+                "amplitude": 15.106765747070312,
+                "mean_error": 14.91373348236084,
+                "variability": 0.0982515811920166
+            }
+        },
+        {
+            "file": "612235.xlsx",
+            "local_start_index": 33680,
+            "local_end_index": 34796,
+            "features": {
+                "duration": 1117,
+                "amplitude": 39.659461975097656,
+                "mean_error": 37.093162536621094,
+                "variability": 5.8364152908325195
+            }
+        },
+        {
+            "file": "636195.xlsx",
+            "local_start_index": 1729,
+            "local_end_index": 2507,
+            "features": {
+                "duration": 779,
+                "amplitude": 30.057966232299805,
+                "mean_error": 24.47673225402832,
+                "variability": 4.602378845214844
+            }
+        }
+    ],
+    "Anomalia Typu 2": [
+        {
+            "file": "330484.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 18392,
+            "features": {
+                "duration": 18393,
+                "amplitude": 114630616.0,
+                "mean_error": 53377064.0,
+                "variability": 30568332.0
+            }
+        },
+        {
+            "file": "330642.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 18036,
+            "features": {
+                "duration": 18037,
+                "amplitude": 125008616.0,
+                "mean_error": 59315172.0,
+                "variability": 33505990.0
+            }
+        }
+    ],
+    "Anomalia Typu 3": [
+        {
+            "file": "316367.xlsx",
+            "local_start_index": 3274,
+            "local_end_index": 19384,
+            "features": {
+                "duration": 16111,
+                "amplitude": 24364310.0,
+                "mean_error": 9042592.0,
+                "variability": 6762835.5
+            }
+        },
+        {
+            "file": "364497.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 15298,
+            "features": {
+                "duration": 15299,
+                "amplitude": 27254514.0,
+                "mean_error": 8256381.0,
+                "variability": 10140262.0
+            }
+        }
+    ],
+    "Anomalia Typu 4": [
+        {
+            "file": "330083.xlsx",
+            "local_start_index": 4043,
+            "local_end_index": 22888,
+            "features": {
+                "duration": 18846,
+                "amplitude": 82909912.0,
+                "mean_error": 33854752.0,
+                "variability": 20601670.0
+            }
+        },
+        {
+            "file": "330233.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 20573,
+            "features": {
+                "duration": 20574,
+                "amplitude": 58942632.0,
+                "mean_error": 26818036.0,
+                "variability": 11855221.0
+            }
+        },
+        {
+            "file": "331628.xlsx",
+            "local_start_index": 8338,
+            "local_end_index": 21433,
+            "features": {
+                "duration": 13096,
+                "amplitude": 50260904.0,
+                "mean_error": 25447962.0,
+                "variability": 11523743.0
+            }
+        }
+    ],
+    "Anomalia Typu 5": [
+        {
+            "file": "316367.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 1133,
+            "features": {
+                "duration": 1134,
+                "amplitude": 11062257.0,
+                "mean_error": 9176077.0,
+                "variability": 2603725.75
+            }
+        },
+        {
+            "file": "330083.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 2437,
+            "features": {
+                "duration": 2438,
+                "amplitude": 16271627.0,
+                "mean_error": 11695844.0,
+                "variability": 4228630.0
+            }
+        },
+        {
+            "file": "331628.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 531,
+            "features": {
+                "duration": 532,
+                "amplitude": 18889398.0,
+                "mean_error": 12189425.0,
+                "variability": 6002867.5
+            }
+        },
+        {
+            "file": "331628.xlsx",
+            "local_start_index": 4799,
+            "local_end_index": 8322,
+            "features": {
+                "duration": 3524,
+                "amplitude": 10737658.0,
+                "mean_error": 7640226.5,
+                "variability": 2421014.75
+            }
+        },
+        {
+            "file": "370615.xlsx",
+            "local_start_index": 6277,
+            "local_end_index": 9868,
+            "features": {
+                "duration": 3592,
+                "amplitude": 16267718.0,
+                "mean_error": 11663183.0,
+                "variability": 4187954.25
+            }
+        }
+    ]
+}

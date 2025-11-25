@@ -1,0 +1,104 @@
+2025-11-25 11:32:02,709 [INFO] --- Konfiguracja Treningu ---
+2025-11-25 11:32:02,710 [INFO] Rodzina danych: RLV1
+2025-11-25 11:32:02,710 [INFO] Liczba epok: 20
+2025-11-25 11:32:02,710 [INFO] Rozmiar partii (Batch Size): 512
+2025-11-25 11:32:02,710 [INFO] Wymiar wejœciowy (Input Dim): Wykrywany automatycznie
+2025-11-25 11:32:02,710 [INFO] Wznawiam trening: False
+2025-11-25 11:32:02,711 [INFO] ---------------------------------
+2025-11-25 11:32:02,711 [INFO] --- Krok 1b: £adowanie Danych ---
+2025-11-25 11:32:02,776 [INFO] U¿ywam urz¹dzenia: cuda
+2025-11-25 11:32:02,776 [INFO] Nie znaleziono pliku progu.
+2025-11-25 11:32:02,780 [ERROR] B£¥D: Nie znaleziono pliku preprocessed_data\RLV1\train_data.pt
+2025-11-25 11:32:38,092 [INFO] --- Konfiguracja Treningu ---
+2025-11-25 11:32:38,092 [INFO] Rodzina danych: RLV1
+2025-11-25 11:32:38,092 [INFO] Liczba epok: 20
+2025-11-25 11:32:38,092 [INFO] Rozmiar partii (Batch Size): 512
+2025-11-25 11:32:38,093 [INFO] Wymiar wejœciowy (Input Dim): Wykrywany automatycznie
+2025-11-25 11:32:38,093 [INFO] Wznawiam trening: False
+2025-11-25 11:32:38,093 [INFO] ---------------------------------
+2025-11-25 11:32:38,093 [INFO] --- Krok 1b: £adowanie Danych ---
+2025-11-25 11:32:38,120 [INFO] U¿ywam urz¹dzenia: cuda
+2025-11-25 11:32:38,120 [INFO] Nie znaleziono pliku progu.
+2025-11-25 11:32:40,631 [INFO] Automatycznie wykryto 'input_dim' z pliku: 27
+2025-11-25 11:32:40,632 [INFO] Utworzono DataLoader z 215 partiami.
+2025-11-25 11:32:40,634 [INFO] 
+--- Krok 2: Inicjalizacja Modelu ---
+2025-11-25 11:32:43,998 [INFO] Rozpoczynam nowy trening od zera.
+2025-11-25 11:32:43,998 [INFO] 
+--- Krok 3: Rozpoczynam Trening (od epoki 1) ---
+2025-11-25 11:33:31,895 [INFO] Epoka 1 zakoñczona. Œrednia strata (Loss): 1.910253
+2025-11-25 11:33:31,895 [INFO] Epoka 1 zakoñczona. Nowy najlepszy wynik! Strata spad³a z inf do 1.910253.
+2025-11-25 11:33:31,896 [INFO] Zapisujê checkpoint w: checkpoints\RLV1\model_checkpoint_RLV1.pth
+2025-11-25 11:33:31,951 [INFO] Zapisano pomyœlnie.
+2025-11-25 11:34:15,159 [INFO] Epoka 2 zakoñczona. Œrednia strata (Loss): 0.936146
+2025-11-25 11:34:15,159 [INFO] Epoka 2 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 1.910253 do 0.936146.
+2025-11-25 11:34:15,159 [INFO] Zapisujê checkpoint w: checkpoints\RLV1\model_checkpoint_RLV1.pth
+2025-11-25 11:34:15,219 [INFO] Zapisano pomyœlnie.
+2025-11-25 11:34:58,097 [INFO] Epoka 3 zakoñczona. Œrednia strata (Loss): 0.809108
+2025-11-25 11:34:58,097 [INFO] Epoka 3 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.936146 do 0.809108.
+2025-11-25 11:34:58,097 [INFO] Zapisujê checkpoint w: checkpoints\RLV1\model_checkpoint_RLV1.pth
+2025-11-25 11:34:58,157 [INFO] Zapisano pomyœlnie.
+2025-11-25 11:35:44,368 [INFO] Epoka 4 zakoñczona. Œrednia strata (Loss): 0.782922
+2025-11-25 11:35:44,368 [INFO] Epoka 4 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.809108 do 0.782922.
+2025-11-25 11:35:44,368 [INFO] Zapisujê checkpoint w: checkpoints\RLV1\model_checkpoint_RLV1.pth
+2025-11-25 11:35:44,474 [INFO] Zapisano pomyœlnie.
+2025-11-25 11:36:32,116 [INFO] Epoka 5 zakoñczona. Œrednia strata (Loss): 0.633512
+2025-11-25 11:36:32,117 [INFO] Epoka 5 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.782922 do 0.633512.
+2025-11-25 11:36:32,117 [INFO] Zapisujê checkpoint w: checkpoints\RLV1\model_checkpoint_RLV1.pth
+2025-11-25 11:36:32,175 [INFO] Zapisano pomyœlnie.
+2025-11-25 11:37:13,699 [INFO] Epoka 6 zakoñczona. Œrednia strata (Loss): 0.582396
+2025-11-25 11:37:13,699 [INFO] Epoka 6 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.633512 do 0.582396.
+2025-11-25 11:37:13,699 [INFO] Zapisujê checkpoint w: checkpoints\RLV1\model_checkpoint_RLV1.pth
+2025-11-25 11:37:13,763 [INFO] Zapisano pomyœlnie.
+2025-11-25 11:37:54,975 [INFO] Epoka 7 zakoñczona. Œrednia strata (Loss): 0.544008
+2025-11-25 11:37:54,975 [INFO] Epoka 7 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.582396 do 0.544008.
+2025-11-25 11:37:54,975 [INFO] Zapisujê checkpoint w: checkpoints\RLV1\model_checkpoint_RLV1.pth
+2025-11-25 11:37:55,033 [INFO] Zapisano pomyœlnie.
+2025-11-25 11:38:36,572 [INFO] Epoka 8 zakoñczona. Œrednia strata (Loss): 0.517063
+2025-11-25 11:38:36,572 [INFO] Epoka 8 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.544008 do 0.517063.
+2025-11-25 11:38:36,573 [INFO] Zapisujê checkpoint w: checkpoints\RLV1\model_checkpoint_RLV1.pth
+2025-11-25 11:38:36,630 [INFO] Zapisano pomyœlnie.
+2025-11-25 11:39:18,723 [INFO] Epoka 9 zakoñczona. Œrednia strata (Loss): 0.501893
+2025-11-25 11:39:18,723 [INFO] Epoka 9 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.517063 do 0.501893.
+2025-11-25 11:39:18,724 [INFO] Zapisujê checkpoint w: checkpoints\RLV1\model_checkpoint_RLV1.pth
+2025-11-25 11:39:18,782 [INFO] Zapisano pomyœlnie.
+2025-11-25 11:40:01,826 [INFO] Epoka 10 zakoñczona. Œrednia strata (Loss): 0.479832
+2025-11-25 11:40:01,827 [INFO] Epoka 10 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.501893 do 0.479832.
+2025-11-25 11:40:01,827 [INFO] Zapisujê checkpoint w: checkpoints\RLV1\model_checkpoint_RLV1.pth
+2025-11-25 11:40:01,891 [INFO] Zapisano pomyœlnie.
+2025-11-25 11:40:46,269 [INFO] Epoka 11 zakoñczona. Œrednia strata (Loss): 0.480682
+2025-11-25 11:40:46,269 [WARNING] Epoka 11 zakoñczona. Brak poprawy. Strata: 0.480682 (Najlepsza: 0.479832)
+2025-11-25 11:40:46,270 [WARNING] Cierpliwoœæ: 1/5
+2025-11-25 11:41:28,481 [INFO] Epoka 12 zakoñczona. Œrednia strata (Loss): 0.471724
+2025-11-25 11:41:28,482 [INFO] Epoka 12 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.479832 do 0.471724.
+2025-11-25 11:41:28,482 [INFO] Zapisujê checkpoint w: checkpoints\RLV1\model_checkpoint_RLV1.pth
+2025-11-25 11:41:28,544 [INFO] Zapisano pomyœlnie.
+2025-11-25 11:42:10,508 [INFO] Epoka 13 zakoñczona. Œrednia strata (Loss): 0.458832
+2025-11-25 11:42:10,509 [INFO] Epoka 13 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.471724 do 0.458832.
+2025-11-25 11:42:10,509 [INFO] Zapisujê checkpoint w: checkpoints\RLV1\model_checkpoint_RLV1.pth
+2025-11-25 11:42:10,574 [INFO] Zapisano pomyœlnie.
+2025-11-25 11:42:52,728 [INFO] Epoka 14 zakoñczona. Œrednia strata (Loss): 0.461025
+2025-11-25 11:42:52,729 [WARNING] Epoka 14 zakoñczona. Brak poprawy. Strata: 0.461025 (Najlepsza: 0.458832)
+2025-11-25 11:42:52,729 [WARNING] Cierpliwoœæ: 1/5
+2025-11-25 11:43:35,053 [INFO] Epoka 15 zakoñczona. Œrednia strata (Loss): 0.445364
+2025-11-25 11:43:35,053 [INFO] Epoka 15 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.458832 do 0.445364.
+2025-11-25 11:43:35,054 [INFO] Zapisujê checkpoint w: checkpoints\RLV1\model_checkpoint_RLV1.pth
+2025-11-25 11:43:35,113 [INFO] Zapisano pomyœlnie.
+2025-11-25 11:44:17,214 [INFO] Epoka 16 zakoñczona. Œrednia strata (Loss): 0.571977
+2025-11-25 11:44:17,214 [WARNING] Epoka 16 zakoñczona. Brak poprawy. Strata: 0.571977 (Najlepsza: 0.445364)
+2025-11-25 11:44:17,215 [WARNING] Cierpliwoœæ: 1/5
+2025-11-25 11:44:59,428 [INFO] Epoka 17 zakoñczona. Œrednia strata (Loss): 0.525162
+2025-11-25 11:44:59,428 [WARNING] Epoka 17 zakoñczona. Brak poprawy. Strata: 0.525162 (Najlepsza: 0.445364)
+2025-11-25 11:44:59,429 [WARNING] Cierpliwoœæ: 2/5
+2025-11-25 11:45:41,838 [INFO] Epoka 18 zakoñczona. Œrednia strata (Loss): 0.541709
+2025-11-25 11:45:41,838 [WARNING] Epoka 18 zakoñczona. Brak poprawy. Strata: 0.541709 (Najlepsza: 0.445364)
+2025-11-25 11:45:41,839 [WARNING] Cierpliwoœæ: 3/5
+2025-11-25 11:46:23,845 [INFO] Epoka 19 zakoñczona. Œrednia strata (Loss): 0.503302
+2025-11-25 11:46:23,846 [WARNING] Epoka 19 zakoñczona. Brak poprawy. Strata: 0.503302 (Najlepsza: 0.445364)
+2025-11-25 11:46:23,846 [WARNING] Cierpliwoœæ: 4/5
+2025-11-25 11:47:06,052 [INFO] Epoka 20 zakoñczona. Œrednia strata (Loss): 0.466101
+2025-11-25 11:47:06,053 [WARNING] Epoka 20 zakoñczona. Brak poprawy. Strata: 0.466101 (Najlepsza: 0.445364)
+2025-11-25 11:47:06,053 [WARNING] Cierpliwoœæ: 5/5
+2025-11-25 11:47:06,053 [INFO] Przekroczono limit cierpliwoœci (5). Zatrzymujê trening.
+2025-11-25 11:47:06,054 [INFO] 
+--- Trening Zakoñczony ---
