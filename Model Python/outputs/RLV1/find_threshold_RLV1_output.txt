@@ -1,18 +1,36 @@
-2025-11-25 11:47:13,816 [INFO] --- Konfiguracja Uruchomienia ---
-2025-11-25 11:47:13,817 [INFO] Rodzina danych: RLV1
-2025-11-25 11:47:13,818 [INFO] Katalog bazowy danych: preprocessed_data
-2025-11-25 11:47:13,819 [INFO] Rozmiar partii (Batch Size): 512
-2025-11-25 11:47:13,819 [INFO] Kwantyl progu: 0.999
-2025-11-25 11:47:13,819 [INFO] Parametry modelu zostan¹ wczytane z checkpointu...
-2025-11-25 11:47:13,820 [INFO] ---------------------------------
-2025-11-25 11:47:13,820 [INFO] --- Rozpoczynam Obliczanie Progu Anomalii dla: RLV1 ---
-2025-11-25 11:47:13,821 [INFO] Logi zapisywane do: outputs\RLV1\find_threshold_RLV1_output.txt
-2025-11-25 11:47:13,848 [INFO] U¿ywam urz¹dzenia: cuda
-2025-11-25 11:47:14,058 [INFO] Model wczytany pomyœlnie.
-2025-11-25 11:47:16,646 [INFO] Obliczam b³êdy rekonstrukcji na danych 'Zgodne' ...
-2025-11-25 11:47:38,354 [INFO] Œredni b³¹d na danych 'Zgodne': 0.426495
-2025-11-25 11:47:38,355 [INFO] Maksymalny b³¹d na danych 'Zgodne': 29.636623
-2025-11-25 11:47:38,355 [INFO] Obliczony próg anomalii (99.9 percentyl): 14.638525
-2025-11-25 11:47:38,356 [INFO] Pomyœlnie zapisano próg w pliku: checkpoints\RLV1\threshold_RLV1.json
-2025-11-25 11:47:38,356 [INFO] 
+2025-11-28 17:46:47,996 [INFO] --- Konfiguracja Uruchomienia ---
+2025-11-28 17:46:47,997 [INFO] Rodzina danych: RLV1
+2025-11-28 17:46:48,000 [INFO] Katalog bazowy danych: preprocessed_data
+2025-11-28 17:46:48,000 [INFO] Rozmiar partii (Batch Size): 512
+2025-11-28 17:46:48,000 [INFO] Kwantyl progu: 0.999
+2025-11-28 17:46:48,001 [INFO] Parametry modelu zostan¹ wczytane z checkpointu...
+2025-11-28 17:46:48,001 [INFO] ---------------------------------
+2025-11-28 17:46:48,002 [INFO] --- Rozpoczynam Obliczanie Progu Anomalii dla: RLV1 ---
+2025-11-28 17:46:48,002 [INFO] Logi zapisywane do: outputs\RLV1\find_threshold_RLV1_output.txt
+2025-11-28 17:46:48,028 [INFO] U¿ywam urz¹dzenia: cuda
+2025-11-28 17:46:48,225 [INFO] Model wczytany pomyœlnie.
+2025-11-28 17:46:50,793 [INFO] Obliczam b³êdy rekonstrukcji na danych 'Zgodne' ...
+2025-11-28 17:47:10,518 [INFO] Œredni b³¹d na danych 'Zgodne': 0.965916
+2025-11-28 17:47:10,518 [INFO] Maksymalny b³¹d na danych 'Zgodne': 34.676067
+2025-11-28 17:47:10,519 [INFO] Obliczony próg anomalii (99.9 percentyl): 17.589634
+2025-11-28 17:47:10,520 [INFO] Pomyœlnie zapisano próg w pliku: checkpoints\RLV1\threshold_RLV1.json
+2025-11-28 17:47:10,521 [INFO] 
+--- Zakoñczono Obliczanie Progu ---
+2025-11-28 19:57:53,212 [INFO] --- Konfiguracja Uruchomienia ---
+2025-11-28 19:57:53,213 [INFO] Rodzina danych: RLV1
+2025-11-28 19:57:53,215 [INFO] Katalog bazowy danych: preprocessed_data
+2025-11-28 19:57:53,217 [INFO] Rozmiar partii (Batch Size): 512
+2025-11-28 19:57:53,217 [INFO] Kwantyl progu: 0.999
+2025-11-28 19:57:53,217 [INFO] Parametry modelu zostan¹ wczytane z checkpointu...
+2025-11-28 19:57:53,218 [INFO] ---------------------------------
+2025-11-28 19:57:53,218 [INFO] --- Rozpoczynam Obliczanie Progu Anomalii dla: RLV1 ---
+2025-11-28 19:57:53,219 [INFO] Logi zapisywane do: outputs\RLV1\find_threshold_RLV1_output.txt
+2025-11-28 19:57:53,247 [INFO] U¿ywam urz¹dzenia: cuda
+2025-11-28 19:57:53,458 [INFO] Model wczytany pomyœlnie.
+2025-11-28 19:57:56,173 [INFO] Obliczam b³êdy rekonstrukcji na danych 'Zgodne' ...
+2025-11-28 19:58:16,888 [INFO] Œredni b³¹d na danych 'Zgodne': 1.193328
+2025-11-28 19:58:16,888 [INFO] Maksymalny b³¹d na danych 'Zgodne': 34.347157
+2025-11-28 19:58:16,888 [INFO] Obliczony próg anomalii (99.9 percentyl): 17.239048
+2025-11-28 19:58:16,890 [INFO] Pomyœlnie zapisano próg w pliku: checkpoints\RLV1\threshold_RLV1.json
+2025-11-28 19:58:16,890 [INFO] 
 --- Zakoñczono Obliczanie Progu ---

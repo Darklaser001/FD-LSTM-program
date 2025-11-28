@@ -43,6 +43,25 @@ class LSTMAutoencoder(nn.Module):
         decoder_output, _ = self.decoder(decoder_input, (hidden_state, cell_state))
         reconstruction = self.output_layer(decoder_output)
         return reconstruction
+    
+
+# =============================================================================
+# --- Funkcja Pomocnicza do obliczania i zapamiętywania gradientów dla
+# --- ułamkowego gradientu prostego
+# =============================================================================
+def compute_gl_coeffs(alpha, history_size, device):
+    """Oblicza współczynniki c_k dla pochodnej ułamkowej."""
+    coeffs = [1.0] # k=0. k to historia jak daleko wstecz patrzymy. np tutaj sprawdzamy "teraźniejszy" gradient więc k=0. Poprzedni gradient (poprzednie ostatnie obliczenia) to k=1 itd.
+    for k in range(1, history_size): # Iterujemy dla kolejnych kroków wstecz i potem obliczamy wagi dla poprzednich kroków. Zaczynamy od 1 bo poniżej przy liczeniu nowej wagi nie możemy dzielić przez 0
+        # Wzór rekurencyjny na współczynniki dwumianowe dla ułamków
+        # c_k = (-1)^k * binom(alpha, k)
+        prev = coeffs[-1]
+        # Uproszczony wzór iteracyjny: c_k = c_{k-1} * (1 - (alpha + 1) / k)
+        new_coeff = prev * (1 - (alpha + 1) / k)
+        coeffs.append(new_coeff)
+    
+    # Zamieniamy na tensor GPU dla szybkości czyli konwersja na tensor pytorcha i wysyłanie do gpu.
+    return torch.tensor(coeffs, device=device, dtype=torch.float32) 
 
 # =============================================================================
 # --- Funkcja Główna (main) ---
@@ -140,7 +159,7 @@ def main(args):
         dataset=train_dataset,
         batch_size=args.batch_size,
         shuffle=True,
-        num_workers=4,
+        num_workers=0,
         pin_memory=True,
         drop_last=True
     )
@@ -199,6 +218,21 @@ def main(args):
 
     patience_counter = 0 # licznik ile razy model nie był lepszy
 
+    # =============================================================================
+    # --- Konfiguracja FD-LSTM (Fractional Derivative) ---
+    # =============================================================================
+    FD_ALPHA = 0.8        # Rząd pochodnej (zazwyczaj 0.8 - 1.2). < 1 to "leniwa" pamięć.
+    FD_HISTORY_SIZE = 5   # Ile kroków wstecz pamiętamy (im więcej, tym więcej zajętego VRAM)
+    
+    # Obliczamy wagi raz i wrzucamy na GPU
+    fd_coeffs = compute_gl_coeffs(FD_ALPHA, FD_HISTORY_SIZE, device)
+    
+    # Bufor na historię gradientów dla każdego parametru modelu
+    # Słownik: {id_parametru: [lista_gradientów_z_przeszłości]}
+    grad_history = {} 
+    
+    logging.info(f"Tryb FD-LSTM aktywny. Alpha={FD_ALPHA}, Historia={FD_HISTORY_SIZE}")
+
     for epoch in range(start_epoch, start_epoch + args.epochs):
         model.train()
         epoch_loss = 0.0
@@ -214,8 +248,42 @@ def main(args):
             loss = criterion(reconstruction, batch_target)
             
             optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
+            loss.backward() # 1. Obliczamy zwykły gradient (g_t)
+
+            # --- FD-LSTM: Modyfikacja Gradientu ---
+            # Metoda Grünwalda-Letnikowa: g_fd = suma(c_k * g_{t-k})
+            
+            with torch.no_grad(): # Wyłączamy śledzenie wbudowane biblioteki
+                for param in model.parameters():
+                    if param.grad is None: continue
+                    
+                    # ID parametru (żeby wiedzieć, czyją historię pobrać)
+                    p_id = id(param)
+                    
+                    # Inicjalizacja bufora dla nowego parametru
+                    if p_id not in grad_history:
+                        grad_history[p_id] = []
+                    
+                    # Dodajemy aktualny gradient do historii
+                    grad_history[p_id].insert(0, param.grad.clone())
+                    
+                    # Utrzymujemy stały rozmiar historii
+                    if len(grad_history[p_id]) > FD_HISTORY_SIZE:
+                        grad_history[p_id].pop() # Usuwamy najstarszy
+                    
+                    # Jeśli mamy historię, liczymy pochodną ułamkową
+                    if len(grad_history[p_id]) > 1:
+                        fractional_grad = torch.zeros_like(param.grad)
+                        
+                        # Suma ważona: c_0*g_t + c_1*g_{t-1} + ...
+                        for k, past_grad in enumerate(grad_history[p_id]):
+                            fractional_grad.add_(past_grad * fd_coeffs[k])
+                        
+                        # NADPISUJEMY zwykły gradient naszym ułamkowym
+                        param.grad.copy_(fractional_grad)
+
+
+            optimizer.step() # 2. Aktualizujemy wagi używając gradientu FD
             
             epoch_loss += loss.item()
             progress_bar.set_postfix(loss=f"{loss.item():.6f}")
@@ -249,6 +317,15 @@ def main(args):
             patience_counter += 1
             logging.warning(f"Epoka {epoch+1} zakończona. Brak poprawy. Strata: {avg_epoch_loss:.6f} (Najlepsza: {best_loss:.6f})")
             logging.warning(f"Cierpliwość: {patience_counter}/{args.patience}")
+
+            if patience_counter == 2: 
+                    old_lr = optimizer.param_groups[0]['lr']
+                    new_lr = old_lr * 0.5 # Zmniejszanie kroku nauki o połowę aby algorytm nie przestrzelał podczas nauki. 
+                    
+                    for param_group in optimizer.param_groups:
+                        param_group['lr'] = new_lr
+                    
+                    logging.info(f">>> EDIT nauki: Zmniejszam Learning Rate z {old_lr} na {new_lr}, aby nie przestrzelać optimum nauki.")
 
         # Sprawdzenie, czy przerywamy trening
         if patience_counter >= args.patience:

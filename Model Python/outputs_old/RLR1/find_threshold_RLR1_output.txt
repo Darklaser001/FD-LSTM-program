@@ -1,18 +1,18 @@
-2025-11-12 01:52:03,362 [INFO] --- Konfiguracja Uruchomienia ---
-2025-11-12 01:52:03,363 [INFO] Rodzina danych: RLR1
-2025-11-12 01:52:03,365 [INFO] Katalog bazowy danych: preprocessed_data
-2025-11-12 01:52:03,366 [INFO] Rozmiar partii (Batch Size): 512
-2025-11-12 01:52:03,366 [INFO] Kwantyl progu: 0.999
-2025-11-12 01:52:03,367 [INFO] Parametry modelu zostan¹ wczytane z checkpointu...
-2025-11-12 01:52:03,367 [INFO] ---------------------------------
-2025-11-12 01:52:03,368 [INFO] --- Rozpoczynam Obliczanie Progu Anomalii dla: RLR1 ---
-2025-11-12 01:52:03,368 [INFO] Logi zapisywane do: outputs\RLR1\find_threshold_RLR1_output.txt
-2025-11-12 01:52:03,397 [INFO] U¿ywam urz¹dzenia: cuda
-2025-11-12 01:52:03,589 [INFO] Model wczytany pomyœlnie.
-2025-11-12 01:52:07,353 [INFO] Obliczam b³êdy rekonstrukcji na danych 'Zgodne' ...
-2025-11-12 01:52:25,128 [INFO] Œredni b³¹d na danych 'Zgodne': 0.172688
-2025-11-12 01:52:25,129 [INFO] Maksymalny b³¹d na danych 'Zgodne': 3.920688
-2025-11-12 01:52:25,129 [INFO] Obliczony próg anomalii (99.9 percentyl): 2.050065
-2025-11-12 01:52:25,130 [INFO] Pomyœlnie zapisano próg w pliku: checkpoints\RLR1\threshold_RLR1.json
-2025-11-12 01:52:25,130 [INFO] 
+2025-11-25 04:59:32,445 [INFO] --- Konfiguracja Uruchomienia ---
+2025-11-25 04:59:32,445 [INFO] Rodzina danych: RLR1
+2025-11-25 04:59:32,446 [INFO] Katalog bazowy danych: preprocessed_data
+2025-11-25 04:59:32,446 [INFO] Rozmiar partii (Batch Size): 512
+2025-11-25 04:59:32,446 [INFO] Kwantyl progu: 0.999
+2025-11-25 04:59:32,446 [INFO] Parametry modelu zostan¹ wczytane z checkpointu...
+2025-11-25 04:59:32,447 [INFO] ---------------------------------
+2025-11-25 04:59:32,447 [INFO] --- Rozpoczynam Obliczanie Progu Anomalii dla: RLR1 ---
+2025-11-25 04:59:32,447 [INFO] Logi zapisywane do: outputs\RLR1\find_threshold_RLR1_output.txt
+2025-11-25 04:59:32,473 [INFO] U¿ywam urz¹dzenia: cuda
+2025-11-25 04:59:32,666 [INFO] Model wczytany pomyœlnie.
+2025-11-25 04:59:40,663 [INFO] Obliczam b³êdy rekonstrukcji na danych 'Zgodne' ...
+2025-11-25 05:00:48,577 [INFO] Œredni b³¹d na danych 'Zgodne': 0.713287
+2025-11-25 05:00:48,579 [INFO] Maksymalny b³¹d na danych 'Zgodne': 18.507294
+2025-11-25 05:00:48,579 [INFO] Obliczony próg anomalii (99.9 percentyl): 9.603624
+2025-11-25 05:00:48,581 [INFO] Pomyœlnie zapisano próg w pliku: checkpoints\RLR1\threshold_RLR1.json
+2025-11-25 05:00:48,581 [INFO] 
 --- Zakoñczono Obliczanie Progu ---

@@ -1,648 +1,363 @@
 {
     "Anomalia Typu 1": [
         {
-            "file_name": "944576.xlsx",
-            "start_time": "2023-10-21 16:29:30",
-            "end_time": "2023-10-21 17:35:27",
-            "start_id": 9109,
-            "end_id": 9109,
+            "file": "941003.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 1854,
             "features": {
-                "duration": 3859,
-                "amplitude": 41.782798767089844,
-                "mean_error": 28.488162994384766,
-                "variability": 2.794182777404785
+                "duration": 1855,
+                "amplitude": 898.3432006835938,
+                "mean_error": 876.6057739257812,
+                "variability": 7.276228427886963
             }
         },
         {
-            "file_name": "948099.xlsx",
-            "start_time": "2023-10-28 15:58:33",
-            "end_time": "2023-10-28 17:09:09",
-            "start_id": 9227,
-            "end_id": 9227,
+            "file": "941639.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 1853,
             "features": {
-                "duration": 4138,
-                "amplitude": 39.62215042114258,
-                "mean_error": 32.293636322021484,
-                "variability": 2.110290288925171
+                "duration": 1854,
+                "amplitude": 868.1275634765625,
+                "mean_error": 853.4362182617188,
+                "variability": 7.278706073760986
             }
         },
         {
-            "file_name": "950731.xlsx",
-            "start_time": "2023-11-09 17:05:51",
-            "end_time": "2023-11-09 18:15:59",
-            "start_id": 9411,
-            "end_id": 9411,
+            "file": "941664.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 1885,
             "features": {
-                "duration": 4110,
-                "amplitude": 33.95945739746094,
-                "mean_error": 29.79100227355957,
-                "variability": 0.7009026408195496
+                "duration": 1886,
+                "amplitude": 873.1390991210938,
+                "mean_error": 862.1476440429688,
+                "variability": 5.90905237197876
             }
         },
         {
-            "file_name": "953148.xlsx",
-            "start_time": "2023-11-16 08:55:15",
-            "end_time": "2023-11-16 10:58:27",
-            "start_id": 9456,
-            "end_id": 9456,
+            "file": "941689.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 1852,
             "features": {
-                "duration": 7294,
-                "amplitude": 33.92558670043945,
-                "mean_error": 31.25613784790039,
-                "variability": 0.9918152689933777
-            }
-        },
-        {
-            "file_name": "953757.xlsx",
-            "start_time": "2023-11-17 08:56:19",
-            "end_time": "2023-11-17 09:58:57",
-            "start_id": 9469,
-            "end_id": 9469,
-            "features": {
-                "duration": 3660,
-                "amplitude": 57.85064697265625,
-                "mean_error": 30.3909912109375,
-                "variability": 4.164636135101318
-            }
-        },
-        {
-            "file_name": "955412.xlsx",
-            "start_time": "2023-11-19 17:32:45",
-            "end_time": "2023-11-19 18:38:03",
-            "start_id": 9564,
-            "end_id": 9564,
-            "features": {
-                "duration": 3820,
-                "amplitude": 31.983295440673828,
-                "mean_error": 30.48455047607422,
-                "variability": 0.3911331295967102
+                "duration": 1853,
+                "amplitude": 881.8180541992188,
+                "mean_error": 867.3544311523438,
+                "variability": 7.496518611907959
             }
         }
     ],
     "Anomalia Typu 2": [
         {
-            "file_name": "942732.xlsx",
-            "start_time": "2023-10-18 10:33:26",
-            "end_time": "2023-10-18 10:35:36",
-            "start_id": 8964,
-            "end_id": 8964,
+            "file": "944576.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 3702,
             "features": {
-                "duration": 32,
-                "amplitude": 2.5351436138153076,
-                "mean_error": 2.300663471221924,
-                "variability": 0.14510414004325867
+                "duration": 3703,
+                "amplitude": 30.012624740600586,
+                "mean_error": 23.545623779296875,
+                "variability": 1.4852523803710938
             }
         },
         {
-            "file_name": "942732.xlsx",
-            "start_time": "2023-10-18 10:37:12",
-            "end_time": "2023-10-18 10:40:19",
-            "start_id": 8964,
-            "end_id": 8964,
+            "file": "948099.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 3981,
             "features": {
-                "duration": 89,
-                "amplitude": 2.2155086994171143,
-                "mean_error": 2.155324935913086,
-                "variability": 0.045071057975292206
+                "duration": 3982,
+                "amplitude": 37.574676513671875,
+                "mean_error": 33.51108932495117,
+                "variability": 1.1665475368499756
             }
         },
         {
-            "file_name": "942732.xlsx",
-            "start_time": "2023-10-18 11:06:27",
-            "end_time": "2023-10-18 11:08:31",
-            "start_id": 8964,
-            "end_id": 8964,
+            "file": "950731.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 3953,
             "features": {
-                "duration": 26,
-                "amplitude": 2.1761512756347656,
-                "mean_error": 2.141757011413574,
-                "variability": 0.013060939498245716
+                "duration": 3954,
+                "amplitude": 35.27037048339844,
+                "mean_error": 33.535240173339844,
+                "variability": 0.37358468770980835
             }
         },
         {
-            "file_name": "960755.xlsx",
-            "start_time": "2023-11-30 21:05:17",
-            "end_time": "2023-11-30 21:07:23",
-            "start_id": 27,
-            "end_id": 27,
+            "file": "953757.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 3503,
             "features": {
-                "duration": 28,
-                "amplitude": 2.6236319541931152,
-                "mean_error": 2.5667567253112793,
-                "variability": 0.0982452780008316
+                "duration": 3504,
+                "amplitude": 47.104896545410156,
+                "mean_error": 32.12132263183594,
+                "variability": 2.3120243549346924
             }
         },
         {
-            "file_name": "961510.xlsx",
-            "start_time": "2023-12-02 05:34:12",
-            "end_time": "2023-12-02 05:36:16",
-            "start_id": 84,
-            "end_id": 84,
+            "file": "955412.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 3663,
             "features": {
-                "duration": 26,
-                "amplitude": 2.147111415863037,
-                "mean_error": 2.143648624420166,
-                "variability": 0.0021115175914019346
+                "duration": 3664,
+                "amplitude": 29.708820343017578,
+                "mean_error": 29.06793212890625,
+                "variability": 0.22825846076011658
             }
         },
         {
-            "file_name": "962299.xlsx",
-            "start_time": "2023-12-03 16:20:41",
-            "end_time": "2023-12-03 16:22:29",
-            "start_id": 154,
-            "end_id": 154,
+            "file": "957223.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 3010,
             "features": {
-                "duration": 10,
-                "amplitude": 2.4623186588287354,
-                "mean_error": 2.2285170555114746,
-                "variability": 0.13068228960037231
+                "duration": 3011,
+                "amplitude": 29.20947265625,
+                "mean_error": 28.64933204650879,
+                "variability": 0.21358351409435272
             }
         },
         {
-            "file_name": "962480.xlsx",
-            "start_time": "2023-12-04 01:01:07",
-            "end_time": "2023-12-04 01:02:47",
-            "start_id": 163,
-            "end_id": 163,
+            "file": "958621.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 2882,
             "features": {
-                "duration": 2,
-                "amplitude": 2.1016910076141357,
-                "mean_error": 2.0768117904663086,
-                "variability": 0.02487921714782715
-            }
-        },
-        {
-            "file_name": "962828.xlsx",
-            "start_time": "2023-12-04 17:29:30",
-            "end_time": "2023-12-04 17:34:56",
-            "start_id": 177,
-            "end_id": 177,
-            "features": {
-                "duration": 228,
-                "amplitude": 4.73145866394043,
-                "mean_error": 2.4453368186950684,
-                "variability": 0.4215690493583679
-            }
-        },
-        {
-            "file_name": "962828.xlsx",
-            "start_time": "2023-12-04 17:33:46",
-            "end_time": "2023-12-04 17:43:23",
-            "start_id": 177,
-            "end_id": 177,
-            "features": {
-                "duration": 479,
-                "amplitude": 3.054734468460083,
-                "mean_error": 2.37864089012146,
-                "variability": 0.31230801343917847
-            }
-        },
-        {
-            "file_name": "962828.xlsx",
-            "start_time": "2023-12-04 17:43:03",
-            "end_time": "2023-12-04 17:49:57",
-            "start_id": 177,
-            "end_id": 177,
-            "features": {
-                "duration": 316,
-                "amplitude": 2.385338068008423,
-                "mean_error": 2.209885597229004,
-                "variability": 0.10160727798938751
-            }
-        },
-        {
-            "file_name": "962828.xlsx",
-            "start_time": "2023-12-04 17:50:06",
-            "end_time": "2023-12-04 18:04:17",
-            "start_id": 177,
-            "end_id": 177,
-            "features": {
-                "duration": 753,
-                "amplitude": 2.5167222023010254,
-                "mean_error": 2.4012935161590576,
-                "variability": 0.09861263632774353
-            }
-        },
-        {
-            "file_name": "962828.xlsx",
-            "start_time": "2023-12-04 18:03:08",
-            "end_time": "2023-12-04 18:04:51",
-            "start_id": 177,
-            "end_id": 177,
-            "features": {
-                "duration": 5,
-                "amplitude": 2.062962055206299,
-                "mean_error": 2.059025526046753,
-                "variability": 0.004113195929676294
-            }
-        },
-        {
-            "file_name": "962828.xlsx",
-            "start_time": "2023-12-04 18:04:42",
-            "end_time": "2023-12-04 18:06:52",
-            "start_id": 177,
-            "end_id": 177,
-            "features": {
-                "duration": 32,
-                "amplitude": 2.1061320304870605,
-                "mean_error": 2.084751605987549,
-                "variability": 0.011577467434108257
-            }
-        },
-        {
-            "file_name": "962828.xlsx",
-            "start_time": "2023-12-04 18:35:44",
-            "end_time": "2023-12-04 18:38:05",
-            "start_id": 177,
-            "end_id": 177,
-            "features": {
-                "duration": 43,
-                "amplitude": 2.4699158668518066,
-                "mean_error": 2.335247755050659,
-                "variability": 0.13952332735061646
-            }
-        },
-        {
-            "file_name": "963068.xlsx",
-            "start_time": "2023-12-05 08:33:05",
-            "end_time": "2023-12-05 08:35:00",
-            "start_id": 198,
-            "end_id": 198,
-            "features": {
-                "duration": 17,
-                "amplitude": 6.416393756866455,
-                "mean_error": 4.494245529174805,
-                "variability": 1.197064995765686
+                "duration": 2883,
+                "amplitude": 12.175803184509277,
+                "mean_error": 11.20479965209961,
+                "variability": 0.3047845661640167
             }
         }
     ],
     "Anomalia Typu 3": [
         {
-            "file_name": "941017.xlsx",
-            "start_time": "2023-10-14 20:15:43",
-            "end_time": "2023-10-14 20:50:51",
-            "start_id": 8897,
-            "end_id": 8897,
+            "file": "941017.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 1853,
             "features": {
-                "duration": 2010,
-                "amplitude": 864.42041015625,
-                "mean_error": 863.1744384765625,
-                "variability": 1.296288013458252
+                "duration": 1854,
+                "amplitude": 870.7052612304688,
+                "mean_error": 869.6471557617188,
+                "variability": 1.0198427438735962
             }
         },
         {
-            "file_name": "941065.xlsx",
-            "start_time": "2023-10-14 22:48:24",
-            "end_time": "2023-10-14 23:23:32",
-            "start_id": 8902,
-            "end_id": 8902,
+            "file": "941065.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 1853,
             "features": {
-                "duration": 2010,
-                "amplitude": 857.9363403320312,
-                "mean_error": 856.6456298828125,
-                "variability": 0.7023105025291443
+                "duration": 1854,
+                "amplitude": 865.3283081054688,
+                "mean_error": 862.4642944335938,
+                "variability": 0.9814679026603699
             }
         },
         {
-            "file_name": "941104.xlsx",
-            "start_time": "2023-10-15 00:34:01",
-            "end_time": "2023-10-15 01:09:13",
-            "start_id": 8905,
-            "end_id": 8905,
+            "file": "941104.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 1857,
             "features": {
-                "duration": 2014,
-                "amplitude": 858.5471801757812,
-                "mean_error": 855.7868041992188,
-                "variability": 1.6263558864593506
+                "duration": 1858,
+                "amplitude": 863.9270629882812,
+                "mean_error": 861.7162475585938,
+                "variability": 1.3446308374404907
             }
         },
         {
-            "file_name": "941779.xlsx",
-            "start_time": "2023-10-16 17:23:42",
-            "end_time": "2023-10-16 17:35:34",
-            "start_id": 8924,
-            "end_id": 8924,
+            "file": "941779.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 457,
             "features": {
-                "duration": 614,
-                "amplitude": 863.19580078125,
-                "mean_error": 860.2821655273438,
-                "variability": 1.4803980588912964
+                "duration": 458,
+                "amplitude": 871.5631103515625,
+                "mean_error": 868.162109375,
+                "variability": 1.771364688873291
             }
         },
         {
-            "file_name": "942465.xlsx",
-            "start_time": "2023-10-18 00:45:01",
-            "end_time": "2023-10-18 01:19:49",
-            "start_id": 8951,
-            "end_id": 8951,
+            "file": "942407.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 1843,
             "features": {
-                "duration": 1990,
-                "amplitude": 817.8659057617188,
-                "mean_error": 808.9844360351562,
-                "variability": 1.5546575784683228
+                "duration": 1844,
+                "amplitude": 822.2638549804688,
+                "mean_error": 819.5953979492188,
+                "variability": 2.5325145721435547
+            }
+        },
+        {
+            "file": "942465.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 1833,
+            "features": {
+                "duration": 1834,
+                "amplitude": 812.8456420898438,
+                "mean_error": 810.293212890625,
+                "variability": 1.1191067695617676
             }
         }
     ],
     "Anomalia Typu 4": [
         {
-            "file_name": "943357.xlsx",
-            "start_time": "2023-10-19 11:22:34",
-            "end_time": "2023-10-19 12:03:28",
-            "start_id": 9015,
-            "end_id": 9015,
+            "file": "943357.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 2199,
             "features": {
-                "duration": 2356,
-                "amplitude": 31.820762634277344,
-                "mean_error": 25.6914119720459,
-                "variability": 1.9809759855270386
+                "duration": 2200,
+                "amplitude": 32.4453239440918,
+                "mean_error": 26.504243850708008,
+                "variability": 2.30299711227417
             }
         },
         {
-            "file_name": "943960.xlsx",
-            "start_time": "2023-10-20 15:31:41",
-            "end_time": "2023-10-20 15:59:31",
-            "start_id": 9059,
-            "end_id": 9059,
+            "file": "943960.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 1415,
             "features": {
-                "duration": 1572,
-                "amplitude": 40.51628875732422,
-                "mean_error": 31.733306884765625,
-                "variability": 2.741719961166382
+                "duration": 1416,
+                "amplitude": 36.49110412597656,
+                "mean_error": 32.911834716796875,
+                "variability": 1.3378251791000366
             }
         },
         {
-            "file_name": "944086.xlsx",
-            "start_time": "2023-10-20 20:50:10",
-            "end_time": "2023-10-20 21:18:00",
-            "start_id": 9072,
-            "end_id": 9072,
+            "file": "944086.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 1415,
             "features": {
-                "duration": 1572,
-                "amplitude": 36.99937438964844,
-                "mean_error": 33.72695541381836,
-                "variability": 1.5062092542648315
+                "duration": 1416,
+                "amplitude": 50.45609664916992,
+                "mean_error": 36.31502914428711,
+                "variability": 4.684772968292236
             }
         },
         {
-            "file_name": "944113.xlsx",
-            "start_time": "2023-10-20 21:53:02",
-            "end_time": "2023-10-20 22:20:52",
-            "start_id": 9075,
-            "end_id": 9075,
+            "file": "944113.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 1415,
             "features": {
-                "duration": 1572,
-                "amplitude": 34.85850143432617,
-                "mean_error": 33.170867919921875,
-                "variability": 0.8412272930145264
+                "duration": 1416,
+                "amplitude": 47.18312454223633,
+                "mean_error": 35.31450271606445,
+                "variability": 3.2070412635803223
             }
         },
         {
-            "file_name": "944480.xlsx",
-            "start_time": "2023-10-21 11:24:18",
-            "end_time": "2023-10-21 12:05:30",
-            "start_id": 9102,
-            "end_id": 9102,
+            "file": "944480.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 2217,
             "features": {
-                "duration": 2374,
-                "amplitude": 42.550689697265625,
-                "mean_error": 32.568145751953125,
-                "variability": 2.532317876815796
+                "duration": 2218,
+                "amplitude": 39.249656677246094,
+                "mean_error": 34.28217315673828,
+                "variability": 1.485313057899475
             }
         },
         {
-            "file_name": "949947.xlsx",
-            "start_time": "2023-11-07 21:38:54",
-            "end_time": "2023-11-07 22:19:09",
-            "start_id": 9347,
-            "end_id": 9347,
+            "file": "949947.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 2160,
             "features": {
-                "duration": 2317,
-                "amplitude": 34.90374755859375,
-                "mean_error": 28.55531883239746,
-                "variability": 1.4843891859054565
+                "duration": 2161,
+                "amplitude": 40.776893615722656,
+                "mean_error": 31.373292922973633,
+                "variability": 1.4361828565597534
             }
         },
         {
-            "file_name": "953364.xlsx",
-            "start_time": "2023-11-16 17:39:37",
-            "end_time": "2023-11-16 18:26:11",
-            "start_id": 9460,
-            "end_id": 9460,
+            "file": "953364.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 2539,
             "features": {
-                "duration": 2696,
-                "amplitude": 35.126644134521484,
-                "mean_error": 30.061471939086914,
-                "variability": 1.1693661212921143
+                "duration": 2540,
+                "amplitude": 37.40196990966797,
+                "mean_error": 29.47663688659668,
+                "variability": 1.7382155656814575
             }
         },
         {
-            "file_name": "954645.xlsx",
-            "start_time": "2023-11-18 15:33:56",
-            "end_time": "2023-11-18 16:17:45",
-            "start_id": 9525,
-            "end_id": 9525,
+            "file": "954645.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 2374,
             "features": {
-                "duration": 2531,
-                "amplitude": 40.28633117675781,
-                "mean_error": 29.22625732421875,
-                "variability": 1.540558099746704
+                "duration": 2375,
+                "amplitude": 36.29572296142578,
+                "mean_error": 29.006441116333008,
+                "variability": 1.6727639436721802
             }
         },
         {
-            "file_name": "954686.xlsx",
-            "start_time": "2023-11-18 16:59:25",
-            "end_time": "2023-11-18 17:23:02",
-            "start_id": 9527,
-            "end_id": 9527,
+            "file": "954686.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 1162,
             "features": {
-                "duration": 1319,
-                "amplitude": 33.223297119140625,
-                "mean_error": 30.273786544799805,
-                "variability": 1.0924668312072754
+                "duration": 1163,
+                "amplitude": 34.35322189331055,
+                "mean_error": 29.83295440673828,
+                "variability": 1.3434844017028809
             }
         },
         {
-            "file_name": "954784.xlsx",
-            "start_time": "2023-11-18 20:03:47",
-            "end_time": "2023-11-18 20:50:34",
-            "start_id": 9532,
-            "end_id": 9532,
+            "file": "954784.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 2552,
             "features": {
-                "duration": 2709,
-                "amplitude": 33.728633880615234,
-                "mean_error": 28.92304039001465,
-                "variability": 1.3982456922531128
+                "duration": 2553,
+                "amplitude": 34.20737838745117,
+                "mean_error": 28.95762062072754,
+                "variability": 1.2934961318969727
             }
         },
         {
-            "file_name": "954883.xlsx",
-            "start_time": "2023-11-18 23:29:59",
-            "end_time": "2023-11-19 00:16:45",
-            "start_id": 9538,
-            "end_id": 9538,
+            "file": "954883.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 2551,
             "features": {
-                "duration": 2708,
-                "amplitude": 32.90078353881836,
-                "mean_error": 28.945646286010742,
-                "variability": 1.254052996635437
+                "duration": 2552,
+                "amplitude": 32.341285705566406,
+                "mean_error": 28.27861976623535,
+                "variability": 1.2323744297027588
             }
         },
         {
-            "file_name": "956613.xlsx",
-            "start_time": "2023-11-22 00:06:05",
-            "end_time": "2023-11-22 00:41:25",
-            "start_id": 9623,
-            "end_id": 9623,
+            "file": "956613.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 1865,
             "features": {
-                "duration": 2022,
-                "amplitude": 38.03349304199219,
-                "mean_error": 34.167152404785156,
-                "variability": 1.1824887990951538
+                "duration": 1866,
+                "amplitude": 41.45768737792969,
+                "mean_error": 38.03293991088867,
+                "variability": 1.394338846206665
             }
         },
         {
-            "file_name": "956985.xlsx",
-            "start_time": "2023-11-22 20:26:10",
-            "end_time": "2023-11-22 20:59:11",
-            "start_id": 9651,
-            "end_id": 9651,
+            "file": "956985.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 1726,
             "features": {
-                "duration": 1883,
-                "amplitude": 35.63534164428711,
-                "mean_error": 32.26594924926758,
-                "variability": 1.8178051710128784
+                "duration": 1727,
+                "amplitude": 33.596954345703125,
+                "mean_error": 30.363197326660156,
+                "variability": 1.2106437683105469
             }
         },
         {
-            "file_name": "957055.xlsx",
-            "start_time": "2023-11-22 23:06:35",
-            "end_time": "2023-11-22 23:39:21",
-            "start_id": 9655,
-            "end_id": 9655,
+            "file": "957055.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 1711,
             "features": {
-                "duration": 1868,
-                "amplitude": 38.22370910644531,
-                "mean_error": 33.070343017578125,
-                "variability": 2.15915584564209
-            }
-        },
-        {
-            "file_name": "957223.xlsx",
-            "start_time": "2023-11-23 01:36:11",
-            "end_time": "2023-11-23 02:30:36",
-            "start_id": 9659,
-            "end_id": 9659,
-            "features": {
-                "duration": 3167,
-                "amplitude": 32.21011734008789,
-                "mean_error": 30.425559997558594,
-                "variability": 0.7791907787322998
-            }
-        },
-        {
-            "file_name": "958621.xlsx",
-            "start_time": "2023-11-26 07:07:18",
-            "end_time": "2023-11-26 07:59:35",
-            "start_id": 9785,
-            "end_id": 9785,
-            "features": {
-                "duration": 3039,
-                "amplitude": 21.18202781677246,
-                "mean_error": 10.92663860321045,
-                "variability": 2.3651514053344727
-            }
-        },
-        {
-            "file_name": "958751.xlsx",
-            "start_time": "2023-11-26 13:42:33",
-            "end_time": "2023-11-26 14:27:43",
-            "start_id": 9790,
-            "end_id": 9790,
-            "features": {
-                "duration": 2612,
-                "amplitude": 6.019043445587158,
-                "mean_error": 3.9716672897338867,
-                "variability": 0.2655567526817322
-            }
-        },
-        {
-            "file_name": "959207.xlsx",
-            "start_time": "2023-11-27 15:46:27",
-            "end_time": "2023-11-27 16:15:58",
-            "start_id": 9880,
-            "end_id": 9880,
-            "features": {
-                "duration": 1673,
-                "amplitude": 3.2435739040374756,
-                "mean_error": 2.973933696746826,
-                "variability": 0.09125657379627228
+                "duration": 1712,
+                "amplitude": 33.372188568115234,
+                "mean_error": 30.55408477783203,
+                "variability": 1.2074841260910034
             }
         }
     ],
     "Anomalia Typu 5": [
         {
-            "file_name": "941003.xlsx",
-            "start_time": "2023-10-14 19:40:30",
-            "end_time": "2023-10-14 20:15:39",
-            "start_id": 8896,
-            "end_id": 8896,
+            "file": "953148.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 7137,
             "features": {
-                "duration": 2011,
-                "amplitude": 894.747802734375,
-                "mean_error": 869.0797729492188,
-                "variability": 8.428136825561523
-            }
-        },
-        {
-            "file_name": "941639.xlsx",
-            "start_time": "2023-10-16 10:58:21",
-            "end_time": "2023-10-16 11:33:29",
-            "start_id": 8915,
-            "end_id": 8915,
-            "features": {
-                "duration": 2010,
-                "amplitude": 860.9169921875,
-                "mean_error": 846.9835815429688,
-                "variability": 7.050997734069824
-            }
-        },
-        {
-            "file_name": "941664.xlsx",
-            "start_time": "2023-10-16 12:15:19",
-            "end_time": "2023-10-16 12:50:59",
-            "start_id": 8917,
-            "end_id": 8917,
-            "features": {
-                "duration": 2042,
-                "amplitude": 866.165771484375,
-                "mean_error": 856.0361328125,
-                "variability": 5.775073528289795
-            }
-        },
-        {
-            "file_name": "941689.xlsx",
-            "start_time": "2023-10-16 13:37:43",
-            "end_time": "2023-10-16 14:12:50",
-            "start_id": 8919,
-            "end_id": 8919,
-            "features": {
-                "duration": 2009,
-                "amplitude": 876.7548217773438,
-                "mean_error": 859.2421264648438,
-                "variability": 7.559083938598633
-            }
-        },
-        {
-            "file_name": "942407.xlsx",
-            "start_time": "2023-10-17 22:56:35",
-            "end_time": "2023-10-17 23:31:33",
-            "start_id": 8946,
-            "end_id": 8946,
-            "features": {
-                "duration": 2000,
-                "amplitude": 839.6048583984375,
-                "mean_error": 820.119140625,
-                "variability": 4.696275234222412
+                "duration": 7138,
+                "amplitude": 33.67707824707031,
+                "mean_error": 31.520999908447266,
+                "variability": 1.000648021697998
             }
         }
     ]

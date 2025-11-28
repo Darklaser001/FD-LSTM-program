@@ -6,9 +6,9 @@
             "local_end_index": 1393,
             "features": {
                 "duration": 1394,
-                "amplitude": 363.04473876953125,
-                "mean_error": 325.51812744140625,
-                "variability": 17.988937377929688
+                "amplitude": 365.2966613769531,
+                "mean_error": 327.68463134765625,
+                "variability": 18.11342430114746
             }
         },
         {
@@ -17,9 +17,9 @@
             "local_end_index": 3021,
             "features": {
                 "duration": 3022,
-                "amplitude": 362.44677734375,
-                "mean_error": 321.28155517578125,
-                "variability": 11.381721496582031
+                "amplitude": 365.3226318359375,
+                "mean_error": 324.95660400390625,
+                "variability": 11.22838306427002
             }
         },
         {
@@ -28,9 +28,9 @@
             "local_end_index": 3045,
             "features": {
                 "duration": 3046,
-                "amplitude": 388.8731384277344,
-                "mean_error": 327.2622985839844,
-                "variability": 18.48158073425293
+                "amplitude": 390.6968688964844,
+                "mean_error": 330.5871887207031,
+                "variability": 18.394630432128906
             }
         },
         {
@@ -39,20 +39,9 @@
             "local_end_index": 4123,
             "features": {
                 "duration": 4124,
-                "amplitude": 392.0879821777344,
-                "mean_error": 322.7803649902344,
-                "variability": 16.50712776184082
-            }
-        },
-        {
-            "file": "947700.xlsx",
-            "local_start_index": 0,
-            "local_end_index": 1603,
-            "features": {
-                "duration": 1604,
-                "amplitude": 38.269134521484375,
-                "mean_error": 32.67637634277344,
-                "variability": 0.9320120811462402
+                "amplitude": 393.8536682128906,
+                "mean_error": 325.7971496582031,
+                "variability": 16.437458038330078
             }
         },
         {
@@ -61,9 +50,9 @@
             "local_end_index": 3571,
             "features": {
                 "duration": 3572,
-                "amplitude": 381.7974548339844,
-                "mean_error": 323.34405517578125,
-                "variability": 17.727277755737305
+                "amplitude": 384.6229248046875,
+                "mean_error": 326.1706237792969,
+                "variability": 17.747461318969727
             }
         },
         {
@@ -72,9 +61,9 @@
             "local_end_index": 2916,
             "features": {
                 "duration": 2917,
-                "amplitude": 369.2369689941406,
-                "mean_error": 323.0119323730469,
-                "variability": 15.553354263305664
+                "amplitude": 371.27740478515625,
+                "mean_error": 326.7108459472656,
+                "variability": 15.04023265838623
             }
         },
         {
@@ -83,9 +72,9 @@
             "local_end_index": 4268,
             "features": {
                 "duration": 4269,
-                "amplitude": 389.2685546875,
-                "mean_error": 333.33819580078125,
-                "variability": 16.474315643310547
+                "amplitude": 391.1759338378906,
+                "mean_error": 336.2044372558594,
+                "variability": 16.616962432861328
             }
         },
         {
@@ -94,9 +83,9 @@
             "local_end_index": 3598,
             "features": {
                 "duration": 3599,
-                "amplitude": 389.4672546386719,
-                "mean_error": 327.4191589355469,
-                "variability": 15.245551109313965
+                "amplitude": 391.68035888671875,
+                "mean_error": 330.34649658203125,
+                "variability": 15.584901809692383
             }
         },
         {
@@ -105,9 +94,9 @@
             "local_end_index": 2932,
             "features": {
                 "duration": 2933,
-                "amplitude": 380.72979736328125,
-                "mean_error": 329.4190673828125,
-                "variability": 18.185020446777344
+                "amplitude": 383.2310485839844,
+                "mean_error": 333.1578063964844,
+                "variability": 18.265987396240234
             }
         },
         {
@@ -116,9 +105,9 @@
             "local_end_index": 4217,
             "features": {
                 "duration": 4218,
-                "amplitude": 372.2066650390625,
-                "mean_error": 322.97149658203125,
-                "variability": 13.689716339111328
+                "amplitude": 373.63775634765625,
+                "mean_error": 323.66815185546875,
+                "variability": 13.805839538574219
             }
         },
         {
@@ -127,9 +116,9 @@
             "local_end_index": 1182,
             "features": {
                 "duration": 1183,
-                "amplitude": 377.2707824707031,
-                "mean_error": 344.2459411621094,
-                "variability": 17.892690658569336
+                "amplitude": 379.09661865234375,
+                "mean_error": 346.5743713378906,
+                "variability": 18.03746795654297
             }
         },
         {
@@ -138,9 +127,9 @@
             "local_end_index": 1409,
             "features": {
                 "duration": 1410,
-                "amplitude": 369.2713317871094,
-                "mean_error": 338.2291259765625,
-                "variability": 15.772178649902344
+                "amplitude": 371.55096435546875,
+                "mean_error": 341.4056701660156,
+                "variability": 15.682648658752441
             }
         },
         {
@@ -149,9 +138,9 @@
             "local_end_index": 4080,
             "features": {
                 "duration": 4081,
-                "amplitude": 611.0033569335938,
-                "mean_error": 563.29736328125,
-                "variability": 16.127540588378906
+                "amplitude": 636.4472045898438,
+                "mean_error": 595.8214721679688,
+                "variability": 14.842964172363281
             }
         },
         {
@@ -160,9 +149,9 @@
             "local_end_index": 3361,
             "features": {
                 "duration": 3362,
-                "amplitude": 586.2665405273438,
-                "mean_error": 548.8016967773438,
-                "variability": 13.224075317382812
+                "amplitude": 618.9146728515625,
+                "mean_error": 582.44775390625,
+                "variability": 13.31153678894043
             }
         },
         {
@@ -171,9 +160,9 @@
             "local_end_index": 3740,
             "features": {
                 "duration": 3741,
-                "amplitude": 587.624755859375,
-                "mean_error": 553.6367797851562,
-                "variability": 8.871461868286133
+                "amplitude": 616.2916259765625,
+                "mean_error": 586.5284423828125,
+                "variability": 8.680779457092285
             }
         },
         {
@@ -182,9 +171,9 @@
             "local_end_index": 4298,
             "features": {
                 "duration": 4299,
-                "amplitude": 601.2606811523438,
-                "mean_error": 564.3665161132812,
-                "variability": 13.365449905395508
+                "amplitude": 628.8195190429688,
+                "mean_error": 597.2286987304688,
+                "variability": 11.757013320922852
             }
         },
         {
@@ -193,9 +182,9 @@
             "local_end_index": 3254,
             "features": {
                 "duration": 3255,
-                "amplitude": 559.2633666992188,
-                "mean_error": 552.6730346679688,
-                "variability": 3.402090549468994
+                "amplitude": 591.4229125976562,
+                "mean_error": 585.0471801757812,
+                "variability": 3.2636752128601074
             }
         },
         {
@@ -204,9 +193,9 @@
             "local_end_index": 3983,
             "features": {
                 "duration": 3984,
-                "amplitude": 602.434814453125,
-                "mean_error": 558.92041015625,
-                "variability": 15.977934837341309
+                "amplitude": 636.1238403320312,
+                "mean_error": 592.7593383789062,
+                "variability": 15.842057228088379
             }
         },
         {
@@ -215,9 +204,9 @@
             "local_end_index": 4052,
             "features": {
                 "duration": 4053,
-                "amplitude": 601.684814453125,
-                "mean_error": 557.4561157226562,
-                "variability": 16.660612106323242
+                "amplitude": 630.6267700195312,
+                "mean_error": 590.478515625,
+                "variability": 15.794464111328125
             }
         },
         {
@@ -226,9 +215,9 @@
             "local_end_index": 4005,
             "features": {
                 "duration": 4006,
-                "amplitude": 581.4630126953125,
-                "mean_error": 553.6149291992188,
-                "variability": 11.10354232788086
+                "amplitude": 611.8447265625,
+                "mean_error": 585.9908447265625,
+                "variability": 9.906026840209961
             }
         },
         {
@@ -237,9 +226,9 @@
             "local_end_index": 4190,
             "features": {
                 "duration": 4191,
-                "amplitude": 604.319580078125,
-                "mean_error": 561.1259765625,
-                "variability": 16.21272087097168
+                "amplitude": 631.6734619140625,
+                "mean_error": 593.2470703125,
+                "variability": 15.2014741897583
             }
         },
         {
@@ -248,9 +237,9 @@
             "local_end_index": 3464,
             "features": {
                 "duration": 3465,
-                "amplitude": 588.8071899414062,
-                "mean_error": 546.1301879882812,
-                "variability": 15.299296379089355
+                "amplitude": 618.8898315429688,
+                "mean_error": 579.8394775390625,
+                "variability": 15.332075119018555
             }
         },
         {
@@ -259,9 +248,9 @@
             "local_end_index": 3341,
             "features": {
                 "duration": 3342,
-                "amplitude": 597.6534423828125,
-                "mean_error": 550.8544921875,
-                "variability": 12.665316581726074
+                "amplitude": 625.92919921875,
+                "mean_error": 584.6306762695312,
+                "variability": 12.693005561828613
             }
         },
         {
@@ -270,9 +259,9 @@
             "local_end_index": 3661,
             "features": {
                 "duration": 3662,
-                "amplitude": 601.1857299804688,
-                "mean_error": 548.6221313476562,
-                "variability": 20.796695709228516
+                "amplitude": 631.3234252929688,
+                "mean_error": 581.4241333007812,
+                "variability": 19.808076858520508
             }
         },
         {
@@ -281,9 +270,9 @@
             "local_end_index": 3592,
             "features": {
                 "duration": 3593,
-                "amplitude": 607.0110473632812,
-                "mean_error": 557.3883056640625,
-                "variability": 19.307449340820312
+                "amplitude": 637.1134033203125,
+                "mean_error": 590.4998168945312,
+                "variability": 19.15568733215332
             }
         },
         {
@@ -292,9 +281,9 @@
             "local_end_index": 3585,
             "features": {
                 "duration": 3586,
-                "amplitude": 589.7289428710938,
-                "mean_error": 549.50244140625,
-                "variability": 13.693475723266602
+                "amplitude": 620.9173583984375,
+                "mean_error": 582.633056640625,
+                "variability": 12.857705116271973
             }
         },
         {
@@ -303,9 +292,9 @@
             "local_end_index": 3569,
             "features": {
                 "duration": 3570,
-                "amplitude": 579.569580078125,
-                "mean_error": 547.3396606445312,
-                "variability": 10.96274471282959
+                "amplitude": 611.0067138671875,
+                "mean_error": 579.7213745117188,
+                "variability": 10.74905776977539
             }
         },
         {
@@ -314,9 +303,9 @@
             "local_end_index": 3567,
             "features": {
                 "duration": 3568,
-                "amplitude": 579.6168823242188,
-                "mean_error": 549.9243774414062,
-                "variability": 10.229460716247559
+                "amplitude": 609.729736328125,
+                "mean_error": 582.7578735351562,
+                "variability": 10.063152313232422
             }
         },
         {
@@ -325,9 +314,9 @@
             "local_end_index": 1166,
             "features": {
                 "duration": 1167,
-                "amplitude": 676.4976806640625,
-                "mean_error": 648.24365234375,
-                "variability": 15.845154762268066
+                "amplitude": 703.1724243164062,
+                "mean_error": 676.46484375,
+                "variability": 15.46765422821045
             }
         },
         {
@@ -336,9 +325,9 @@
             "local_end_index": 3372,
             "features": {
                 "duration": 3373,
-                "amplitude": 583.568359375,
-                "mean_error": 549.3951416015625,
-                "variability": 10.70517635345459
+                "amplitude": 614.1971435546875,
+                "mean_error": 583.3150634765625,
+                "variability": 10.520343780517578
             }
         },
         {
@@ -347,9 +336,9 @@
             "local_end_index": 3542,
             "features": {
                 "duration": 3543,
-                "amplitude": 632.3212280273438,
-                "mean_error": 561.370361328125,
-                "variability": 23.72056770324707
+                "amplitude": 659.7681884765625,
+                "mean_error": 595.0325927734375,
+                "variability": 22.366424560546875
             }
         },
         {
@@ -358,9 +347,9 @@
             "local_end_index": 3768,
             "features": {
                 "duration": 3769,
-                "amplitude": 655.52685546875,
-                "mean_error": 554.3484497070312,
-                "variability": 22.013233184814453
+                "amplitude": 677.313232421875,
+                "mean_error": 585.3447875976562,
+                "variability": 19.318710327148438
             }
         },
         {
@@ -369,9 +358,9 @@
             "local_end_index": 4465,
             "features": {
                 "duration": 4466,
-                "amplitude": 604.1475830078125,
-                "mean_error": 579.2097778320312,
-                "variability": 6.739366054534912
+                "amplitude": 631.0357055664062,
+                "mean_error": 610.1605224609375,
+                "variability": 5.367544651031494
             }
         },
         {
@@ -380,9 +369,9 @@
             "local_end_index": 3909,
             "features": {
                 "duration": 3910,
-                "amplitude": 615.0542602539062,
-                "mean_error": 567.3623046875,
-                "variability": 23.99080467224121
+                "amplitude": 641.2470703125,
+                "mean_error": 597.0916748046875,
+                "variability": 21.727298736572266
             }
         },
         {
@@ -391,9 +380,9 @@
             "local_end_index": 4567,
             "features": {
                 "duration": 4568,
-                "amplitude": 1318.969970703125,
-                "mean_error": 1292.166015625,
-                "variability": 7.844683647155762
+                "amplitude": 1347.1546630859375,
+                "mean_error": 1320.4124755859375,
+                "variability": 7.968868255615234
             }
         },
         {
@@ -402,9 +391,9 @@
             "local_end_index": 4484,
             "features": {
                 "duration": 4485,
-                "amplitude": 1379.87744140625,
-                "mean_error": 1293.6265869140625,
-                "variability": 23.853300094604492
+                "amplitude": 1407.0994873046875,
+                "mean_error": 1322.8450927734375,
+                "variability": 23.39647674560547
             }
         },
         {
@@ -413,9 +402,9 @@
             "local_end_index": 4497,
             "features": {
                 "duration": 4498,
-                "amplitude": 1361.1571044921875,
-                "mean_error": 1290.4019775390625,
-                "variability": 22.487539291381836
+                "amplitude": 1388.862060546875,
+                "mean_error": 1319.2679443359375,
+                "variability": 22.411691665649414
             }
         },
         {
@@ -424,9 +413,9 @@
             "local_end_index": 5852,
             "features": {
                 "duration": 5853,
-                "amplitude": 1384.9134521484375,
-                "mean_error": 1315.8695068359375,
-                "variability": 14.472190856933594
+                "amplitude": 1406.2840576171875,
+                "mean_error": 1339.6187744140625,
+                "variability": 14.354364395141602
             }
         },
         {
@@ -435,9 +424,9 @@
             "local_end_index": 5400,
             "features": {
                 "duration": 5401,
-                "amplitude": 1336.79541015625,
-                "mean_error": 1305.7603759765625,
-                "variability": 9.405919075012207
+                "amplitude": 1358.4696044921875,
+                "mean_error": 1328.9473876953125,
+                "variability": 9.39448070526123
             }
         },
         {
@@ -446,9 +435,9 @@
             "local_end_index": 4708,
             "features": {
                 "duration": 4709,
-                "amplitude": 1170.248046875,
-                "mean_error": 1142.820068359375,
-                "variability": 8.84280776977539
+                "amplitude": 1200.185546875,
+                "mean_error": 1167.654296875,
+                "variability": 9.216662406921387
             }
         },
         {
@@ -457,9 +446,9 @@
             "local_end_index": 5526,
             "features": {
                 "duration": 5527,
-                "amplitude": 1162.387939453125,
-                "mean_error": 1151.1461181640625,
-                "variability": 11.223057746887207
+                "amplitude": 1179.5223388671875,
+                "mean_error": 1170.580078125,
+                "variability": 9.156744956970215
             }
         },
         {
@@ -468,9 +457,9 @@
             "local_end_index": 5551,
             "features": {
                 "duration": 5552,
-                "amplitude": 1170.9837646484375,
-                "mean_error": 1155.5802001953125,
-                "variability": 12.174338340759277
+                "amplitude": 1196.3363037109375,
+                "mean_error": 1181.8580322265625,
+                "variability": 11.873690605163574
             }
         },
         {
@@ -479,9 +468,9 @@
             "local_end_index": 3457,
             "features": {
                 "duration": 3458,
-                "amplitude": 2127.8173828125,
-                "mean_error": 2059.76318359375,
-                "variability": 20.283077239990234
+                "amplitude": 2158.5537109375,
+                "mean_error": 2101.484130859375,
+                "variability": 17.838420867919922
             }
         },
         {
@@ -490,9 +479,9 @@
             "local_end_index": 3202,
             "features": {
                 "duration": 3203,
-                "amplitude": 1420.8778076171875,
-                "mean_error": 1338.41748046875,
-                "variability": 19.44492530822754
+                "amplitude": 1424.9599609375,
+                "mean_error": 1342.667236328125,
+                "variability": 19.42528533935547
             }
         },
         {
@@ -501,9 +490,9 @@
             "local_end_index": 4199,
             "features": {
                 "duration": 4200,
-                "amplitude": 1179.602294921875,
-                "mean_error": 1163.6109619140625,
-                "variability": 11.189218521118164
+                "amplitude": 1207.4930419921875,
+                "mean_error": 1191.2261962890625,
+                "variability": 11.426116943359375
             }
         },
         {
@@ -512,9 +501,9 @@
             "local_end_index": 4783,
             "features": {
                 "duration": 4784,
-                "amplitude": 1189.4317626953125,
-                "mean_error": 1153.0469970703125,
-                "variability": 11.839372634887695
+                "amplitude": 1213.9632568359375,
+                "mean_error": 1178.6741943359375,
+                "variability": 11.720267295837402
             }
         },
         {
@@ -523,9 +512,9 @@
             "local_end_index": 5778,
             "features": {
                 "duration": 5779,
-                "amplitude": 1393.0325927734375,
-                "mean_error": 1331.2276611328125,
-                "variability": 15.089095115661621
+                "amplitude": 1418.866943359375,
+                "mean_error": 1357.97802734375,
+                "variability": 15.268277168273926
             }
         },
         {
@@ -534,9 +523,9 @@
             "local_end_index": 2263,
             "features": {
                 "duration": 2264,
-                "amplitude": 1208.4097900390625,
-                "mean_error": 1202.6033935546875,
-                "variability": 9.867742538452148
+                "amplitude": 1236.8382568359375,
+                "mean_error": 1230.7347412109375,
+                "variability": 10.977498054504395
             }
         },
         {
@@ -545,9 +534,9 @@
             "local_end_index": 3412,
             "features": {
                 "duration": 3413,
-                "amplitude": 1134.542724609375,
-                "mean_error": 1128.805419921875,
-                "variability": 1.764224648475647
+                "amplitude": 1161.7999267578125,
+                "mean_error": 1149.7406005859375,
+                "variability": 3.87945556640625
             }
         },
         {
@@ -556,9 +545,9 @@
             "local_end_index": 4802,
             "features": {
                 "duration": 4803,
-                "amplitude": 1136.7454833984375,
-                "mean_error": 1132.3338623046875,
-                "variability": 2.846935749053955
+                "amplitude": 1163.9315185546875,
+                "mean_error": 1159.5050048828125,
+                "variability": 2.632530689239502
             }
         },
         {
@@ -567,9 +556,9 @@
             "local_end_index": 5035,
             "features": {
                 "duration": 5036,
-                "amplitude": 1156.8028564453125,
-                "mean_error": 1136.9454345703125,
-                "variability": 7.856590747833252
+                "amplitude": 1183.19677734375,
+                "mean_error": 1160.122802734375,
+                "variability": 10.037927627563477
             }
         },
         {
@@ -578,224 +567,55 @@
             "local_end_index": 5054,
             "features": {
                 "duration": 5055,
-                "amplitude": 1149.50634765625,
-                "mean_error": 1134.9193115234375,
-                "variability": 4.399587631225586
+                "amplitude": 1175.3958740234375,
+                "mean_error": 1161.4407958984375,
+                "variability": 3.9149365425109863
             }
         },
         {
             "file": "959716.xlsx",
-            "local_start_index": 1493,
-            "local_end_index": 1528,
-            "features": {
-                "duration": 36,
-                "amplitude": 16.437427520751953,
-                "mean_error": 16.261266708374023,
-                "variability": 0.15055911242961884
-            }
-        },
-        {
-            "file": "959716.xlsx",
-            "local_start_index": 1546,
+            "local_start_index": 1588,
             "local_end_index": 2564,
             "features": {
-                "duration": 1019,
-                "amplitude": 38.4339485168457,
-                "mean_error": 35.508121490478516,
-                "variability": 5.698605537414551
+                "duration": 977,
+                "amplitude": 91.2021713256836,
+                "mean_error": 87.2142562866211,
+                "variability": 9.78818416595459
             }
         },
         {
             "file": "959803.xlsx",
-            "local_start_index": 101,
+            "local_start_index": 176,
             "local_end_index": 2633,
             "features": {
-                "duration": 2533,
-                "amplitude": 38.296546936035156,
-                "mean_error": 33.64359664916992,
-                "variability": 3.180131196975708
+                "duration": 2458,
+                "amplitude": 103.53680419921875,
+                "mean_error": 87.71918487548828,
+                "variability": 6.222091197967529
             }
         },
         {
             "file": "963369.xlsx",
             "local_start_index": 0,
-            "local_end_index": 157,
+            "local_end_index": 92,
             "features": {
-                "duration": 158,
-                "amplitude": 80.7593994140625,
-                "mean_error": 48.339046478271484,
-                "variability": 18.83592987060547
+                "duration": 93,
+                "amplitude": 83.42755889892578,
+                "mean_error": 63.479286193847656,
+                "variability": 11.636046409606934
             }
         }
     ],
     "Anomalia Typu 2": [
-        {
-            "file": "950068.xlsx",
-            "local_start_index": 0,
-            "local_end_index": 5023,
-            "features": {
-                "duration": 5024,
-                "amplitude": 1587.80322265625,
-                "mean_error": 1449.2080078125,
-                "variability": 34.859619140625
-            }
-        },
-        {
-            "file": "950135.xlsx",
-            "local_start_index": 0,
-            "local_end_index": 3920,
-            "features": {
-                "duration": 3921,
-                "amplitude": 1468.093505859375,
-                "mean_error": 1396.734619140625,
-                "variability": 45.792030334472656
-            }
-        },
-        {
-            "file": "950300.xlsx",
-            "local_start_index": 0,
-            "local_end_index": 3770,
-            "features": {
-                "duration": 3771,
-                "amplitude": 715.649658203125,
-                "mean_error": 618.1149291992188,
-                "variability": 42.3211555480957
-            }
-        },
-        {
-            "file": "951691.xlsx",
-            "local_start_index": 0,
-            "local_end_index": 3480,
-            "features": {
-                "duration": 3481,
-                "amplitude": 700.4262084960938,
-                "mean_error": 577.5714721679688,
-                "variability": 43.61088943481445
-            }
-        },
-        {
-            "file": "951724.xlsx",
-            "local_start_index": 0,
-            "local_end_index": 3648,
-            "features": {
-                "duration": 3649,
-                "amplitude": 666.6839599609375,
-                "mean_error": 561.8974609375,
-                "variability": 29.96072769165039
-            }
-        },
-        {
-            "file": "951879.xlsx",
-            "local_start_index": 0,
-            "local_end_index": 3679,
-            "features": {
-                "duration": 3680,
-                "amplitude": 666.6925659179688,
-                "mean_error": 565.30517578125,
-                "variability": 32.4967155456543
-            }
-        },
-        {
-            "file": "952086.xlsx",
-            "local_start_index": 0,
-            "local_end_index": 3878,
-            "features": {
-                "duration": 3879,
-                "amplitude": 668.3133544921875,
-                "mean_error": 570.9908447265625,
-                "variability": 36.61331558227539
-            }
-        },
-        {
-            "file": "952182.xlsx",
-            "local_start_index": 0,
-            "local_end_index": 3942,
-            "features": {
-                "duration": 3943,
-                "amplitude": 674.0559692382812,
-                "mean_error": 567.6583862304688,
-                "variability": 40.02708435058594
-            }
-        },
-        {
-            "file": "952266.xlsx",
-            "local_start_index": 0,
-            "local_end_index": 3606,
-            "features": {
-                "duration": 3607,
-                "amplitude": 668.9530029296875,
-                "mean_error": 557.4949951171875,
-                "variability": 33.57577133178711
-            }
-        },
-        {
-            "file": "953894.xlsx",
-            "local_start_index": 0,
-            "local_end_index": 4765,
-            "features": {
-                "duration": 4766,
-                "amplitude": 1406.9810791015625,
-                "mean_error": 1317.9427490234375,
-                "variability": 27.353689193725586
-            }
-        },
-        {
-            "file": "955382.xlsx",
-            "local_start_index": 0,
-            "local_end_index": 8095,
-            "features": {
-                "duration": 8096,
-                "amplitude": 2316.317138671875,
-                "mean_error": 2071.587646484375,
-                "variability": 47.50507736206055
-            }
-        },
-        {
-            "file": "956942.xlsx",
-            "local_start_index": 0,
-            "local_end_index": 4686,
-            "features": {
-                "duration": 4687,
-                "amplitude": 1402.962158203125,
-                "mean_error": 1209.93896484375,
-                "variability": 81.33232116699219
-            }
-        }
-    ],
-    "Anomalia Typu 3": [
-        {
-            "file": "949063.xlsx",
-            "local_start_index": 0,
-            "local_end_index": 955,
-            "features": {
-                "duration": 956,
-                "amplitude": 469051.375,
-                "mean_error": 468968.1875,
-                "variability": 57.6308708190918
-            }
-        },
-        {
-            "file": "952572.xlsx",
-            "local_start_index": 0,
-            "local_end_index": 1140,
-            "features": {
-                "duration": 1141,
-                "amplitude": 468500.46875,
-                "mean_error": 468414.40625,
-                "variability": 49.646934509277344
-            }
-        }
-    ],
-    "Anomalia Typu 4": [
         {
             "file": "947397.xlsx",
             "local_start_index": 0,
             "local_end_index": 6858,
             "features": {
                 "duration": 6859,
-                "amplitude": 463183.84375,
-                "mean_error": 463136.53125,
-                "variability": 5.692011833190918
+                "amplitude": 463162.3125,
+                "mean_error": 463115.375,
+                "variability": 5.720770359039307
             }
         },
         {
@@ -804,22 +624,22 @@
             "local_end_index": 8796,
             "features": {
                 "duration": 8797,
-                "amplitude": 463038.28125,
-                "mean_error": 462984.25,
-                "variability": 13.137866020202637
+                "amplitude": 463028.3125,
+                "mean_error": 462965.90625,
+                "variability": 11.712541580200195
             }
         }
     ],
-    "Anomalia Typu 5": [
+    "Anomalia Typu 3": [
         {
             "file": "944924.xlsx",
             "local_start_index": 0,
             "local_end_index": 6478,
             "features": {
                 "duration": 6479,
-                "amplitude": 374.9864807128906,
-                "mean_error": 318.24603271484375,
-                "variability": 15.155478477478027
+                "amplitude": 378.4122009277344,
+                "mean_error": 321.40264892578125,
+                "variability": 15.26750659942627
             }
         },
         {
@@ -828,9 +648,9 @@
             "local_end_index": 13233,
             "features": {
                 "duration": 13234,
-                "amplitude": 425.24462890625,
-                "mean_error": 319.9759826660156,
-                "variability": 29.450389862060547
+                "amplitude": 428.0523986816406,
+                "mean_error": 322.181884765625,
+                "variability": 29.702251434326172
             }
         },
         {
@@ -839,9 +659,9 @@
             "local_end_index": 11834,
             "features": {
                 "duration": 11835,
-                "amplitude": 318.47003173828125,
-                "mean_error": 311.0320739746094,
-                "variability": 3.2662484645843506
+                "amplitude": 319.3227844238281,
+                "mean_error": 309.6258239746094,
+                "variability": 3.58233904838562
             }
         },
         {
@@ -850,9 +670,9 @@
             "local_end_index": 6987,
             "features": {
                 "duration": 6988,
-                "amplitude": 2113.2041015625,
-                "mean_error": 2058.941650390625,
-                "variability": 12.690000534057617
+                "amplitude": 2156.5166015625,
+                "mean_error": 2102.218017578125,
+                "variability": 12.711230278015137
             }
         },
         {
@@ -861,9 +681,9 @@
             "local_end_index": 9256,
             "features": {
                 "duration": 9257,
-                "amplitude": 1392.6102294921875,
-                "mean_error": 1329.220947265625,
-                "variability": 13.051650047302246
+                "amplitude": 1396.954833984375,
+                "mean_error": 1334.04541015625,
+                "variability": 13.103517532348633
             }
         },
         {
@@ -872,9 +692,9 @@
             "local_end_index": 9176,
             "features": {
                 "duration": 9177,
-                "amplitude": 1422.804443359375,
-                "mean_error": 1327.77685546875,
-                "variability": 18.638511657714844
+                "amplitude": 1427.0516357421875,
+                "mean_error": 1332.369873046875,
+                "variability": 18.68708038330078
             }
         },
         {
@@ -883,9 +703,9 @@
             "local_end_index": 9172,
             "features": {
                 "duration": 9173,
-                "amplitude": 1407.3956298828125,
-                "mean_error": 1321.1534423828125,
-                "variability": 16.910125732421875
+                "amplitude": 1411.6732177734375,
+                "mean_error": 1325.4300537109375,
+                "variability": 16.986228942871094
             }
         },
         {
@@ -894,9 +714,9 @@
             "local_end_index": 8509,
             "features": {
                 "duration": 8510,
-                "amplitude": 1420.420166015625,
-                "mean_error": 1324.14453125,
-                "variability": 17.722700119018555
+                "amplitude": 1446.2354736328125,
+                "mean_error": 1349.6053466796875,
+                "variability": 17.76527976989746
             }
         },
         {
@@ -905,9 +725,167 @@
             "local_end_index": 7250,
             "features": {
                 "duration": 7251,
-                "amplitude": 2125.57763671875,
-                "mean_error": 2047.0360107421875,
-                "variability": 25.258333206176758
+                "amplitude": 2161.91552734375,
+                "mean_error": 2098.14599609375,
+                "variability": 24.438705444335938
+            }
+        }
+    ],
+    "Anomalia Typu 4": [
+        {
+            "file": "949063.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 955,
+            "features": {
+                "duration": 956,
+                "amplitude": 469076.4375,
+                "mean_error": 468992.9375,
+                "variability": 57.432308197021484
+            }
+        },
+        {
+            "file": "952572.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 1140,
+            "features": {
+                "duration": 1141,
+                "amplitude": 468488.15625,
+                "mean_error": 468400.84375,
+                "variability": 49.59870529174805
+            }
+        }
+    ],
+    "Anomalia Typu 5": [
+        {
+            "file": "950068.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 5023,
+            "features": {
+                "duration": 5024,
+                "amplitude": 1617.581787109375,
+                "mean_error": 1485.547607421875,
+                "variability": 33.28373336791992
+            }
+        },
+        {
+            "file": "950135.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 3920,
+            "features": {
+                "duration": 3921,
+                "amplitude": 1503.23193359375,
+                "mean_error": 1430.1844482421875,
+                "variability": 43.20435333251953
+            }
+        },
+        {
+            "file": "950300.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 3770,
+            "features": {
+                "duration": 3771,
+                "amplitude": 747.3218383789062,
+                "mean_error": 650.2518310546875,
+                "variability": 41.3869743347168
+            }
+        },
+        {
+            "file": "951691.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 3480,
+            "features": {
+                "duration": 3481,
+                "amplitude": 728.8904418945312,
+                "mean_error": 610.647705078125,
+                "variability": 42.51361846923828
+            }
+        },
+        {
+            "file": "951724.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 3648,
+            "features": {
+                "duration": 3649,
+                "amplitude": 695.4529418945312,
+                "mean_error": 594.8807983398438,
+                "variability": 29.56867790222168
+            }
+        },
+        {
+            "file": "951879.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 3679,
+            "features": {
+                "duration": 3680,
+                "amplitude": 695.5916748046875,
+                "mean_error": 598.2366943359375,
+                "variability": 32.16523361206055
+            }
+        },
+        {
+            "file": "952086.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 3878,
+            "features": {
+                "duration": 3879,
+                "amplitude": 693.364501953125,
+                "mean_error": 603.4553833007812,
+                "variability": 35.641788482666016
+            }
+        },
+        {
+            "file": "952182.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 3942,
+            "features": {
+                "duration": 3943,
+                "amplitude": 698.203369140625,
+                "mean_error": 598.477294921875,
+                "variability": 37.9127197265625
+            }
+        },
+        {
+            "file": "952266.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 3606,
+            "features": {
+                "duration": 3607,
+                "amplitude": 695.615966796875,
+                "mean_error": 590.6748657226562,
+                "variability": 33.0710334777832
+            }
+        },
+        {
+            "file": "953894.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 4765,
+            "features": {
+                "duration": 4766,
+                "amplitude": 1434.4930419921875,
+                "mean_error": 1345.78173828125,
+                "variability": 27.569406509399414
+            }
+        },
+        {
+            "file": "955382.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 8095,
+            "features": {
+                "duration": 8096,
+                "amplitude": 2357.095458984375,
+                "mean_error": 2114.8017578125,
+                "variability": 46.64093780517578
+            }
+        },
+        {
+            "file": "956942.xlsx",
+            "local_start_index": 0,
+            "local_end_index": 4686,
+            "features": {
+                "duration": 4687,
+                "amplitude": 1404.27734375,
+                "mean_error": 1229.1444091796875,
+                "variability": 72.40840148925781
             }
         }
     ]

@@ -1,97 +1,50 @@
-2025-11-12 01:56:10,748 [INFO] --- Konfiguracja Uruchomienia ---
-2025-11-12 01:56:10,749 [INFO] Rodzina danych: RLV2
-2025-11-12 01:56:10,751 [INFO] Katalog bazowy danych: preprocessed_data
-2025-11-12 01:56:10,751 [INFO] Rozmiar partii (Batch Size): 512
-2025-11-12 01:56:10,752 [INFO] Wymuœ obliczenie progu: False
-2025-11-12 01:56:10,752 [INFO] Parametry modelu zostan¹ wczytane z checkpointu...
-2025-11-12 01:56:10,753 [INFO] ---------------------------------
-2025-11-12 01:56:10,753 [INFO] --- Rozpoczynam Detekcjê Anomalii dla: RLV2 ---
-2025-11-12 01:56:10,753 [INFO] Logi zapisywane do: outputs\RLV2\detect_RLV2_output.txt
-2025-11-12 01:56:10,779 [INFO] U¿ywam urz¹dzenia: cuda
-2025-11-12 01:56:10,993 [INFO] Model wczytany pomyœlnie.
-2025-11-12 01:56:10,993 [WARNING] Brak pliku progu w checkpoints\RLV2\threshold_RLV2.json.
-2025-11-12 01:56:10,995 [WARNING] Uruchamiam automatyczne obliczanie progu (proszê czekaæ)...
-2025-11-12 01:58:25,559 [INFO] Obliczanie progu zakoñczone. Kontynuujê detekcjê.
-2025-11-12 01:58:25,611 [INFO] Pomyœlnie wczytano próg: 0.541890
-2025-11-12 01:58:25,611 [INFO] 
---- Rozpoczynam analizê plików 'Wady' (Próg = 0.541890) ---
-2025-11-12 01:58:25,640 [INFO] >>> Analizujê plik: 329634.xlsx
-2025-11-12 01:58:27,447 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-12 01:58:27,448 [INFO] >>> Analizujê plik: 330048.xlsx
-2025-11-12 01:58:28,920 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-12 01:58:28,920 [INFO] >>> Analizujê plik: 331345.xlsx
-2025-11-12 01:58:29,147 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-12 01:58:29,147 [INFO] >>> Analizujê plik: 344405.xlsx
-2025-11-12 01:58:29,698 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-12 01:58:29,698 [INFO] >>> Analizujê plik: 344423.xlsx
-2025-11-12 01:58:30,269 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-12 01:58:30,269 [INFO] >>> Analizujê plik: 345143.xlsx
-2025-11-12 01:58:31,926 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-12 01:58:31,926 [INFO] >>> Analizujê plik: 349413.xlsx
-2025-11-12 01:58:33,469 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-12 01:58:33,469 [INFO] >>> Analizujê plik: 366899.xlsx
-2025-11-12 01:58:34,544 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-12 01:58:34,544 [INFO] >>> Analizujê plik: 702642.xlsx
-2025-11-12 01:58:35,900 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-12 01:58:35,901 [INFO] >>> Analizujê plik: 717823.xlsx
-2025-11-12 01:58:37,305 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-12 01:58:37,306 [INFO] >>> Analizujê plik: 946284.xlsx
-2025-11-12 01:58:37,848 [INFO] WYKRYTO 7 zdarzeñ anomalii w tym pliku.
-2025-11-12 01:58:37,849 [INFO] >>> Analizujê plik: 957419.xlsx
-2025-11-12 01:58:38,751 [INFO] WYKRYTO 6 zdarzeñ anomalii w tym pliku.
-2025-11-12 01:58:38,751 [INFO] >>> Analizujê plik: 957615.xlsx
-2025-11-12 01:58:39,687 [INFO] WYKRYTO 2 zdarzeñ anomalii w tym pliku.
-2025-11-12 01:58:39,687 [INFO] 
+2025-11-25 12:33:25,217 [INFO] --- Konfiguracja Uruchomienia ---
+2025-11-25 12:33:25,217 [INFO] Rodzina danych: RLV2
+2025-11-25 12:33:25,220 [INFO] Katalog bazowy danych: preprocessed_data
+2025-11-25 12:33:25,220 [INFO] Rozmiar partii (Batch Size): 512
+2025-11-25 12:33:25,220 [INFO] Wymuœ obliczenie progu: False
+2025-11-25 12:33:25,221 [INFO] Parametry modelu zostan¹ wczytane z checkpointu...
+2025-11-25 12:33:25,221 [INFO] ---------------------------------
+2025-11-25 12:33:25,221 [INFO] --- Rozpoczynam Detekcjê Anomalii dla: RLV2 ---
+2025-11-25 12:33:25,222 [INFO] Logi zapisywane do: outputs\RLV2\detect_RLV2_output.txt
+2025-11-25 12:33:25,259 [INFO] U¿ywam urz¹dzenia: cuda
+2025-11-25 12:33:25,491 [INFO] Model wczytany pomyœlnie.
+2025-11-25 12:33:25,491 [WARNING] Brak pliku progu w checkpoints\RLV2\threshold_RLV2.json.
+2025-11-25 12:33:25,493 [WARNING] Uruchamiam automatyczne obliczanie progu (proszê czekaæ)...
+2025-11-25 12:33:50,739 [INFO] Obliczanie progu zakoñczone. Kontynuujê detekcjê.
+2025-11-25 12:33:50,758 [INFO] Pomyœlnie wczytano próg: 5.252294
+2025-11-25 12:33:50,758 [INFO] 
+--- Rozpoczynam analizê plików 'Wady' (Próg = 5.252294) ---
+2025-11-25 12:33:50,759 [INFO] >>> Analizujê plik: 329634.xlsx
+2025-11-25 12:33:54,058 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 12:33:54,058 [INFO] >>> Analizujê plik: 330048.xlsx
+2025-11-25 12:33:58,036 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 12:33:58,037 [INFO] >>> Analizujê plik: 331345.xlsx
+2025-11-25 12:33:58,513 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 12:33:58,513 [INFO] >>> Analizujê plik: 344405.xlsx
+2025-11-25 12:33:59,904 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 12:33:59,904 [INFO] >>> Analizujê plik: 344423.xlsx
+2025-11-25 12:34:01,397 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 12:34:01,397 [INFO] >>> Analizujê plik: 345143.xlsx
+2025-11-25 12:34:05,972 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 12:34:05,972 [INFO] >>> Analizujê plik: 349413.xlsx
+2025-11-25 12:34:10,154 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 12:34:10,155 [INFO] >>> Analizujê plik: 366899.xlsx
+2025-11-25 12:34:12,505 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-11-25 12:34:12,506 [INFO] >>> Analizujê plik: 702642.xlsx
+2025-11-25 12:34:16,144 [INFO] WYKRYTO 36 zdarzeñ anomalii w tym pliku.
+2025-11-25 12:34:16,144 [INFO] >>> Analizujê plik: 717823.xlsx
+2025-11-25 12:34:20,118 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 12:34:20,119 [INFO] >>> Analizujê plik: 946284.xlsx
+2025-11-25 12:34:21,460 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 12:34:21,460 [INFO] >>> Analizujê plik: 957419.xlsx
+2025-11-25 12:34:23,825 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 12:34:23,825 [INFO] >>> Analizujê plik: 957615.xlsx
+2025-11-25 12:34:26,158 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-11-25 12:34:26,158 [INFO] 
 --- Detekcja Wstêpna Zakoñczona ---
-2025-11-12 01:58:39,690 [INFO] £¹cznie znaleziono 25 zdarzeñ w 13 plikach.
-2025-11-12 01:58:39,691 [INFO] Zapisano surowe zdarzenia w: outputs\RLV2\raw_events_RLV2.json
-2025-11-12 01:58:39,692 [INFO] 
+2025-11-25 12:34:26,160 [INFO] £¹cznie znaleziono 44 zdarzeñ w 9 plikach.
+2025-11-25 12:34:26,162 [INFO] Zapisano surowe zdarzenia w: outputs\RLV2\raw_events_RLV2.json
+2025-11-25 12:34:26,162 [INFO] 
 --- Uruchamiam automatyczn¹ klasyfikacjê i raportowanie... ---
-2025-11-12 01:59:01,007 [INFO] Klasyfikacja zakoñczona pomyœlnie.
-2025-11-12 02:03:28,129 [INFO] --- Konfiguracja Uruchomienia ---
-2025-11-12 02:03:28,130 [INFO] Rodzina danych: RLV2
-2025-11-12 02:03:28,132 [INFO] Katalog bazowy danych: preprocessed_data
-2025-11-12 02:03:28,133 [INFO] Rozmiar partii (Batch Size): 512
-2025-11-12 02:03:28,134 [INFO] Wymuœ obliczenie progu: False
-2025-11-12 02:03:28,134 [INFO] Parametry modelu zostan¹ wczytane z checkpointu...
-2025-11-12 02:03:28,134 [INFO] ---------------------------------
-2025-11-12 02:03:28,135 [INFO] --- Rozpoczynam Detekcjê Anomalii dla: RLV2 ---
-2025-11-12 02:03:28,135 [INFO] Logi zapisywane do: outputs\RLV2\detect_RLV2_output.txt
-2025-11-12 02:03:28,169 [INFO] U¿ywam urz¹dzenia: cuda
-2025-11-12 02:03:28,398 [INFO] Model wczytany pomyœlnie.
-2025-11-12 02:03:28,399 [INFO] Pomyœlnie wczytano próg: 0.541890
-2025-11-12 02:03:28,401 [INFO] 
---- Rozpoczynam analizê plików 'Wady' (Próg = 0.541890) ---
-2025-11-12 02:03:28,402 [INFO] >>> Analizujê plik: 329634.xlsx
-2025-11-12 02:03:29,676 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-12 02:03:37,940 [INFO] >>> Analizujê plik: 330048.xlsx
-2025-11-12 02:03:39,586 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-12 02:03:39,586 [INFO] >>> Analizujê plik: 331345.xlsx
-2025-11-12 02:03:39,772 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-12 02:03:39,772 [INFO] >>> Analizujê plik: 344405.xlsx
-2025-11-12 02:03:40,299 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-12 02:03:40,299 [INFO] >>> Analizujê plik: 344423.xlsx
-2025-11-12 02:03:40,855 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-12 02:03:40,855 [INFO] >>> Analizujê plik: 345143.xlsx
-2025-11-12 02:03:42,484 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-12 02:03:42,485 [INFO] >>> Analizujê plik: 349413.xlsx
-2025-11-12 02:03:44,056 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-12 02:03:44,057 [INFO] >>> Analizujê plik: 366899.xlsx
-2025-11-12 02:03:44,974 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-12 02:03:44,975 [INFO] >>> Analizujê plik: 702642.xlsx
-2025-11-12 02:03:46,529 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-12 02:03:46,529 [INFO] >>> Analizujê plik: 717823.xlsx
-2025-11-12 02:03:48,102 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-12 02:03:48,102 [INFO] >>> Analizujê plik: 946284.xlsx
-2025-11-12 02:03:48,639 [INFO] WYKRYTO 7 zdarzeñ anomalii w tym pliku.
-2025-11-12 02:03:48,640 [INFO] >>> Analizujê plik: 957419.xlsx
-2025-11-12 02:03:49,533 [INFO] WYKRYTO 6 zdarzeñ anomalii w tym pliku.
-2025-11-12 02:03:49,534 [INFO] >>> Analizujê plik: 957615.xlsx
-2025-11-12 02:03:50,507 [INFO] WYKRYTO 2 zdarzeñ anomalii w tym pliku.
-2025-11-12 02:03:50,507 [INFO] 
---- Detekcja Wstêpna Zakoñczona ---
-2025-11-12 02:03:50,510 [INFO] £¹cznie znaleziono 25 zdarzeñ w 13 plikach.
-2025-11-12 02:03:50,511 [INFO] Zapisano surowe zdarzenia w: outputs\RLV2\raw_events_RLV2.json
-2025-11-12 02:03:50,511 [INFO] 
---- Uruchamiam automatyczn¹ klasyfikacjê i raportowanie... ---
-2025-11-12 02:04:09,169 [INFO] Klasyfikacja zakoñczona pomyœlnie.
+2025-11-25 12:35:15,520 [INFO] Klasyfikacja zakoñczona pomyœlnie.

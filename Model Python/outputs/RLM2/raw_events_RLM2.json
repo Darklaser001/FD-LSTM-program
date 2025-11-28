@@ -64,14 +64,6 @@
         "map_file_path": "preprocessed_data\\RLM2\\947397_map.csv"
     },
     {
-        "file_name": "947700",
-        "start_index": 0,
-        "end_index": 1603,
-        "seq_len": 256,
-        "data_file_path": "preprocessed_data\\RLM2\\947700_data.pt",
-        "map_file_path": "preprocessed_data\\RLM2\\947700_map.csv"
-    },
-    {
         "file_name": "947975",
         "start_index": 0,
         "end_index": 3571,
@@ -625,15 +617,7 @@
     },
     {
         "file_name": "959716",
-        "start_index": 1493,
-        "end_index": 1528,
-        "seq_len": 256,
-        "data_file_path": "preprocessed_data\\RLM2\\959716_data.pt",
-        "map_file_path": "preprocessed_data\\RLM2\\959716_map.csv"
-    },
-    {
-        "file_name": "959716",
-        "start_index": 1546,
+        "start_index": 1588,
         "end_index": 2564,
         "seq_len": 256,
         "data_file_path": "preprocessed_data\\RLM2\\959716_data.pt",
@@ -641,7 +625,7 @@
     },
     {
         "file_name": "959803",
-        "start_index": 101,
+        "start_index": 176,
         "end_index": 2633,
         "seq_len": 256,
         "data_file_path": "preprocessed_data\\RLM2\\959803_data.pt",
@@ -650,7 +634,7 @@
     {
         "file_name": "963369",
         "start_index": 0,
-        "end_index": 157,
+        "end_index": 92,
         "seq_len": 256,
         "data_file_path": "preprocessed_data\\RLM2\\963369_data.pt",
         "map_file_path": "preprocessed_data\\RLM2\\963369_map.csv"
