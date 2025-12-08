@@ -4,7 +4,7 @@ chcp 65001 > nul
 
 ECHO.
 ECHO =======================================================
-ECHO ==   AUTOMATYCZNY TRENING WSZYSTKICH MODELI (15 EPOK)  ==
+ECHO ==   AUTOMATYCZNY TRENING WSZYSTKICH MODELI (20 EPOK)  ==
 ECHO =======================================================
 ECHO.
 
@@ -21,7 +21,7 @@ for %%f in (%FAMILIES%) do (
     REM --input_dim zostanie wykryty automatycznie
     REM --hidden_dim itp. zostaną wzięte z domyślnych w skrypcie
     
-    python train_model.py --family %%f --epochs 10  --load_model
+    python train_model.py --family %%f --epochs 20  --load_model
     
     ECHO [INFO] --- Trening dla %%f zakończony ---
     ECHO.
