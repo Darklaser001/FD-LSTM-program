@@ -6,5 +6,8 @@ preprocessed_data/
 __pycache__/
 *.pyc
 
-# --- Ignoruj pliki tymczasowe Excela (jeśli jakieś są otwarte) ---
+# --- Ignoruj pliki tymczasowe Excela ---
 ~$*.xlsx
+
+# --- Ignoruj pracę ---
+*Tokarski*
