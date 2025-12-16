@@ -10,33 +10,7 @@ import pandas as pd
 import glob
 import json # Do zapisu progu
 from tqdm import tqdm
-
-# =============================================================================
-# --- Definicja Modelu (musi być identyczna jak w train_model.py) ---
-# =============================================================================
-class LSTMAutoencoder(nn.Module):
-    def __init__(self, input_dim, hidden_dim, num_layers, seq_len, dropout_rate):
-        super(LSTMAutoencoder, self).__init__()
-        self.input_dim = input_dim
-        self.hidden_dim = hidden_dim
-        self.num_layers = num_layers
-        self.seq_len = seq_len
-        self.encoder = nn.LSTM(
-            input_size=input_dim, hidden_size=hidden_dim, num_layers=num_layers,
-            batch_first=True, dropout=dropout_rate if num_layers > 1 else 0
-        )
-        self.decoder = nn.LSTM(
-            input_size=hidden_dim, hidden_size=hidden_dim, num_layers=num_layers,
-            batch_first=True, dropout=dropout_rate if num_layers > 1 else 0
-        )
-        self.output_layer = nn.Linear(hidden_dim, input_dim)
-
-    def forward(self, x):
-        _, (hidden_state, cell_state) = self.encoder(x)
-        decoder_input = hidden_state[-1].unsqueeze(1).repeat(1, self.seq_len, 1)
-        decoder_output, _ = self.decoder(input=decoder_input, hx=(hidden_state, cell_state))
-        reconstruction = self.output_layer(decoder_output)
-        return reconstruction
+from fractional_modules import LSTMAutoencoder
 
 # =============================================================================
 # --- Główna Funkcja Obliczania Progu ---
@@ -118,8 +92,8 @@ def main(args):
         'hidden_dim': args.hidden_dim if args.hidden_dim is not None else params_from_file.get('hidden_dim'),
         'num_layers': args.num_layers if args.num_layers is not None else params_from_file.get('num_layers'),
         'seq_len': args.seq_len if args.seq_len is not None else params_from_file.get('seq_len'),
-        # Zauważ: argument parsera to 'dropout', ale klasa chce 'dropout_rate'
-        'dropout_rate': args.dropout if args.dropout is not None else params_from_file.get('dropout') 
+        'dropout_rate': args.dropout if args.dropout is not None else params_from_file.get('dropout'),
+        'vi' : args.vi if args.vi is not None else params_from_file.get('vi')
     }
 
 
@@ -129,7 +103,8 @@ def main(args):
         hidden_dim=final_params['hidden_dim'],
         num_layers=final_params['num_layers'],
         seq_len=final_params['seq_len'],
-        dropout_rate=final_params['dropout_rate']
+        dropout_rate=final_params['dropout_rate'],
+        vi=final_params['vi']
     ).to(device)
     
     model.load_state_dict(checkpoint['model_state_dict'])
@@ -205,6 +180,8 @@ if __name__ == "__main__":
                         help="[Opcjonalne] Nadpisuje 'seq_len' z checkpointu")
     parser.add_argument('--dropout', type=float, default=None,
                         help="[Opcjonalne] Nadpisuje 'dropout' z checkpointu")
+    parser.add_argument('--vi', type=float, default=None, 
+                        help="Opcjonalnie: wersja Vi modelu")
     
     # Argumenty Procesu
     parser.add_argument('--base_dir', type=str, default="preprocessed_data")

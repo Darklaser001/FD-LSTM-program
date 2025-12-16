@@ -250,9 +250,25 @@
     {
         "file_name": "958621",
         "start_index": 0,
+        "end_index": 1740,
+        "seq_len": 256,
+        "data_file_path": "preprocessed_data\\RLR1\\958621_data.pt",
+        "map_file_path": "preprocessed_data\\RLR1\\958621_map.csv"
+    },
+    {
+        "file_name": "958621",
+        "start_index": 2253,
         "end_index": 2882,
         "seq_len": 256,
         "data_file_path": "preprocessed_data\\RLR1\\958621_data.pt",
         "map_file_path": "preprocessed_data\\RLR1\\958621_map.csv"
+    },
+    {
+        "file_name": "963068",
+        "start_index": 864,
+        "end_index": 872,
+        "seq_len": 256,
+        "data_file_path": "preprocessed_data\\RLR1\\963068_data.pt",
+        "map_file_path": "preprocessed_data\\RLR1\\963068_map.csv"
     }
 ]

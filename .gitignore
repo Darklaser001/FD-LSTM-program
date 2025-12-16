@@ -1,0 +1,14 @@
+# --- Ignoruj pracę ---
+Jakub Tokarski 68892 Analiza anomalii w kontekście produkcji kabli światłowodowych.docx
+
+# --- Ignoruj DANE ---
+Model Python/Dane/
+Model Python/preprocessed_data/
+
+# --- Ignoruj pliki systemowe Pythona ---
+Model Python/__pycache__/
+Model Python/*.pyc
+
+# --- Ignoruj pliki tymczasowe Excela ---
+Model Python/~$*.xlsx
+

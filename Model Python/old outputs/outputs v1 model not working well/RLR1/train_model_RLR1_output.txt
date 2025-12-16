@@ -1,0 +1,213 @@
+2025-12-13 03:03:55,006 [INFO] --- Konfiguracja Treningu ---
+2025-12-13 03:03:55,007 [INFO] Rodzina danych: RLR1
+2025-12-13 03:03:55,009 [INFO] Liczba epok: 50
+2025-12-13 03:03:55,010 [INFO] Rozmiar partii (Batch Size): 256
+2025-12-13 03:03:55,010 [INFO] Wymiar wejœciowy (Input Dim): Wykrywany automatycznie
+2025-12-13 03:03:55,010 [INFO] Architektura: H1=256, H2=128, H3=64, Latent=64
+2025-12-13 03:03:55,011 [INFO] Dropout: 0.1
+2025-12-13 03:03:55,011 [INFO] Fractional Alpha Start: 1.0
+2025-12-13 03:03:55,011 [INFO] Wznawiam trening: True
+2025-12-13 03:03:55,012 [INFO] ---------------------------------
+2025-12-13 03:03:55,012 [INFO] --- Krok 1b: £adowanie Danych ---
+2025-12-13 03:03:55,095 [INFO] U¿ywam urz¹dzenia: cuda
+2025-12-13 03:03:55,096 [INFO] Nie znaleziono pliku progu.
+2025-12-13 03:04:04,698 [INFO] Automatycznie wykryto 'input_dim' z pliku: 40
+2025-12-13 03:04:04,700 [INFO] Utworzono DataLoader z 851 partiami.
+2025-12-13 03:04:04,701 [INFO] 
+--- Krok 2: Inicjalizacja Modelu ---
+2025-12-13 03:04:06,437 [WARNING] Ostrze¿enie: Flaga --load_model podana, ale plik checkpoints\RLR1\model_checkpoint_RLR1.pth nie istnieje.
+2025-12-13 03:04:06,438 [WARNING] Rozpoczynam nowy trening od zera.
+2025-12-13 03:04:06,440 [INFO] 
+--- Krok 3: Rozpoczynam Trening (od epoki 1) ---
+2025-12-13 03:05:15,632 [INFO] Epoka 1 zakoñczona. Loss: 3.487029 | Alpha (kszta³t): 2.2885
+2025-12-13 03:05:15,632 [INFO] Epoka 1 zakoñczona. Nowy najlepszy wynik! Strata spad³a z inf do 3.487029.
+2025-12-13 03:05:15,633 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:05:15,664 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:06:22,624 [INFO] Epoka 2 zakoñczona. Loss: 2.542672 | Alpha (kszta³t): 2.7515
+2025-12-13 03:06:22,624 [INFO] Epoka 2 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 3.487029 do 2.542672.
+2025-12-13 03:06:22,625 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:06:22,652 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:07:28,348 [INFO] Epoka 3 zakoñczona. Loss: 1.694907 | Alpha (kszta³t): 2.8141
+2025-12-13 03:07:28,348 [INFO] Epoka 3 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 2.542672 do 1.694907.
+2025-12-13 03:07:28,348 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:07:28,376 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:08:36,471 [INFO] Epoka 4 zakoñczona. Loss: 1.645183 | Alpha (kszta³t): 2.8129
+2025-12-13 03:08:36,472 [INFO] Epoka 4 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 1.694907 do 1.645183.
+2025-12-13 03:08:36,472 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:08:36,500 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:09:42,087 [INFO] Epoka 5 zakoñczona. Loss: 1.640277 | Alpha (kszta³t): 2.8175
+2025-12-13 03:09:42,087 [INFO] Epoka 5 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 1.645183 do 1.640277.
+2025-12-13 03:09:42,087 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:09:42,115 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:10:49,855 [INFO] Epoka 6 zakoñczona. Loss: 1.639741 | Alpha (kszta³t): 2.8471
+2025-12-13 03:10:49,855 [INFO] Epoka 6 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 1.640277 do 1.639741.
+2025-12-13 03:10:49,856 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:10:49,882 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:11:57,980 [INFO] Epoka 7 zakoñczona. Loss: 1.603741 | Alpha (kszta³t): 2.9092
+2025-12-13 03:11:57,980 [INFO] Epoka 7 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 1.639741 do 1.603741.
+2025-12-13 03:11:57,981 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:11:58,007 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:13:06,121 [INFO] Epoka 8 zakoñczona. Loss: 1.622722 | Alpha (kszta³t): 2.9646
+2025-12-13 03:13:06,121 [WARNING] Epoka 8 zakoñczona. Brak poprawy. Strata: 1.622722 (Najlepsza: 1.603741)
+2025-12-13 03:13:06,122 [WARNING] Cierpliwoœæ: 1/50
+2025-12-13 03:14:14,225 [INFO] Epoka 9 zakoñczona. Loss: 1.520869 | Alpha (kszta³t): 2.9982
+2025-12-13 03:14:14,225 [INFO] Epoka 9 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 1.603741 do 1.520869.
+2025-12-13 03:14:14,225 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:14:14,252 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:15:22,348 [INFO] Epoka 10 zakoñczona. Loss: 1.446891 | Alpha (kszta³t): 3.0999
+2025-12-13 03:15:22,349 [INFO] Epoka 10 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 1.520869 do 1.446891.
+2025-12-13 03:15:22,349 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:15:22,376 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:16:28,668 [INFO] Epoka 11 zakoñczona. Loss: 1.346697 | Alpha (kszta³t): 3.0526
+2025-12-13 03:16:28,668 [INFO] Epoka 11 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 1.446891 do 1.346697.
+2025-12-13 03:16:28,669 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:16:28,695 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:17:34,771 [INFO] Epoka 12 zakoñczona. Loss: 1.361176 | Alpha (kszta³t): 3.0847
+2025-12-13 03:17:34,771 [WARNING] Epoka 12 zakoñczona. Brak poprawy. Strata: 1.361176 (Najlepsza: 1.346697)
+2025-12-13 03:17:34,771 [WARNING] Cierpliwoœæ: 1/50
+2025-12-13 03:18:42,878 [INFO] Epoka 13 zakoñczona. Loss: 1.305358 | Alpha (kszta³t): 3.0982
+2025-12-13 03:18:42,878 [INFO] Epoka 13 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 1.346697 do 1.305358.
+2025-12-13 03:18:42,879 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:18:42,907 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:19:51,021 [INFO] Epoka 14 zakoñczona. Loss: 1.303013 | Alpha (kszta³t): 3.0893
+2025-12-13 03:19:51,022 [INFO] Epoka 14 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 1.305358 do 1.303013.
+2025-12-13 03:19:51,022 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:19:51,049 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:20:59,178 [INFO] Epoka 15 zakoñczona. Loss: 1.092332 | Alpha (kszta³t): 3.1171
+2025-12-13 03:20:59,178 [INFO] Epoka 15 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 1.303013 do 1.092332.
+2025-12-13 03:20:59,179 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:20:59,206 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:22:05,998 [INFO] Epoka 16 zakoñczona. Loss: 1.040596 | Alpha (kszta³t): 3.2223
+2025-12-13 03:22:05,998 [INFO] Epoka 16 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 1.092332 do 1.040596.
+2025-12-13 03:22:05,999 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:22:06,026 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:23:13,439 [INFO] Epoka 17 zakoñczona. Loss: 0.970456 | Alpha (kszta³t): 3.2279
+2025-12-13 03:23:13,439 [INFO] Epoka 17 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 1.040596 do 0.970456.
+2025-12-13 03:23:13,439 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:23:13,467 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:24:21,758 [INFO] Epoka 18 zakoñczona. Loss: 1.068323 | Alpha (kszta³t): 3.4107
+2025-12-13 03:24:21,758 [WARNING] Epoka 18 zakoñczona. Brak poprawy. Strata: 1.068323 (Najlepsza: 0.970456)
+2025-12-13 03:24:21,759 [WARNING] Cierpliwoœæ: 1/50
+2025-12-13 03:25:29,838 [INFO] Epoka 19 zakoñczona. Loss: 0.978614 | Alpha (kszta³t): 3.3676
+2025-12-13 03:25:29,838 [WARNING] Epoka 19 zakoñczona. Brak poprawy. Strata: 0.978614 (Najlepsza: 0.970456)
+2025-12-13 03:25:29,838 [WARNING] Cierpliwoœæ: 2/50
+2025-12-13 03:26:37,959 [INFO] Epoka 20 zakoñczona. Loss: 1.073747 | Alpha (kszta³t): 3.3470
+2025-12-13 03:26:37,959 [WARNING] Epoka 20 zakoñczona. Brak poprawy. Strata: 1.073747 (Najlepsza: 0.970456)
+2025-12-13 03:26:37,960 [WARNING] Cierpliwoœæ: 3/50
+2025-12-13 03:27:46,124 [INFO] Epoka 21 zakoñczona. Loss: 1.048500 | Alpha (kszta³t): 3.4024
+2025-12-13 03:27:46,125 [WARNING] Epoka 21 zakoñczona. Brak poprawy. Strata: 1.048500 (Najlepsza: 0.970456)
+2025-12-13 03:27:46,125 [WARNING] Cierpliwoœæ: 4/50
+2025-12-13 03:28:54,216 [INFO] Epoka 22 zakoñczona. Loss: 0.867708 | Alpha (kszta³t): 3.4159
+2025-12-13 03:28:54,216 [INFO] Epoka 22 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.970456 do 0.867708.
+2025-12-13 03:28:54,217 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:28:54,243 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:30:02,343 [INFO] Epoka 23 zakoñczona. Loss: 0.805815 | Alpha (kszta³t): 3.4184
+2025-12-13 03:30:02,343 [INFO] Epoka 23 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.867708 do 0.805815.
+2025-12-13 03:30:02,344 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:30:02,371 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:31:10,458 [INFO] Epoka 24 zakoñczona. Loss: 0.778299 | Alpha (kszta³t): 3.4390
+2025-12-13 03:31:10,458 [INFO] Epoka 24 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.805815 do 0.778299.
+2025-12-13 03:31:10,459 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:31:10,485 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:32:18,556 [INFO] Epoka 25 zakoñczona. Loss: 0.774192 | Alpha (kszta³t): 3.4785
+2025-12-13 03:32:18,558 [INFO] Epoka 25 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.778299 do 0.774192.
+2025-12-13 03:32:18,558 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:32:18,586 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:33:26,592 [INFO] Epoka 26 zakoñczona. Loss: 0.754232 | Alpha (kszta³t): 3.4604
+2025-12-13 03:33:26,592 [INFO] Epoka 26 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.774192 do 0.754232.
+2025-12-13 03:33:26,593 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:33:26,620 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:34:32,052 [INFO] Epoka 27 zakoñczona. Loss: 0.745636 | Alpha (kszta³t): 3.4610
+2025-12-13 03:34:32,053 [INFO] Epoka 27 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.754232 do 0.745636.
+2025-12-13 03:34:32,053 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:34:32,080 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:35:37,560 [INFO] Epoka 28 zakoñczona. Loss: 0.752252 | Alpha (kszta³t): 3.4702
+2025-12-13 03:35:37,560 [WARNING] Epoka 28 zakoñczona. Brak poprawy. Strata: 0.752252 (Najlepsza: 0.745636)
+2025-12-13 03:35:37,560 [WARNING] Cierpliwoœæ: 1/50
+2025-12-13 03:36:43,036 [INFO] Epoka 29 zakoñczona. Loss: 0.734985 | Alpha (kszta³t): 3.4655
+2025-12-13 03:36:43,036 [INFO] Epoka 29 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.745636 do 0.734985.
+2025-12-13 03:36:43,036 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:36:43,063 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:37:49,671 [INFO] Epoka 30 zakoñczona. Loss: 0.739273 | Alpha (kszta³t): 3.4902
+2025-12-13 03:37:49,671 [WARNING] Epoka 30 zakoñczona. Brak poprawy. Strata: 0.739273 (Najlepsza: 0.734985)
+2025-12-13 03:37:49,672 [WARNING] Cierpliwoœæ: 1/50
+2025-12-13 03:38:57,775 [INFO] Epoka 31 zakoñczona. Loss: 0.730610 | Alpha (kszta³t): 3.5028
+2025-12-13 03:38:57,775 [INFO] Epoka 31 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.734985 do 0.730610.
+2025-12-13 03:38:57,776 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:38:57,803 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:40:05,597 [INFO] Epoka 32 zakoñczona. Loss: 0.730554 | Alpha (kszta³t): 3.5092
+2025-12-13 03:40:05,598 [INFO] Epoka 32 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.730610 do 0.730554.
+2025-12-13 03:40:05,598 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:40:05,625 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:41:13,720 [INFO] Epoka 33 zakoñczona. Loss: 0.725140 | Alpha (kszta³t): 3.5324
+2025-12-13 03:41:13,720 [INFO] Epoka 33 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.730554 do 0.725140.
+2025-12-13 03:41:13,720 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:41:13,747 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:42:21,853 [INFO] Epoka 34 zakoñczona. Loss: 0.698516 | Alpha (kszta³t): 3.5221
+2025-12-13 03:42:21,853 [INFO] Epoka 34 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.725140 do 0.698516.
+2025-12-13 03:42:21,854 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:42:21,881 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:43:30,007 [INFO] Epoka 35 zakoñczona. Loss: 0.685489 | Alpha (kszta³t): 3.5783
+2025-12-13 03:43:30,007 [INFO] Epoka 35 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.698516 do 0.685489.
+2025-12-13 03:43:30,008 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:43:30,034 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:44:38,135 [INFO] Epoka 36 zakoñczona. Loss: 0.682207 | Alpha (kszta³t): 3.6188
+2025-12-13 03:44:38,135 [INFO] Epoka 36 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.685489 do 0.682207.
+2025-12-13 03:44:38,135 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:44:38,162 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:45:44,456 [INFO] Epoka 37 zakoñczona. Loss: 0.672284 | Alpha (kszta³t): 3.6156
+2025-12-13 03:45:44,456 [INFO] Epoka 37 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.682207 do 0.672284.
+2025-12-13 03:45:44,457 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:45:44,484 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:46:49,923 [INFO] Epoka 38 zakoñczona. Loss: 0.667484 | Alpha (kszta³t): 3.6150
+2025-12-13 03:46:49,923 [INFO] Epoka 38 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.672284 do 0.667484.
+2025-12-13 03:46:49,924 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:46:49,950 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:47:55,421 [INFO] Epoka 39 zakoñczona. Loss: 0.688405 | Alpha (kszta³t): 3.5711
+2025-12-13 03:47:55,421 [WARNING] Epoka 39 zakoñczona. Brak poprawy. Strata: 0.688405 (Najlepsza: 0.667484)
+2025-12-13 03:47:55,421 [WARNING] Cierpliwoœæ: 1/50
+2025-12-13 03:49:00,896 [INFO] Epoka 40 zakoñczona. Loss: 0.644216 | Alpha (kszta³t): 3.5951
+2025-12-13 03:49:00,896 [INFO] Epoka 40 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.667484 do 0.644216.
+2025-12-13 03:49:00,896 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:49:00,923 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:50:06,358 [INFO] Epoka 41 zakoñczona. Loss: 0.630433 | Alpha (kszta³t): 3.6116
+2025-12-13 03:50:06,358 [INFO] Epoka 41 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.644216 do 0.630433.
+2025-12-13 03:50:06,358 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:50:06,385 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:51:11,782 [INFO] Epoka 42 zakoñczona. Loss: 0.626927 | Alpha (kszta³t): 3.6169
+2025-12-13 03:51:11,782 [INFO] Epoka 42 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.630433 do 0.626927.
+2025-12-13 03:51:11,783 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:51:11,809 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:52:17,183 [INFO] Epoka 43 zakoñczona. Loss: 0.623196 | Alpha (kszta³t): 3.6316
+2025-12-13 03:52:17,183 [INFO] Epoka 43 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.626927 do 0.623196.
+2025-12-13 03:52:17,183 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:52:17,211 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:53:25,176 [INFO] Epoka 44 zakoñczona. Loss: 0.615105 | Alpha (kszta³t): 3.6236
+2025-12-13 03:53:25,177 [INFO] Epoka 44 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.623196 do 0.615105.
+2025-12-13 03:53:25,177 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:53:25,204 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:54:33,574 [INFO] Epoka 45 zakoñczona. Loss: 0.609384 | Alpha (kszta³t): 3.6351
+2025-12-13 03:54:33,574 [INFO] Epoka 45 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.615105 do 0.609384.
+2025-12-13 03:54:33,575 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:54:33,601 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:55:41,690 [INFO] Epoka 46 zakoñczona. Loss: 0.599077 | Alpha (kszta³t): 3.6502
+2025-12-13 03:55:41,691 [INFO] Epoka 46 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.609384 do 0.599077.
+2025-12-13 03:55:41,691 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:55:41,718 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:56:50,085 [INFO] Epoka 47 zakoñczona. Loss: 0.594876 | Alpha (kszta³t): 3.6362
+2025-12-13 03:56:50,085 [INFO] Epoka 47 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.599077 do 0.594876.
+2025-12-13 03:56:50,085 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:56:50,113 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:57:58,346 [INFO] Epoka 48 zakoñczona. Loss: 0.586920 | Alpha (kszta³t): 3.6311
+2025-12-13 03:57:58,346 [INFO] Epoka 48 zakoñczona. Nowy najlepszy wynik! Strata spad³a z 0.594876 do 0.586920.
+2025-12-13 03:57:58,346 [INFO] Zapisujê checkpoint w: checkpoints\RLR1\model_checkpoint_RLR1.pth
+2025-12-13 03:57:58,374 [INFO] Zapisano pomyœlnie.
+2025-12-13 03:59:06,713 [INFO] Epoka 49 zakoñczona. Loss: 0.634677 | Alpha (kszta³t): 3.6296
+2025-12-13 03:59:06,713 [WARNING] Epoka 49 zakoñczona. Brak poprawy. Strata: 0.634677 (Najlepsza: 0.586920)
+2025-12-13 03:59:06,714 [WARNING] Cierpliwoœæ: 1/50
+2025-12-13 04:00:15,298 [INFO] Epoka 50 zakoñczona. Loss: 0.633627 | Alpha (kszta³t): 3.6384
+2025-12-13 04:00:15,299 [WARNING] Epoka 50 zakoñczona. Brak poprawy. Strata: 0.633627 (Najlepsza: 0.586920)
+2025-12-13 04:00:15,299 [WARNING] Cierpliwoœæ: 2/50
+2025-12-13 04:00:15,623 [INFO] Wykres zapisany: outputs\RLR1\loss_RLR1.png
+2025-12-13 04:00:15,623 [INFO] 
+--- Trening Zakoñczony ---

@@ -14,33 +14,7 @@ import matplotlib.patches as mpatches
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 import seaborn as sns
-
-# =============================================================================
-# --- Definicja Modelu ---
-# =============================================================================
-class LSTMAutoencoder(nn.Module):
-    def __init__(self, input_dim, hidden_dim, num_layers, seq_len, dropout_rate):
-        super(LSTMAutoencoder, self).__init__()
-        self.input_dim = input_dim
-        self.hidden_dim = hidden_dim
-        self.num_layers = num_layers
-        self.seq_len = seq_len
-        self.encoder = nn.LSTM(
-            input_size=input_dim, hidden_size=hidden_dim, num_layers=num_layers,
-            batch_first=True, dropout=dropout_rate if num_layers > 1 else 0
-        )
-        self.decoder = nn.LSTM(
-            input_size=hidden_dim, hidden_size=hidden_dim, num_layers=num_layers,
-            batch_first=True, dropout=dropout_rate if num_layers > 1 else 0
-        )
-        self.output_layer = nn.Linear(hidden_dim, input_dim)
-
-    def forward(self, x):
-        _, (hidden_state, cell_state) = self.encoder(x)
-        decoder_input = hidden_state[-1].unsqueeze(1).repeat(1, self.seq_len, 1)
-        decoder_output, _ = self.decoder(input=decoder_input, hx=(hidden_state, cell_state))
-        reconstruction = self.output_layer(decoder_output)
-        return reconstruction
+from fractional_modules import LSTMAutoencoder
 
 # =============================================================================
 # --- Funkcje Pomocnicze ---
@@ -233,34 +207,56 @@ def main(args):
     checkpoint_dir = os.path.join("checkpoints", args.family)
     model_path = os.path.join(checkpoint_dir, f"model_checkpoint_{args.family}.pth")
     events_file_path = os.path.join(log_dir, f"raw_events_{args.family}.json")
-    threshold_path = os.path.join(checkpoint_dir, f"threshold_{args.family}.json")
+
     processed_data_dir = os.path.join(args.base_dir, args.family)
     train_data_path = os.path.join(processed_data_dir, 'train_data.pt')
 
     # --- 1. Wczytanie Modelu ---
-    logging.info(f"Wczytuję model...")
     if not os.path.exists(model_path):
-        logging.error("Brak modelu!")
-        return
-    checkpoint = torch.load(model_path, map_location=device)
+        logging.error(f"BŁĄD: Nie znaleziono modelu w {model_path}")
+        logging.error("Uruchom najpierw 'train_model.py'")
+        return 
+
+    checkpoint = torch.load(model_path)
+    
+    
+    #### WAŻNY PUNKT - wczytujemy dane z modelu - kopiujemy wartości które używaliśmy przy rozruchu modelu. Do manualnego nadpisania przy uruchomieniu programu.
+
+    # 1.1. Wczytaj parametry domyślne z pliku
     if 'model_params' not in checkpoint:
-        logging.error("Model bez parametrów.")
+        logging.error("BŁĄD: Checkpoint nie zawiera 'model_params'.")
+        logging.error("Proszę, wytrenuj model ponownie (choćby 1 epokę) używając najnowszej wersji 'train_model.py'.")
         return
     
-    params = checkpoint['model_params']
-    model_args = {k: params.get(k) for k in ['input_dim', 'hidden_dim', 'num_layers', 'seq_len', 'dropout']}
-    model_args['dropout_rate'] = model_args.pop('dropout')
+    params_from_file = checkpoint['model_params']
+
     
-    model = LSTMAutoencoder(**model_args).to(device)
+    # 1.2. Zbuduj ostateczną listę parametrów, dając priorytet 'args'
+    # Użyj wartości od użytkownika (args.X) jeśli istnieje, inaczej weź z pliku
+    final_params = {
+        'input_dim': args.input_dim if args.input_dim is not None else params_from_file.get('input_dim'),
+        'hidden_dim': args.hidden_dim if args.hidden_dim is not None else params_from_file.get('hidden_dim'),
+        'num_layers': args.num_layers if args.num_layers is not None else params_from_file.get('num_layers'),
+        'seq_len': args.seq_len if args.seq_len is not None else params_from_file.get('seq_len'),
+        'dropout_rate': args.dropout if args.dropout is not None else params_from_file.get('dropout'),
+        'vi' : args.vi if args.vi is not None else params_from_file.get('vi')
+    }
+
+
+    # 1.3. Zainicjuj model
+    model = LSTMAutoencoder(
+        input_dim=final_params['input_dim'],
+        hidden_dim=final_params['hidden_dim'],
+        num_layers=final_params['num_layers'],
+        seq_len=final_params['seq_len'],
+        dropout_rate=final_params['dropout_rate'],
+        vi=final_params['vi']
+    ).to(device)
+
+
     model.load_state_dict(checkpoint['model_state_dict'])
     model.eval()
     criterion = nn.MSELoss(reduction='none')
-
-    # Wczytanie progu
-    try:
-        with open(threshold_path, 'r') as f:
-            threshold_val = json.load(f)['threshold']
-    except: threshold_val = 0
 
     # --- 2. Wczytanie Zdarzeń (Raw Events) ---
     try:
@@ -301,7 +297,6 @@ def main(args):
     
     # Listy do przechowywania "zszytych" danych
     global_losses = []   # Ciągła lista błędów (Y axis)
-    global_x_axis = []   # Indeksy (X axis) - chociaż tutaj po prostu użyjemy range() //zbędne
     file_separators = [] # Gdzie kończy się jeden plik a zaczyna drugi (index)
     file_names_map = []  # Nazwa pliku dla separatora
     
@@ -472,9 +467,27 @@ def main(args):
     logging.info("Zakończono.")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--family', type=str, required=True)
+    parser = argparse.ArgumentParser(description="Skrypt do klasyfikacji i raportowania anomalii")
+    
+    parser.add_argument('--family', type=str, required=True, 
+                        help="Rodzina danych (np. RLM1)")
+    
+    parser.add_argument('--input_dim', type=int, default=None,
+                        help="[Opcjonalne] Nadpisuje 'input_dim' z checkpointu")
+    parser.add_argument('--hidden_dim', type=int, default=None,
+                        help="[Opcjonalne] Nadpisuje 'hidden_dim' z checkpointu")
+    parser.add_argument('--num_layers', type=int, default=None,
+                        help="[Opcjonalne] Nadpisuje 'num_layers' z checkpointu")
+    parser.add_argument('--seq_len', type=int, default=None,
+                        help="[Opcjonalne] Nadpisuje 'seq_len' z checkpointu")
+    parser.add_argument('--dropout', type=float, default=None,
+                        help="[Opcjonalne] Nadpisuje 'dropout' z checkpointu")
+    parser.add_argument('--vi', type=float, default=None, 
+                        help="Opcjonalnie: wersja Vi modelu")
     parser.add_argument('--base_dir', type=str, default="preprocessed_data")
     parser.add_argument('--num_clusters', type=int, default=5)
+
+    
     args = parser.parse_args()
+    
     main(args)

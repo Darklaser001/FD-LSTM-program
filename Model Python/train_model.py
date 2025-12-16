@@ -1,3 +1,4 @@
+from matplotlib import pyplot as plt
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -7,61 +8,34 @@ import argparse # Do obsługi argumentów z wiersza poleceń
 from tqdm import tqdm # Korzystam do wizualizacji postępu w wierszu poleceń
 import logging # Importujemy moduł logowania
 import sys     # Potrzebne do obsługi konsoli
+from fractional_modules import LSTMAutoencoder
 
 # =============================================================================
-# --- Krok 2: Definicja Modelu (LSTM Autoencoder) ---
-# (Ta klasa pozostaje bez zmian, ale musi być zdefiniowana 
-#  zanim wczytamy model)
+# --- Funkcja do rysowania wykresów ---
 # =============================================================================
-class LSTMAutoencoder(nn.Module):
-    def __init__(self, input_dim, hidden_dim, num_layers, seq_len, dropout_rate):
-        super(LSTMAutoencoder, self).__init__()
-        self.input_dim = input_dim
-        self.hidden_dim = hidden_dim
-        self.num_layers = num_layers
-        self.seq_len = seq_len
-
-        self.encoder = nn.LSTM(
-            input_size=input_dim,
-            hidden_size=hidden_dim,
-            num_layers=num_layers,
-            batch_first=True,
-            dropout=dropout_rate if num_layers > 1 else 0
-        )
-        self.decoder = nn.LSTM(
-            input_size=hidden_dim,
-            hidden_size=hidden_dim,
-            num_layers=num_layers,
-            batch_first=True,
-            dropout=dropout_rate if num_layers > 1 else 0
-        )
-        self.output_layer = nn.Linear(hidden_dim, input_dim)
-
-    def forward(self, x):
-        _, (hidden_state, cell_state) = self.encoder(x)
-        decoder_input = hidden_state[-1].unsqueeze(1).repeat(1, self.seq_len, 1)
-        decoder_output, _ = self.decoder(decoder_input, (hidden_state, cell_state))
-        reconstruction = self.output_layer(decoder_output)
-        return reconstruction
+def save_training_plot(history_loss, family, vi, output_dir):
+    """
+    Rysuje wykres spadku Loss w trakcie epok i zapisuje go do pliku.
+    """
+    plt.style.use('ggplot') # Ładny styl
+    plt.figure(figsize=(10, 6))
     
-
-# =============================================================================
-# --- Funkcja Pomocnicza do obliczania i zapamiętywania gradientów dla
-# --- ułamkowego gradientu prostego
-# =============================================================================
-def compute_gl_coeffs(alpha, history_size, device):
-    """Oblicza współczynniki c_k dla pochodnej ułamkowej."""
-    coeffs = [1.0] # k=0. k to historia jak daleko wstecz patrzymy. np tutaj sprawdzamy "teraźniejszy" gradient więc k=0. Poprzedni gradient (poprzednie ostatnie obliczenia) to k=1 itd.
-    for k in range(1, history_size): # Iterujemy dla kolejnych kroków wstecz i potem obliczamy wagi dla poprzednich kroków. Zaczynamy od 1 bo poniżej przy liczeniu nowej wagi nie możemy dzielić przez 0
-        # Wzór rekurencyjny na współczynniki dwumianowe dla ułamków
-        # c_k = (-1)^k * binom(alpha, k)
-        prev = coeffs[-1]
-        # Uproszczony wzór iteracyjny: c_k = c_{k-1} * (1 - (alpha + 1) / k)
-        new_coeff = prev * (1 - (alpha + 1) / k)
-        coeffs.append(new_coeff)
+    epochs = range(1, len(history_loss) + 1)
+    plt.plot(epochs, history_loss, marker='o', linestyle='-', color='b', label='Training Loss')
     
-    # Zamieniamy na tensor GPU dla szybkości czyli konwersja na tensor pytorcha i wysyłanie do gpu.
-    return torch.tensor(coeffs, device=device, dtype=torch.float32) 
+    plt.title(f"Dynamika Uczenia: {family} (Vi={vi})")
+    plt.xlabel("Epoka")
+    plt.ylabel("Średni Błąd Rekonstrukcji (MSE)")
+    plt.grid(True)
+    plt.legend()
+    
+    filename = f"learning_curve_{family}_v{vi}.png"
+    plots_dir = os.path.join(output_dir, "plots")
+    os.makedirs(plots_dir, exist_ok=True)
+    save_path = os.path.join(plots_dir, filename)
+    plt.savefig(save_path)
+    plt.close()
+    logging.info(f"Zapisano wykres uczenia: {save_path}")
 
 # =============================================================================
 # --- Funkcja Główna (main) ---
@@ -98,6 +72,7 @@ def main(args):
     logging.info(f"Rozmiar partii (Batch Size): {args.batch_size}")
     logging.info(f"Wymiar wejściowy (Input Dim): {args.input_dim if args.input_dim else 'Wykrywany automatycznie'}")    
     logging.info(f"Wznawiam trening: {args.load_model}")
+    logging.info(f"Wartość v (Vi): {args.vi}")
     logging.info("---------------------------------")
 
     # --- Krok 1b: Ładowanie Danych ---
@@ -173,12 +148,14 @@ def main(args):
         hidden_dim=args.hidden_dim,
         num_layers=args.num_layers,
         seq_len=args.seq_len,
-        dropout_rate=args.dropout
+        dropout_rate=args.dropout,
+        vi=args.vi
     ).to(device)
 
     criterion = nn.MSELoss()
     optimizer = optim.Adam(model.parameters(), lr=args.lr)
 
+    history_loss = [] # Do wykresu jak wyglądał postęp nauki
     start_epoch = 0
     best_loss = float('inf') # Do przerywania programu i podstawa przy tworzeniu nowego modelu
 
@@ -200,6 +177,9 @@ def main(args):
                     logging.warning("Nie znaleziono 'best_loss' w checkpoincie. Używam 'inf'.")
                     logging.warning("Zapisz model ponownie (pozwól mu na 1 epokę), aby zaktualizować checkpoint.")
                 
+                if 'loss_history' in checkpoint:
+                    history_loss = checkpoint['loss_history']
+
                 logging.info(f"Wznowiono trening. Zaczynam od epoki {start_epoch + 1}")
                 logging.info(f"Wczytano poprzedni najlepszy loss: {best_loss:.6f}")
             except Exception as e:
@@ -221,18 +201,6 @@ def main(args):
     # =============================================================================
     # --- Konfiguracja FD-LSTM (Fractional Derivative) ---
     # =============================================================================
-    FD_ALPHA = 0.8        # Rząd pochodnej (zazwyczaj 0.8 - 1.2). < 1 to "leniwa" pamięć.
-    FD_HISTORY_SIZE = 5   # Ile kroków wstecz pamiętamy (im więcej, tym więcej zajętego VRAM)
-    
-    # Obliczamy wagi raz i wrzucamy na GPU
-    fd_coeffs = compute_gl_coeffs(FD_ALPHA, FD_HISTORY_SIZE, device)
-    
-    # Bufor na historię gradientów dla każdego parametru modelu
-    # Słownik: {id_parametru: [lista_gradientów_z_przeszłości]}
-    grad_history = {} 
-    
-    logging.info(f"Tryb FD-LSTM aktywny. Alpha={FD_ALPHA}, Historia={FD_HISTORY_SIZE}")
-
     for epoch in range(start_epoch, start_epoch + args.epochs):
         model.train()
         epoch_loss = 0.0
@@ -244,51 +212,26 @@ def main(args):
             batch_data = batch_data.to(device, non_blocking=True)
             batch_target = batch_target.to(device, non_blocking=True)
             
+            # 1. Forward pass (tutaj zadziała Twoja warstwa FractionalActivation z modułu)
             reconstruction = model(batch_data)
             loss = criterion(reconstruction, batch_target)
             
+            # 2. Backward pass (Standardowy, zgodny z artykułem [cite: 15])
             optimizer.zero_grad()
-            loss.backward() # 1. Obliczamy zwykły gradient (g_t)
-
-            # --- FD-LSTM: Modyfikacja Gradientu ---
-            # Metoda Grünwalda-Letnikowa: g_fd = suma(c_k * g_{t-k})
+            loss.backward() 
             
-            with torch.no_grad(): # Wyłączamy śledzenie wbudowane biblioteki
-                for param in model.parameters():
-                    if param.grad is None: continue
-                    
-                    # ID parametru (żeby wiedzieć, czyją historię pobrać)
-                    p_id = id(param)
-                    
-                    # Inicjalizacja bufora dla nowego parametru
-                    if p_id not in grad_history:
-                        grad_history[p_id] = []
-                    
-                    # Dodajemy aktualny gradient do historii
-                    grad_history[p_id].insert(0, param.grad.clone())
-                    
-                    # Utrzymujemy stały rozmiar historii
-                    if len(grad_history[p_id]) > FD_HISTORY_SIZE:
-                        grad_history[p_id].pop() # Usuwamy najstarszy
-                    
-                    # Jeśli mamy historię, liczymy pochodną ułamkową
-                    if len(grad_history[p_id]) > 1:
-                        fractional_grad = torch.zeros_like(param.grad)
-                        
-                        # Suma ważona: c_0*g_t + c_1*g_{t-1} + ...
-                        for k, past_grad in enumerate(grad_history[p_id]):
-                            fractional_grad.add_(past_grad * fd_coeffs[k])
-                        
-                        # NADPISUJEMY zwykły gradient naszym ułamkowym
-                        param.grad.copy_(fractional_grad)
-
-
-            optimizer.step() # 2. Aktualizujemy wagi używając gradientu FD
+            # USUWAMY CAŁĄ PĘTLĘ "FD-LSTM: Modyfikacja Gradientu"
+            # PyTorch sam obliczy gradienty przez Twoją funkcję FractionalActivation
+            
+            # 3. Update wag
+            optimizer.step()
             
             epoch_loss += loss.item()
             progress_bar.set_postfix(loss=f"{loss.item():.6f}")
 
         avg_epoch_loss = epoch_loss / len(train_loader)
+
+        history_loss.append(avg_epoch_loss) # Zapisanie wyniku do tabeli do wykresu
         
         logging.info(f"Epoka {epoch+1} zakończona. Średnia strata (Loss): {avg_epoch_loss:.6f}")
 
@@ -306,7 +249,8 @@ def main(args):
                     'model_state_dict': model.state_dict(),
                     'optimizer_state_dict': optimizer.state_dict(),
                     'best_loss': best_loss, # Zapisujemy nowy najlepszy wynik
-                    'model_params': vars(args) # Zapisujemy konfigurację uruchomieniową do wykorzystania w detect.py i find_threshold.py. Można manualnie nadpisać ale to prosta automatyzacja.
+                    'model_params': vars(args), # Zapisujemy konfigurację uruchomieniową do wykorzystania w detect.py i find_threshold.py. Można manualnie nadpisać ale to prosta automatyzacja.
+                    'loss_history': history_loss
                 }, model_save_path)
                 logging.info("Zapisano pomyślnie.")
             except Exception as e:
@@ -333,6 +277,13 @@ def main(args):
             break
 
     logging.info("\n--- Trening Zakończony ---")
+
+    # Wywołujemy funkcję przekazując zebraną listę history_loss
+    save_training_plot(history_loss, args.family, args.vi, log_dir)
+
+    logging.info("\n--- Wykresy wygenerowane poprawnie ---")
+
+
 # =============================================================================
 # --- Definicja Argumentów Wiersza Poleceń ---
 # =============================================================================
@@ -359,6 +310,8 @@ if __name__ == "__main__":
                         help="Długość sekwencji")
     parser.add_argument('--dropout', type=float, default=0.1,
                         help="Współczynnik dropout")
+    parser.add_argument('--vi', type=float, default=1.0,
+                        help="Rząd pochodnej ułamkowej (vi) dla funkcji aktywacji")
     
     # Argumenty Treningu
     parser.add_argument('--epochs', type=int, default=20,

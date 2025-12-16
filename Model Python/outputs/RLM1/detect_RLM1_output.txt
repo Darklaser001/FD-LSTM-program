@@ -1,288 +1,401 @@
-2025-11-28 19:43:40,174 [INFO] --- Konfiguracja Uruchomienia ---
-2025-11-28 19:43:40,174 [INFO] Rodzina danych: RLM1
-2025-11-28 19:43:40,176 [INFO] Katalog bazowy danych: preprocessed_data
-2025-11-28 19:43:40,177 [INFO] Rozmiar partii (Batch Size): 512
-2025-11-28 19:43:40,177 [INFO] Wymuœ obliczenie progu: False
-2025-11-28 19:43:40,178 [INFO] Parametry modelu zostan¹ wczytane z checkpointu...
-2025-11-28 19:43:40,178 [INFO] ---------------------------------
-2025-11-28 19:43:40,178 [INFO] --- Rozpoczynam Detekcjê Anomalii dla: RLM1 ---
-2025-11-28 19:43:40,179 [INFO] Logi zapisywane do: outputs\RLM1\detect_RLM1_output.txt
-2025-11-28 19:43:40,208 [INFO] U¿ywam urz¹dzenia: cuda
-2025-11-28 19:43:40,443 [INFO] Model wczytany pomyœlnie.
-2025-11-28 19:43:40,443 [WARNING] Brak pliku progu w checkpoints\RLM1\threshold_RLM1.json.
-2025-11-28 19:43:40,445 [WARNING] Uruchamiam automatyczne obliczanie progu (proszê czekaæ)...
-2025-11-28 19:44:57,916 [INFO] Obliczanie progu zakoñczone. Kontynuujê detekcjê.
-2025-11-28 19:44:57,976 [INFO] Pomyœlnie wczytano próg: 28.015974
-2025-11-28 19:44:57,977 [INFO] 
---- Rozpoczynam analizê plików 'Wady' (Próg = 28.015974) ---
-2025-11-28 19:44:58,005 [INFO] >>> Analizujê plik: 928442.xlsx
-2025-11-28 19:44:59,152 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:44:59,152 [INFO] >>> Analizujê plik: 928488.xlsx
-2025-11-28 19:45:00,056 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:00,056 [INFO] >>> Analizujê plik: 928980.xlsx
-2025-11-28 19:45:00,751 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:00,752 [INFO] >>> Analizujê plik: 929011.xlsx
-2025-11-28 19:45:01,401 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:01,401 [INFO] >>> Analizujê plik: 929046.xlsx
-2025-11-28 19:45:02,053 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:02,053 [INFO] >>> Analizujê plik: 929071.xlsx
-2025-11-28 19:45:02,681 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:02,681 [INFO] >>> Analizujê plik: 930808.xlsx
-2025-11-28 19:45:03,416 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:03,417 [INFO] >>> Analizujê plik: 931079.xlsx
-2025-11-28 19:45:05,485 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:05,485 [INFO] >>> Analizujê plik: 931315.xlsx
-2025-11-28 19:45:07,927 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:07,927 [INFO] >>> Analizujê plik: 931639.xlsx
-2025-11-28 19:45:10,522 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:10,522 [INFO] >>> Analizujê plik: 931904.xlsx
-2025-11-28 19:45:12,383 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:12,383 [INFO] >>> Analizujê plik: 932051.xlsx
-2025-11-28 19:45:14,126 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:14,126 [INFO] >>> Analizujê plik: 932531.xlsx
-2025-11-28 19:45:14,615 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:14,615 [INFO] >>> Analizujê plik: 932882.xlsx
-2025-11-28 19:45:16,367 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:16,367 [INFO] >>> Analizujê plik: 932985.xlsx
-2025-11-28 19:45:18,136 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:18,137 [INFO] >>> Analizujê plik: 933066.xlsx
-2025-11-28 19:45:19,994 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:19,994 [INFO] >>> Analizujê plik: 933123.xlsx
-2025-11-28 19:45:21,858 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:21,858 [INFO] >>> Analizujê plik: 933219.xlsx
-2025-11-28 19:45:23,751 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:23,751 [INFO] >>> Analizujê plik: 933303.xlsx
-2025-11-28 19:45:25,640 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:25,641 [INFO] >>> Analizujê plik: 933407.xlsx
-2025-11-28 19:45:27,356 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:27,357 [INFO] >>> Analizujê plik: 933476.xlsx
-2025-11-28 19:45:28,043 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:28,043 [INFO] >>> Analizujê plik: 933512.xlsx
-2025-11-28 19:45:28,767 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:28,767 [INFO] >>> Analizujê plik: 933708.xlsx
-2025-11-28 19:45:29,229 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:29,229 [INFO] >>> Analizujê plik: 934693.xlsx
-2025-11-28 19:45:29,731 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:29,731 [INFO] >>> Analizujê plik: 934816.xlsx
-2025-11-28 19:45:32,206 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:32,206 [INFO] >>> Analizujê plik: 935029.xlsx
-2025-11-28 19:45:33,142 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:33,143 [INFO] >>> Analizujê plik: 938861.xlsx
-2025-11-28 19:45:34,084 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:34,085 [INFO] >>> Analizujê plik: 938916.xlsx
-2025-11-28 19:45:36,483 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:36,483 [INFO] >>> Analizujê plik: 938941.xlsx
-2025-11-28 19:45:37,214 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:37,215 [INFO] >>> Analizujê plik: 939443.xlsx
-2025-11-28 19:45:37,920 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:37,920 [INFO] >>> Analizujê plik: 939572.xlsx
-2025-11-28 19:45:38,618 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:38,618 [INFO] >>> Analizujê plik: 939622.xlsx
-2025-11-28 19:45:39,328 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:39,328 [INFO] >>> Analizujê plik: 940098.xlsx
-2025-11-28 19:45:40,048 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:40,048 [INFO] >>> Analizujê plik: 940117.xlsx
-2025-11-28 19:45:40,779 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:40,780 [INFO] >>> Analizujê plik: 940494.xlsx
-2025-11-28 19:45:43,198 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:43,198 [INFO] >>> Analizujê plik: 941014.xlsx
-2025-11-28 19:45:44,195 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:44,195 [INFO] >>> Analizujê plik: 941753.xlsx
-2025-11-28 19:45:44,900 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:44,900 [INFO] >>> Analizujê plik: 941775.xlsx
-2025-11-28 19:45:45,622 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:45,623 [INFO] >>> Analizujê plik: 941789.xlsx
-2025-11-28 19:45:46,196 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:46,197 [INFO] >>> Analizujê plik: 941813.xlsx
-2025-11-28 19:45:46,892 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:46,892 [INFO] >>> Analizujê plik: 941883.xlsx
-2025-11-28 19:45:47,574 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:47,574 [INFO] >>> Analizujê plik: 942152.xlsx
-2025-11-28 19:45:48,114 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:48,114 [INFO] >>> Analizujê plik: 942212.xlsx
-2025-11-28 19:45:48,566 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:48,566 [INFO] >>> Analizujê plik: 942235.xlsx
-2025-11-28 19:45:49,042 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:49,042 [INFO] >>> Analizujê plik: 942479.xlsx
-2025-11-28 19:45:49,597 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:49,598 [INFO] >>> Analizujê plik: 942671.xlsx
-2025-11-28 19:45:51,212 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:51,212 [INFO] >>> Analizujê plik: 942832.xlsx
-2025-11-28 19:45:52,268 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:52,268 [INFO] >>> Analizujê plik: 942992.xlsx
-2025-11-28 19:45:52,654 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:52,655 [INFO] >>> Analizujê plik: 944498.xlsx
-2025-11-28 19:45:53,401 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:53,401 [INFO] >>> Analizujê plik: 944529.xlsx
-2025-11-28 19:45:54,085 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:54,085 [INFO] >>> Analizujê plik: 944581.xlsx
-2025-11-28 19:45:54,829 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:54,829 [INFO] >>> Analizujê plik: 944591.xlsx
-2025-11-28 19:45:55,503 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:55,503 [INFO] >>> Analizujê plik: 944628.xlsx
-2025-11-28 19:45:56,143 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:56,143 [INFO] >>> Analizujê plik: 944693.xlsx
-2025-11-28 19:45:56,853 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:56,853 [INFO] >>> Analizujê plik: 944707.xlsx
-2025-11-28 19:45:57,709 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:57,709 [INFO] >>> Analizujê plik: 944768.xlsx
-2025-11-28 19:45:58,464 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:58,464 [INFO] >>> Analizujê plik: 944799.xlsx
-2025-11-28 19:45:59,168 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:59,169 [INFO] >>> Analizujê plik: 944830.xlsx
-2025-11-28 19:45:59,865 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:45:59,865 [INFO] >>> Analizujê plik: 944837.xlsx
-2025-11-28 19:46:00,399 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:00,399 [INFO] >>> Analizujê plik: 944847.xlsx
-2025-11-28 19:46:00,787 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:00,787 [INFO] >>> Analizujê plik: 944884.xlsx
-2025-11-28 19:46:01,500 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:01,500 [INFO] >>> Analizujê plik: 944910.xlsx
-2025-11-28 19:46:02,233 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:02,233 [INFO] >>> Analizujê plik: 944921.xlsx
-2025-11-28 19:46:02,643 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:02,643 [INFO] >>> Analizujê plik: 944995.xlsx
-2025-11-28 19:46:03,364 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:03,365 [INFO] >>> Analizujê plik: 945017.xlsx
-2025-11-28 19:46:04,107 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:04,107 [INFO] >>> Analizujê plik: 945815.xlsx
-2025-11-28 19:46:04,802 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:04,802 [INFO] >>> Analizujê plik: 946988.xlsx
-2025-11-28 19:46:05,217 [INFO] WYKRYTO 2 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:05,217 [INFO] >>> Analizujê plik: 947104.xlsx
-2025-11-28 19:46:05,761 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:05,761 [INFO] >>> Analizujê plik: 947115.xlsx
-2025-11-28 19:46:06,291 [INFO] WYKRYTO 12 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:06,291 [INFO] >>> Analizujê plik: 947137.xlsx
-2025-11-28 19:46:06,901 [INFO] WYKRYTO 4 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:06,901 [INFO] >>> Analizujê plik: 947153.xlsx
-2025-11-28 19:46:07,475 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:07,475 [INFO] >>> Analizujê plik: 947183.xlsx
-2025-11-28 19:46:07,993 [INFO] WYKRYTO 3 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:07,993 [INFO] >>> Analizujê plik: 947212.xlsx
-2025-11-28 19:46:08,619 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:08,619 [INFO] >>> Analizujê plik: 947229.xlsx
-2025-11-28 19:46:09,243 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:09,243 [INFO] >>> Analizujê plik: 947481.xlsx
-2025-11-28 19:46:09,765 [INFO] Nie znaleziono anomalii w tym pliku.
-2025-11-28 19:46:09,765 [INFO] >>> Analizujê plik: 947527.xlsx
-2025-11-28 19:46:10,286 [INFO] WYKRYTO 4 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:10,287 [INFO] >>> Analizujê plik: 947626.xlsx
-2025-11-28 19:46:10,880 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:10,880 [INFO] >>> Analizujê plik: 947637.xlsx
-2025-11-28 19:46:11,425 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:11,425 [INFO] >>> Analizujê plik: 947791.xlsx
-2025-11-28 19:46:11,958 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:11,958 [INFO] >>> Analizujê plik: 948008.xlsx
-2025-11-28 19:46:12,523 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:12,524 [INFO] >>> Analizujê plik: 948096.xlsx
-2025-11-28 19:46:13,077 [INFO] WYKRYTO 2 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:13,078 [INFO] >>> Analizujê plik: 948173.xlsx
-2025-11-28 19:46:13,658 [INFO] WYKRYTO 5 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:13,658 [INFO] >>> Analizujê plik: 948199.xlsx
-2025-11-28 19:46:14,196 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:14,197 [INFO] >>> Analizujê plik: 948306.xlsx
-2025-11-28 19:46:14,720 [INFO] WYKRYTO 3 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:14,721 [INFO] >>> Analizujê plik: 948377.xlsx
-2025-11-28 19:46:15,905 [INFO] WYKRYTO 13 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:15,905 [INFO] >>> Analizujê plik: 948435.xlsx
-2025-11-28 19:46:17,160 [INFO] WYKRYTO 17 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:17,160 [INFO] >>> Analizujê plik: 948476.xlsx
-2025-11-28 19:46:17,904 [INFO] WYKRYTO 7 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:17,905 [INFO] >>> Analizujê plik: 948556.xlsx
-2025-11-28 19:46:19,093 [INFO] Nie znaleziono anomalii w tym pliku.
-2025-11-28 19:46:19,093 [INFO] >>> Analizujê plik: 948608.xlsx
-2025-11-28 19:46:20,609 [INFO] Nie znaleziono anomalii w tym pliku.
-2025-11-28 19:46:20,610 [INFO] >>> Analizujê plik: 948772.xlsx
-2025-11-28 19:46:22,398 [INFO] Nie znaleziono anomalii w tym pliku.
-2025-11-28 19:46:22,398 [INFO] >>> Analizujê plik: 948827.xlsx
-2025-11-28 19:46:23,706 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:23,708 [INFO] >>> Analizujê plik: 948910.xlsx
-2025-11-28 19:46:24,885 [INFO] WYKRYTO 11 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:24,886 [INFO] >>> Analizujê plik: 949529.xlsx
-2025-11-28 19:46:26,801 [INFO] Nie znaleziono anomalii w tym pliku.
-2025-11-28 19:46:26,802 [INFO] >>> Analizujê plik: 949610.xlsx
-2025-11-28 19:46:28,606 [INFO] Nie znaleziono anomalii w tym pliku.
-2025-11-28 19:46:28,606 [INFO] >>> Analizujê plik: 949850.xlsx
-2025-11-28 19:46:30,619 [INFO] Nie znaleziono anomalii w tym pliku.
-2025-11-28 19:46:30,619 [INFO] >>> Analizujê plik: 950619.xlsx
-2025-11-28 19:46:32,168 [INFO] WYKRYTO 4 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:32,168 [INFO] >>> Analizujê plik: 950710.xlsx
-2025-11-28 19:46:34,526 [INFO] WYKRYTO 3 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:34,526 [INFO] >>> Analizujê plik: 950740.xlsx
-2025-11-28 19:46:36,037 [INFO] WYKRYTO 2 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:36,037 [INFO] >>> Analizujê plik: 950846.xlsx
-2025-11-28 19:46:36,655 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:36,655 [INFO] >>> Analizujê plik: 950859.xlsx
-2025-11-28 19:46:37,146 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:37,146 [INFO] >>> Analizujê plik: 950900.xlsx
-2025-11-28 19:46:37,613 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:37,613 [INFO] >>> Analizujê plik: 950913.xlsx
-2025-11-28 19:46:38,047 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:38,048 [INFO] >>> Analizujê plik: 951636.xlsx
-2025-11-28 19:46:38,619 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:38,619 [INFO] >>> Analizujê plik: 952249.xlsx
-2025-11-28 19:46:39,904 [INFO] Nie znaleziono anomalii w tym pliku.
-2025-11-28 19:46:39,904 [INFO] >>> Analizujê plik: 952460.xlsx
-2025-11-28 19:46:40,547 [INFO] Nie znaleziono anomalii w tym pliku.
-2025-11-28 19:46:40,547 [INFO] >>> Analizujê plik: 952787.xlsx
-2025-11-28 19:46:41,144 [INFO] Nie znaleziono anomalii w tym pliku.
-2025-11-28 19:46:41,144 [INFO] >>> Analizujê plik: 953048.xlsx
-2025-11-28 19:46:42,012 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:42,012 [INFO] >>> Analizujê plik: 953384.xlsx
-2025-11-28 19:46:42,620 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:42,620 [INFO] >>> Analizujê plik: 953396.xlsx
-2025-11-28 19:46:43,213 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:43,213 [INFO] >>> Analizujê plik: 953425.xlsx
-2025-11-28 19:46:43,798 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:43,798 [INFO] >>> Analizujê plik: 953475.xlsx
-2025-11-28 19:46:44,336 [INFO] WYKRYTO 13 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:44,337 [INFO] >>> Analizujê plik: 953545.xlsx
-2025-11-28 19:46:44,923 [INFO] WYKRYTO 29 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:44,924 [INFO] >>> Analizujê plik: 953573.xlsx
-2025-11-28 19:46:45,505 [INFO] WYKRYTO 35 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:45,505 [INFO] >>> Analizujê plik: 953633.xlsx
-2025-11-28 19:46:46,091 [INFO] WYKRYTO 37 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:46,092 [INFO] >>> Analizujê plik: 953653.xlsx
-2025-11-28 19:46:46,617 [INFO] WYKRYTO 8 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:46,617 [INFO] >>> Analizujê plik: 953756.xlsx
-2025-11-28 19:46:47,261 [INFO] WYKRYTO 11 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:47,261 [INFO] >>> Analizujê plik: 953840.xlsx
-2025-11-28 19:46:47,880 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:47,881 [INFO] >>> Analizujê plik: 956692.xlsx
-2025-11-28 19:46:48,577 [INFO] Nie znaleziono anomalii w tym pliku.
-2025-11-28 19:46:48,577 [INFO] >>> Analizujê plik: 956707.xlsx
-2025-11-28 19:46:49,505 [INFO] Nie znaleziono anomalii w tym pliku.
-2025-11-28 19:46:49,505 [INFO] >>> Analizujê plik: 957891.xlsx
-2025-11-28 19:46:50,690 [INFO] Nie znaleziono anomalii w tym pliku.
-2025-11-28 19:46:50,690 [INFO] >>> Analizujê plik: 958314.xlsx
-2025-11-28 19:46:51,260 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:51,260 [INFO] >>> Analizujê plik: 958331.xlsx
-2025-11-28 19:46:51,884 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:51,885 [INFO] >>> Analizujê plik: 958350.xlsx
-2025-11-28 19:46:52,493 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:52,493 [INFO] >>> Analizujê plik: 958924.xlsx
-2025-11-28 19:46:54,309 [INFO] Nie znaleziono anomalii w tym pliku.
-2025-11-28 19:46:54,309 [INFO] >>> Analizujê plik: 959087.xlsx
-2025-11-28 19:46:55,166 [INFO] Nie znaleziono anomalii w tym pliku.
-2025-11-28 19:46:55,166 [INFO] >>> Analizujê plik: 959631.xlsx
-2025-11-28 19:46:56,434 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
-2025-11-28 19:46:56,434 [INFO] >>> Analizujê plik: 959652.xlsx
-2025-11-28 19:46:57,659 [INFO] Nie znaleziono anomalii w tym pliku.
-2025-11-28 19:46:57,659 [INFO] >>> Analizujê plik: 960276.xlsx
-2025-11-28 19:46:58,364 [INFO] Nie znaleziono anomalii w tym pliku.
-2025-11-28 19:46:58,365 [INFO] >>> Analizujê plik: 960319.xlsx
-2025-11-28 19:46:59,064 [INFO] Nie znaleziono anomalii w tym pliku.
-2025-11-28 19:46:59,065 [INFO] >>> Analizujê plik: 960344.xlsx
-2025-11-28 19:46:59,734 [INFO] Nie znaleziono anomalii w tym pliku.
-2025-11-28 19:46:59,735 [INFO] >>> Analizujê plik: 960360.xlsx
-2025-11-28 19:47:00,427 [INFO] Nie znaleziono anomalii w tym pliku.
-2025-11-28 19:47:00,427 [INFO] >>> Analizujê plik: 960388.xlsx
-2025-11-28 19:47:01,427 [INFO] Nie znaleziono anomalii w tym pliku.
-2025-11-28 19:47:01,428 [INFO] 
+2025-12-16 03:27:54,392 [INFO] --- Konfiguracja Uruchomienia ---
+2025-12-16 03:27:54,392 [INFO] Rodzina danych: RLM1
+2025-12-16 03:27:54,394 [INFO] Katalog bazowy danych: preprocessed_data
+2025-12-16 03:27:54,395 [INFO] Rozmiar partii (Batch Size): 512
+2025-12-16 03:27:54,395 [INFO] Wymuœ obliczenie progu: False
+2025-12-16 03:27:54,396 [INFO] Parametry modelu zostan¹ wczytane z checkpointu...
+2025-12-16 03:27:54,396 [INFO] ---------------------------------
+2025-12-16 03:27:54,397 [INFO] --- Rozpoczynam Detekcjê Anomalii dla: RLM1 ---
+2025-12-16 03:27:54,397 [INFO] Logi zapisywane do: outputs\RLM1\detect_RLM1_output.txt
+2025-12-16 03:27:54,422 [INFO] U¿ywam urz¹dzenia: cuda
+2025-12-16 03:27:54,643 [INFO] Model wczytany pomyœlnie.
+2025-12-16 03:27:54,643 [WARNING] Brak pliku progu w checkpoints\RLM1\threshold_RLM1.json.
+2025-12-16 03:27:54,645 [WARNING] Uruchamiam automatyczne obliczanie progu (proszê czekaæ)...
+2025-12-16 03:29:01,451 [INFO] Obliczanie progu zakoñczone. Kontynuujê detekcjê.
+2025-12-16 03:29:01,480 [INFO] Pomyœlnie wczytano próg: 29.276342
+2025-12-16 03:29:01,481 [INFO] 
+--- Rozpoczynam analizê plików 'Wady' (Próg = 29.276342) ---
+2025-12-16 03:29:01,505 [INFO] >>> Analizujê plik: 928442.xlsx
+2025-12-16 03:29:02,844 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:04,272 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:04,272 [INFO] >>> Analizujê plik: 928488.xlsx
+2025-12-16 03:29:05,160 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:06,036 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:06,037 [INFO] >>> Analizujê plik: 928980.xlsx
+2025-12-16 03:29:06,801 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:07,680 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:07,681 [INFO] >>> Analizujê plik: 929011.xlsx
+2025-12-16 03:29:08,414 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:09,442 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:09,442 [INFO] >>> Analizujê plik: 929046.xlsx
+2025-12-16 03:29:10,111 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:11,032 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:11,032 [INFO] >>> Analizujê plik: 929071.xlsx
+2025-12-16 03:29:11,708 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:12,556 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:12,557 [INFO] >>> Analizujê plik: 930808.xlsx
+2025-12-16 03:29:13,414 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:14,305 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:14,305 [INFO] >>> Analizujê plik: 931079.xlsx
+2025-12-16 03:29:16,614 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:17,552 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:17,552 [INFO] >>> Analizujê plik: 931315.xlsx
+2025-12-16 03:29:20,335 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:21,454 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:21,455 [INFO] >>> Analizujê plik: 931639.xlsx
+2025-12-16 03:29:24,320 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:25,317 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:25,317 [INFO] >>> Analizujê plik: 931904.xlsx
+2025-12-16 03:29:27,448 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:28,413 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:28,413 [INFO] >>> Analizujê plik: 932051.xlsx
+2025-12-16 03:29:30,293 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:31,218 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:31,218 [INFO] >>> Analizujê plik: 932531.xlsx
+2025-12-16 03:29:31,800 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:32,623 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:32,623 [INFO] >>> Analizujê plik: 932882.xlsx
+2025-12-16 03:29:34,855 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:35,766 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:35,767 [INFO] >>> Analizujê plik: 932985.xlsx
+2025-12-16 03:29:37,710 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:38,633 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:38,633 [INFO] >>> Analizujê plik: 933066.xlsx
+2025-12-16 03:29:40,505 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:41,431 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:41,432 [INFO] >>> Analizujê plik: 933123.xlsx
+2025-12-16 03:29:43,452 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:44,381 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:44,381 [INFO] >>> Analizujê plik: 933219.xlsx
+2025-12-16 03:29:46,463 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:47,375 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:47,375 [INFO] >>> Analizujê plik: 933303.xlsx
+2025-12-16 03:29:49,317 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:50,246 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:50,247 [INFO] >>> Analizujê plik: 933407.xlsx
+2025-12-16 03:29:52,040 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:52,943 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:52,943 [INFO] >>> Analizujê plik: 933476.xlsx
+2025-12-16 03:29:53,678 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:54,544 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:54,544 [INFO] >>> Analizujê plik: 933512.xlsx
+2025-12-16 03:29:55,343 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:56,267 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:56,268 [INFO] >>> Analizujê plik: 933708.xlsx
+2025-12-16 03:29:56,763 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:57,746 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:57,746 [INFO] >>> Analizujê plik: 934693.xlsx
+2025-12-16 03:29:58,273 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:29:59,137 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:29:59,138 [INFO] >>> Analizujê plik: 934816.xlsx
+2025-12-16 03:30:01,744 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:02,738 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:02,739 [INFO] >>> Analizujê plik: 935029.xlsx
+2025-12-16 03:30:03,797 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:04,671 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:04,671 [INFO] >>> Analizujê plik: 938861.xlsx
+2025-12-16 03:30:05,673 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:06,585 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:06,585 [INFO] >>> Analizujê plik: 938916.xlsx
+2025-12-16 03:30:09,224 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:10,181 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:10,181 [INFO] >>> Analizujê plik: 938941.xlsx
+2025-12-16 03:30:10,942 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:11,837 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:11,837 [INFO] >>> Analizujê plik: 939443.xlsx
+2025-12-16 03:30:12,597 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:13,487 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:13,488 [INFO] >>> Analizujê plik: 939572.xlsx
+2025-12-16 03:30:14,241 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:15,115 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:15,115 [INFO] >>> Analizujê plik: 939622.xlsx
+2025-12-16 03:30:15,889 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:16,739 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:16,739 [INFO] >>> Analizujê plik: 940098.xlsx
+2025-12-16 03:30:17,509 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:18,607 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:18,607 [INFO] >>> Analizujê plik: 940117.xlsx
+2025-12-16 03:30:19,367 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:20,249 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:20,249 [INFO] >>> Analizujê plik: 940494.xlsx
+2025-12-16 03:30:22,732 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:23,716 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:23,716 [INFO] >>> Analizujê plik: 941014.xlsx
+2025-12-16 03:30:24,788 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:25,695 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:25,695 [INFO] >>> Analizujê plik: 941753.xlsx
+2025-12-16 03:30:26,463 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:27,337 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:27,338 [INFO] >>> Analizujê plik: 941775.xlsx
+2025-12-16 03:30:28,122 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:28,945 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:28,945 [INFO] >>> Analizujê plik: 941789.xlsx
+2025-12-16 03:30:29,567 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:30,644 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:30,644 [INFO] >>> Analizujê plik: 941813.xlsx
+2025-12-16 03:30:31,389 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:32,286 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:32,287 [INFO] >>> Analizujê plik: 941883.xlsx
+2025-12-16 03:30:33,038 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:33,888 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:33,888 [INFO] >>> Analizujê plik: 942152.xlsx
+2025-12-16 03:30:34,474 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:35,307 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:35,307 [INFO] >>> Analizujê plik: 942212.xlsx
+2025-12-16 03:30:35,797 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:36,646 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:36,646 [INFO] >>> Analizujê plik: 942235.xlsx
+2025-12-16 03:30:37,157 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:38,014 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:38,014 [INFO] >>> Analizujê plik: 942479.xlsx
+2025-12-16 03:30:38,623 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:39,666 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:39,666 [INFO] >>> Analizujê plik: 942671.xlsx
+2025-12-16 03:30:41,348 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:42,309 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:42,309 [INFO] >>> Analizujê plik: 942832.xlsx
+2025-12-16 03:30:43,541 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:44,442 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:44,443 [INFO] >>> Analizujê plik: 942992.xlsx
+2025-12-16 03:30:44,851 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:45,661 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:45,661 [INFO] >>> Analizujê plik: 944498.xlsx
+2025-12-16 03:30:46,424 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:47,308 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:47,308 [INFO] >>> Analizujê plik: 944529.xlsx
+2025-12-16 03:30:48,021 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:48,864 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:48,864 [INFO] >>> Analizujê plik: 944581.xlsx
+2025-12-16 03:30:49,646 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:50,672 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:50,673 [INFO] >>> Analizujê plik: 944591.xlsx
+2025-12-16 03:30:51,505 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:52,391 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:52,391 [INFO] >>> Analizujê plik: 944628.xlsx
+2025-12-16 03:30:53,109 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:53,966 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:53,967 [INFO] >>> Analizujê plik: 944693.xlsx
+2025-12-16 03:30:54,843 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:55,725 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:55,725 [INFO] >>> Analizujê plik: 944707.xlsx
+2025-12-16 03:30:56,667 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:57,540 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:57,541 [INFO] >>> Analizujê plik: 944768.xlsx
+2025-12-16 03:30:58,295 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:30:59,213 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:30:59,213 [INFO] >>> Analizujê plik: 944799.xlsx
+2025-12-16 03:31:00,044 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:01,120 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:01,120 [INFO] >>> Analizujê plik: 944830.xlsx
+2025-12-16 03:31:01,978 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:02,868 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:02,868 [INFO] >>> Analizujê plik: 944837.xlsx
+2025-12-16 03:31:03,587 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:04,461 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:04,461 [INFO] >>> Analizujê plik: 944847.xlsx
+2025-12-16 03:31:04,945 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:05,864 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:05,865 [INFO] >>> Analizujê plik: 944884.xlsx
+2025-12-16 03:31:06,735 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:07,621 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:07,621 [INFO] >>> Analizujê plik: 944910.xlsx
+2025-12-16 03:31:08,557 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:09,434 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:09,435 [INFO] >>> Analizujê plik: 944921.xlsx
+2025-12-16 03:31:09,961 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:10,864 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:10,864 [INFO] >>> Analizujê plik: 944995.xlsx
+2025-12-16 03:31:11,869 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:12,929 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:12,930 [INFO] >>> Analizujê plik: 945017.xlsx
+2025-12-16 03:31:13,845 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:14,736 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:14,737 [INFO] >>> Analizujê plik: 945815.xlsx
+2025-12-16 03:31:15,780 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:16,707 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:16,707 [INFO] >>> Analizujê plik: 946988.xlsx
+2025-12-16 03:31:17,453 [INFO] WYKRYTO 2 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:18,311 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:18,312 [INFO] >>> Analizujê plik: 947104.xlsx
+2025-12-16 03:31:18,992 [INFO] WYKRYTO 5 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:19,806 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:19,807 [INFO] >>> Analizujê plik: 947115.xlsx
+2025-12-16 03:31:20,756 [INFO] WYKRYTO 21 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:21,575 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:21,576 [INFO] >>> Analizujê plik: 947137.xlsx
+2025-12-16 03:31:22,510 [INFO] WYKRYTO 11 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:23,355 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:23,355 [INFO] >>> Analizujê plik: 947153.xlsx
+2025-12-16 03:31:24,192 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:25,058 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:25,058 [INFO] >>> Analizujê plik: 947183.xlsx
+2025-12-16 03:31:25,621 [INFO] WYKRYTO 3 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:26,477 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:26,477 [INFO] >>> Analizujê plik: 947212.xlsx
+2025-12-16 03:31:27,422 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:28,192 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:28,192 [INFO] >>> Analizujê plik: 947229.xlsx
+2025-12-16 03:31:29,092 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:29,901 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:29,901 [INFO] >>> Analizujê plik: 947481.xlsx
+2025-12-16 03:31:30,574 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-12-16 03:31:30,575 [INFO] >>> Analizujê plik: 947527.xlsx
+2025-12-16 03:31:31,356 [INFO] WYKRYTO 5 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:32,215 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:32,215 [INFO] >>> Analizujê plik: 947626.xlsx
+2025-12-16 03:31:32,993 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:33,818 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:33,818 [INFO] >>> Analizujê plik: 947637.xlsx
+2025-12-16 03:31:34,475 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:35,444 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:35,444 [INFO] >>> Analizujê plik: 947791.xlsx
+2025-12-16 03:31:36,158 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:36,977 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:36,977 [INFO] >>> Analizujê plik: 948008.xlsx
+2025-12-16 03:31:37,589 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:38,492 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:38,492 [INFO] >>> Analizujê plik: 948096.xlsx
+2025-12-16 03:31:39,110 [INFO] WYKRYTO 2 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:39,967 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:39,967 [INFO] >>> Analizujê plik: 948173.xlsx
+2025-12-16 03:31:40,653 [INFO] WYKRYTO 5 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:41,532 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:41,533 [INFO] >>> Analizujê plik: 948199.xlsx
+2025-12-16 03:31:42,208 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:43,003 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:43,003 [INFO] >>> Analizujê plik: 948306.xlsx
+2025-12-16 03:31:43,660 [INFO] WYKRYTO 3 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:44,481 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:44,482 [INFO] >>> Analizujê plik: 948377.xlsx
+2025-12-16 03:31:45,702 [INFO] WYKRYTO 8 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:46,719 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:46,719 [INFO] >>> Analizujê plik: 948435.xlsx
+2025-12-16 03:31:48,027 [INFO] WYKRYTO 14 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:48,873 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:48,873 [INFO] >>> Analizujê plik: 948476.xlsx
+2025-12-16 03:31:49,857 [INFO] WYKRYTO 11 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:50,685 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:50,685 [INFO] >>> Analizujê plik: 948556.xlsx
+2025-12-16 03:31:52,089 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-12-16 03:31:52,089 [INFO] >>> Analizujê plik: 948608.xlsx
+2025-12-16 03:31:53,784 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-12-16 03:31:53,784 [INFO] >>> Analizujê plik: 948772.xlsx
+2025-12-16 03:31:55,906 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-12-16 03:31:55,906 [INFO] >>> Analizujê plik: 948827.xlsx
+2025-12-16 03:31:57,459 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:31:58,374 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:31:58,375 [INFO] >>> Analizujê plik: 948910.xlsx
+2025-12-16 03:31:59,730 [INFO] WYKRYTO 6 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:00,742 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:00,742 [INFO] >>> Analizujê plik: 949529.xlsx
+2025-12-16 03:32:02,988 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-12-16 03:32:02,988 [INFO] >>> Analizujê plik: 949610.xlsx
+2025-12-16 03:32:05,155 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-12-16 03:32:05,155 [INFO] >>> Analizujê plik: 949850.xlsx
+2025-12-16 03:32:07,558 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-12-16 03:32:07,558 [INFO] >>> Analizujê plik: 950619.xlsx
+2025-12-16 03:32:09,395 [INFO] WYKRYTO 4 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:10,306 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:10,306 [INFO] >>> Analizujê plik: 950710.xlsx
+2025-12-16 03:32:13,076 [INFO] WYKRYTO 3 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:14,059 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:14,059 [INFO] >>> Analizujê plik: 950740.xlsx
+2025-12-16 03:32:15,695 [INFO] WYKRYTO 2 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:16,579 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:16,579 [INFO] >>> Analizujê plik: 950846.xlsx
+2025-12-16 03:32:17,314 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:18,150 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:18,150 [INFO] >>> Analizujê plik: 950859.xlsx
+2025-12-16 03:32:18,676 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:19,486 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:19,486 [INFO] >>> Analizujê plik: 950900.xlsx
+2025-12-16 03:32:19,980 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:20,803 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:20,803 [INFO] >>> Analizujê plik: 950913.xlsx
+2025-12-16 03:32:21,266 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:22,092 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:22,092 [INFO] >>> Analizujê plik: 951636.xlsx
+2025-12-16 03:32:22,800 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:23,641 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:23,641 [INFO] >>> Analizujê plik: 952249.xlsx
+2025-12-16 03:32:25,073 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-12-16 03:32:25,074 [INFO] >>> Analizujê plik: 952460.xlsx
+2025-12-16 03:32:26,034 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-12-16 03:32:26,034 [INFO] >>> Analizujê plik: 952787.xlsx
+2025-12-16 03:32:26,697 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-12-16 03:32:26,697 [INFO] >>> Analizujê plik: 953048.xlsx
+2025-12-16 03:32:27,604 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:28,509 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:28,510 [INFO] >>> Analizujê plik: 953384.xlsx
+2025-12-16 03:32:29,317 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:30,161 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:30,162 [INFO] >>> Analizujê plik: 953396.xlsx
+2025-12-16 03:32:30,904 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:31,745 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:31,746 [INFO] >>> Analizujê plik: 953425.xlsx
+2025-12-16 03:32:32,445 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:33,294 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:33,294 [INFO] >>> Analizujê plik: 953475.xlsx
+2025-12-16 03:32:33,859 [INFO] WYKRYTO 11 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:34,717 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:34,717 [INFO] >>> Analizujê plik: 953545.xlsx
+2025-12-16 03:32:35,331 [INFO] WYKRYTO 12 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:36,176 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:36,177 [INFO] >>> Analizujê plik: 953573.xlsx
+2025-12-16 03:32:37,063 [INFO] WYKRYTO 22 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:37,886 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:37,886 [INFO] >>> Analizujê plik: 953633.xlsx
+2025-12-16 03:32:38,594 [INFO] WYKRYTO 19 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:39,443 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:39,444 [INFO] >>> Analizujê plik: 953653.xlsx
+2025-12-16 03:32:40,103 [INFO] WYKRYTO 3 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:40,972 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:40,972 [INFO] >>> Analizujê plik: 953756.xlsx
+2025-12-16 03:32:41,761 [INFO] WYKRYTO 8 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:42,579 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:42,580 [INFO] >>> Analizujê plik: 953840.xlsx
+2025-12-16 03:32:43,244 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:44,168 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:44,168 [INFO] >>> Analizujê plik: 956692.xlsx
+2025-12-16 03:32:44,968 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-12-16 03:32:44,968 [INFO] >>> Analizujê plik: 956707.xlsx
+2025-12-16 03:32:46,005 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-12-16 03:32:46,005 [INFO] >>> Analizujê plik: 957891.xlsx
+2025-12-16 03:32:47,476 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-12-16 03:32:47,476 [INFO] >>> Analizujê plik: 958314.xlsx
+2025-12-16 03:32:48,109 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:49,056 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:49,056 [INFO] >>> Analizujê plik: 958331.xlsx
+2025-12-16 03:32:49,720 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:50,529 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:50,529 [INFO] >>> Analizujê plik: 958350.xlsx
+2025-12-16 03:32:51,184 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:51,975 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:51,975 [INFO] >>> Analizujê plik: 958924.xlsx
+2025-12-16 03:32:54,093 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-12-16 03:32:54,093 [INFO] >>> Analizujê plik: 959087.xlsx
+2025-12-16 03:32:55,197 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-12-16 03:32:55,198 [INFO] >>> Analizujê plik: 959631.xlsx
+2025-12-16 03:32:56,626 [INFO] WYKRYTO 1 zdarzeñ anomalii w tym pliku.
+2025-12-16 03:32:57,446 [INFO] Zapisano wykresy w: outputs\RLM1\plots
+2025-12-16 03:32:57,446 [INFO] >>> Analizujê plik: 959652.xlsx
+2025-12-16 03:32:58,769 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-12-16 03:32:58,769 [INFO] >>> Analizujê plik: 960276.xlsx
+2025-12-16 03:32:59,695 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-12-16 03:32:59,695 [INFO] >>> Analizujê plik: 960319.xlsx
+2025-12-16 03:33:00,488 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-12-16 03:33:00,488 [INFO] >>> Analizujê plik: 960344.xlsx
+2025-12-16 03:33:01,256 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-12-16 03:33:01,256 [INFO] >>> Analizujê plik: 960360.xlsx
+2025-12-16 03:33:02,175 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-12-16 03:33:02,175 [INFO] >>> Analizujê plik: 960388.xlsx
+2025-12-16 03:33:03,367 [INFO] Nie znaleziono anomalii w tym pliku.
+2025-12-16 03:33:03,367 [INFO] 
 --- Detekcja Wstêpna Zakoñczona ---
-2025-11-28 19:47:01,430 [INFO] £¹cznie znaleziono 315 zdarzeñ w 111 plikach.
-2025-11-28 19:47:01,440 [INFO] Zapisano surowe zdarzenia w: outputs\RLM1\raw_events_RLM1.json
-2025-11-28 19:47:01,440 [INFO] 
+2025-12-16 03:33:03,369 [INFO] £¹cznie znaleziono 269 zdarzeñ w 111 plikach.
+2025-12-16 03:33:03,369 [INFO] Generujê histogram dla wszystkich plików ³¹cznie...
+2025-12-16 03:33:04,876 [INFO] Zapisano globalny histogram: outputs\RLM1\GLOBAL_HISTOGRAM_RLM1.png
+2025-12-16 03:33:04,882 [INFO] Zapisano surowe zdarzenia w: outputs\RLM1\raw_events_RLM1.json
+2025-12-16 03:33:04,882 [INFO] 
 --- Uruchamiam automatyczn¹ klasyfikacjê i raportowanie... ---
-2025-11-28 19:49:24,109 [INFO] Klasyfikacja zakoñczona pomyœlnie.
+2025-12-16 03:35:23,806 [INFO] Klasyfikacja zakoñczona pomyœlnie.

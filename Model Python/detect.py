@@ -1,3 +1,4 @@
+from matplotlib import pyplot as plt
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, TensorDataset
@@ -11,33 +12,99 @@ import glob
 import json
 from tqdm import tqdm
 import subprocess # Do wywoływania programu w find_threshold.py jak nie będzie takowy stworzony.
+from fractional_modules import LSTMAutoencoder
 
-# =============================================================================
-# --- Definicja Modelu (musi być identyczna jak w train_model.py) ---
-# =============================================================================
-class LSTMAutoencoder(nn.Module):
-    def __init__(self, input_dim, hidden_dim, num_layers, seq_len, dropout_rate):
-        super(LSTMAutoencoder, self).__init__()
-        self.input_dim = input_dim
-        self.hidden_dim = hidden_dim
-        self.num_layers = num_layers
-        self.seq_len = seq_len
-        self.encoder = nn.LSTM(
-            input_size=input_dim, hidden_size=hidden_dim, num_layers=num_layers,
-            batch_first=True, dropout=dropout_rate if num_layers > 1 else 0
-        )
-        self.decoder = nn.LSTM(
-            input_size=hidden_dim, hidden_size=hidden_dim, num_layers=num_layers,
-            batch_first=True, dropout=dropout_rate if num_layers > 1 else 0
-        )
-        self.output_layer = nn.Linear(hidden_dim, input_dim)
+# =========================================================================
+# --- FUNKCJA RYSUJĄCA (DASHBOARD 4-w-1) ---
+# =========================================================================
+def generate_dashboard(family, test_filename, vi, threshold, 
+                       file_losses, anomaly_indices, 
+                       test_tensor, reconstructions, 
+                       output_dir, timestamps=None):
+    """
+    Generuje i zapisuje panel z 4 wykresami w folderze 'plots'.
+    """
+    # Tworzenie podfolderu na wykresy
+    plots_dir = os.path.join(output_dir, "plots")
+    os.makedirs(plots_dir, exist_ok=True)
 
-    def forward(self, x):
-        _, (hidden_state, cell_state) = self.encoder(x)
-        decoder_input = hidden_state[-1].unsqueeze(1).repeat(1, self.seq_len, 1)
-        decoder_output, _ = self.decoder(input=decoder_input, hx=(hidden_state, cell_state))
-        reconstruction = self.output_layer(decoder_output)
-        return reconstruction
+    plt.style.use('ggplot')
+    fig = plt.figure(figsize=(20, 12))
+    fig.suptitle(f"Raport Detekcji: {family} / {test_filename} (Vi={vi})", fontsize=16)
+
+    # 1. Wykres Błędu w Czasie
+    ax1 = fig.add_subplot(2, 2, 1)
+    
+    if timestamps is not None and len(timestamps) == len(file_losses):
+        import matplotlib.dates as mdates
+        ax1.plot(timestamps, file_losses, label='Błąd MSE', color='steelblue', linewidth=1)
+        ax1.xaxis.set_major_formatter(mdates.DateFormatter('%H:%M:%S'))
+        fig.autofmt_xdate()
+    else:
+        ax1.plot(file_losses, label='Błąd MSE', color='steelblue', linewidth=1)
+
+    ax1.axhline(y=threshold, color='r', linestyle='--', label=f'Próg ({threshold:.4f})')
+    
+    if len(anomaly_indices) > 0:
+        if timestamps is not None and len(timestamps) == len(file_losses):
+            # Wyciągamy daty dla indeksów anomalii
+            anom_times = timestamps[anomaly_indices] 
+            anom_vals = file_losses[anomaly_indices]
+            ax1.scatter(anom_times, anom_vals, color='red', s=20, zorder=5, label='Anomalia')
+        else:
+            ax1.scatter(anomaly_indices, file_losses[anomaly_indices], color='red', s=20, zorder=5, label='Anomalia')
+
+    ax1.set_title("Błąd Rekonstrukcji (MSE) w czasie")
+    ax1.set_ylabel("MSE Loss")
+    ax1.legend()
+
+    # 2. Histogram Błędu
+    ax2 = fig.add_subplot(2, 2, 2)
+    ax2.hist(file_losses, bins=50, color='skyblue', edgecolor='black', alpha=0.7, label='Rozkład błędu')
+    ax2.axvline(x=threshold, color='r', linestyle='--', label='Próg')
+    ax2.set_title("Histogram Błędu Rekonstrukcji")
+    ax2.set_yscale('log') 
+    ax2.legend()
+
+    # 3. Przykładowa Rekonstrukcja (Największy Błąd)
+    ax3 = fig.add_subplot(2, 2, 3)
+    if len(anomaly_indices) > 0:
+        # Szukamy indexu z największym błędem wśród anomalii
+        # anomaly_indices to np.array indeksów
+        losses_at_anomalies = file_losses[anomaly_indices]
+        max_loss_arg = np.argmax(losses_at_anomalies)
+        max_err_idx = anomaly_indices[max_loss_arg]
+        
+        label_text = f"Największa Anomalia (idx={max_err_idx})"
+        idx_to_plot = max_err_idx
+    else:
+        idx_to_plot = len(file_losses) // 2
+        label_text = f"Przykładowy przebieg (Normalny - idx={idx_to_plot})"
+
+    orig_seq = test_tensor[idx_to_plot].cpu().numpy()
+    recon_seq = reconstructions[idx_to_plot] 
+
+    # Rysujemy cechę 0
+    ax3.plot(orig_seq[:, 0], label='Oryginał (Cecha 0)', color='black', alpha=0.7)
+    ax3.plot(recon_seq[:, 0], label='Rekonstrukcja (Cecha 0)', color='orange', linestyle='--')
+    ax3.set_title(label_text)
+    ax3.legend()
+
+    # 4. Posortowany Błąd
+    ax4 = fig.add_subplot(2, 2, 4)
+    sorted_losses = np.sort(file_losses)
+    ax4.plot(sorted_losses, color='green', linewidth=2)
+    ax4.axhline(y=threshold, color='r', linestyle='--')
+    ax4.set_title("Posortowane wartości błędu")
+    ax4.set_xlabel("Próbki")
+    ax4.set_ylabel("MSE")
+
+    save_path = os.path.join(plots_dir, f"dashboard_{test_filename.replace('.pt', '')}.png")
+    plt.tight_layout(rect=[0, 0.03, 1, 0.95])
+    plt.savefig(save_path)
+    plt.close()
+    
+    logging.info(f"Zapisano wykresy w: {plots_dir}")
 
 # =============================================================================
 # --- Główna Funkcja Detekcji ---
@@ -116,8 +183,8 @@ def main(args):
         'hidden_dim': args.hidden_dim if args.hidden_dim is not None else params_from_file.get('hidden_dim'),
         'num_layers': args.num_layers if args.num_layers is not None else params_from_file.get('num_layers'),
         'seq_len': args.seq_len if args.seq_len is not None else params_from_file.get('seq_len'),
-        # Zauważ: argument parsera to 'dropout', ale klasa chce 'dropout_rate'
-        'dropout_rate': args.dropout if args.dropout is not None else params_from_file.get('dropout') 
+        'dropout_rate': args.dropout if args.dropout is not None else params_from_file.get('dropout'),
+        'vi' : args.vi if args.vi is not None else params_from_file.get('vi')
     }
 
 
@@ -127,7 +194,8 @@ def main(args):
         hidden_dim=final_params['hidden_dim'],
         num_layers=final_params['num_layers'],
         seq_len=final_params['seq_len'],
-        dropout_rate=final_params['dropout_rate']
+        dropout_rate=final_params['dropout_rate'],
+        vi=final_params['vi']
     ).to(device)
     
     model.load_state_dict(checkpoint['model_state_dict'])
@@ -147,7 +215,8 @@ def main(args):
             "python", "find_threshold.py",
             "--family", args.family,
             "--base_dir", args.base_dir,
-            "--batch_size", str(args.batch_size)
+            "--batch_size", str(args.batch_size),
+            "--vi", str(final_params['vi'])
             # Uwaga: parametry modelu (input_dim itp.) są teraz wczytywane
             # przez find_threshold.py z pliku checkpointu (zgodnie z Nr 1)
         ]
@@ -183,6 +252,7 @@ def main(args):
 
     criterion = nn.MSELoss(reduction='none')
     all_raw_events = [] # Nowa lista na wszystkie zdarzenia
+    global_losses = [] # lista do globalnych błędów
     total_files_with_anomalies = 0
 
     for data_file_path in wady_files_data:
@@ -206,20 +276,25 @@ def main(args):
 
         wady_loader = DataLoader(TensorDataset(wady_tensor, wady_tensor), batch_size=args.batch_size)
         
+        
         file_losses = []
+        reconstructions = []
         with torch.no_grad():
             for (batch_data, _) in wady_loader:
                 batch_data = batch_data.to(device)
                 reconstruction = model(batch_data)
                 loss = criterion(reconstruction, batch_data) # Porównaj z oryginałem
                 loss = torch.mean(loss, dim=(1, 2))
-                file_losses.append(loss.cpu().numpy())
+                file_losses.extend(loss.cpu().numpy())
+                reconstructions.append(reconstruction.cpu().numpy())
         
         if not file_losses:
             logging.info("Plik pusty. Pomijam.")
             continue
             
-        file_losses = np.concatenate(file_losses)
+        file_losses = np.array(file_losses)
+        global_losses.extend(file_losses)
+        reconstructions = np.concatenate(reconstructions, axis = 0)
         anomaly_indices = np.where(file_losses > threshold)[0]
         
         if len(anomaly_indices) == 0:
@@ -249,9 +324,71 @@ def main(args):
                 'data_file_path': data_file_path, 
                 'map_file_path': map_file_path
             })
-    
+        
+        timestamps = None
+        map_file_path = data_file_path.replace('_data.pt', '_map.csv')
+            
+        if os.path.exists(map_file_path):
+            try:
+                df_map = pd.read_csv(map_file_path)
+                # LSTM ucina pierwsze (seq_len - 1) próbek przy tworzeniu sekwencji
+                current_seq_len = model.seq_len
+                
+                if len(df_map) >= current_seq_len:
+                    # Bierzemy czasy od (seq_len - 1) do końca
+                    raw_timestamps = df_map['Timestamp'].values[current_seq_len-1:]
+                    
+                    # Zabezpieczenie długości (gdyby preprocess coś uciął inaczej)
+                    if len(raw_timestamps) > len(file_losses):
+                        raw_timestamps = raw_timestamps[:len(file_losses)]
+                    
+                    timestamps = pd.to_datetime(raw_timestamps)
+            except Exception as e:
+                logging.warning(f"Nie udało się wczytać mapy czasu: {e}")
+
+        # Generowanie wykresów
+        generate_dashboard(
+            family=args.family, 
+            test_filename=os.path.basename(data_file_path),
+            vi=final_params['vi'], 
+            threshold=threshold,
+            file_losses=file_losses,       
+            anomaly_indices=anomaly_indices,
+            test_tensor=wady_tensor,
+            reconstructions=reconstructions,
+            output_dir=log_dir,
+            timestamps=timestamps
+        )
+
     logging.info(f"\n--- Detekcja Wstępna Zakończona ---")
     logging.info(f"Łącznie znaleziono {len(all_raw_events)} zdarzeń w {total_files_with_anomalies} plikach.")
+
+    if global_losses:
+        logging.info("Generuję histogram dla wszystkich plików łącznie...")
+        plt.figure(figsize=(12, 6)) # Nieco szerszy
+        
+        min_val = max(min(global_losses), 1e-6) # Zabezpieczenie przed 0
+        max_val = max(global_losses)
+        
+        # Tworzymy 100 kubełków rozmieszczonych logarytmicznie
+        bins = np.logspace(np.log10(min_val), np.log10(max_val), 100)
+        
+        plt.hist(global_losses, bins=bins, color='purple', alpha=0.7, label='Rozkład błędu')
+        plt.axvline(x=threshold, color='red', linestyle='--', linewidth=2, label=f'Próg ({threshold:.2f})')
+        
+        plt.xscale('log') # Logarytmiczna oś X
+        plt.yscale('log') # Logarytmiczna oś Y
+        
+        plt.title(f"Globalny Histogram Błędu ({args.family}) - Skala Logarytmiczna")
+        plt.xlabel("Błąd Rekonstrukcji (MSE) - Skala Log")
+        plt.ylabel("Liczba próbek (Log)")
+        plt.legend()
+        plt.grid(True, which="both", ls="--", alpha=0.3)
+        
+        global_hist_path = os.path.join(log_dir, f"GLOBAL_HISTOGRAM_{args.family}.png")
+        plt.savefig(global_hist_path)
+        plt.close()
+        logging.info(f"Zapisano globalny histogram: {global_hist_path}")
 
     # --- 4. Zapis zdarzeń i wywołanie classify.py ---
     if not all_raw_events:
@@ -281,6 +418,7 @@ def main(args):
     except Exception as e:
         logging.error(f"Automatyczne uruchomienie 'classify.py' nie powiodło się: {e}")
 
+   
         
 # =============================================================================
 # --- Argumenty Wiersza Poleceń ---
@@ -292,7 +430,6 @@ if __name__ == "__main__":
                         help="Rodzina danych (np. RLM1)")
     parser.add_argument('--recalculate-threshold', action='store_true',
                         help="Wymuś ponowne obliczenie progu")
-    # ... (reszta argumentów bez zmian)
     
     # Argumenty Modelu (muszą pasować do trenowanego)   (Domyślnie wczytywane z checkpointu)
     parser.add_argument('--input_dim', type=int, default=None,
@@ -305,6 +442,8 @@ if __name__ == "__main__":
                         help="[Opcjonalne] Nadpisuje 'seq_len' z checkpointu")
     parser.add_argument('--dropout', type=float, default=None,
                         help="[Opcjonalne] Nadpisuje 'dropout' z checkpointu")
+    parser.add_argument('--vi', type=float, default=None, 
+                        help="Opcjonalnie: wersja Vi modelu")
     
     # Argumenty Procesu
     parser.add_argument('--base_dir', type=str, default="preprocessed_data")
