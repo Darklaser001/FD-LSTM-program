@@ -12,3 +12,5 @@ Model Python/*.pyc
 # --- Ignoruj pliki tymczasowe Excela ---
 Model Python/~$*.xlsx
 
+# --- Ignoruj stare wyniki ---
+Model Python/old_outputs

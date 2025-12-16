@@ -30,9 +30,8 @@ def save_training_plot(history_loss, family, vi, output_dir):
     plt.legend()
     
     filename = f"learning_curve_{family}_v{vi}.png"
-    plots_dir = os.path.join(output_dir, "plots")
-    os.makedirs(plots_dir, exist_ok=True)
-    save_path = os.path.join(plots_dir, filename)
+    os.makedirs(output_dir, exist_ok=True)
+    save_path = os.path.join(output_dir, filename)
     plt.savefig(save_path)
     plt.close()
     logging.info(f"Zapisano wykres uczenia: {save_path}")

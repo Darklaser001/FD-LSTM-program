@@ -16,12 +16,131 @@ from sklearn.preprocessing import StandardScaler
 import seaborn as sns
 from fractional_modules import LSTMAutoencoder
 
+
+CLUSTER_COLORS = {
+    1: '#e6194b', # Red
+    2: '#3cb44b', # Green
+    3: '#ffe119', # Yellow
+    4: '#4363d8', # Blue
+    5: '#f58231', # Orange
+    6: '#911eb4', # Purple
+    7: '#42d4f4', # Cyan
+    8: '#f032e6', # Magenta
+    9: '#bfef45', # Lime
+    10: '#fabebe', # Pink
+}
+
 # =============================================================================
 # --- Funkcje Pomocnicze ---
 # =============================================================================
 
+def plot_cluster_profiles(feature_data, labels, num_clusters, log_dir, family_name):
+    """
+    Rysuje profil błędów cech dla każdego klastra.
+    Pozwala zrozumieć 'CO' się zepsuło w danym typie anomalii.
+    """
+    # Tworzymy DataFrame: Kolumny = Cechy, Wiersze = Próbki
+    df = pd.DataFrame(feature_data)
+    df['Cluster'] = labels + 1 # +1 żeby typy były od 1
+    
+    # Obliczamy średni profil dla każdego klastra
+    # (uśredniamy logarytmy błędów)
+    profiles = df.groupby('Cluster').mean()
+    
+    # Rysowanie
+    num_cols = 2
+    num_rows = (num_clusters + 1) // 2
+    
+    fig, axes = plt.subplots(num_rows, num_cols, figsize=(15, 4 * num_rows))
+    fig.suptitle(f"Profile Klastrów - Sygnatura Błędów ({family_name})", fontsize=16)
+    axes = axes.flatten()
+    
+    for i in range(num_clusters):
+        cluster_id = i + 1
+        ax = axes[i]
+        
+        if cluster_id not in profiles.index:
+            ax.text(0.5, 0.5, "Brak danych", ha='center')
+            continue
+            
+        profile = profiles.loc[cluster_id]
+        color = CLUSTER_COLORS.get(cluster_id, 'gray')
+        
+        ax.bar(profile.index, profile.values, color=color, alpha=0.8)
+        ax.set_title(f"Typ {cluster_id} (Liczba zdarzeń: {len(df[df['Cluster']==cluster_id])})")
+        ax.set_xlabel("Indeks Cechy (Feature ID)")
+        ax.set_ylabel("Log(Błąd Średni)")
+        ax.grid(True, axis='y', linestyle='--', alpha=0.5)
+        
+    plt.tight_layout(rect=[0, 0.03, 1, 0.96])
+    path = os.path.join(log_dir, f"ANALYSIS_Profiles_{family_name}.png")
+    plt.savefig(path, dpi=150)
+    plt.close()
+    logging.info(f"Zapisano profile klastrów: {path}")
+
+def plot_stacked_histogram(global_losses_np, valid_events, threshold, log_dir, family_name):
+    """
+    Histogram globalny, ale pokolorowany typami anomalii.
+    """
+    plt.figure(figsize=(14, 7))
+    
+    # 1. Przygotowanie danych
+    # Tło (wszystkie błędy)
+    all_data = global_losses_np
+    
+    # Zbieramy dane dla poszczególnych typów
+    stacked_data = []
+    labels = []
+    colors = []
+    
+    # Sortujemy typy, które faktycznie wystąpiły
+    found_types = sorted(list(set(e['type'] for e in valid_events)))
+    
+    for type_id in found_types:
+        # Wyciągamy wartości błędów dla wszystkich zdarzeń tego typu
+        type_values = []
+        type_events = [e for e in valid_events if e['type'] == type_id]
+        
+        for event in type_events:
+            s = event['global_start']
+            e = event['global_end']
+            # Pobieramy fragment z globalnej tablicy
+            type_values.extend(global_losses_np[s:e+1])
+            
+        stacked_data.append(type_values)
+        labels.append(f"Typ {type_id}")
+        colors.append(CLUSTER_COLORS.get(type_id, 'gray'))
+    
+    # 2. Rysowanie
+    # Najpierw szare tło (cały rozkład)
+    min_val = max(min(all_data), 1e-6)
+    max_val = max(all_data)
+    bins = np.logspace(np.log10(min_val), np.log10(max_val), 100)
+    
+    plt.hist(all_data, bins=bins, color='#e0e0e0', label='Tło (Norma + Szum)', alpha=0.5)
+    
+    # Teraz kolorowe słupki (Stacked)
+    if stacked_data:
+        plt.hist(stacked_data, bins=bins, stacked=True, label=labels, color=colors, alpha=1.0)
+    
+    plt.axvline(x=threshold, color='red', linestyle='--', linewidth=2, label='Próg')
+    
+    plt.xscale('log')
+    plt.yscale('log')
+    plt.title(f"Skumulowany Histogram Anomalii ({family_name})")
+    plt.xlabel("Błąd Rekonstrukcji (MSE) - Skala Log")
+    plt.ylabel("Liczba próbek (Log)")
+    plt.legend()
+    plt.grid(True, which="both", ls="--", alpha=0.3)
+    
+    path = os.path.join(log_dir, f"ANALYSIS_StackedHist_{family_name}.png")
+    plt.savefig(path, dpi=150)
+    plt.close()
+    logging.info(f"Zapisano skumulowany histogram: {path}")
+
+
 def plot_3d_scatter_analysis(processed_events, log_dir, family_name):
-    """Wersja PANCERNA: Ręczne obliczanie logarytmu przed rysowaniem."""
+    """Ręczne obliczanie logarytmu przed rysowaniem."""
     from mpl_toolkits.mplot3d import Axes3D
 
     # 1. Przygotowanie danych
@@ -83,7 +202,7 @@ def plot_3d_scatter_analysis(processed_events, log_dir, family_name):
     path = os.path.join(log_dir, f"ANALYSIS_3D_Scatter_{family_name}.png")
     plt.savefig(path, dpi=150, bbox_inches='tight')
     plt.close()
-    logging.info(f"Zapisano wykres 3D (metoda pancerna): {path}")
+    logging.info(f"Zapisano wykres 3D: {path}")
 
 def plot_scatter_analysis(processed_events, log_dir, family_name):
     """Rysuje mapę anomalii: Czas trwania vs Amplituda."""
@@ -174,17 +293,6 @@ def calculate_loss_profile(tensor_data, model, device, criterion, batch_size=512
     if not all_losses: return np.array([])
     return np.concatenate(all_losses)
 
-# Kolory dla klastrów
-CLUSTER_COLORS = {
-    1: '#e6194b', # Red
-    2: '#3cb44b', # Green
-    3: '#ffe119', # Yellow
-    4: '#4363d8', # Blue
-    5: '#f58231', # Orange
-    6: '#911eb4', # Purple
-    7: '#42d4f4', # Cyan
-}
-
 # =============================================================================
 # --- Główna Funkcja ---
 # =============================================================================
@@ -207,6 +315,8 @@ def main(args):
     checkpoint_dir = os.path.join("checkpoints", args.family)
     model_path = os.path.join(checkpoint_dir, f"model_checkpoint_{args.family}.pth")
     events_file_path = os.path.join(log_dir, f"raw_events_{args.family}.json")
+    threshold_path = os.path.join(checkpoint_dir, f"threshold_{args.family}.json") # Potrzebne do histogramu
+
 
     processed_data_dir = os.path.join(args.base_dir, args.family)
     train_data_path = os.path.join(processed_data_dir, 'train_data.pt')
@@ -257,6 +367,12 @@ def main(args):
     model.load_state_dict(checkpoint['model_state_dict'])
     model.eval()
     criterion = nn.MSELoss(reduction='none')
+
+    # Wczytanie progu
+    try:
+        with open(threshold_path, 'r') as f:
+            threshold = json.load(f)['threshold']
+    except: threshold = 0
 
     # --- 2. Wczytanie Zdarzeń (Raw Events) ---
     try:
@@ -309,7 +425,7 @@ def main(args):
         file_names_map.append("DANE NORMALNE (WZORZEC)")
 
     # Lista cech do klastrowania (zbieramy je teraz, przy okazji iteracji)
-    feature_list = []
+    feature_vectors_for_clustering = []
     valid_events = []
 
     logging.info(f"Przetwarzanie {len(sorted_files)} plików wadliwych...")
@@ -327,7 +443,19 @@ def main(args):
         # 2. Zbieramy cechy anomalii w tym pliku
         file_events = events_by_file[file_path]
         for event in file_events:
-            # Wycinamy błędy dla tej konkretnej anomalii
+            if 'feature_vector' in event:
+                # Wektor cech (Signature)
+                raw_vec = np.array(event['feature_vector'])
+                # Bierzemy Logarytm z wektora (żeby zrównoważyć skale błędów)
+                # log1p(x) = log(1+x), bezpieczne dla 0
+                log_vec = np.log1p(raw_vec)
+                
+                feature_vectors_for_clustering.append(log_vec)
+            else:
+                logging.warning(f"Zdarzenie w {file_path} nie ma feature_vector! Pomijam w klastrowaniu.")
+                continue
+
+            # Obliczamy metadane dla statystyki (Scatter/Boxplot)
             ev_losses = losses[event['start_index'] : event['end_index'] + 1]
             if len(ev_losses) == 0: continue
             
@@ -338,15 +466,14 @@ def main(args):
                 'variability': float(np.std(ev_losses)) 
             }
             
-            # Zapisujemy zdarzenie z GLOBALNYM indeksem (do wykresu)
-            # Dodajemy offset, żeby wiedzieć gdzie narysować to na dużym wykresie
             event_copy = event.copy()
             event_copy['global_start'] = event['start_index'] + offset
             event_copy['global_end'] = event['end_index'] + offset
             event_copy['features'] = features
-            
-            feature_list.append([features['duration'], features['amplitude'], features['mean_error'], features['variability']])
             valid_events.append(event_copy)
+
+        file_separators.append(current_idx)
+        file_names_map.append(os.path.basename(file_path).replace('_data.pt', ''))
 
         # 3. Dodajemy błędy pliku do globalnej listy
         global_losses.extend(losses)
@@ -358,21 +485,27 @@ def main(args):
         file_names_map.append(base_name)
 
     # --- 4. Klastrowanie ---
-    if not feature_list:
-        logging.error("Brak anomalii do klastrowania.")
+    if not feature_vectors_for_clustering:
+        logging.error("Brak danych do klastrowania.")
         return
 
     logging.info("Klastrowanie anomalii...")
-    scaler = StandardScaler()
-    X = scaler.fit_transform(feature_list)
+
+    # Konwersja do numpy
+    X_features = np.array(feature_vectors_for_clustering)
+    
+    # UWAGA: Nie używamy StandardScaler tutaj, bo Logarytm (log1p) już zrobił normalizację skali,
+    # a chcemy zachować informację, że cecha A ma błąd 1000 a cecha B tylko 5.
+    # Jeśli zrobimy StandardScaler, to mały błąd na cichej cechie będzie tak samo ważny jak duży na głośnej.
+    
     kmeans = KMeans(n_clusters=args.num_clusters, random_state=42, n_init=10)
-    labels = kmeans.fit_predict(X)
+    labels = kmeans.fit_predict(X_features)
 
     # Przypisz typy
     for i, event in enumerate(valid_events):
         event['type'] = int(labels[i] + 1)
 
-    # --- 5. Rysowanie Wielkiego Wykresu ---
+    # --- 5. Rysowanie Wykresów ---
     logging.info("Generowanie globalnego wykresu...")
     
     # Konwertujemy na numpy dla szybszego rysowania
@@ -434,11 +567,55 @@ def main(args):
     logging.info(f"Wykres globalny zapisany: {plot_path}")
 
     # --- Generowanie Wykresów Analitycznych ---
-    logging.info("Generowanie wykresów analitycznych (Scatter & Boxplot)...")
+    logging.info("Generowanie wykresów analitycznych...")
     # Musimy przekazać 'valid_events', które mają już przypisany 'type'
     plot_scatter_analysis(valid_events, log_dir, args.family)
     plot_boxplot_analysis(valid_events, log_dir, args.family)
     plot_3d_scatter_analysis(valid_events, log_dir, args.family)
+
+    # Dodatkowe wykresy analityczne PO analizie na podstawie konkretnych wartości rekonstruowanych cech
+        # A. Profile Klastrów (Bar Charts)
+    plot_cluster_profiles(X_features, labels, args.num_clusters, log_dir, args.family)
+    
+    # B. Stacked Histogram (Global Error)
+    global_losses_np = np.array(global_losses)
+    plot_stacked_histogram(global_losses_np, valid_events, threshold, log_dir, args.family)
+
+    # C. Globalny Wykres Liniowy
+    logging.info("Generowanie wykresu liniowego...")
+    plt.figure(figsize=(100, 15)) 
+    plt.yscale('log')
+    plt.plot(global_losses_np, color='#d9d9d9', linewidth=0.8, label='Tło')
+    
+    if len(normal_losses) > 0:
+        plt.plot(range(len(normal_losses)), normal_losses, color='#2d8659', linewidth=1.0, label='Dane Wzorcowe')
+
+    for cluster_id in range(1, args.num_clusters + 1):
+        color = CLUSTER_COLORS.get(cluster_id, 'black')
+        type_events = [e for e in valid_events if e['type'] == cluster_id]
+        for event in type_events:
+            s = event['global_start']
+            e = event['global_end']
+            plt.plot(range(s, e+1), global_losses_np[s:e+1], color=color, linewidth=1.5)
+
+    # Separatory
+    for i, sep_idx in enumerate(file_separators):
+        plt.axvline(x=sep_idx, color='black', linestyle=':', alpha=0.5)
+        prev = file_separators[i-1] if i > 0 else 0
+        center = (prev + sep_idx) / 2
+        if i < len(file_names_map):
+            plt.text(center, max(global_losses_np)*0.95, file_names_map[i], 
+                     rotation=90, va='top', ha='center', fontsize=8, alpha=0.7)
+
+    patches = [mpatches.Patch(color='#2d8659', label='Dane Wzorcowe')]
+    for i in range(1, args.num_clusters + 1):
+        patches.append(mpatches.Patch(color=CLUSTER_COLORS[i], label=f'Typ {i}'))
+    
+    plt.legend(handles=patches, loc='upper right')
+    plt.title(f"Globalna Analiza - Klasyfikacja wg. Cech ({args.family})")
+    plt.margins(x=0)
+    plt.savefig(os.path.join(log_dir, f"GLOBAL_TIMELINE_{args.family}.png"), dpi=300, bbox_inches='tight')
+    plt.close()
 
     # --- 6. Zapis JSON ---
     final_json = {f"Anomalia Typu {i}": [] for i in range(1, args.num_clusters + 1)}
@@ -455,7 +632,8 @@ def main(args):
                 'file': fname,
                 'local_start_index': event['start_index'],
                 'local_end_index': event['end_index'],
-                'features': event['features']
+                'features': event['features'],
+                'feature_vector_log': np.log1p(event['feature_vector']).tolist() 
             }
             final_json[f"Anomalia Typu {event['type']}"].append(event_data)
         except: pass

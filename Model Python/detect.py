@@ -13,14 +13,17 @@ import json
 from tqdm import tqdm
 import subprocess # Do wywoływania programu w find_threshold.py jak nie będzie takowy stworzony.
 from fractional_modules import LSTMAutoencoder
+import seaborn as sns # Dodane do heatmapy
+import joblib
+
 
 # =========================================================================
 # --- FUNKCJA RYSUJĄCA (DASHBOARD 4-w-1) ---
 # =========================================================================
 def generate_dashboard(family, test_filename, vi, threshold, 
                        file_losses, anomaly_indices, 
-                       test_tensor, reconstructions, 
-                       output_dir, timestamps=None):
+                       test_tensor, reconstructions, feature_errors,
+                       output_dir, timestamps=None, feature_names=None):
     """
     Generuje i zapisuje panel z 4 wykresami w folderze 'plots'.
     """
@@ -29,7 +32,7 @@ def generate_dashboard(family, test_filename, vi, threshold,
     os.makedirs(plots_dir, exist_ok=True)
 
     plt.style.use('ggplot')
-    fig = plt.figure(figsize=(20, 12))
+    fig = plt.figure(figsize=(24, 14))
     fig.suptitle(f"Raport Detekcji: {family} / {test_filename} (Vi={vi})", fontsize=16)
 
     # 1. Wykres Błędu w Czasie
@@ -68,40 +71,110 @@ def generate_dashboard(family, test_filename, vi, threshold,
 
     # 3. Przykładowa Rekonstrukcja (Największy Błąd)
     ax3 = fig.add_subplot(2, 2, 3)
+
+    idx_to_plot = 0
+    feature_to_plot_idx = 0
+
     if len(anomaly_indices) > 0:
         # Szukamy indexu z największym błędem wśród anomalii
         # anomaly_indices to np.array indeksów
         losses_at_anomalies = file_losses[anomaly_indices]
         max_loss_arg = np.argmax(losses_at_anomalies)
-        max_err_idx = anomaly_indices[max_loss_arg]
+        idx_to_plot = anomaly_indices[max_loss_arg]
+
+        errors_at_moment = feature_errors[idx_to_plot] # wektor błędów wszystkich cech w tym momencie
+        feature_to_plot_idx = np.argmax(errors_at_moment)
         
-        label_text = f"Największa Anomalia (idx={max_err_idx})"
-        idx_to_plot = max_err_idx
+        label_text = f"Największa Anomalia (idx={idx_to_plot})"
     else:
+        # Jeśli brak anomalii, pokaż środek pliku i pierwszą cechę
         idx_to_plot = len(file_losses) // 2
+        feature_to_plot_idx = 0
         label_text = f"Przykładowy przebieg (Normalny - idx={idx_to_plot})"
 
-    orig_seq = test_tensor[idx_to_plot].cpu().numpy()
-    recon_seq = reconstructions[idx_to_plot] 
+    # Pobieranie nazwy cechy
+    if feature_names is not None and feature_to_plot_idx < len(feature_names):
+        feature_name = feature_names[feature_to_plot_idx]
+    else:
+        feature_name = f"Cecha {feature_to_plot_idx}"
 
-    # Rysujemy cechę 0
-    ax3.plot(orig_seq[:, 0], label='Oryginał (Cecha 0)', color='black', alpha=0.7)
-    ax3.plot(recon_seq[:, 0], label='Rekonstrukcja (Cecha 0)', color='orange', linestyle='--')
-    ax3.set_title(label_text)
+    orig_seq = test_tensor[idx_to_plot]
+    recon_seq = reconstructions[idx_to_plot]
+
+    # Rysujemy wybraną, "najgorszą" cechę
+    ax3.plot(np.sqrt(np.abs(orig_seq[:, feature_to_plot_idx])), label=f'Oryginał: {feature_name}', color='black', alpha=0.7)
+    ax3.plot(np.sqrt(np.abs(recon_seq[:, feature_to_plot_idx])), label=f'Rekonstrukcja', color='orange', linestyle='--')
+    ax3.set_title(f"{label_text}\nNajwiększy błąd w: {feature_name}")
     ax3.legend()
 
-    # 4. Posortowany Błąd
+    # 4. Heatmanap błędów cech
     ax4 = fig.add_subplot(2, 2, 4)
-    sorted_losses = np.sort(file_losses)
-    ax4.plot(sorted_losses, color='green', linewidth=2)
-    ax4.axhline(y=threshold, color='r', linestyle='--')
-    ax4.set_title("Posortowane wartości błędu")
-    ax4.set_xlabel("Próbki")
-    ax4.set_ylabel("MSE")
+    
+    # 1. Obliczamy średni błąd dla każdej cechy w całym pliku
+    # feature_errors_scaled jest [Samples, Features]
+    mean_error_per_feature = np.mean(feature_errors, axis=0)
+    
+    # 2. Wybieramy TOP 20 cech z największym błędem
+    TOP_N = 50
+    top_indices = np.argsort(mean_error_per_feature)[-TOP_N:] # Ostatnie N to największe
+    # Sortujemy je, żeby największy błąd był na górze (odwracamy kolejność)
+    top_indices = top_indices[::-1] 
+    
+    # Wycinamy dane tylko dla tych cech
+    heatmap_data = feature_errors[:, top_indices].T # [Top_Features, Samples]
+    heatmap_data = np.log1p(heatmap_data) # Logarytm dla czytelności
+    
+    # Przygotowanie etykiet
+    if feature_names:
+        yticklabels = [feature_names[i] for i in top_indices]
+    else:
+        yticklabels = [f"Cecha {i}" for i in top_indices]
 
+    # Rysujemy Heatmapę
+    # Używamy rasterized=True dla szybkości zapisu wektorowego/png przy dużej ilości punktów
+    sns.heatmap(
+        heatmap_data,
+        ax=ax4,
+        cmap='RdYlGn_r',
+        cbar_kws={'label': 'Log(Błąd)'},
+        yticklabels=yticklabels,
+        xticklabels=False, # Wyłączamy X bo i tak nieczytelne
+        rasterized=True,
+        vmin=0
+    )
+    
+    # Ręczne dodanie etykiet Osi X (Czasu)
+    # Dzielimy oś czasu na 10 równych punktów
+    num_ticks = 10 
+    total_steps = heatmap_data.shape[1]
+    tick_positions = np.linspace(0, total_steps - 1, num_ticks, dtype=int)
+    
+    if timestamps is not None and len(timestamps) == total_steps:
+        # Formatowanie daty do HH:MM:SS
+        import pandas as pd
+        # Upewniamy się, że timestamps to format datetime
+        ts_temp = pd.to_datetime(timestamps)
+        xticklabels = [ts_temp[i].strftime('%H:%M:%S') for i in tick_positions]
+        xlabel_text = "Czas (Godzina)"
+    else:
+        xticklabels = tick_positions
+        xlabel_text = "Krok czasowy"
+
+    ax4.set_xticks(tick_positions)
+    ax4.set_xticklabels(xticklabels, rotation=45, ha='right')
+
+    ax4.set_title(f"Heatmapa Błędów - TOP {TOP_N} Najgorszych Procesów", fontsize=10)
+    ax4.set_ylabel("Proces / Cecha")
+    ax4.set_xlabel(xlabel_text)
+    ax4.tick_params(axis='y', labelsize=8)
+
+    # Zapis
     save_path = os.path.join(plots_dir, f"dashboard_{test_filename.replace('.pt', '')}.png")
-    plt.tight_layout(rect=[0, 0.03, 1, 0.95])
-    plt.savefig(save_path)
+    
+    plt.tight_layout()
+
+        
+    plt.savefig(save_path, dpi=100)
     plt.close()
     
     logging.info(f"Zapisano wykresy w: {plots_dir}")
@@ -148,6 +221,21 @@ def main(args):
 
     logging.info(f"--- Rozpoczynam Detekcję Anomalii dla: {args.family} ---")
     logging.info(f"Logi zapisywane do: {log_file_path}")
+
+    # --- Wczytanie nazw cech (procesów np. proces_003) ---
+    feature_names = None
+    names_json_path = os.path.join(args.base_dir, args.family, f"{args.family}_column_names.json")
+    
+    if os.path.exists(names_json_path):
+        try:
+            with open(names_json_path, 'r', encoding='utf-8') as f:
+                feature_names = json.load(f)
+            logging.info(f"Wczytano nazwy {len(feature_names)} procesów z: {names_json_path}")
+        except Exception as e:
+            logging.warning(f"Nie udało się wczytać nazw procesów: {e}")
+    else:
+        logging.warning(f"Nie znaleziono pliku z nazwami: {names_json_path}. Wykresy będą używać indeksów.")
+
 
     # --- Konfiguracja Urządzenia i Ścieżek ---
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -202,6 +290,28 @@ def main(args):
     model.eval()
     logging.info("Model wczytany pomyślnie.")
 
+    # --- 1.4 Wczytanie PCA do odwrotnej transformacji ---
+    pca_path = os.path.join(processed_data_dir, f'pca_{args.family}.gz')
+    if os.path.exists(pca_path):
+        try:
+            logging.info(f"Wczytuję PCA z {pca_path} w celu inwersji (wizualizacja)...")
+            pca_model = joblib.load(pca_path)
+            
+            # Przygotowanie macierzy do obliczeń na GPU (szybkie odwrocenie PCA)
+            # sklearn PCA: components_ shape (n_components, n_features)
+            # Transformacja odwrotna: X_orig = X_pca @ components_ + mean_
+            pca_components_tensor = torch.tensor(pca_model.components_, dtype=torch.float32).to(device)
+            pca_mean_tensor = torch.tensor(pca_model.mean_, dtype=torch.float32).to(device)
+            
+            logging.info(f"PCA załadowane. Wymiary komponentów: {pca_components_tensor.shape}")
+        except Exception as e:
+            logging.error(f"Nie udało się wczytać PCA: {e}. Heatmapy będą w skali PCA.")
+            pca_components_tensor = None
+            pca_mean_tensor = None
+    else:
+        logging.warning("Brak pliku PCA. Heatmapy pozostaną w skali PCA.")
+        pca_components_tensor = None
+        pca_mean_tensor = None
 
     # --- 2. Wczytanie Progu (Threshold) ---
     if not os.path.exists(threshold_path):
@@ -252,7 +362,6 @@ def main(args):
 
     criterion = nn.MSELoss(reduction='none')
     all_raw_events = [] # Nowa lista na wszystkie zdarzenia
-    global_losses = [] # lista do globalnych błędów
     total_files_with_anomalies = 0
 
     for data_file_path in wady_files_data:
@@ -277,24 +386,59 @@ def main(args):
         wady_loader = DataLoader(TensorDataset(wady_tensor, wady_tensor), batch_size=args.batch_size)
         
         
-        file_losses = []
-        reconstructions = []
+        file_losses = []          # Błędy w przestrzeni PCA (do progu)
+        file_feature_losses = []  # Błędy w przestrzeni ORYGINALNEJ (do heatmapy)
+        reconstructions = []      # Rekonstrukcje w przestrzeni ORYGINALNEJ
+        original_inputs = []      # Oryginały w przestrzeni ORYGINALNEJ (do wykresu)
+
         with torch.no_grad():
             for (batch_data, _) in wady_loader:
-                batch_data = batch_data.to(device)
-                reconstruction = model(batch_data)
-                loss = criterion(reconstruction, batch_data) # Porównaj z oryginałem
-                loss = torch.mean(loss, dim=(1, 2))
-                file_losses.extend(loss.cpu().numpy())
-                reconstructions.append(reconstruction.cpu().numpy())
+                batch_data = batch_data.to(device) # PCA input [Batch, Seq, Components]
+                reconstruction_pca = model(batch_data) # PCA output
+
+                # A. Obliczamy błąd w przestrzeni PCA (dla kompatybilności z Threshold)
+                raw_loss_pca = criterion(reconstruction_pca, batch_data) 
+
+                # Błąd skalarny do histogramu i progu (Batch,) - z PCA
+                scalar_loss = torch.mean(raw_loss_pca, dim=(1, 2))
+                file_losses.extend(scalar_loss.cpu().numpy())
+                
+          
+                # B. Obliczamy błąd w przestrzeni ORYGINALNEJ (dla wizualizacji i heatmapy)
+                if pca_components_tensor is not None:
+                    # Odwracamy PCA na GPU: X_orig = X_pca @ Components + Mean
+                    # batch_data: [B, S, C] @ [C, F] -> [B, S, F]
+                    batch_data_orig = torch.matmul(batch_data, pca_components_tensor) + pca_mean_tensor
+                    reconstruction_orig = torch.matmul(reconstruction_pca, pca_components_tensor) + pca_mean_tensor
+                    
+                    # Błąd per cecha (oryginalna)
+                    # (Data - Recon)^2
+                    raw_loss_orig = (batch_data_orig - reconstruction_orig) ** 2
+                    
+                    # Uśredniamy po czasie sekwencji (dim=1) -> [Batch, Features]
+                    feat_loss = torch.mean(raw_loss_orig, dim=1)
+                    
+                    file_feature_losses.extend(feat_loss.cpu().numpy())
+                    reconstructions.append(reconstruction_orig.cpu().numpy())
+                    original_inputs.append(batch_data_orig.cpu().numpy())
+                
+                else:
+                    # Fallback jeśli nie ma PCA
+                    feat_loss = torch.mean(raw_loss_pca, dim=1)
+                    file_feature_losses.extend(feat_loss.cpu().numpy())
+                    reconstructions.append(reconstruction_pca.cpu().numpy())
+                    original_inputs.append(batch_data.cpu().numpy())
         
         if not file_losses:
             logging.info("Plik pusty. Pomijam.")
             continue
             
         file_losses = np.array(file_losses)
-        global_losses.extend(file_losses)
+        file_feature_losses = np.array(file_feature_losses) # [Samples, Original_Features]
         reconstructions = np.concatenate(reconstructions, axis = 0)
+        original_inputs = np.concatenate(original_inputs, axis = 0)
+
+        # Detekcja
         anomaly_indices = np.where(file_losses > threshold)[0]
         
         if len(anomaly_indices) == 0:
@@ -313,8 +457,16 @@ def main(args):
         logging.info(f"WYKRYTO {len(anomaly_events)} zdarzeń anomalii w tym pliku.")
         total_files_with_anomalies += 1
 
-        # Zapisz zdarzenia do klasyfikacji
+        # Zapisz zdarzenia do klasyfikacji (z wektorem cech)
         for (start, end) in anomaly_events:
+            # Wyciągamy średni wektor błędu dla tego zdarzenia
+            # event_features ma wymiar [Czas_trwania, Liczba_Cech_Oryginalnych]
+            event_features_matrix = file_feature_losses[start:end+1, :]
+
+            # Uśredniamy po czasie trwania anomalii -> dostajemy wektor [Liczba_Cech_Oryginalnych]
+            # To jest "Sygnatura Anomalii" (już przetłumaczona na procesy!)
+            avg_feature_vector = np.mean(event_features_matrix, axis=0)
+
             all_raw_events.append({
                 'file_name': file_base_name,
                 'start_index': int(start), # int() dla kompatybilności z JSON
@@ -322,7 +474,8 @@ def main(args):
                 'seq_len': final_params['seq_len'],
                 # Przekaż ścieżki, aby classify.py wiedział, co otworzyć
                 'data_file_path': data_file_path, 
-                'map_file_path': map_file_path
+                'map_file_path': map_file_path,
+                'feature_vector': avg_feature_vector.tolist() 
             })
         
         timestamps = None
@@ -350,45 +503,20 @@ def main(args):
         generate_dashboard(
             family=args.family, 
             test_filename=os.path.basename(data_file_path),
-            vi=final_params['vi'], 
-            threshold=threshold,
-            file_losses=file_losses,       
+            vi=final_params['vi'],  # Parametr Vi na którym uczył się model
+            threshold=threshold,    # Próg modelu
+            file_losses=file_losses,  # Błędy PCA (do wykresu 1 i 2)     
             anomaly_indices=anomaly_indices,
-            test_tensor=wady_tensor,
-            reconstructions=reconstructions,
-            output_dir=log_dir,
-            timestamps=timestamps
+            test_tensor=original_inputs,    # Oryginały (do wykresu 3)
+            feature_errors=file_feature_losses, # Błędy ORYGINALNE (do heatmapy)
+            reconstructions=reconstructions, # Rekonstrukcje ORYGINALNE (do wykresu 3)
+            output_dir=log_dir, # Ścieżka do wykresów
+            timestamps=timestamps,
+            feature_names=feature_names
         )
 
     logging.info(f"\n--- Detekcja Wstępna Zakończona ---")
     logging.info(f"Łącznie znaleziono {len(all_raw_events)} zdarzeń w {total_files_with_anomalies} plikach.")
-
-    if global_losses:
-        logging.info("Generuję histogram dla wszystkich plików łącznie...")
-        plt.figure(figsize=(12, 6)) # Nieco szerszy
-        
-        min_val = max(min(global_losses), 1e-6) # Zabezpieczenie przed 0
-        max_val = max(global_losses)
-        
-        # Tworzymy 100 kubełków rozmieszczonych logarytmicznie
-        bins = np.logspace(np.log10(min_val), np.log10(max_val), 100)
-        
-        plt.hist(global_losses, bins=bins, color='purple', alpha=0.7, label='Rozkład błędu')
-        plt.axvline(x=threshold, color='red', linestyle='--', linewidth=2, label=f'Próg ({threshold:.2f})')
-        
-        plt.xscale('log') # Logarytmiczna oś X
-        plt.yscale('log') # Logarytmiczna oś Y
-        
-        plt.title(f"Globalny Histogram Błędu ({args.family}) - Skala Logarytmiczna")
-        plt.xlabel("Błąd Rekonstrukcji (MSE) - Skala Log")
-        plt.ylabel("Liczba próbek (Log)")
-        plt.legend()
-        plt.grid(True, which="both", ls="--", alpha=0.3)
-        
-        global_hist_path = os.path.join(log_dir, f"GLOBAL_HISTOGRAM_{args.family}.png")
-        plt.savefig(global_hist_path)
-        plt.close()
-        logging.info(f"Zapisano globalny histogram: {global_hist_path}")
 
     # --- 4. Zapis zdarzeń i wywołanie classify.py ---
     if not all_raw_events:
